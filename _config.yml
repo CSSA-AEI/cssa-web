@@ -19,10 +19,10 @@ index:
 feed:
   en: /feed.xml
   fr: /flux.xml
-baseurl: "/jekyll-multilingual" # the subpath of your site, e.g. /blog
+baseurl: "/cssa-web" # the subpath of your site, e.g. /blog
 url: "https://cssa-aei.github.io/cssa-web/" # the base hostname & protocol for your site
 twitter_username: CSSAAEI
-github_username:  jekyll
+github_username:  CSSA-AEI
 
 # Build settings
 markdown: kramdown
