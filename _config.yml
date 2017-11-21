@@ -19,9 +19,9 @@ index:
 feed:
   en: /feed.xml
   fr: /flux.xml
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll-multilingual" # the subpath of your site, e.g. /blog
 url: "https://cssa-aei.github.io/cssa-web/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
+twitter_username: CSSAAEI
 github_username:  jekyll
 
 # Build settings
