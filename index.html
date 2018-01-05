@@ -4,9 +4,27 @@ ref: index
 lang: en
 ---
 
-<div class="home">
+<div class="main-header">
+  <div class="school-name">{{ site.school-name[page.lang] }}</div>
+  <div class="name">{{ site.header-title[page.lang] }}</div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="events">
+  <div class="title">Upcoming Events</div>
+  <p>dksfjhkjlsdhfklsdajfhkldsajfhds kjfhdskljfhksadljfhkldsjhfkljhkhjsdf kljdshfkdlsajhfklsajdhfjksdfh</p>
+  <p>dksfjhkjlsdhfklsdajfhkldsajfhds kjfhdskljfhksadljfhkldsjhfkljhkhjsdf kljdshfkdlsajhfklsajdhfjksdfh</p>
+</div>
+
+<div class="posts">
+  <div class="title">Latest Posts</div>
+  <p>dksfjhkjlsdhfklsdajfhkldsajfhds kjfhdskljfhksadljfhkldsjhfkljhkhjsdf kljdshfkdlsajhfklsajdhfjksdfh</p>
+  <p>dksfjhkjlsdhfklsdajfhkldsajfhds kjfhdskljfhksadljfhkldsjhfkljhkhjsdf kljdshfkdlsajhfklsajdhfjksdfh</p>
+</div>
+
+
+<!--<div class="home">
+
+  <h1 class="page-heading">Latest Posts</h1>
 
   <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
@@ -23,4 +41,4 @@ lang: en
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+</div>-->

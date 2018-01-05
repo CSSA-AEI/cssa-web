@@ -6,7 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:
+title-short:
+  en: CSSA
+  fr: AÉI
+title-long:
   en: Computer Science Student Association
   fr: Association des Étudiants en Informatique
 email: exec@cssa-aei.ca
@@ -26,3 +29,11 @@ github_username:  CSSA-AEI
 
 # Build settings
 markdown: kramdown
+
+#header messages
+header-title:
+  en: Computer Science<br>Student Association
+  fr: Association des<br>Étudiants en Informatique
+school-name:
+  en: University of Ottawa
+  fr: Université d'Ottawa
