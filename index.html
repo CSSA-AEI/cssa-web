@@ -13,8 +13,19 @@ lang: en
   <div class="wrapper">
     <div class="title">{{ site.upcoming-events[page.lang] }}</div>
     <ul class="event-list">
-      
+      {% assign events=site.events | where:"lang", page.lang %}
+      {% for event in events %}
+        <li>
+          <span class="post-meta">{{ event.date | date: "%b %-d, %Y" }}</span>
+
+            <a class="heading-page" href="#">{{ event.title }}</a>
+
+            <div class="excerpt">{{ event.content | strip_html | truncatewords:30 }}</div>
+        </li>
+      {% endfor %}
     </ul>
+
+    <center><a class="button" href=" {{ site.blog-url[page.lang] }}">{{ site.more-button[page.lang] }}</a></center>
 </div>
 </div>
 

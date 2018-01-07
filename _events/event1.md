@@ -1,7 +1,9 @@
 ---
 layout: event
-title: Event 1
-date: March 12, 2018
-ref: event
+title:  Event 1
+ref: welcome
+date:   2016-02-29 09:48:44 +0100
+lang: en
 ---
-Hello world!
+Hello
+Hello
