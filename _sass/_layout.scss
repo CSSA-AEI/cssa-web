@@ -56,6 +56,15 @@
     line-height: 55px;
     font-family: 'Roboto Condensed', sans-serif;
   }
+
+  .button{
+    background-color: $blue-color;
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+  }
 }
 
 
@@ -260,6 +269,13 @@
         .heading{
           font-size: 30px;
           color: white;
+          padding: 5px;
+          display: inline;
+        }
+
+        .heading-page{
+          font-size: 30px;
+          color: black;
           padding: 5px;
           display: inline;
         }

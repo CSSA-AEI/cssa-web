@@ -11,7 +11,7 @@ lang: en
 
 <div class="events">
   <div class="wrapper">
-    <div class="title">Upcoming Events</div>
+    <div class="title">{{ site.upcoming-events[page.lang] }}</div>
     <p>Will do soon</p>
     <p>will do soon</p>
 </div>
@@ -19,7 +19,7 @@ lang: en
 
 <div class="posts">
   <div class="wrapper">
-    <div class="title">Latest Posts</div>
+    <div class="title">{{ site.latest-posts[page.lang] }}</div>
     <ul class="post-list">
       {% assign posts=site.posts | where:"lang", page.lang %}
       {% for post in posts limit:5 %}
@@ -28,31 +28,11 @@ lang: en
 
             <a class="heading" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
-            <div class="excerpt">{{ post.content | strip_html | truncatewords:25 }}</div>
+            <div class="excerpt">{{ post.content | strip_html | truncatewords:30 }}</div>
         </li>
       {% endfor %}
     </ul>
+
+    <center><a class="button" href="#">{{ site.more-button[page.lang] }}</a></center>
 </div>
 </div>
-
-
-<!--<div class="home">
-
-  <h1 class="page-heading">Latest Posts</h1>
-
-  <ul class="post-list">
-    {% assign posts=site.posts | where:"lang", page.lang %}
-    {% for post in posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>-->
