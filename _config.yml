@@ -5,6 +5,10 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+collections:
+  events:
+    output: true
+
 # Site settings
 title-short:
   en: CSSA
@@ -49,8 +53,3 @@ more-button:
 blog-url:
   en: /cssa-web/blog
   fr: /cssa-web/blog-fr
-
-#Initialize collections
-collections:
-  events:
-    output: true
