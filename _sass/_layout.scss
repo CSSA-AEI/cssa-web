@@ -42,8 +42,12 @@
 
 .posts{
   display: block;
-  color: black;
+  color: white;
   background-color: #cfd1d3;
+  background-image: url(../images/postbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 50px;
 
   .title{
@@ -239,12 +243,34 @@
 
     > li {
         margin-bottom: $spacing-unit;
+        border: 1px #b1b1b1 solid;
+        padding: 20px;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px;
+        padding-bottom: -10px;
+
+
+        .post-meta{
+          background-color: $grey-color;
+          color: white;
+          display: inline-block;
+          padding: 5px;
+        }
+
+        .h2{
+          margin-top: 10px;
+
+        }
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    background-color: $grey-color;
+    color: white;
+    padding: 10px;
+    display: inline;
 }
 
 .post-link {
@@ -259,12 +285,19 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    background-image: url(../images/headerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 90px;
+    padding-bottom: 30px;
 }
 
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    color: white;
 
     @include media-query($on-laptop) {
         font-size: 36px;

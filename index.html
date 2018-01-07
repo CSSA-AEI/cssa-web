@@ -10,15 +10,29 @@ lang: en
 </div>
 
 <div class="events">
-  <div class="title">Upcoming Events</div>
-  <p>dksfjhkjlsdhfklsdajfhkldsajfhds kjfhdskljfhksadljfhkldsjhfkljhkhjsdf kljdshfkdlsajhfklsajdhfjksdfh</p>
-  <p>dksfjhkjlsdhfklsdajfhkldsajfhds kjfhdskljfhksadljfhkldsjhfkljhkhjsdf kljdshfkdlsajhfklsajdhfjksdfh</p>
+  <div class="wrapper">
+    <div class="title">Upcoming Events</div>
+    <p>Will do soon</p>
+    <p>will do soon</p>
+</div>
 </div>
 
 <div class="posts">
-  <div class="title">Latest Posts</div>
-  <p>dksfjhkjlsdhfklsdajfhkldsajfhds kjfhdskljfhksadljfhkldsjhfkljhkhjsdf kljdshfkdlsajhfklsajdhfjksdfh</p>
-  <p>dksfjhkjlsdhfklsdajfhkldsajfhds kjfhdskljfhksadljfhkldsjhfkljhkhjsdf kljdshfkdlsajhfklsajdhfjksdfh</p>
+  <div class="wrapper">
+    <div class="title">Latest Posts</div>
+    <ul class="post-list">
+      {% assign posts=site.posts | where:"lang", page.lang %}
+      {% for post in posts limit:5 %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+</div>
 </div>
 
 
