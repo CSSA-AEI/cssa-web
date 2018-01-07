@@ -49,3 +49,8 @@ more-button:
 blog-url:
   en: /cssa-web/blog
   fr: /cssa-web/blog-fr
+
+#Initialize collections
+collections:
+  events:
+    output: true
