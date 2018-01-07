@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog
-permalink: /blog/
+permalink: /blog-fr/
 ref: blog
 lang: fr
 ---
