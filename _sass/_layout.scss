@@ -243,24 +243,30 @@
 
     > li {
         margin-bottom: $spacing-unit;
-        border: 1px #b1b1b1 solid;
         padding: 20px;
-        background-color: white;
         font-family: 'Roboto', sans-serif;
         margin: 10px;
         padding-bottom: -10px;
+        border-bottom: 2px white solid;
 
 
         .post-meta{
-          background-color: $grey-color;
+          background-color: $blue-color;
           color: white;
           display: inline-block;
           padding: 5px;
         }
 
-        .h2{
-          margin-top: 10px;
+        .heading{
+          font-size: 30px;
+          color: white;
+          padding: 5px;
+          display: inline;
+        }
 
+        .excerpt{
+          padding-top: 20px;
+          padding-bottom: 10px;
         }
     }
 }
