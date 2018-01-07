@@ -25,7 +25,7 @@ lang: en
             <div>
               <span class="event-info">Cost: {{ event.cost }}</span>
               <span class="event-info">Location: {{ event.location }}</span>
-              <span class="fb-link">Facebook Event</span>
+              <span class="fb-link"><a href="{{ event.facebooklink }}">Facebook Event</a></span>
             </div>
 
             <div class="excerpt">{{ event.content | strip_html | truncatewords:30 }}</div>
