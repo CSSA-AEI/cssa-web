@@ -7,6 +7,13 @@ layout: default
   <header class="post-header">
     <div class="wrapper">
       <h1 class="post-title">{{ page.title }}</h1>
+      <div class="event-list-page">
+        <li>
+          <span class="event-info">Cost: {{ page.cost }}</span>
+          <span class="event-info">Location: {{ page.location }}</span>
+          <span class="fb-link"><a href="{{ page.facebooklink }}">Facebook Event</a></span>
+        </li>
+      </div>
   </div>
   </header>
 

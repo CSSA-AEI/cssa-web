@@ -418,6 +418,7 @@
           margin-top: 5px;
         }
 
+
         .heading{
           font-size: 30px;
           color: white;
@@ -449,7 +450,6 @@
         font-family: 'Roboto', sans-serif;
         margin: 10px;
         padding-bottom: -10px;
-        border-bottom: 2px white solid;
 
 
         .post-meta{
@@ -466,6 +466,30 @@
           display: inline-block;
           padding: 5px;
           margin-top: 5px;
+        }
+
+        .event-info{
+          background-color: #5887ba;
+          color: white;
+          padding: 10px;
+          font-family: 'Roboto', sans-serif;
+          font-size: 15px;
+          margin-top: 10px;
+          margin-right: 5px;
+        }
+
+        .fb-link{
+          background-color: #284769;
+          color: white;
+          padding: 10px;
+          font-family: 'Roboto', sans-serif;
+          font-size: 15px;
+          margin-top: 10px;
+          margin-right: 5px;
+
+          a{
+            color: white;
+          }
         }
 
         .heading{

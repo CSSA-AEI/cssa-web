@@ -13,7 +13,7 @@ lang: en
       <div>
         <span class="post-meta">{{ event.date | date: "%b %-d, %Y" }} @ {{ event.time }}</span>
 
-          <a class="heading" href="#">{{ event.title }}</a>
+          <a class="heading" href="{{ event.permalink | prepend: site.baseurl }}">{{ event.title }}</a>
       </div>
 
         <div>

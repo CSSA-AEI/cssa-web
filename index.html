@@ -14,12 +14,12 @@ lang: en
     <div class="title">{{ site.upcoming-events[page.lang] }}</div>
     <ul class="event-list">
       {% assign events=site.events | where:"lang", page.lang %}
-      {% for event in events %}
+      {% for event in events limit:5 %}
         <li>
           <div>
             <span class="post-meta">{{ event.date | date: "%b %-d, %Y" }} @ {{ event.time }}</span>
 
-              <a class="heading" href="#">{{ event.title }}</a>
+              <a class="heading" href="{{ event.permalink | prepend: site.baseurl }}">{{ event.title }}</a>
           </div>
 
             <div>
