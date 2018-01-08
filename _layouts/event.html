@@ -9,9 +9,11 @@ layout: default
       <h1 class="post-title">{{ page.title }}</h1>
       <div class="event-list-page">
         <li>
-          <span class="event-info">Cost: {{ page.cost }}</span>
-          <span class="event-info">Location: {{ page.location }}</span>
-          <span class="fb-link"><a href="{{ page.facebooklink }}">Facebook Event</a></span>
+          <div>
+            <span class="event-info">{{ site.cost[page.lang] }}: {{ page.cost }}</span>
+            <span class="event-info">{{ site.location[page.lang] }}: {{ page.location }}</span>
+            <span class="fb-link"><a href="{{ page.facebooklink }}">{{ site.facebook-link[page.lang]}}</a></span>
+          </div>
         </li>
       </div>
   </div>

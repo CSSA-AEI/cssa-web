@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Events
-permalink: /events/
+title: Événements
+permalink: /evenements/
 ref: events
-lang: en
+lang: fr
 ---
 
 <ul class="event-list-page">

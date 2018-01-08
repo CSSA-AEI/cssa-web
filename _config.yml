@@ -53,3 +53,18 @@ more-button:
 blog-url:
   en: /cssa-web/blog
   fr: /cssa-web/blog-fr
+
+
+#Events
+cost:
+  en: Cost
+  fr: Coût
+location:
+  en: Location
+  fr: Emplacement
+facebook-link:
+  en: Facebook Event
+  fr: Événement Facebook
+event-more-button:
+  en: See more events
+  fr: Voir plus d'événements
