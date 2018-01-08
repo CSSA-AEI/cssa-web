@@ -438,3 +438,53 @@
         }
     }
 }
+
+.event-list-page {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px;
+        padding-bottom: -10px;
+        border-bottom: 2px white solid;
+
+
+        .post-meta{
+          background-color: $blue-color;
+          color: white;
+          display: inline-block;
+          padding: 5px;
+          margin-bottom: 15px;
+        }
+
+        .event-meta{
+          background-color: #2a4664;
+          color: white;
+          display: inline-block;
+          padding: 5px;
+          margin-top: 5px;
+        }
+
+        .heading{
+          font-size: 30px;
+          color: black;
+          padding: 5px;
+          display: inline;
+        }
+
+        .heading-page{
+          font-size: 30px;
+          color: black;
+          padding: 5px;
+          display: inline;
+        }
+
+        .excerpt{
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+    }
+}

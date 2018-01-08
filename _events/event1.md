@@ -8,6 +8,7 @@ facebooklink: http://google.ca
 ref: welcome
 date:  2016-02-29 09:48:44 +0100
 lang: en
+permalink: /events/event-1
 ---
 Hello
 Hello
