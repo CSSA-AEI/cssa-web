@@ -9,7 +9,7 @@
    background-size: cover;
    background-attachment: fixed;
    color: white;
-   height: 400px;
+   padding-bottom: 200px;
    text-align: center;
    padding-top:200px;
    text-transform: uppercase;
@@ -18,6 +18,11 @@
    .name{
      font-size: 80px;
      line-height: 85px;
+
+     @media screen and (max-width: $on-palm) {
+       font-size: 40px;
+       line-height: 45px;
+     }
    }
 
    .school-name{
@@ -31,6 +36,12 @@
   color: white;
   background: $blue-color;
   padding: 50px;
+
+  @media screen and (max-width: $on-palm) {
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   .title{
     text-align: center;
@@ -46,6 +57,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .event-info{
@@ -476,6 +488,7 @@
           font-size: 15px;
           margin-top: 10px;
           margin-right: 5px;
+          margin-bottom: 20px;
         }
 
         .fb-link{

@@ -5,7 +5,7 @@ cost: Free
 location: SITE 0000
 time: 12pm
 facebooklink: http://google.ca
-ref: welcome
+ref: event-1
 date:  2016-02-29 09:48:44 +0100
 lang: en
 permalink: /events/event-1
