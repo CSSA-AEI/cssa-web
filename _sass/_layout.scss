@@ -38,9 +38,8 @@
   padding: 50px;
 
   @media screen and (max-width: $on-palm) {
-    padding: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .title{
@@ -98,6 +97,11 @@
   background-size: cover;
   background-attachment: fixed;
   padding: 50px;
+
+  @media screen and (max-width: $on-palm) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   .title{
     text-align: center;
