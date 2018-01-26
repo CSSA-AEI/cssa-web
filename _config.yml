@@ -53,6 +53,9 @@ more-button:
 blog-url:
   en: /cssa-web/blog
   fr: /cssa-web/blog-fr
+event-url:
+  en: /cssa-web/events
+  fr: /cssa-web/evenements
 
 
 #Events
