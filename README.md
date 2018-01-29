@@ -48,6 +48,9 @@ Also for each page, you will need to make 2 files (one for English and one for F
 
 Once you are done with making changes to the header, you can write the rest of the content using markdown syntax.
 
+## Add pages to menu
+When you create a new page, it will automatically be added to the menu. So you do not need to worry about it :)
+
 ## Making events
 For events, this is a custom collection that ws created for the CSSA. It follows the same structure as a page and post. However, there is a folder for all the events to go into and the folder is called `_events`. There will be a header at the top that will look like this: 
 
