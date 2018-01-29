@@ -72,4 +72,14 @@ Make sure to go through the header and make the neccessary changes. Once that's 
 
 Also for each event, you will need to make 2 files (one for English and one for French). Make sure that the `ref` is the same as the French event as well and vice versa. The `ref` will also have to be unique. So make sure not to duplicate or else that will cause issues.
 
+# Translations
+For translations of menus, buttons, and other static information, you edit it in the `_config.yml` file. If you look in the file you will see something like this: 
 
+```
+school-name:
+  en: University of Ottawa
+  fr: Université d'Ottawa
+```
+For edition translations, find the desired text and edit the field with the desired language. To make new translations, you can add a new name to the translation like this: `NAME_OF_TRANSLATION:`. Then you add the `en: ENGLISH TRANSLATION` and the `fr: translation`.
+
+If you are making changes to the `_config.yml` file, you will have to restart the server to see the changes. 
