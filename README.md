@@ -80,6 +80,6 @@ school-name:
   en: University of Ottawa
   fr: Université d'Ottawa
 ```
-For edition translations, find the desired text and edit the field with the desired language. To make new translations, you can add a new name to the translation like this: `NAME_OF_TRANSLATION:`. Then you add the `en: ENGLISH TRANSLATION` and the `fr: translation`.
+For edition translations, find the desired text and edit the field with the desired language. To make new translations, you can add a new name to the translation like this: `NAME_OF_TRANSLATION:`. Then you add the `en: ENGLISH TRANSLATION` and the `fr: FRENCH TRANSLATION`.
 
 If you are making changes to the `_config.yml` file, you will have to restart the server to see the changes. 
