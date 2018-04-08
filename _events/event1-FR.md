@@ -1,12 +1,12 @@
 ---
 layout: event
-title:  Event 1-FR
-cost: Free
-location: SITE 0000
-time: 12pm
-facebooklink: http://google.ca
+title:  Research @ EECS
+cost: Gratuit
+location: CRX C308
+time: 17h30
+facebooklink: https://www.facebook.com/events/123497961824097/
 ref: event-1
-date:  2016-02-29 09:48:44 +0100
+date:  2016-03-28
 lang: fr
 permalink: /evenements/evenement-1
 ---
