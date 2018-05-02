@@ -11,9 +11,8 @@ We, the Computer Science Student Association (CSSA) of the University of Ottawa,
 View our constitution in English [here.]({{ site.url }}/2017-2018-cssa-constitution.pdf) We are working on the French translation for our constitution.
 
 ## The Team 2018-2019
-| Role   |      Name    |
-|----------|:-------------:|
-| President |  Justyn Florendo |
-| VP Finance |    Remi Gelinas |
-| VP Internal | Amy Zhou |
-| VP Info. Tech. | Oliver Benning |
+
+President - Justyn Florendo
+VP Finance - Remi Gelinas
+VP Internal - Amy Zhou
+VP Info. Tech. - Oliver Benning

@@ -8,11 +8,10 @@ Nous nous appellons l’Association d’étudiants en Informatique (AÉI) de l�
 
 Voyez notre constitution en anglais [ici.]({{ site.url }}/2017-2018-cssa-constitution.pdf) Nous sommes désolés de vous dire que nous sommes en train de traduire notre constitution en français.
 
-##  L'équipe
-| Rôle  |      Nom    |
-|----------|:-------------:|
-| President |  Justyn Florendo |
-| VP Finance |    Remi Gelinas |
-| VP Internal | Amy Zhou |
-| VP Info. Tech. | Oliver Benning |
+##  L'équipe 2018-2019
+
+Président - Justyn Florendo
+Vice-Président affaires financières - Remi Gelinas
+Vice-Président interne - Amy Zhou
+Vice-Président informatique - Oliver Benning
 
