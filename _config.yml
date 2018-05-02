@@ -18,8 +18,8 @@ title-long:
   fr: Association des Étudiants en Informatique
 email: exec@cssa-aei.ca
 description:
-  en: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-  fr: Écrivez une super description de votre nouveau site ici. Vous pouvez modifier cette ligne dans _config.yml. Elle apparaîtra dans la balise meta description (pour les résultats sur Google) et dans le fil RSS feed.xml.
+  en: We, the Computer Science Student Association (CSSA) of the University of Ottawa, provide by this Constitution an organization dedicated to the pursuit of obtaining and managing resources for all members of the undergraduate Computer Science community at the University of Ottawa.
+  fr: Nous nous appellons l’Association d’étudiants en Informatique (AÉI) de l’Université d’Ottawa. Gouverné par la constitution de l’université, nous sommes responsables pour la gestion de tout les resources disponsibles pour les membres de la programme baccaleauréate de l’université d’Ottawa en informatique.
 index:
   en:
   fr: accueil.html
