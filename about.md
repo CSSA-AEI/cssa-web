@@ -12,7 +12,7 @@ View our constitution in English [here.]({{ site.url }}/2017-2018-cssa-constitut
 
 ## The Team 2018-2019
 
-President - Justyn Florendo
-VP Finance - Remi Gelinas
-VP Internal - Amy Zhou
-VP Info. Tech. - Oliver Benning
+* President - Justyn Florendo
+* VP Finance - Remi Gelinas
+* VP Internal - Amy Zhou
+* VP Info. Tech. - Oliver Benning
