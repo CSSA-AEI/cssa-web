@@ -30,6 +30,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://cssa-aei.ca" # the base hostname & protocol for your site
 twitter_username: CSSAAEI
 github_username:  CSSA-AEI
+repository: CSSA-AEI/cssa-web
 
 # Build settings
 markdown: kramdown
