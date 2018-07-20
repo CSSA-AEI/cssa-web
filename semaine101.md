@@ -6,6 +6,4 @@ ref: 101-week
 lang: fr
 ---
 
-Thank you so much for participating in CSSA's 101 Week 2017!
-
-Make sure to check out the photos on our Facebook page.
+Les informations concernant la semaine 101 de cette année ainsi que le lien d'achat pour le kit seront bientôt disponibles!
