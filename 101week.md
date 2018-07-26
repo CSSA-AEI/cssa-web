@@ -16,12 +16,12 @@ This is a test to see if markdown renders do not take this seriously.
 
 **Justyn Florendo, *president* **
 
-[justyn]: https://commons.wikimedia.org/wiki/File:Generic-person.svg "Justyn Florendo"
+[justyn]: https://i1.wp.com/www.shelbytrailer.com/wp-content/uploads/2017/03/person-generic.jpg "Justyn Florendo"
 ![Justyn Florendo][justyn]
 
 **Remi Gelinas, *VP Finance* **
 
-[remi]: https://commons.wikimedia.org/wiki/File:Generic-person.svg "Remi Gelinas"
+[remi]: https://i1.wp.com/www.shelbytrailer.com/wp-content/uploads/2017/03/person-generic.jpg "Remi Gelinas"
 ![Remi Gelinas][remi]
 
 
