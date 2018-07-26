@@ -55,7 +55,7 @@ This is a test to see if markdown renders do not take this seriously.
 
 # When?
 
-*FROM September XX to September*
+*FROM September XX to September XX*
 
 # Where?
 
