@@ -6,4 +6,6 @@ ref: 101-week
 lang: en
 ---
 
-# 101 Week signups coming soon!
+# Signups are live! Head over to our 101 Week website below to get your kit.
+
+# [101 Week Site](https://101.cssa-aei.ca)
