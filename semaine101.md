@@ -6,4 +6,6 @@ ref: 101-week
 lang: fr
 ---
 
-Les informations concernant la semaine 101 de cette année ainsi que le lien d'achat pour le kit seront bientôt disponibles!
+# Les inscriptions sont en direct. Rendez-vous sur le lien ci-dessous pour vous inscrire
+
+# [Site web 101](https://101.cssa-aei.ca)
