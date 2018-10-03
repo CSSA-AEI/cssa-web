@@ -18,6 +18,9 @@ View our constitution in English [here.]({{ site.url }}/2017-2018-cssa-constitut
 {% endfor %}
 </ul>
 
+## The office
+Our office is located at <b>SITE 4076</b>, feel free to stop by. Our office hours will be held there.
+
 ## Office Hours
 
 {% for member in site.data.executives %}
