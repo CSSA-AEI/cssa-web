@@ -1,15 +1,19 @@
 - position: President
   name: Justyn Florendo
   contact: president@cssa-aei.ca
+  office-hours: Mon 8:30am - 11:00am and Thu 11:30am - 1:00pm
 
 - position: VP Finance
   name: Remi Gelinas
   contact: finance@cssa-aei.ca
+  office-hours: Mon 6:00pm - 7:30pm and Wed 6:00pm - 7:30pm
 
 - position: VP Internal
   name: Amy Zhou
   contact: internal@cssa-aei.ca
+  office-hours: Wed 11:30am - 1:00pm and Fri 10:00am - 11:30am
 
 - position: VP IT
   name: Oliver Benning
   contact: it@cssa-aei.ca
+  office-hours: Thu 10:00am - 11:30am and Fri 11:30am - 1:00pm
