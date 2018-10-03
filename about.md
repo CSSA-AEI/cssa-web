@@ -20,6 +20,6 @@ View our constitution in English [here.]({{ site.url }}/2017-2018-cssa-constitut
 
 ## Office Hours
 
-{% for member in site.data.executives}
-    <b>{{member.name}}:</b> {{member.office-hours}}
+{% for member in site.data.executives %}
+<b>{{member.name}}:</b> {{member.office-hours}}
 {% endfor %}
