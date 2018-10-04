@@ -26,3 +26,5 @@ Our office is located at <b>SITE 4076</b>, feel free to stop by. Our office hour
 {% for member in site.data.executives %}
 <b>{{member.name}}:</b> {{member.office-hours}}
 {% endfor %}
+
+<iframe src="https://calendar.google.com/calendar/embed?src=cssa-aei.ca_2ud2njrgm2i2025uei6fj37tkk%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
