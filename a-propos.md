@@ -10,8 +10,17 @@ Voyez notre constitution en anglais [ici.]({{ site.url }}/2017-2018-cssa-constit
 
 ##  L'équipe 2018-2019
 
-Président - Justyn Florendo
-Vice-Président affaires financières - Remi Gelinas
-Vice-Président interne - Amy Zhou
-Vice-Président informatique - Oliver Benning
+<ul>
+{% for member in site.data.executif %}
+    <li>{{member.position}}: {{ member.name }}</li>
+{% endfor %}
+</ul>
 
+## Le bureau
+Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer. Nos heures de bureau auront lieu là-bas.
+
+## Office Hours
+
+{% for member in site.data.executif %}
+<b>{{member.name}}:</b> {{member.office-hours}}
+{% endfor %}
