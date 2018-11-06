@@ -14,10 +14,39 @@ lang: en
 Amit Shanbhoug: 11
 
 Arik Barenboim: 36
+
 Abstain: 12
+
 Spoiled: 2
+
 WINNER: Arik Barenboim
 
 ## VP External
+
 Trevor Shleihauf: 21.5 (after deduction)
-Samuel Saint-Fleur: 
+
+Samuel Saint-Fleur: 21
+
+Abstain: 6
+
+Spoiled: 1
+
+## VP Social
+
+Reyna Doerwald
+
+Natalie Maximo
+
+## VP Communications
+
+Dirieh Mahdi Ali
+
+## VP Executive Affairs
+
+Antwan Hakko
+
+## VP Philanthrophy
+
+Diego Pontones Ledon
+
+
