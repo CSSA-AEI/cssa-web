@@ -14,7 +14,7 @@ lang: en
 
         <a class="heading-page" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
-        <div class="excerpt">{{ post.content | strip_html | truncatewords:30 }}</div>
+        <div class="excerpt">{{ post.content | strip_html | truncatewords:10 }}</div>
     </li>
   {% endfor %}
 </ul>
