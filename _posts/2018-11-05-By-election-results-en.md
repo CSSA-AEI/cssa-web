@@ -10,7 +10,9 @@ lang: en
 ### Total number of voters: 61
 
 ## VP Academic
+
 Amit Shanbhoug: 11
+
 Arik Barenboim: 36
 Abstain: 12
 Spoiled: 2
