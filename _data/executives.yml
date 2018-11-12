@@ -60,46 +60,83 @@
     en: academic@cssa-aei.ca
     fr: academic@cssa-aei.ca
   office-hours:
-    en: Wed 2:30pm - 4:00pm and 
+    en: Wed 2:30pm - 4:00pm and Thu 1:00pm - 2:30 pm
+    fr: mer 14h30 - 16h00 et jeu 13h00 - 14h30
    
 - position:
     en: VP External
     fr: VP externel
-  name: Trevor Schleihauf
-  contact: external@cssa-aei.ca
-  office-hours: TBD
+  name:
+    en: Trevor Schleihauf
+    fr: Trevor Schleihauf
+  contact:
+    en: external@cssa-aei.ca
+    fr: external@cssa-aei.ca
+  office-hours:
+    en: Tue 10:00am - 11:30am and Tue 2:30pm - 4:00pm
+    fr: mar 10h00 - 11h30 et mar 14h30 - 16h00
   
 - position:
     en: VP Social
     fr: VP Social
-  name: Reyna Doerwald
-  contact: social@cssa-aei.ca
-  office-hours: TBD
+  name:
+    en: Reyna Doerwald
+    fr: Reyna Doerwald
+  contact:
+    en: social@cssa-aei.ca
+    fr: social@cssa-aei.ca
+  office-hours:
+    en: Mon 11:30am - 1:00pm and Tue 11:30am - 1:00pm
+    fr: lun 11h30 - 13h00 et mar 11h30 - 13h00
   
 - position:
     en: VP Communications
     fr: VP communications
-  name: Dirieh Mahdi Ali
-  contact: comms@cssa-aei.ca
-  office-hours: TBD
+  name:
+    en: Dirieh Mahdi Ali
+    fr: Dirieh Mahdi Ali
+  contact:
+    en: comms@cssa-aei.ca
+    fr: comms@cssa-aei.ca
+  office-hours:
+    en: Wed 4:00pm - 5:30pm and Thu 4:00pm - 5:30pm
+    fr: mer 16h00 - 17h30 et jeu 16h00 - 17h30
   
 - position:
     en: VP Executive Affairs
     fr: VP affairs executifs
-  name: Antwan Hakko
-  contact: execaffairs@cssa-aei.ca
-  office-hours: TBD
+  name:
+    en: Antwan Hakko
+    fr: Antwan Hakko
+  contact:
+    en: execaffairs@cssa-aei.ca
+    fr: execaffairs@cssa-aei.ca
+  office-hours:
+    en: Mon 1:00pm - 2:30pm and Fri 2:30pm - 4:00pm
+    fr: lun 13h00 - 14h30 et ven 13h00 - 14h30
   
 - position:
     en: VP Philanthropy
     fr: VP philanthropy
-  name: Diego Pontones Ledon
-  contact: phil@cssa-aei.ca
-  office-hours: TBD
+  name:
+    en: Diego Pontones Ledon
+    fr: Diego Pontones Ledon
+  contact:
+    en: phil@cssa-aei.ca
+    fr: phil@cssa-aei.ca
+  office-hours:
+    en: Mon 2:30pm - 5:30pm
+    fr: lun 14h30 - 17h30
   
 - position:
     en: VP Equity
     fr: VP equitable
-  name: Charmaine De Ramos
-  contact: equity@cssa-aei.ca
-  office-hours: TBD
+  name:
+    en: Charmaine De Ramos
+    fr: Charmaine De Ramos
+  contact:
+    en: equity@cssa-aei.ca
+    fr: equity@cssa-aei.ca
+  office-hours:
+    en: Wed 10:00am - 11:30am and Thu 2:30pm - 4:00pm
+    fr: mer 10h00 - 11h30 et jeu 14h30 - 16h00
