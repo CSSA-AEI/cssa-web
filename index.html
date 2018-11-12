@@ -18,7 +18,7 @@ lang: en
     </tr>
     {% for member in site.data.executives %}
     <tr>  
-      <td>{{ member.position }}</td>
+      <td>{{ member.position.en }}</td>
       <td>{{ member.name }}</td>
       <td><a href="mailto:{{ member.contact }}">{{ member.contact }}</a></td>
       <td>{{ member.office-hours }}</td>
