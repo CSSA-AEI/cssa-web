@@ -20,7 +20,7 @@ lang: en
     <tr>  
       <td>{{ member.position }}</td>
       <td>{{ member.name }}</td>
-      <td>{{ member.contact }}</td>
+      <td><a href="mailto:{{ member.contact }}">{{ member.contact }}</a></td>
       <td>{{ member.office-hours }}</td>
     </tr>
     {% endfor %}
