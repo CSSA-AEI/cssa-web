@@ -16,14 +16,14 @@ lang: en
       <th>Contact</th>
       <th>Office hours</th>
     </tr>
-    <tr>
-      {% for member in site.data.executives %}
+    {% for member in site.data.executives %}
+    <tr>  
       <td>{{ member.position }}</td>
       <td>{{ member.name }}</td>
       <td>{{ member.contact }}</td>
       <td>{{ member.office-hours }}</td>
-      {% endfor %}
     </tr>
+    {% endfor %}
   </table>
 </div>
 
