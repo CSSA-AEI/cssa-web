@@ -1,54 +1,76 @@
-- position: President
+- position:
+    en: President
+    fr: président
   name: Justyn Florendo
   contact: president@cssa-aei.ca
   office-hours: Mon 8:30am - 11:00am and Thu 11:30am - 1:00pm
 
-- position: VP Finance
+- position:
+    en: VP Finance
+    fr: VP Finance
   name: Remi Gelinas
   contact: finance@cssa-aei.ca
   office-hours: Mon 6:00pm - 7:30pm and Wed 6:00pm - 7:30pm
 
-- position: VP Internal
+- position:
+    en: VP Internal
+    fr: VP Internal
   name: Amy Zhou
   contact: internal@cssa-aei.ca
   office-hours: Wed 11:30am - 1:00pm and Fri 10:00am - 11:30am
 
-- position: VP IT
+- position:
+    en: VP IT
+    fr: VP TI
   name: Oliver Benning
   contact: it@cssa-aei.ca
   office-hours: Thu 10:00am - 11:30am and Fri 11:30am - 1:00pm
 
-- position: VP Academic
+- position:
+    en: VP Academic
+    fr: VP Academic
   name: Arik Barenboim
   contact: academic@cssa-aei.ca
   office-hours: TBD
    
-- position: VP External
+- position:
+    en: VP External
+    fr: VP externel
   name: Trevor Schleihauf
   contact: external@cssa-aei.ca
   office-hours: TBD
   
-- position: VP Social
+- position:
+    en: VP Social
+    fr: VP Social
   name: Reyna Doerwald
   contact: social@cssa-aei.ca
   office-hours: TBD
   
-- position: VP Communications
+- position:
+    en: VP Communications
+    fr: VP communications
   name: Dirieh Mahdi Ali
   contact: comms@cssa-aei.ca
   office-hours: TBD
   
-- position: VP Executive Affairs
+- position:
+    en: VP Executive Affairs
+    fr: VP affairs executifs
   name: Antwan Hakko
   contact: execaffairs@cssa-aei.ca
   office-hours: TBD
   
-- position: VP Philanthropy
+- position:
+    en: VP Philanthropy
+    fr: VP philanthropy
   name: Diego Pontones Ledon
   contact: phil@cssa-aei.ca
   office-hours: TBD
   
-- position: VP Equity
+- position:
+    en: VP Equity
+    fr: VP equitable
   name: Charmaine De Ramos
   contact: equity@cssa-aei.ca
   office-hours: TBD
