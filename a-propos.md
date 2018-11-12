@@ -11,8 +11,11 @@ Voyez notre constitution en anglais [ici.]({{ site.url }}/2017-2018-cssa-constit
 ##  L'équipe 2018-2019
 
 <ul>
-{% for member in site.data.executif %}
-    <li>{{member.position}}: {{ member.name }}</li>
+{% for member in site.data.executives %}
+    <li>{{ member.position.[page.lang] }}: {{ member.name.[page.lang] }} </li>
+    <ul>
+        <li><a href="mailto:{{ member.contact.[page.lang] }}">{{ member.contact.[page.lang] }}</a></li>
+    </ul>
 {% endfor %}
 </ul>
 
@@ -21,6 +24,6 @@ Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer. Nos heure
 
 ## Office Hours
 
-{% for member in site.data.executif %}
-<b>{{member.name}}:</b> {{member.office-hours}}
+{% for member in site.data.executives %}
+<b>{{ member.name.[page.lang] }}:</b> {{ member.office-hours.[page.lang] }}
 {% endfor %}
