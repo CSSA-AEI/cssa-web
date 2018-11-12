@@ -18,10 +18,10 @@ lang: en
     </tr>
     {% for member in site.data.executives %}
     <tr>  
-      <td>{{ member.position.en }}</td>
-      <td>{{ member.name }}</td>
-      <td><a href="mailto:{{ member.contact }}">{{ member.contact }}</a></td>
-      <td>{{ member.office-hours }}</td>
+      <td>{{ member.position.[page.lang] }}</td>
+      <td>{{ member.name.[page.lang] }}</td>
+      <td><a href="mailto:{{ member.contact.[page.lang] }}">{{ member.contact.[page.lang] }}</a></td>
+      <td>{{ member.office-hours.[page.lang] }}</td>
     </tr>
     {% endfor %}
   </table>
