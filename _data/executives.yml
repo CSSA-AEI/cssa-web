@@ -1,37 +1,66 @@
 - position:
     en: President
     fr: président
-  name: Justyn Florendo
-  contact: president@cssa-aei.ca
-  office-hours: Mon 8:30am - 11:00am and Thu 11:30am - 1:00pm
+  name:
+    en: Justyn Florendo
+    fr: Justyn Florendo
+  contact:
+    en: president@cssa-aei.ca
+    fr: president@cssa-aei.ca
+  office-hours:
+    en: Wed 1:00pm - 2:30pm and Thu 11:30am - Fri 1:00pm
+    fr: mer 13h00 - 14h30 et jeu 11h30 - 13h00
 
 - position:
     en: VP Finance
     fr: VP Finance
-  name: Remi Gelinas
-  contact: finance@cssa-aei.ca
-  office-hours: Mon 6:00pm - 7:30pm and Wed 6:00pm - 7:30pm
+  name:
+    en: Remi Gelinas
+    fr: Remi Gelinas
+  contact:
+    en: finance@cssa-aei.ca
+    fr: finance@cssa-aei.ca
+  office-hours:
+    en: Mon 6:00pm - 7:30pm and Wed 6:00pm - 7:30pm
+    fr: lun 18h00 - 19h30 et mar 18h00 - 19h30
 
 - position:
     en: VP Internal
     fr: VP Internal
-  name: Amy Zhou
-  contact: internal@cssa-aei.ca
-  office-hours: Wed 11:30am - 1:00pm and Fri 10:00am - 11:30am
+  name:
+    en: Amy Zhou
+    fr: Amy Zhou
+  contact:
+    en: internal@cssa-aei.ca
+    fr: internal@cssa-aei.ca
+  office-hours:
+    en: Wed 11:30am - 1:00pm and Fri 10:00am - 11:30am
+    fr: mer 11h00 - 13h00 et ven 10h00 - 11h30
 
 - position:
     en: VP IT
     fr: VP TI
-  name: Oliver Benning
-  contact: it@cssa-aei.ca
-  office-hours: Thu 10:00am - 11:30am and Fri 11:30am - 1:00pm
+  name:
+    en: Oliver Benning
+    fr: Oliver Benning
+  contact:
+    en: it@cssa-aei.ca
+    fr: it@cssa-aei.ca
+  office-hours:
+    en: Thu 10:00am - 11:30am and Fri 11:30am - 1:00pm
+    fr: jeu 10h00 - 11h30 et ven 11h30 - 13h00
 
 - position:
     en: VP Academic
     fr: VP Academic
-  name: Arik Barenboim
-  contact: academic@cssa-aei.ca
-  office-hours: TBD
+  name:
+    en: Arik Barenboim
+    fr: Arik Barenboim
+  contact:
+    en: academic@cssa-aei.ca
+    fr: academic@cssa-aei.ca
+  office-hours:
+    en: Wed 2:30pm - 4:00pm and 
    
 - position:
     en: VP External
