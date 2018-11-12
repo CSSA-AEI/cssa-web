@@ -14,9 +14,9 @@ View our constitution in English [here.]({{ site.url }}/2017-2018-cssa-constitut
 
 <ul>
 {% for member in site.data.executives %}
-    <li>{{member.position}}: {{ member.name }} </li>
+    <li>{{ member.position.[page.lang] }}: {{ member.name.[page.lang] }} </li>
     <ul>
-        <li><a href="mailto:{{ member.contact }}">{{ member.contact }}</a></li>
+        <li><a href="mailto:{{ member.contact.[page.lang] }}">{{ member.contact.[page.lang] }}</a></li>
     </ul>
 {% endfor %}
 </ul>
