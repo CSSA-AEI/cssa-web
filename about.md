@@ -27,5 +27,5 @@ Our office is located at <b>SITE 4076</b>, feel free to stop by. Our office hour
 ## Office Hours
 
 {% for member in site.data.executives %}
-<b>{{member.name}}:</b> {{member.office-hours}}
+<b>{{member.name.[page.lang]}}:</b> {{member.office-hours.[page.lang]}}
 {% endfor %}
