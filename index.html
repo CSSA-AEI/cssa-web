@@ -8,23 +8,7 @@ lang: en
   <div class="school-name">{{ site.school-name[page.lang] }}</div>
   <div class="name">{{ site.header-title[page.lang] }}</div>
   <div class="school-name">Visit us in our office at SITE 4076</div>
-  <div class="school-name">The 2018 executive team:</div>
-  <table style="width:100%">
-    <tr>
-      <th>Position</th>
-      <th>Name</th> 
-      <th>Contact</th>
-      <th>Office hours</th>
-    </tr>
-    {% for member in site.data.executives %}
-    <tr>  
-      <td>{{ member.position.[page.lang] }}</td>
-      <td>{{ member.name.[page.lang] }}</td>
-      <td><a href="mailto:{{ member.contact.[page.lang] }}">{{ member.contact.[page.lang] }}</a></td>
-      <td>{{ member.office-hours.[page.lang] }}</td>
-    </tr>
-    {% endfor %}
-  </table>
+  <img src="https://cssa.nyc3.cdn.digitaloceanspaces.com/office_hours.JPG" alt="Office hours">
 </div>
 
 <div class="events">
