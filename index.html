@@ -15,7 +15,7 @@ lang: en
   <div class="wrapper">
     <div class="title">{{ site.upcoming-events[page.lang] }}</div>
     <ul class="event-list">
-      {% assign events=site.events | where:"lang", page.lang | where: 'date' > site.time | sort: 'date' %}
+      {% assign events=site.events | where:"lang", page.lang | sort: 'date' %}
       {% for event in events limit:5 %}
         <li>
           <div>
