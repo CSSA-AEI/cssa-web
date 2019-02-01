@@ -1,0 +1,12 @@
+---
+layout: event
+title:  Rideau canal with CSA
+cost: Free
+location: Rideau Canal
+time: 2:00pm
+ref: event-3
+date:  2019-02-07
+lang: en
+permalink: /events/rideau-canal
+---
+Looking to sharpen your ice-skating skills? Join us with the Communications Student Association for an fun afternoon at the Rideau Canal!
