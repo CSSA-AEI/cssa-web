@@ -4,8 +4,7 @@ title:  Movie night with Econ
 cost: Free
 location: TBD
 time: TBD
-facebooklink: 
-ref: 2019-02-27_movie-night.md
+ref: 2019-02-27_movie-night
 date:  2019-02-27
 lang: en
 permalink: /events/movie-night_2019
