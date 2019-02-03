@@ -1,0 +1,13 @@
+---
+layout: event
+title:  Soirée Loft
+cost: Free
+location: [The Loft](https://www.theloftlounge.ca/)
+time: 8:00pm
+ref: 2019-02-13_the_loft
+date:  2019-02-13
+lang: en
+permalink: /events/soiree_loft-2019
+---
+
+Une soirée amusante remplie de jeux de société, d'amis et de boissons (si vous avez l'age de consommation)! Le prix d'admission sera gratuit!
