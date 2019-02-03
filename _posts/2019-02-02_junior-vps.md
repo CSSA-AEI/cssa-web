@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Recruiting junior VPs!
-ref: welcome
+ref: 2019-02-02_junior-vps
 date:   2019-02-02
 categories: 
 lang: en
