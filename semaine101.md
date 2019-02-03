@@ -6,6 +6,4 @@ ref: 101-week
 lang: fr
 ---
 
-# Les inscriptions sont en direct. Rendez-vous sur le lien ci-dessous pour vous inscrire
-
-# [Site web 101](https://101.cssa-aei.ca)
+# Informations seront ici l'été prochain!
