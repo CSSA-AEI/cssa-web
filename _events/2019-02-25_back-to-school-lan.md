@@ -5,7 +5,7 @@ cost: Free
 location: CBY A04
 time: 7:00pm
 facebooklink: https://www.facebook.com/events/251605359083139/
-ref: 2019-02-25_canal.md
+ref: 2019-02-25_back-to-school-lan
 date:  2019-02-25
 lang: en
 permalink: /events/back-to-school-lan
