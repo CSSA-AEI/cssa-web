@@ -6,7 +6,7 @@ location: The Loft
 time: 8:00pm
 ref: 2019-02-13_the_loft
 date:  2019-02-13
-lang: en
+lang: fr
 permalink: /events/soiree_loft-2019
 ---
 
