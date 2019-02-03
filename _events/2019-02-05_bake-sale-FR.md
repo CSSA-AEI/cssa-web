@@ -5,7 +5,7 @@ cost: Free
 location: Rotunda STE
 time: 10h00 - 16h00
 facebooklink: https://www.facebook.com/events/2172995289433681/
-ref: cssa-bake-sale-2019
+ref: 2019-02-05_bake-sale
 date:  2019-02-05
 lang: fr
 permalink: /events/aei-vente-de-patisserie-2019
