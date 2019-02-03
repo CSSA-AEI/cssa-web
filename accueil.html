@@ -8,24 +8,6 @@ lang: fr
   <div class="school-name">{{ site.school-name[page.lang] }}</div>
   <div class="name">{{ site.header-title[page.lang] }}</div>
   <div class="school-name">Rendez-nous visite à notre bureau au SITE 4076</div>
-  <div class="school-name">L'équipe executif 2018:</div>
-  <table style="width:50%">
-    <tr>
-      <th>Position</th>
-      <th>Name</th> 
-      <th>Contact</th>
-      <th>Office hours</th>
-    </tr>
-    {% for member in site.data.executives %}
-    <tr>  
-      <td>{{ member.position.[page.lang] }}</td>
-      <td>{{ member.name.[page.lang] }}</td>
-      <td><a href="mailto:{{ member.contact.[page.lang] }}">{{ member.contact.[page.lang] }}</a></td>
-      <td>{{ member.office-hours.[page.lang] }}</td>
-    </tr>
-    {% endfor %}
-  </table>
-</div>
 </div>
 
 <div class="events">
