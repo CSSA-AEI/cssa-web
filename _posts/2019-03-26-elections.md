@@ -13,7 +13,7 @@ Here are our candidates for our executive positions and their platforms.
 
 **President**
 
-__Arik Barenboim__
+_Arik Barenboim_
 
 Hello! My name is Arik Barenboim, and I am the current VP Academic of the Computer Science Student Association! I am running for the position of President of the CSSA for this coming school year, and I can’t wait to work alongside you all to move the CSSA in a new and exciting direction. As VP Academic this past year I have had some incredible opportunities to conduct multiple engaging Resume Roasts, run a successful career fair, and help facilitate research at EECCS. 
 
@@ -23,8 +23,14 @@ As VP Academic this year, I was able to acquire the resources and connections re
 
 _Diego Pontones_
 
-Hello everyone! My name is Diego Pontones and I am running for CSSA President for the 2019-2020 school year. I have been involved in the CSSA for two years now, as VP Academic and VP philanthropic, as well as planning 101 week for the CSSA this past summer. With these experiences, I have acquired a good understanding of how to run a successful student body, as well as how to work with other individuals and student bodies to enhance the student experience. A little bit about myself:    	I enjoy working in teams the most, which has brought me success in playing various sports, and working with others. Planning 101 week has connected me to many people throughout campus and being involved in 101 week has been my favourite experiences during my years of undergrad. I believe that my personality and past experiences make me an ideal candidate for this position.
+Hello everyone! My name is Diego Pontones and I am running for CSSA President for the 2019-2020 school year. I have been involved in the CSSA for two years now, as VP Academic and VP philanthropic, as well as planning 101 week for the CSSA this past summer. With these experiences, I have acquired a good understanding of how to run a successful student body, as well as how to work with other individuals and student bodies to enhance the student experience.
+
+A little bit about myself:
+
+I enjoy working in teams the most, which has brought me success in playing various sports, and working with others. Planning 101 week has connected me to many people throughout campus and being involved in 101 week has been my favourite experiences during my years of undergrad. I believe that my personality and past experiences make me an ideal candidate for this position.
+
 Throughout the years, I’ve met many people from Computer science, as well as other student bodies. One of my primary goals as president would be to connect the CSSA with related clubs and associations, with hopes of giving the students more awareness and opportunities for events. Exposure and communication have been a recurring issue with the CSSA, and it is one that I intend to fix. Similarly, with the people I have met throughout the years as part of a student body, I would like to bridge the relationship between Computer Science and other fed bodies, to provide a more varied mix of events for the students.
+
 As SFUO is being replace by UOSU, I would like to successfully collaborate with this new student body. With UOSU, I intend on working with them to have proper funding for the CSSA, and to have the proper logistics to run 101 week.  
 My aim this year would be to work alongside the CSSA exec and help them out with their roles to provide a fun and exciting year for the computer science students.  
 
