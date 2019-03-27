@@ -23,6 +23,8 @@ As VP Academic this year, I was able to acquire the resources and connections re
 
 _Diego Pontones_
 
+<img style="max-width:50px;height:auto;width:auto" src="https://lh5.googleusercontent.com/Gah-EO3Sj2WOKf18LnFHzniSHk7p0QxpRxdckhz7W_cQcmoGDFr9YRmIL_b1Hmf2xUgFhEFhomvg_T5VR5T7sWOy3fUzXbO7FI9ede0gZV1klgwvWXVW7mmZqSlw7KnaMrHVPI85">
+
 Hello everyone! My name is Diego Pontones and I am running for CSSA President for the 2019-2020 school year. I have been involved in the CSSA for two years now, as VP Academic and VP philanthropic, as well as planning 101 week for the CSSA this past summer. With these experiences, I have acquired a good understanding of how to run a successful student body, as well as how to work with other individuals and student bodies to enhance the student experience.
 
 A little bit about myself:
