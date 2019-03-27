@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Elections 2019!"
-ref: welcome
+ref: elections2019
 date:   2019-03-26
 categories: 
 lang: fr
