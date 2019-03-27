@@ -7,7 +7,7 @@ lang: en
 ---
 
 <ul class="event-list-page">
-  {% assign events=site.events | where:"lang", page.lang | sort: 'date' %}
+  {% assign events=site.events | where:"lang", page.lang | sort: 'date' | reverse %}
   {% for event in events %}
     <li>
       <div>
