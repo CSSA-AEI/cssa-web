@@ -13,7 +13,7 @@ Voici nos candidats pour nos postes de direction et leurs plateformes.
 
 **Président**
 
-__Arik Barenboim__
+_Arik Barenboim_
 
 Salut! Je m'appelle Arik Barenboim et je suis l'actuel vice-président académique de l'association des étudiants en sciences informatiques! Je suis candidat au poste de président de la CSSA pour la prochaine année scolaire et je suis impatient de travailler avec vous tous pour faire progresser la CSSA dans une nouvelle direction passionnante. En tant que vice-président académique au cours de la dernière année, j’ai eu des occasions incroyables d’organiser plusieurs reprises, Resume Roasts, d’organiser un salon des carrières réussi et d’aider à faciliter la recherche à l’ECECS.
 
@@ -23,9 +23,16 @@ En tant que VP académique cette année, j'ai pu acquérir les ressources et les
 
 _Diego Pontones_
 
-Bonjour tout le monde ! Je m'appelle Diego Pontones. Je suis candidat à la présidence de l’AEI pour l'année scolaire 2019-2020. Je participe à l'AEI depuis deux ans maintenant, à titre de vice-président à l'enseignement et de vice-président à la philanthropie, et j'ai planifié la semaine 101 pour l'AEI l'été dernier. Grâce à ces expériences, j'ai acquis une bonne compréhension de la façon de diriger un groupe d'étudiants qui réussit, ainsi que de la façon de travailler avec d'autres personnes et groupes d'étudiants pour améliorer l'expérience des étudiants. Un peu sur moi-même : J'aime beaucoup travailler en équipe, ce qui m'a permis d'avoir du succès dans divers sports et de travailler avec d'autres. La planification de la semaine 101 m'a permis d'établir des liens avec de nombreuses personnes sur le campus et ma participation à la semaine 101 a été mon expérience préférée pendant mes années d'études. Je crois que ma personnalité et mes expériences passées font de moi un candidat idéal pour ce poste.
+Bonjour tout le monde ! Je m'appelle Diego Pontones. Je suis candidat à la présidence de l’AEI pour l'année scolaire 2019-2020. Je participe à l'AEI depuis deux ans maintenant, à titre de vice-président à l'enseignement et de vice-président à la philanthropie, et j'ai planifié la semaine 101 pour l'AEI l'été dernier. Grâce à ces expériences, j'ai acquis une bonne compréhension de la façon de diriger un groupe d'étudiants qui réussit, ainsi que de la façon de travailler avec d'autres personnes et groupes d'étudiants pour améliorer l'expérience des étudiants.
+
+Un peu sur moi-même :
+
+J'aime beaucoup travailler en équipe, ce qui m'a permis d'avoir du succès dans divers sports et de travailler avec d'autres. La planification de la semaine 101 m'a permis d'établir des liens avec de nombreuses personnes sur le campus et ma participation à la semaine 101 a été mon expérience préférée pendant mes années d'études. Je crois que ma personnalité et mes expériences passées font de moi un candidat idéal pour ce poste.
+
 Au fil des ans, j'ai rencontré de nombreuses personnes du monde de l'informatique. L'un de mes principaux objectifs en tant que président serait d'établir des liens entre l’AEI et les clubs et associations connexes, dans l'espoir de sensibiliser davantage les étudiants et de leur offrir des occasions de participer à des événements. L'exposition et la communication ont été un problème récurrent avec l’AEI, et j'ai l'intention d'y remédier. De même, avec les personnes que j'ai rencontrées au fil des ans au sein d'un groupe d'étudiants, j'aimerais jeter un pont entre l'informatique et d'autres organismes fédéraux, afin d'offrir un éventail plus varié d'activités aux étudiants.
+
 Comme la FÉUO est en train d'être remplacée par l'UOSU, j'aimerais collaborer avec ce nouveau corps étudiant avec succès. Avec l'UOSU, j'ai l'intention de travailler avec eux pour obtenir un financement adéquat pour l’AEI, et pour avoir la logistique adéquate pour mener la semaine 101. 
+
 Mon objectif cette année serait de travailler aux côtés de l'exécutif de l’AEI et de l'aider dans son rôle afin d'offrir une année amusante et excitante aux étudiants en sciences informatiques.
 
 **VP TI**
