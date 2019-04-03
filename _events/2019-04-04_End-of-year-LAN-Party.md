@@ -11,4 +11,4 @@ lang: en
 permalink: /events/end-of-year-lan-party
 ---
 
-Join us for our last Lan Party of the year! Come out and test your skills at your favourite games! We will be hosting a Smash Bros Melee, as well as a FIFA 2019 tournament. You can sign up for the tournament(s) using this form. Alternatively, there will also be board games for you to enjoy. Pizza and drinks will be provided! Doors open at 7pm, and we will be located at CBYA04!
+Join us for our last Lan Party of the year! Come out and test your skills at your favourite games! We will be hosting a Smash Bros Melee, as well as a FIFA 2019 tournament. You can sign up for the tournament(s) using this [form](https://docs.google.com/forms/d/e/1FAIpQLScMWxsszFDUeLSAKxDsXJSiwSy8ax5HHAu2doK5ccRWUJ84zQ/viewform). Alternatively, there will also be board games for you to enjoy. Pizza and drinks will be provided! Doors open at 7pm, and we will be located at CBYA04!
