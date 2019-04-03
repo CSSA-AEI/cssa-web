@@ -16,8 +16,8 @@ Total number of voters // Nombre total d’électeurs: 62
 President:
 Diego Pontones: 32  - ELECTED
 Arik Barenboim: 24
-Abstain/S’abstenir: 4
-Spoiled/Gâté: 2
+Abstain: 4
+Spoiled: 2
 
 VP IT: Oliver Benning
 Yes: 42.4 (after deductions)
