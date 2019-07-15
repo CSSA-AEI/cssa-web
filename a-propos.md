@@ -20,10 +20,4 @@ Voyez notre constitution en anglais [ici.]({{ site.url }}/2017-2018-cssa-constit
 </ul>
 
 ## Le bureau
-Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer. Nos heures de bureau auront lieu là-bas.
-
-## Office Hours
-
-{% for member in site.data.executives %}
-<b>{{ member.name.[page.lang] }}:</b> {{ member.office-hours.[page.lang] }}
-{% endfor %}
+Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer.
