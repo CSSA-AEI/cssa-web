@@ -6,4 +6,4 @@ ref: 101-week
 lang: en
 ---
 
-# Stay tuned for updates on next fall's 101 week!
+# 101 Week kits on sale now at [101.cssa-aei.ca](https://101.cssa-aei.ca)!
