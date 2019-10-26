@@ -6,4 +6,4 @@ ref: 101-week
 lang: en
 ---
 
-# 101 Week kits on sale now at [101.cssa-aei.ca](https://101.cssa-aei.ca)!
+# 101 Week kits has passed for 2019, come back here in 2020 for the next 101 week!
