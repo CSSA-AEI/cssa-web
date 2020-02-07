@@ -7,8 +7,8 @@ lang: en
 ---
 
 <center>The CSSA is now proud to announce that we are selling Grey and Navy Hoodies!</center>
-<center>Hoodies are available **in person only** at SITE 4076.</center>
+<center>Hoodies are available <b>in person only** at SITE 4076.</b></center>
 
 ![My helpful screenshot](/images/merch-01.jpg)
 
-<center>Hoodies, Price: $25</center>
+<center>Price: $25</center>
