@@ -10,16 +10,22 @@ We, the Computer Science Student Association (CSSA) of the University of Ottawa,
 
 View our constitution in English [here.]({{ site.url }}/2017-2018-cssa-constitution.pdf) We are working on the French translation for our constitution.
 
-## The Team 2018-2019
-
-<ul>
-{% for member in site.data.executives %}
-    <li>{{ member.position.[page.lang] }}: {{ member.name.[page.lang] }} </li>
-    <ul>
-        <li><a href="mailto:{{ member.contact.[page.lang] }}">{{ member.contact.[page.lang] }}</a></li>
-    </ul>
-{% endfor %}
-</ul>
-
 ## The office
 Our office is located at <b>SITE 4076</b>, feel free to stop by.
+
+## The Team 2018-2019
+
+<section class="post-feed">
+	{% for member in site.data.executives %}
+	<a class="post-card" href="mailto:{{ member.contact.[page.lang] }}">
+		<header class="post-card-header">
+			<div class="post-card-image" style="background-image: url(&quot;/images/team/{{member.photo}}&quot;);"></div>
+			<div class="post-card-tags"></div>
+			<h2 class="post-card-title">{{ member.position.[page.lang] }}: {{ member.name.[page.lang] }}</h2>
+		</header>
+		<section class="post-card-excerpt">
+			<p>{{ member.contact.[page.lang] }}</p>
+		</section>
+	</a>
+	{% endfor %}
+</section>

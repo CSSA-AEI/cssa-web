@@ -9,7 +9,8 @@
     fr: president@cssa-aei.ca
   office-hours:
     en: 
-    fr: 
+    fr:
+  photo: diego.jpg 
 
 - position:
     en: VP Finance
@@ -22,7 +23,8 @@
     fr: finance@cssa-aei.ca
   office-hours:
     en: 
-    fr: 
+    fr:
+  photo: omer.jpg 
 
 - position:
     en: VP Internal
@@ -36,6 +38,7 @@
   office-hours:
     en: N/A
     fr: N/A
+  photo: charmaine.jpg
 
 - position:
     en: VP IT
@@ -48,7 +51,8 @@
     fr: it@cssa-aei.ca
   office-hours:
     en: 
-    fr: 
+    fr:
+  photo: arik.jpg 
 
 - position:
     en: VP Academic
@@ -62,6 +66,7 @@
   office-hours:
     en:
     fr:
+  photo: dirieh.jpg
    
 - position:
     en: VP External
@@ -75,19 +80,20 @@
   office-hours:
     en:
     fr:
-  
-- position:
-    en: VP Social
-    fr: VP Social
-  name:
-    en: Samuel Saint-Fleur
-    fr: Samuel Saint-Fleur
-  contact:
-    en: social@cssa-aei.ca
-    fr: social@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
+  photo: laura.jpg
+
+# - position:
+#     en: VP Social
+#     fr: VP Social
+#   name:
+#     en: Samuel Saint-Fleur
+#     fr: Samuel Saint-Fleur
+#   contact:
+#     en: social@cssa-aei.ca
+#     fr: social@cssa-aei.ca
+#   office-hours:
+#     en:
+#     fr:
   
 - position:
     en: VP Communications
@@ -101,6 +107,7 @@
   office-hours:
     en:
     fr:
+  photo: sami.jpg
   
 - position:
     en: VP Executive Affairs
@@ -114,19 +121,20 @@
   office-hours:
     en:
     fr:
+  photo: anthony.jpg
   
-- position:
-    en: VP Philanthropy
-    fr: VP philanthropy
-  name:
-    en: vacant
-    fr: libre
-  contact:
-    en: phil@cssa-aei.ca
-    fr: phil@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
+# - position:
+#     en: VP Philanthropy
+#     fr: VP philanthropy
+#   name:
+#     en: vacant
+#     fr: libre
+#   contact:
+#     en: phil@cssa-aei.ca
+#     fr: phil@cssa-aei.ca
+#   office-hours:
+#     en:
+#     fr:
   
 - position:
     en: VP Equity
@@ -140,3 +148,4 @@
   office-hours:
     en:
     fr:
+  photo: madeleine.jpg

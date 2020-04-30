@@ -21,12 +21,12 @@ description:
   en: We, the Computer Science Student Association (CSSA) of the University of Ottawa, provide by this Constitution an organization dedicated to the pursuit of obtaining and managing resources for all members of the undergraduate Computer Science community at the University of Ottawa.
   fr: Nous nous appellons l’Association d’étudiants en Informatique (AÉI) de l’Université d’Ottawa. Gouverné par la constitution de l’université, nous sommes responsables pour la gestion de tout les resources disponsibles pour les membres de la programme baccaleauréate de l’université d’Ottawa en informatique.
 index:
-  en:
+  en: index.html
   fr: accueil.html
 feed:
   en: /feed.xml
   fr: /flux.xml
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cssa-aei.ca" # the base hostname & protocol for your site
 twitter_username: CSSAAEI
 github_username:  CSSA-AEI
