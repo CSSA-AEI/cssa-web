@@ -7,7 +7,7 @@ To install this, you will need Ruby and Jekyll installed. For more information y
 After installing:
 1. Open the folder in terminal
 2. Enter this statement `bundle exec jekyll serve`
-3. You can then view the site locally at http://127.0.0.1:4000/cssa-web
+3. You can then view the site locally at http://127.0.0.1:4000/
 
 # Making posts, pages & events
 To make posts, pages, and events we use markdown. If you need help writing markdown, you can view the [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
