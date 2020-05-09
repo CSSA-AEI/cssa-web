@@ -1,16 +1,16 @@
 - position:
     en: President
-    fr: président
+    fr: Président
   name:
-    en: Diego Pontones
-    fr: Diego Pontones
+    en: Laura Hornar
+    fr: Laura Hornar
   contact:
     en: president@cssa-aei.ca
     fr: president@cssa-aei.ca
   office-hours:
     en: 
     fr:
-  photo: diego.jpg 
+  photo: laura.jpg 
 
 - position:
     en: VP Finance
@@ -28,124 +28,126 @@
 
 - position:
     en: VP Internal
-    fr: VP Internal
+    fr: VP Interne
   name:
-    en: Charmaine De Ramos
-    fr: Charmaine De Ramos
+    en: Elian Karpov
+    fr: Elian Karpov
   contact:
     en: internal@cssa-aei.ca
     fr: internal@cssa-aei.ca
   office-hours:
-    en: N/A
-    fr: N/A
-  photo: charmaine.jpg
+    en: 
+    fr: 
+  photo: elian.jpg
 
 - position:
     en: VP IT
     fr: VP TI
   name:
-    en: Arik Barenboim
-    fr: Arik Barenboim
+    en: Anthony Mahanna
+    fr: Anthony Mahanna
   contact:
     en: it@cssa-aei.ca
     fr: it@cssa-aei.ca
   office-hours:
     en: 
     fr:
-  photo: arik.jpg 
+  photo: anthony.jpg 
 
 - position:
     en: VP Academic
-    fr: VP Academic
+    fr: VP Académique
   name:
-    en: Dirieh Mahdi Ali
-    fr: Dirieh Mahdi Ali
+    en: Satrajit Chatterjee
+    fr: Satrajit Chatterjee
   contact:
     en: academic@cssa-aei.ca
     fr: academic@cssa-aei.ca
   office-hours:
     en:
     fr:
-  photo: dirieh.jpg
+  photo: satrajit.jpg
    
 - position:
     en: VP External
-    fr: VP externel
+    fr: VP Externe
   name:
-    en: Laura Hornar
-    fr: Laura Hornar
+    en: Fred Nguyễn
+    fr: Fred Nguyễn
   contact:
     en: external@cssa-aei.ca
     fr: external@cssa-aei.ca
   office-hours:
     en:
     fr:
-  photo: laura.jpg
+  photo: fred.jpg
 
-# - position:
-#     en: VP Social
-#     fr: VP Social
-#   name:
-#     en: Samuel Saint-Fleur
-#     fr: Samuel Saint-Fleur
-#   contact:
-#     en: social@cssa-aei.ca
-#     fr: social@cssa-aei.ca
-#   office-hours:
-#     en:
-#     fr:
-  
 - position:
-    en: VP Communications
-    fr: VP communications
+    en: VP Social
+    fr: VP Sociale
   name:
     en: Sami Ben Moussa
     fr: Sami Ben Moussa
   contact:
-    en: comms@cssa-aei.ca
-    fr: comms@cssa-aei.ca
+    en: social@cssa-aei.ca
+    fr: social@cssa-aei.ca
   office-hours:
     en:
     fr:
   photo: sami.jpg
   
 - position:
-    en: VP Executive Affairs
-    fr: VP affairs executifs
+    en: VP Communications
+    fr: VP Communications
   name:
-    en: Anthony Mahanna
-    fr: Anthony Mahanna
+    en: Tristan Pender
+    fr: Tristan Pender
+  contact:
+    en: comms@cssa-aei.ca
+    fr: comms@cssa-aei.ca
+  office-hours:
+    en:
+    fr:
+  photo: tristan.jpg
+  
+- position:
+    en: VP Executive Affairs
+    fr: VP Affaires Exécutives
+  name:
+    en: Charmaine De Ramos
+    fr: Charmaine De Ramos
   contact:
     en: execaffairs@cssa-aei.ca
     fr: execaffairs@cssa-aei.ca
   office-hours:
     en:
     fr:
-  photo: anthony.jpg
+  photo: charmaine.jpg
   
-# - position:
-#     en: VP Philanthropy
-#     fr: VP philanthropy
-#   name:
-#     en: vacant
-#     fr: libre
-#   contact:
-#     en: phil@cssa-aei.ca
-#     fr: phil@cssa-aei.ca
-#   office-hours:
-#     en:
-#     fr:
+- position:
+    en: VP Philanthropy
+    fr: VP Philanthropie
+  name:
+    en: Shreya Langhe
+    fr: Shreya Langhe
+  contact:
+    en: phil@cssa-aei.ca
+    fr: phil@cssa-aei.ca
+  office-hours:
+    en:
+    fr:
+  photo: shreya.jpg
   
 - position:
     en: VP Equity
-    fr: VP equitable
+    fr: VP Équité
   name:
-    en: Madeleine Stanway
-    fr: Madeleine Stanway
+    en: Siana Kong
+    fr: Siana Kong
   contact:
     en: equity@cssa-aei.ca
     fr: equity@cssa-aei.ca
   office-hours:
     en:
     fr:
-  photo: madeleine.jpg
+  photo: siana.jpg

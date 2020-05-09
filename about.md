@@ -13,7 +13,7 @@ View our constitution in English [here.]({{ site.url }}/2017-2018-cssa-constitut
 ## The office
 Our office is located at <b>SITE 4076</b>, feel free to stop by.
 
-## The Team 2018-2019
+## Executive Team 2020 - 2021
 
 <section class="post-feed">
 	{% for member in site.data.executives %}
