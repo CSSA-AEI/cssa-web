@@ -97,13 +97,19 @@ _Anthony Mahanna_
 
 <img style="max-width:200px;height:auto;width:auto" src="https://lh6.googleusercontent.com/UpsmqPlrdTPbAAS0vWn_CFzYpVRZ8HqcmOyYjMQjZ1Iva0xrXT4BJkCcDfsMPeQaEnTZV5krnSdW1eQlX6BuuNDlsXkldcsAVqhp0Tji-fIdtQSC-B4Ie1n65t3vx4pRDIWVyEzL">
 
-Dear members of the CSSA, 
-It is with profound gratitude that I, Anthony Mahanna, announce my candidature for the VP position of Executive Affairs at our beloved Computer Science Student Association. The following objectives will be considered as part of my agenda to enhance the CSSA community experience: 
-Renovate the Social Hub of our Community → With the cooperation of other executive members of the CSSA, I plan on redesigning the SITE4076 office space into a Social Hub that will streamline student networking and provide CSSA members with an entertainment space for those days where you don’t feel like doing any work. 
-Ensure that our Events are Rewarding → I plan to engage with new government and private departments to organize events that touch on emerging technologies, such as Cybersecurity, Cloud Computing and Satellite Technologies. Acquiring the support from these departments will allow for more networking events, competitions and workshops. 
-Use a Newer Social Platform for CS Students to Connect → Lastly, I would love to be able to host an online social platform (i.e. Slack) where new undergraduate students can reach out to the CS community and share their ongoing happenings with others. 
-I had a fantastic time during the 101 Week thanks to last year’s board of executives and thus I plan to reciprocate for the following wave of new Undergraduate students. With the help of your votes, our board of executives will be able to improve the services provided by the CSSA and create long-lasting partnerships along the way. 
-I sincerely recommend all students to take the time to vote on March 28th/29th at SITE4076 in order for us to obtain an accurate representation of our community’s interests. Cheers! 
+Hi! 
+As VP Executive Affairs, my plans are to:
+ 
+Renovate the Social Hub of our Community → 
+With the cooperation of other executive members of the CSSA, I plan on redesigning the SITE4076 office space into a Social Hub that will streamline student networking and provide CSSA members with an entertainment space for those days where you don’t feel like doing any work. 
+
+Ensure that our Events are Rewarding → 
+I plan to engage with new government and private departments to organize events that touch on emerging technologies, such as Cybersecurity, Cloud Computing and Satellite Technologies. Acquiring the support from these departments will allow for more networking events, competitions and workshops. 
+
+Use a Newer Social Platform for CS Students to Connect → 
+Lastly, I would love to be able to host an online social platform (i.e. Slack) where new undergraduate students can reach out to the CS community and share their ongoing happenings with others. 
+
+I recommend all students to take the time to vote on March 28th/29th at SITE4076 in order for us to obtain an accurate representation of our community’s interests. Cheers! 
 - Anthony 
 
 **VP Academic**
