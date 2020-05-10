@@ -6,4 +6,4 @@ ref: 101-week
 lang: fr
 ---
 
-# Semaine 101 2019 est passé. Les informations seront ici l'été prochain!
+## <center>La semaine 101 de 2019 s'est terminée. Passer à nouveau en 2020!</center> 

@@ -6,4 +6,4 @@ ref: 101-week
 lang: en
 ---
 
-# 101 Week kits has passed for 2019, come back here in 2020 for the next 101 week!
+## <center> 101 Week has passed for 2019, come back here in 2020 for the next one!</center>
