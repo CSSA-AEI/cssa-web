@@ -10,14 +10,20 @@ Voyez notre constitution en anglais [ici.]({{ site.url }}/2017-2018-cssa-constit
 
 ##  L'équipe éxécutive 2020 - 2021
 
-<ul>
-{% for member in site.data.executives %}
-    <li>{{ member.position.[page.lang] }}: {{ member.name.[page.lang] }} </li>
-    <ul>
-        <li><a href="mailto:{{ member.contact.[page.lang] }}">{{ member.contact.[page.lang] }}</a></li>
-    </ul>
-{% endfor %}
-</ul>
+<section class="post-feed">
+	{% for member in site.data.executives %}
+	<a class="post-card" href="mailto:{{ member.contact.[page.lang] }}">
+		<header class="post-card-header">
+			<div class="post-card-image" style="background-image: url(&quot;/images/team/{{member.photo}}&quot;);"></div>
+			<div class="post-card-tags"></div>
+			<h2 class="post-card-title">{{ member.position.[page.lang] }}: {{ member.name.[page.lang] }}</h2>
+		</header>
+		<section class="post-card-excerpt">
+			<p>{{ member.contact.[page.lang] }}</p>
+		</section>
+	</a>
+	{% endfor %}
+</section>
 
 ## Le bureau
 Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer.
