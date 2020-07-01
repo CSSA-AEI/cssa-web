@@ -6,7 +6,7 @@ ref: uopetition
 lang: en
 ---
 
-The University of Ottawais contemplating forcing students to use Respondus Lockdown browser and monitoring during examinations.
+The University of Ottawa is contemplating forcing students to use Respondus Lockdown browser and monitoring during examinations.
 
 This software and others like it use video surveillance through webcams to record students during examinations and detect suspicious behaviours. This can result in privacy concerns, heightened anxiety and technological limitations for students.
 
