@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ❗Respondus Lockdown❗
+title: Respondus Lockdown
 permalink: /uopetition/
 ref: uopetition 
 lang: en
