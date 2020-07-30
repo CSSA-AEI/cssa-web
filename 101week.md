@@ -22,3 +22,6 @@ lang: en
 #### See you soon!
 
 - The CSSA Executive Team 2020-2021
+
+
+##### PS! Google Forms is a bit unpredictable, so if you are experiencing any issues opening / saving the form, we ask you to try again at a later time, or try to open the form in an incognito browser. If it happens again, please contact us at exec@cssa-aei.ca

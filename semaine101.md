@@ -22,3 +22,5 @@ lang: fr
 #### A bientôt !
 
 - L'équipe exécutive de l'AÉI 2020 - 2021
+
+##### PS! Google Forms est un peu imprévisible, donc si vous avez des difficultés à ouvrir ou à enregistrer le formulaire, nous vous demandons d’essayer de nouveau plus tard, ou d’essayer d’ouvrir le formulaire dans un navigateur incognito. Si le problème se reproduit, veuillez communiquer avec nous à exec@cssa-aei.ca.
