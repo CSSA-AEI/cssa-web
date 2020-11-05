@@ -66,9 +66,12 @@ cost:
 location:
   en: Location
   fr: Emplacement
+associations:
+  en: 
+  fr: 
 facebook-link:
-  en: Event Link
-  fr: Lien à l'événement
+  en: Link
+  fr: Lien
 event-more-button:
   en: See more events
   fr: Voir plus d'événements

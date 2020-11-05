@@ -60,6 +60,7 @@ layout: event
 title: EVENT NAME
 cost: COST OF EVENT
 location: LOCATION OF EVENT
+associations: ASSOCIATIONS RESPONSIBLE
 time: TIME OF EVENT
 facebooklink: FACEBOOK LINK TO EVENT
 ref: REF OF EVENT

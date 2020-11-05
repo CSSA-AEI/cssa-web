@@ -3,6 +3,7 @@ layout: event
 title:  Compétition d'ingénierie de l'Université d'Ottawa
 cost: Gratuit
 location: En-ligne (Discord)
+associations: ESS 
 time: 09h00 - 18h00
 facebooklink: https://docs.google.com/forms/d/e/1FAIpQLSfJ8a4jn8XL8HQJ9NUpO_eEjkxF2bYIb2p0gcU9W6p4xyQbMw/viewform?fbclid=IwAR1PFt7vWAT4ZWpaM6vDpj5r_9UlbezzLfKi7MWDVWZ_0PEfy9wJsp0MMoE
 ref: 2020-11-14_uOttawa-Eng-Comp

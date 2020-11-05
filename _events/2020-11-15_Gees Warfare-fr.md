@@ -3,8 +3,9 @@ layout: event
 title:  Gees Warfare
 cost: 5$/joueur et 20$/équipe
 location: En-ligne
+associations: CSSA, PSA, CSA
 time: 16h00 - 20h00
-facebooklink: smash.gg/geeswarfare
+facebooklink: https://smash.gg/tournament/gees-warfare/details
 ref: 2020-11-15-Gees-Warfare
 date:  2020-11-15
 lang: fr
@@ -19,6 +20,6 @@ Le tournoi se déroulera selon un format CDL avec trois cartes : hardpoint, Sear
 
 Pour plus d'informations, consultez le lien ci-dessous ! Les inscriptions se terminent le 13 novembre ! Que la meilleure équipe gagne !
 
-Allez sur [smash.gg/geeswarfare](smash.gg/geeswarfare) pour vous inscrire!
+Allez sur [smash.gg/geeswarfare](https://smash.gg/tournament/gees-warfare/details) pour vous inscrire!
 
 <div style="text-align:center"><img src="../images/events/cssa_gees_warfare.jpg"/></div>

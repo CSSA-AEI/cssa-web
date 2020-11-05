@@ -19,6 +19,7 @@ lang: fr
       <div>
         <span class="event-info">{{ site.cost[page.lang] }}: {{ event.cost }}</span>
         <span class="event-info">{{ site.location[page.lang] }}: {{ event.location }}</span>
+        <span class="event-info">{{ event.associations }}</span>
         <span class="fb-link"><a href="{{ event.facebooklink }}">{{ site.facebook-link[page.lang]}}</a></span>
       </div>
 
