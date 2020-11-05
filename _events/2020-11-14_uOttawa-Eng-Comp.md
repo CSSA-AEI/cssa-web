@@ -2,9 +2,9 @@
 layout: event
 title:  uOttawa Engineering Competition
 cost: Free
-location: Online (Discord
+location: Online (Discord)
 time: 9:00am - 6:00pm
-facebooklink: https://www.facebook.com/events/853048721701768/
+facebooklink: https://docs.google.com/forms/d/e/1FAIpQLSfJ8a4jn8XL8HQJ9NUpO_eEjkxF2bYIb2p0gcU9W6p4xyQbMw/viewform?fbclid=IwAR1PFt7vWAT4ZWpaM6vDpj5r_9UlbezzLfKi7MWDVWZ_0PEfy9wJsp0MMoE
 ref: 2020-11-14_uOttawa-Eng-Comp
 date:  2020-11-14
 lang: en
