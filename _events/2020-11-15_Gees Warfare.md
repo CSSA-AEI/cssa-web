@@ -22,4 +22,4 @@ For more information check out the link below! Registration closes November 13th
 
 Go to [smash.gg/geeswarfare](https://smash.gg/tournament/gees-warfare/details) to register
 
-<div style="text-align:center"><img src="../images/events/cssa_gees_warfare.jpg"/></div>
+<div style="text-align:center"><img src="../images/events/cssa_gees_warfare.png"/></div>
