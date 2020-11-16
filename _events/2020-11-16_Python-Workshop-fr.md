@@ -8,7 +8,7 @@ time: 5:30PM
 facebooklink: https://uottawa-ca.zoom.us/j/96195941646?pwd=Wm5hdk9aOEpncnUvVzRaV0E2R3RMUT09
 ref: 2020-11-16-Python-Workshop
 date: 2020-11-16
-lang: en
+lang: fr
 permalink: /events/soirée-python
 ---
 
