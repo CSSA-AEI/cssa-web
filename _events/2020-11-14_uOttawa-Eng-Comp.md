@@ -1,6 +1,6 @@
 ---
 layout: event
-title:  uOttawa Engineering Competition
+title: uOttawa Engineering Competition
 cost: Free
 location: Online (Discord)
 associations: ESS 

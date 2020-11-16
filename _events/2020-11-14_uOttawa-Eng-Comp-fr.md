@@ -1,6 +1,6 @@
 ---
 layout: event
-title:  Compétition d'ingénierie de l'Université d'Ottawa
+title: Compétition d'ingénierie de l'Université d'Ottawa
 cost: Gratuit
 location: En-ligne (Discord)
 associations: ESS 

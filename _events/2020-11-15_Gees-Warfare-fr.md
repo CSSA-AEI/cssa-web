@@ -1,6 +1,6 @@
 ---
 layout: event
-title:  Gees Warfare
+title: Gees Warfare
 cost: 5$/joueur et 20$/équipe
 location: En-ligne
 associations: AÉI, PSA, CSA
