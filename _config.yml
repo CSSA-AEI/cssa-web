@@ -22,7 +22,7 @@ description:
   fr: Nous nous appellons l’Association d’étudiants en Informatique (AÉI) de l’Université d’Ottawa. Gouverné par la constitution de l’université, nous sommes responsables pour la gestion de tout les resources disponsibles pour les membres de la programme baccaleauréate de l’université d’Ottawa en informatique.
 index:
   en: index.html
-  fr: accueil.html
+  fr: index.html
 feed:
   en: /feed.xml
   fr: /flux.xml
@@ -42,6 +42,9 @@ header-title:
 school-name:
   en: University of Ottawa
   fr: Université d'Ottawa
+office: 
+  en: Visit us in our office at SITE 4076
+  fr: Rendez-nous visite à notre bureau au SITE 4076
 upcoming-events:
   en: Upcoming Events
   fr: Évènements à Venir
