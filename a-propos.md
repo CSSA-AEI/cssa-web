@@ -20,12 +20,7 @@ Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer.
 		<header class="post-card-header">
 			<div class="post-card-image" style="background-image: url(&quot;/images/team/{{member.photo}}&quot;);"></div>
 			<div class="post-card-tags"></div>
-			{% if member.double-position.[page.lang] %}
-            	<h2 class="post-card-title">{{ member.double-position.[page.lang] }}:</h2>
-				<h2 class="post-card-title">{{ member.name.[page.lang] }}</h2>
-			{% else %}
-				<h2 class="post-card-title">{{ member.position.[page.lang] }}: {{ member.name.[page.lang] }}</h2>
-          	{% endif %}
+			<h2 class="post-card-title">{{ member.position.[page.lang] }}<br/>{{ member.name.[page.lang] }}</h2>
 		</header>
 		<section class="post-card-excerpt">
 			<p>{{ member.contact.[page.lang] }}</p>
