@@ -8,7 +8,11 @@ Nous nous appellons l’Association d’étudiants en Informatique (AÉI) de l�
 
 Voyez notre constitution en anglais [ici.]({{ site.url }}/2017-2018-cssa-constitution.pdf) Nous sommes désolés de vous dire que nous sommes en train de traduire notre constitution en français.
 
+## Le bureau
+Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer.
+
 ##  L'équipe éxécutive 2020 - 2021
+
 
 <section class="post-feed">
 	{% for member in site.data.executives %}
@@ -16,7 +20,12 @@ Voyez notre constitution en anglais [ici.]({{ site.url }}/2017-2018-cssa-constit
 		<header class="post-card-header">
 			<div class="post-card-image" style="background-image: url(&quot;/images/team/{{member.photo}}&quot;);"></div>
 			<div class="post-card-tags"></div>
-			<h2 class="post-card-title">{{ member.position.[page.lang] }}: {{ member.name.[page.lang] }}</h2>
+			{% if member.double-position.[page.lang] %}
+            	<h2 class="post-card-title">{{ member.double-position.[page.lang] }}:</h2>
+				<h2 class="post-card-title">{{ member.name.[page.lang] }}</h2>
+			{% else %}
+				<h2 class="post-card-title">{{ member.position.[page.lang] }}: {{ member.name.[page.lang] }}</h2>
+          	{% endif %}
 		</header>
 		<section class="post-card-excerpt">
 			<p>{{ member.contact.[page.lang] }}</p>
@@ -24,6 +33,3 @@ Voyez notre constitution en anglais [ici.]({{ site.url }}/2017-2018-cssa-constit
 	</a>
 	{% endfor %}
 </section>
-
-## Le bureau
-Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer.

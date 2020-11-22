@@ -26,9 +26,12 @@
     fr:
   photo: omer.jpg 
 
-- position:
-    en: VP Internal
-    fr: VP Interne
+# - position: 
+#     en: VP Internal
+#     fr: VP Internal
+- double-position:
+    en: VP Internal & VP External
+    fr: VP Interne & VP Externe
   name:
     en: Elian Karpov
     fr: Elian Karpov
@@ -68,19 +71,19 @@
     fr:
   photo: satrajit.jpg
    
-- position:
-    en: VP External
-    fr: VP Externe
-  name:
-    en: Fred Nguyễn
-    fr: Fred Nguyễn
-  contact:
-    en: external@cssa-aei.ca
-    fr: external@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
-  photo: fred.jpg
+# - position:
+#     en: VP External
+#     fr: VP Externe
+#   name:
+#     en: REDACTED
+#     fr: REDACTED
+#   contact:
+#     en: external@cssa-aei.ca
+#     fr: external@cssa-aei.ca
+#   office-hours:
+#     en:
+#     fr:
+#   photo: REDACTED.jpg
 
 - position:
     en: VP Social
