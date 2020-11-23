@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Un message de SÉUO
+title: Un message du SÉUO
 permalink: /seuoMessage/
 ref: uosuMessage 
 lang: fr

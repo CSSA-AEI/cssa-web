@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A Message from UOSU
+title: A message from UOSU
 permalink: /uosuMessage/
 ref: uosuMessage 
 lang: en
