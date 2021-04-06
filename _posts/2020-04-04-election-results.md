@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "2020 Election results"
+title: "2020 Election results"
 ref: election-results2020
-date:   2020-04-04
-categories: 
+date: 2020-04-04
+categories:
 lang: en
 ---
 
@@ -13,13 +13,13 @@ If you have any questions please email [elections@cssa-aei.ca](mailto:elections@
 
 Total number of voters: 120
 
-President - Laura Hornar 
-Yes: 98 
+President - Laura Hornar
+Yes: 98
 No: 7
 Abstain: 15
 **ELECTED**
 
-VP Finance - Omer Abubaker 
+VP Finance - Omer Abubaker
 Yes: 97
 No: 10
 Abstain: 13
@@ -27,40 +27,40 @@ Abstain: 13
 
 VP Academic - Satrajit Chatterjee
 Yes: 88
-No: 6 
+No: 6
 Abstain: 26
 **ELECTED**
 
-VP Social - Sami Ben Moussa 
+VP Social - Sami Ben Moussa
 Yes: 92
 No:11
 Abstain: 17
 **ELECTED**
 
-VP Communications - Tristan Pender 
-Yes:  81
-No: 7 
+VP Communications - Tristan Pender
+Yes: 81
+No: 7
 Abstain: 32
-**ELECTED** 
+**ELECTED**
 
-VP Internal - Elian Karpov 
+VP Internal
 Elian Karpov: 60 **ELECTED**
 Jamal Nur: 32
-Abstain: 28 
+Abstain: 28
 
-VP External - Fred Nguyen 
+VP External - Fred Nguyen
 Yes: 88
 No: 6
 Abstain: 26
 **ELECTED**
 
-VP Philanthropic - Shreya Langhe 
-Yes:  93
-No: 3 
+VP Philanthropic - Shreya Langhe
+Yes: 93
+No: 3
 Abstain:24
 **ELECTED**
 
-VP Equity - Siana Kong 
+VP Equity - Siana Kong
 Yes: 88
 No: 7
 Abstain: 25
@@ -68,12 +68,12 @@ Abstain: 25
 
 VP Executive Affairs - Charmaine De Ramos
 Yes: 90
-No: 7 
-Abstain: 23 
+No: 7
+Abstain: 23
 **ELECTED**
 
-VP IT - Anthony Mahanna 
-Yes:  88
+VP IT - Anthony Mahanna
+Yes: 88
 No: 6
 Abstain: 26
 **ELECTED**
