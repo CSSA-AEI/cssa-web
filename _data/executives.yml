@@ -27,8 +27,8 @@
   photo: omer.jpg 
 
 - position: 
-    en: VP Internal & VP External
-    fr: VP Interne & VP Externe
+    en: VP Internal
+    fr: VP Interne
   name:
     en: Elian Karpov
     fr: Elian Karpov
@@ -68,19 +68,19 @@
     fr:
   photo: satrajit.jpg
    
-# - position:
-#     en: VP External
-#     fr: VP Externe
-#   name:
-#     en: REDACTED
-#     fr: REDACTED
-#   contact:
-#     en: external@cssa-aei.ca
-#     fr: external@cssa-aei.ca
-#   office-hours:
-#     en:
-#     fr:
-#   photo: REDACTED.jpg
+- position:
+    en: VP External
+    fr: VP Externe
+  name:
+    en: Kian Salehi
+    fr: Kian Salehi
+  contact:
+    en: external@cssa-aei.ca
+    fr: external@cssa-aei.ca
+  office-hours:
+    en:
+    fr:
+  photo: salehi.jpg
 
 - position:
     en: VP Social
@@ -96,19 +96,19 @@
     fr:
   photo: sami.jpg
   
-- position:
-    en: VP Communications
-    fr: VP Communications
-  name:
-    en: Tristan Pender
-    fr: Tristan Pender
-  contact:
-    en: comms@cssa-aei.ca
-    fr: comms@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
-  photo: tristan.jpg
+# - position:
+#     en: VP Communications
+#     fr: VP Communications
+#   name:
+#     en: Vacant
+#     fr: Vacant
+#   contact:
+#     en: comms@cssa-aei.ca
+#     fr: comms@cssa-aei.ca
+#   office-hours:
+#     en:
+#     fr:
+#   photo: vacant.jpg
   
 - position:
     en: VP Executive Affairs
@@ -122,7 +122,7 @@
   office-hours:
     en:
     fr:
-  photo: charmaine.jpg
+  photo: arik.jpg
   
 - position:
     en: VP Philanthropy
@@ -142,12 +142,12 @@
     en: VP Equity
     fr: VP Équité
   name:
-    en: Siana Kong
-    fr: Siana Kong
+    en: Tristan Pender
+    fr: Tristan Pender
   contact:
     en: equity@cssa-aei.ca
     fr: equity@cssa-aei.ca
   office-hours:
     en:
     fr:
-  photo: siana.jpg
+  photo: tristan.jpg
