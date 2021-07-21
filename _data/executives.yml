@@ -95,21 +95,21 @@
     en:
     fr:
   photo: sami.jpg
-  
-# - position:
-#     en: VP Communications
-#     fr: VP Communications
-#   name:
-#     en: Vacant
-#     fr: Vacant
-#   contact:
-#     en: comms@cssa-aei.ca
-#     fr: comms@cssa-aei.ca
-#   office-hours:
-#     en:
-#     fr:
-#   photo: vacant.jpg
-  
+
+- position:
+    en: Director of Communications
+    fr: Directeur de Communications
+  name:
+    en: Michel Moore
+    fr: Michel Moore
+  contact:
+    en: comms@cssa-aei.ca
+    fr: comms@cssa-aei.ca
+  office-hours:
+    en:
+    fr:
+  photo: michel.jpg
+
 - position:
     en: VP Executive Affairs
     fr: VP Affaires Exécutives
