@@ -8,7 +8,7 @@
 collections:
   events:
     output: true
-  openings:
+  opportunities:
     output: true
 
 # Site settings
@@ -81,13 +81,13 @@ event-more-button:
   en: See more events
   fr: Voir plus d'événements
 
-# Openings
-new-openings:
-  en: Openings [WIP]
-  fr: Ouvertures [WIP]
-openings-url:
-  en: /openings
-  fr: /ouvertures
-openings-more-button:
-  en: See more openings
-  fr: Voir plus d'ouvertures
+# Opportunities
+new-opportunities:
+  en: Opportunities [WIP]
+  fr: Opportunités [WIP]
+opportunities-url:
+  en: /opportunities
+  fr: /opportunites
+opportunities-more-button:
+  en: See more opportunities
+  fr: Voir plus d'opportunités

@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Openings
-permalink: /openings/
-ref: openings
+title: Opportunities
+permalink: /opportunities/
+ref: opportunities
 lang: en
 ---
 
 <ul class="post-list">
-  {% assign openings=site.openings | where:"lang", page.lang | sort: 'date' | reverse %}
-  {% for opening in openings %}
+  {% assign opportunities=site.opportunities | where:"lang", page.lang | sort: 'date' | reverse %}
+  {% for opening in opportunities %}
     <li>
       <span class="post-meta">{{ opening.date | date: "%b %-d, %Y" }}</span>
 
