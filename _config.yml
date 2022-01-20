@@ -83,8 +83,8 @@ event-more-button:
 
 # Opportunities
 new-opportunities:
-  en: Opportunities [WIP]
-  fr: Opportunités [WIP]
+  en: Opportunities
+  fr: Opportunités
 opportunities-url:
   en: /opportunities
   fr: /opportunites
