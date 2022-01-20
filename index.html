@@ -54,3 +54,22 @@ lang: en
     <center><a class="button" href=" {{ site.blog-url[page.lang] }}">{{ site.more-button[page.lang] }}</a></center>
 </div>
 </div>
+
+<div class="events">
+  <div class="wrapper">
+    <div class="title">{{ site.new-openings[page.lang] }}</div>
+    <ul class="post-list">
+      {% assign openings=site.openings | where:"lang", page.lang | sort: 'date' | reverse %}
+      {% for opening in openings limit:5 %}
+        <li>
+          <span class="post-meta">{{ opening.date | date: "%b %-d, %Y" }}</span>
+
+            <a class="heading" href="{{ opening.url | prepend: site.baseurl }}">{{ opening.title }}</a>
+
+            <div class="excerpt">{{ opening.content | strip_html | truncatewords:30 }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+    <center><a class="button" href=" {{ site.openings-url[page.lang] }}">{{ site.openings-more-button[page.lang] }}</a></center>
+  </div>
+</div>

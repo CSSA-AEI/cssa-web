@@ -8,6 +8,8 @@
 collections:
   events:
     output: true
+  openings:
+    output: true
 
 # Site settings
 title-short:
@@ -78,3 +80,14 @@ facebook-link:
 event-more-button:
   en: See more events
   fr: Voir plus d'événements
+
+# Openings
+new-openings:
+  en: Openings [WIP]
+  fr: Ouvertures [WIP]
+openings-url:
+  en: /openings
+  fr: /ouvertures
+openings-more-button:
+  en: See more openings
+  fr: Voir plus d'ouvertures
