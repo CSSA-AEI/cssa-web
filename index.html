@@ -57,10 +57,10 @@ lang: en
 
 <div class="events">
   <div class="wrapper">
-    <div class="title">{{ site.new-openings[page.lang] }}</div>
+    <div class="title">{{ site.new-opportunities[page.lang] }}</div>
     <ul class="post-list">
-      {% assign openings=site.openings | where:"lang", page.lang | sort: 'date' | reverse %}
-      {% for opening in openings limit:5 %}
+      {% assign opportunities=site.opportunities | where:"lang", page.lang | sort: 'date' | reverse %}
+      {% for opening in opportunities limit:5 %}
         <li>
           <span class="post-meta">{{ opening.date | date: "%b %-d, %Y" }}</span>
 
@@ -70,6 +70,6 @@ lang: en
         </li>
       {% endfor %}
     </ul>
-    <center><a class="button" href=" {{ site.openings-url[page.lang] }}">{{ site.openings-more-button[page.lang] }}</a></center>
+    <center><a class="button" href=" {{ site.opportunities-url[page.lang] }}">{{ site.opportunities-more-button[page.lang] }}</a></center>
   </div>
 </div>

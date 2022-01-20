@@ -3,7 +3,7 @@ layout: post
 title: "Opportunité #1"
 ref: opportunity-title
 date: 2022-01-20
-categories: openings
+categories: opportunities
 lang: fr
 ---
 
