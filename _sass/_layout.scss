@@ -326,6 +326,13 @@
           padding: 5px;
         }
 
+        .post-meta-2{
+          background-color: #3c484e;
+          color: white;
+          display: inline-block;
+          padding: 5px;
+        }
+
         .heading{
           font-size: 30px;
           color: white;
@@ -353,6 +360,14 @@
     color: white;
     padding: 10px;
     display: inline;
+}
+
+.post-meta-2 {
+  font-size: $small-font-size;
+  background-color: #3c484e;
+  color: white;
+  padding: 10px;
+  display: inline;
 }
 
 .post-link {
@@ -490,6 +505,14 @@
 
         .post-meta{
           background-color: $blue-color;
+          color: white;
+          display: inline-block;
+          padding: 5px;
+          margin-bottom: 15px;
+        }
+
+        .post-meta-2{
+          background-color: #3c484e;
           color: white;
           display: inline-block;
           padding: 5px;

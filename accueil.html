@@ -57,13 +57,13 @@ lang: fr
     <div class="title">{{ site.new-opportunities[page.lang] }}</div>
     <ul class="post-list">
       {% assign opportunities=site.opportunities | where:"lang", page.lang | sort: 'date' | reverse %}
-      {% for opening in opportunities limit:5 %}
+      {% for opportunity in opportunities limit:5 %}
         <li>
-          <span class="post-meta">{{ opening.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-meta">{{ opportunity.date1 | date: "%b %-d, %Y" }}</span>
 
-            <a class="heading" href="{{ opening.url | prepend: site.baseurl }}">{{ opening.title }}</a>
+            <a class="heading" href="{{ opportunity.url | prepend: site.baseurl }}">{{ opportunity.title }}</a>
 
-            <div class="excerpt">{{ opening.content | strip_html | truncatewords:30 }}</div>
+            <div class="excerpt">{{ opportunity.content | strip_html | truncatewords:30 }}</div>
         </li>
       {% endfor %}
     </ul>
