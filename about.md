@@ -17,14 +17,14 @@ Our office is located at <b>SITE 4076</b>, feel free to stop by.
 
 <section class="post-feed">
 	{% for member in site.data.executives %}
-	<a class="post-card" href="mailto:{{ member.contact.[page.lang] }}">
+	<a class="post-card" href="mailto:{{ member.contact }}">
 		<header class="post-card-header">
 			<div class="post-card-image" style="background-image: url(&quot;/images/team/{{member.photo}}&quot;);"></div>
 			<div class="post-card-tags"></div>
-			<h2 class="post-card-title">{{ member.position.[page.lang] }}<br/>{{ member.name.[page.lang] }}</h2>
+			<h2 class="post-card-title">{{ member.position.[page.lang] }}<br/>{{ member.name }}</h2>
 		</header>
 		<section class="post-card-excerpt">
-			<p>{{ member.contact.[page.lang] }}</p>
+			<p>{{ member.contact] }}</p>
 		</section>
 	</a>
 	{% endfor %}

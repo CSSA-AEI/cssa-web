@@ -1,153 +1,76 @@
 - position:
     en: President
     fr: Présidente
-  name:
-    en: Laura Hornar
-    fr: Laura Hornar
-  contact:
-    en: president@cssa-aei.ca
-    fr: president@cssa-aei.ca
-  office-hours:
-    en: 
-    fr:
+  contact: president@cssa-aei.ca
+  name: Laura Hornar
   photo: laura.jpg 
 
 - position:
     en: VP Finance
     fr: VP Finance
-  name:
-    en: Omer Abubaker
-    fr: Omer Abubaker
-  contact:
-    en: finance@cssa-aei.ca
-    fr: finance@cssa-aei.ca
-  office-hours:
-    en: 
-    fr:
+  contact: finance@cssa-aei.ca
+  name: Omer Abubaker
   photo: omer.jpg 
 
 - position: 
     en: VP Internal & 101 Week Coordinator
     fr: VP Interne et Coordinatrice de la semaine 101
-  name:
-    en: Elian Karpov
-    fr: Elian Karpov
-  contact:
-    en: internal@cssa-aei.ca
-    fr: internal@cssa-aei.ca
-  office-hours:
-    en: 
-    fr: 
+  contact: internal@cssa-aei.ca
+  name: Elian Karpov
   photo: elian.jpg
 
 - position:
     en: VP IT
     fr: VP IT
-  name:
-    en: Anthony Mahanna
-    fr: Anthony Mahanna
-  contact:
-    en: it@cssa-aei.ca
-    fr: it@cssa-aei.ca
-  office-hours:
-    en: 
-    fr:
+  contact: it@cssa-aei.ca
+  name: Anthony Mahanna
   photo: anthony.jpg 
 
 - position:
     en: VP Academic
     fr: VP Académique
-  name:
-    en: Satrajit Chatterjee
-    fr: Satrajit Chatterjee
-  contact:
-    en: academic@cssa-aei.ca
-    fr: academic@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
+  contact: academic@cssa-aei.ca
+  name: Satrajit Chatterjee
   photo: satrajit.jpg
    
 - position:
     en: VP External
     fr: VP Externe
-  name:
-    en: Kian Salehi
-    fr: Kian Salehi
-  contact:
-    en: external@cssa-aei.ca
-    fr: external@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
+  contact: external@cssa-aei.ca
+  name: Kian Salehi
   photo: kian.jpg
 
 - position:
     en: VP Social
     fr: VP Sociale
-  name:
-    en: Sami Ben Moussa
-    fr: Sami Ben Moussa
-  contact:
-    en: social@cssa-aei.ca
-    fr: social@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
+  contact: social@cssa-aei.ca
+  name: Sami Ben Moussa
   photo: sami.jpg
 
 - position:
     en: VP Communications
     fr: VP Communications
-  name:
-    en: Michel Moore
-    fr: Michel Moore
-  contact:
-    en: comms@cssa-aei.ca
-    fr: comms@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
+  contact: comms@cssa-aei.ca
+  name: Michel Moore
   photo: michel.jpg
 
 - position:
     en: VP Executive Affairs
     fr: VP Affaires Exécutives
-  name:
-    en: Arik Barenboim
-    fr: Arik Barenboim
-  contact:
-    en: execaffairs@cssa-aei.ca
-    fr: execaffairs@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
+  contact: execaffairs@cssa-aei.ca
+  name: Arik Barenboim
   photo: arik.jpg
   
 - position:
     en: VP Philanthropy
     fr: VP Philanthropie
-  name:
-    en: Shreya Langhe
-    fr: Shreya Langhe
-  contact:
-    en: phil@cssa-aei.ca
-    fr: phil@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
+  contact: phil@cssa-aei.ca
+  name: Shreya Langhe
   photo: shreya.jpg
   
 - position:
     en: VP Equity
     fr: VP Équité
-  name:
-    en: Tristan Pender
-    fr: Tristan Pender
-  contact:
-    en: equity@cssa-aei.ca
-    fr: equity@cssa-aei.ca
-  office-hours:
-    en:
-    fr:
+  contact: equity@cssa-aei.ca
+  name: Tristan Pender
   photo: tristan.jpg
