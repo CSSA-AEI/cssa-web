@@ -2,75 +2,75 @@
     en: President
     fr: Présidente
   contact: president@cssa-aei.ca
-  name: Laura Hornar
-  photo: laura.jpg 
+  name: Elian Karpov
+  photo: karpov.jpg
+
+- position:
+    en: VP Social
+    fr: VP Sociale
+  contact: social@cssa-aei.ca
+  name: Tomer Szulsztein
+  photo: szulsztein.jpg
 
 - position:
     en: VP Finance
     fr: VP Finance
   contact: finance@cssa-aei.ca
-  name: Omer Abubaker
-  photo: omer.jpg 
+  name: Ali Raza Bhangu
+  photo: bhangu.jpg
+
+- position:
+    en: VP Academic
+    fr: VP Académique
+  contact: academic@cssa-aei.ca
+  name: Mustafa Ahmed
+  photo: ahmed.jpg
+
+# - position:
+#     en: VP Communications
+#     fr: VP Communications
+#   contact: comms@cssa-aei.ca
+#   name: Michel Moore
+#   photo: michel.jpg
 
 - position: 
-    en: VP Internal & 101 Week Coordinator
-    fr: VP Interne et Coordinatrice de la semaine 101
+    en: VP Internal
+    fr: VP Interne
   contact: internal@cssa-aei.ca
-  name: Elian Karpov
-  photo: elian.jpg
+  name: Christiane Meherete
+  photo: meherete.jpg
+
+- position:
+    en: VP External
+    fr: VP Externe
+  contact: external@cssa-aei.ca
+  name: Kian Salehi
+  photo: salehi.jpg
+
+- position:
+    en: VP Philanthropy
+    fr: VP Philanthropie
+  contact: phil@cssa-aei.ca
+  name: Yasin Elmi
+  photo: elmi.jpg
+
+- position:
+    en: VP Equity
+    fr: VP Équité
+  contact: equity@cssa-aei.ca
+  name: Tristan Pender
+  photo: pender.jpg
+
+- position:
+    en: VP Executive Affairs
+    fr: VP Affaires Exécutives
+  contact: execaffairs@cssa-aei.ca
+  name: Vanisha Bagga
+  photo: bagga.jpg
 
 - position:
     en: VP IT
     fr: VP IT
   contact: it@cssa-aei.ca
   name: Anthony Mahanna
-  photo: anthony.jpg 
-
-- position:
-    en: VP Academic
-    fr: VP Académique
-  contact: academic@cssa-aei.ca
-  name: Satrajit Chatterjee
-  photo: satrajit.jpg
-   
-- position:
-    en: VP External
-    fr: VP Externe
-  contact: external@cssa-aei.ca
-  name: Kian Salehi
-  photo: kian.jpg
-
-- position:
-    en: VP Social
-    fr: VP Sociale
-  contact: social@cssa-aei.ca
-  name: Sami Ben Moussa
-  photo: sami.jpg
-
-- position:
-    en: VP Communications
-    fr: VP Communications
-  contact: comms@cssa-aei.ca
-  name: Michel Moore
-  photo: michel.jpg
-
-- position:
-    en: VP Executive Affairs
-    fr: VP Affaires Exécutives
-  contact: execaffairs@cssa-aei.ca
-  name: Arik Barenboim
-  photo: arik.jpg
-  
-- position:
-    en: VP Philanthropy
-    fr: VP Philanthropie
-  contact: phil@cssa-aei.ca
-  name: Shreya Langhe
-  photo: shreya.jpg
-  
-- position:
-    en: VP Equity
-    fr: VP Équité
-  contact: equity@cssa-aei.ca
-  name: Tristan Pender
-  photo: tristan.jpg
+  photo: mahanna.jpg 
