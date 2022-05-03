@@ -808,7 +808,7 @@ h6 {
     margin: 0 0 10px 0;
     border-radius: 50 %;
     width: auto;
-    height: 200px;
+    height: 22em;
     background: var(--color-secondary) no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
