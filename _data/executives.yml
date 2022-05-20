@@ -26,12 +26,12 @@
   name: Mustafa Ahmed
   photo: ahmed.jpg
 
-# - position:
-#     en: VP Communications
-#     fr: VP Communications
-#   contact: comms@cssa-aei.ca
-#   name: Michel Moore
-#   photo: michel.jpg
+- position:
+    en: Director of Communications
+    fr: Directeur de Communications
+  contact: comms@cssa-aei.ca
+  name: Marija Bolic
+  photo: bolic.jpg
 
 - position: 
     en: VP Internal
