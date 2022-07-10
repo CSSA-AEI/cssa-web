@@ -8,4 +8,4 @@ lang: en
 
 Coming soon... 👀
 <br>
-<a href="https://drive.google.com/file/d/1kdBjUNOwsHgYJ3woFIp9xDmeHZLhL-Tv/view?usp=sharing">Tentative Schedule</a>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Tentative Schedule</a>

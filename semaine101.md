@@ -7,4 +7,4 @@ lang: fr
 ---
 À venir... 👀
 <br>
-<a href="https://drive.google.com/file/d/1kdBjUNOwsHgYJ3woFIp9xDmeHZLhL-Tv/view?usp=sharing">Itinéraire Provisoire</a>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Itinéraire Provisoire</a>
