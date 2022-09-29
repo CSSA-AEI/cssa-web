@@ -6,7 +6,7 @@ ref: merchandise
 lang: fr
 ---
 
-<center>L'AÉI est fier d'annoncer que nous offrons maintenant des hoodies soit en rouge grenat, gris, ou marin!</center>
-<center> Remplissez <a href="https://docs.google.com/forms/d/1k-VrzIUc0NTQYJidaA3-stAgY1zJUqpE0hP_Agzuikc/viewform?edit_requested=true" target="_blank" class="">le formulaire suivant</a> pour en acheter un!</center>
+<center>L'AÉI est fier d'annoncer que nous offrons maintenant des <b>hoodies</b> soit en rouge grenat, gris, ou marin!</center>
+<center> Visitez <b>SITE4076</b> pour en acheter un!</center>
 <div style="text-align:center"><img src="/images/merch-01.jpg"/></div>
-<center>Prix: $25 + frais de port </center>
+<center>Prix: $25-30 </center>
