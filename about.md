@@ -13,7 +13,7 @@ View our constitution in English [here.]({{ site.url }}/constitutions/2022-2023.
 ## The office
 Our office is located at <b>SITE 4076</b>, feel free to stop by.
 
-## Executive Team 2020 - 2021
+## Executive Team 2022 - 2023
 
 <section class="post-feed">
 	{% for member in site.data.executives %}

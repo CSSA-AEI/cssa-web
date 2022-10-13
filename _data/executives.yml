@@ -19,19 +19,19 @@
   name: Ali Raza Bhangu
   photo: bhangu.jpg
 
-- position:
-    en: VP Academic
-    fr: VP Académique
-  contact: academic@cssa-aei.ca
-  name: Mustafa Ahmed
-  photo: ahmed.jpg
+# - position:
+#     en: VP Academic
+#     fr: VP Académique
+#   contact: academic@cssa-aei.ca
+#   name: Mustafa Ahmed
+#   photo: ahmed.jpg
 
-- position:
-    en: Director of Communications
-    fr: Directeur de Communications
-  contact: comms@cssa-aei.ca
-  name: Marija Bolic
-  photo: bolic.jpg
+# - position:
+#     en: Director of Communications
+#     fr: Directeur de Communications
+#   contact: comms@cssa-aei.ca
+#   name: Marija Bolic
+#   photo: bolic.jpg
 
 - position: 
     en: VP Internal
@@ -54,12 +54,12 @@
   name: Yasin Elmi
   photo: elmi.jpg
 
-- position:
-    en: VP Equity
-    fr: VP Équité
-  contact: equity@cssa-aei.ca
-  name: Tristan Pender
-  photo: pender.jpg
+# - position:
+#     en: VP Equity
+#     fr: VP Équité
+#   contact: equity@cssa-aei.ca
+#   name: Tristan Pender
+#   photo: pender.jpg
 
 - position:
     en: VP Executive Affairs

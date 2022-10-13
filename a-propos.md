@@ -11,7 +11,7 @@ Voyez notre constitution en anglais [ici.]({{ site.url }}/constitutions/2022-202
 ## Le bureau
 Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer.
 
-##  L'équipe éxécutive 2020 - 2021
+##  L'équipe éxécutive 2022 - 2023
 
 
 <section class="post-feed">
