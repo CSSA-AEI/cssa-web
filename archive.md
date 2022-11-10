@@ -5,7 +5,6 @@ permalink: /archive/
 ref: archive
 lang: en
 ---
-<!---
 # Meeting Minutes 
 You can access our meeting minutes for the two latest executive terms below:
 <div class="page_grid">
@@ -44,14 +43,4 @@ You can access our meeting minutes for the two latest executive terms below:
         </ul>
     </details>
 </div>
---->
-# Archived Pages
-You can access our blog, events, and other posts that are too old to be shown up front
 
-<div class= "archived_pages">
-    {% assign pages = site.archived_pages | where:"lang", page.lang %}
-    {% for a_page in pages %}
-        <a href= {{ a_page.url | prepend site.baseurl }}><h2>{{ a_page.title }}</h2></a>
-    {% endfor %}
-
-</div>
