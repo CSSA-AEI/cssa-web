@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Instagram 
-permalink: /instagram/
 ref: instagram
-lang: en
+lang: fr 
 ---
 
 
