@@ -1,0 +1,41 @@
+DeFi The Conventional 2022 | A Web3 Hackathon
+
+The uOttawa Engineering Students Society, Institute of Electrical and Electronics Engineers Student Branch, and Computer Science Student Association are pleased to officially announce that we will be co-hosting Canada's largest DeFi Hackathon here 
+at the University of Ottawa from March 18th to March 20th, 2022.
+
+DeFi The Conventional comes in a series of events, including two technical workshops in addition to a 36h hackathon. 
+
+The workshop series is intended to help attendees get familiarized with blockchain and decentralized finance on top of allowing them to acquire the practical skills needed to be better equipped to participate in the hackathon. Additionally, there will also be multiple workshops and AMAs hosted by Web3 developers and Terra employees during the hackathon weekend.
+
+The hackathon consists of a large-scale 36h hybrid (both in-person and online) programming competition, where the goal for hackers is to create blockchain solutions from given challenges that help improve the Cosmos and Terra ecosystems. 
+More information on these public decentralized Web3 environments can be found in the links in our bio.
+
+The competition has a total prize pool of CA$12,000 distributed among 3 challenge sections:
+  1. $2,500
+  2. $1,000
+  3. $500
+
+Furthermore, Terra will be looking to hire developers that show excellent performance, initiative, and willingness to improve the Web3 space.
+
+Students from universities across Ontario and Quebec that wish to participate in person would be fully accommodated in terms of transportation, food, and hacking space. 
+This includes applicants from the following institutions:
+@uoftengsoc 
+@uwengsoc 
+@ryersonengineer 
+@macengsociety 
+@westernues 
+@conengsoc 
+@mcgilleus 
+@guelphengsoc 
+@ot_engsoc 
+@queensengsoc 
+@lasengsoc
+@ecaconcordia
+@aepoly
+@aeets 
+
+The hackathon and workshops will be live-streamed on the event's official Twitch and Twitter accounts.
+
+➠To sign up, applications must be submitted via the Typeform available in our bio.
+
+This event is officially sponsored by Terra.
