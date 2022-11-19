@@ -8,7 +8,7 @@ lang: en
 
 
 <section class="post-feed">
-	{% for post in site.data.IG_posts reversed %}
+	{% for post in site.data.IG_posts_test reversed %}
 	<a class="post-card">
 		<header class="post-card-header">
 			<div class="post-card-image" style="background-image: url(&quot;/cssa.aei/{{post.post.date_time}}/{{post.post.photos[0]}}&quot;);"></div>

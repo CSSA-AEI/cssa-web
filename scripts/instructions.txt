@@ -1,0 +1,25 @@
+# Instagram Scraper
+## Requirements
+To run this script and fetch instagram data you will need to have instaloader installed
+run pip install instaloader 
+## Running instaloader
+the syntax for geting the profile data is:
+`instaloader profile cssa.aei`
+
+for the CSSA you use:
+`instaloader profile cssa.aei`
+
+if you run into an error and are asked to login run:
+
+`instaloader --login []username] --password [password]`
+
+and if you are asked to authenticate and it does not work at all follow these steps:
+1. Install FireFox if you do not have it already
+2. Login to your Instagram account in FireFox and make sure you are remembered
+3. Open import_firefox_sessions.py and make sure the path to FireFox in whichever machine you are using is correct
+4. run `python3 import_firefox_sessions.py`
+5. Try logging in again, but without a password `instaloader --login [username]`
+
+check the instaloader documentation for more help
+
+Once the files are installed
