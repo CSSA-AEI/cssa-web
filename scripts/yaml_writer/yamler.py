@@ -14,7 +14,6 @@ def split_text(text_path):
             return {'en':'',"fr":''}
     caption={'en':'',"fr":""}
     for text in text_separator(text_list):
-        print(text)
         if text == '':
             continue
         try:
