@@ -1,9 +1,4 @@
 - post:
-    date_time: '2018-12-03'
-    en: ''
-    fr: ''
-    photos: []
-- post:
     date_time: 2018-12-03_22-30-37
     en: Meet your 2018-2019 Exec team!
     fr: ''
@@ -11,11 +6,10 @@
     - 2018-12-03_22-30-37_UTC.jpg
 - post:
     date_time: 2018-12-03_23-01-00
-    en: ''
-    fr: "Come celebrate the last day of classes with a holiday LAN party! One final\
+    en: "Come celebrate the last day of classes with a holiday LAN party! One final\
       \ event to end the semester and chill out before exams. We will also be holding\
-      \ a raffle, including a Raspberry Pi, Google Home Mini, and more to come! ----------\
-      \ Venez c\xE9l\xE9brer la derni\xE8re journ\xE9e de cours avec une f\xEAte LAN!\
+      \ a raffle, including a Raspberry Pi, Google Home Mini, and more to come!"
+    fr:  "Venez c\xE9l\xE9brer la derni\xE8re journ\xE9e de cours avec une f\xEAte LAN!\
       \ Un dernier \xE9v\xE9nement pour terminer le semestre et se d\xE9tendre avant\
       \ les examens. Nous organiserons aussi un tirage au sort, nottament un Raspberry\
       \ Pi, Google Home Mini ainsi que d'autres \xE0 venir!"
