@@ -6,7 +6,7 @@ source env/bin/activate
 
 cd cssa-web
 
-instaloader --latest-stamps time.ini cssa.aei  
+instaloader --no-profile-pic --latest-stamps time.ini cssa.aei  
 
 cd scripts/profile_scraper
 

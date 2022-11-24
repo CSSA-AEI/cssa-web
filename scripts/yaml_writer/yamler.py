@@ -19,10 +19,8 @@ def split_text(text_path):
         try:
             if detect(text) == 'en':
                 caption['en'] += text
-                print('en','\n')
             elif detect(text) == 'fr':
                 caption['fr'] += text
-                print('fr','\n')
         except:
             continue
     return caption
@@ -30,9 +28,15 @@ def split_text(text_path):
 
 
 with open(file_path,'r') as doc:
-    folders_in_yaml = yaml.full_load(doc)
-   
-post_folders = sorted([folder for folder in os.listdir(post_path) if (os.path.isdir(post_path+folder))])
+    current_file = yaml.full_load(doc)
+
+folders_in_yaml = set()
+
+for  object in current_file:
+    folders_in_yaml.add(object['post']['date_time']) 
+print(folders_in_yaml)
+
+post_folders = sorted([folder for folder in os.listdir(post_path) if (os.path.isdir(post_path+folder) and folder not in folders_in_yaml)])
 #folder not in folders_in_yaml and 
 posts = []
 
@@ -57,6 +61,8 @@ for folder in post_folders:
     post = {'post':dict(**date_time,**caption,**photos)}
     posts.append(post)
 #posts.update(folders_in_yaml)
+
+posts[0:0] = current_file
 
 with open(file_path,'w') as doc:
     yaml.dump(posts,doc)

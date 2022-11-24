@@ -6,13 +6,13 @@
     - 2018-12-03_22-30-37_UTC.jpg
 - post:
     date_time: 2018-12-03_23-01-00
-    en: "Come celebrate the last day of classes with a holiday LAN party! One final\
+    en: Come celebrate the last day of classes with a holiday LAN party! One final\
       \ event to end the semester and chill out before exams. We will also be holding\
-      \ a raffle, including a Raspberry Pi, Google Home Mini, and more to come!"
-    fr:  "Venez c\xE9l\xE9brer la derni\xE8re journ\xE9e de cours avec une f\xEAte LAN!\
-      \ Un dernier \xE9v\xE9nement pour terminer le semestre et se d\xE9tendre avant\
-      \ les examens. Nous organiserons aussi un tirage au sort, nottament un Raspberry\
-      \ Pi, Google Home Mini ainsi que d'autres \xE0 venir!"
+      \ a raffle, including a Raspberry Pi, Google Home Mini, and more to come!
+    fr: "Venez c\xE9l\xE9brer la derni\xE8re journ\xE9e de cours avec une f\xEAte\
+      \ LAN! Un dernier \xE9v\xE9nement pour terminer le semestre et se d\xE9tendre\
+      \ avant les examens. Nous organiserons aussi un tirage au sort, nottament un\
+      \ Raspberry Pi, Google Home Mini ainsi que d'autres \xE0 venir!"
     photos:
     - 2018-12-03_23-01-00_UTC.jpg
 - post:
@@ -323,13 +323,13 @@
     - 2020-02-10_01-10-44_UTC_5.jpg
 - post:
     date_time: 2020-02-11_02-15-04
-    en: 'Kinaxis presents: Intro to Machine learningTOMORROW @ 1:00pm at Stem 117Basic
-      PythonThe workshop is going to tackle successful application of machine learning
-      algorithms on data collected by multiple scientists through the Human Micro-biome
-      Project.It will address some common pitfalls with real data that you might encounter
-      if you''re trying to build a machine learning product, as well as introducing
-      some supervised and unsupervised algorithms applicable on that dataset.Hands-on
-      exercises included, we''ll be sharing a Kaggle kernel with the data attached.'
+    en: 'Kinaxis presents: Intro to Machine learningBasic PythonThe workshop is going
+      to tackle successful application of machine learning algorithms on data collected
+      by multiple scientists through the Human Micro-biome Project.It will address
+      some common pitfalls with real data that you might encounter if you''re trying
+      to build a machine learning product, as well as introducing some supervised
+      and unsupervised algorithms applicable on that dataset.Hands-on exercises included,
+      we''ll be sharing a Kaggle kernel with the data attached.'
     fr: ''
     photos:
     - 2020-02-11_02-15-04_UTC.jpg
@@ -555,17 +555,17 @@
       collaborate with Morgan Stanley technologists, win prizes and be considered
       for an internship!New deadline to apply is September 8! The registration link
       is in the bio.Morgan Stanley: Hackathon Code to Give'
-    fr: "(La version fran\xE7aise suit)\xC9tudiants, passionn\xE9s de logiciels et\
-      \ d\xE9veloppeurs, il est temps de faire la diff\xE9rence! D\xE9ployez vos comp\xE9\
-      tences et collaborez avec des innovateurs de Morgan Stanley pour redonner \xE0\
-      \ la communaut\xE9 montr\xE9alaise. Participez au hackathon Code to Give de\
-      \ Morgan Stanley - une comp\xE9tition virtuelle visant \xE0 cr\xE9er des solutions\
-      \ technologiques cr\xE9atives pour les organismes sans but lucratif de Montr\xE9\
-      al.Inscrivez-vous \xE0 Code to Give d\xE8s aujourd'hui pour avoir l'occasion\
-      \ d'avoir un impact r\xE9el, de collaborer avec les technologues de Morgan Stanley,\
-      \ de gagner des prix et d'\xEAtre consid\xE9r\xE9 pour un stage!La nouvelle\
-      \ date limite d'inscription est le 8 septembre! Le lien d'inscription est dans\
-      \ la bio."
+    fr: "(La version fran\xE7aise suit)13 Sep 2021 8:00 AM \xE0 20 Sep 2021 5:00 PM\xC9\
+      tudiants, passionn\xE9s de logiciels et d\xE9veloppeurs, il est temps de faire\
+      \ la diff\xE9rence! D\xE9ployez vos comp\xE9tences et collaborez avec des innovateurs\
+      \ de Morgan Stanley pour redonner \xE0 la communaut\xE9 montr\xE9alaise. Participez\
+      \ au hackathon Code to Give de Morgan Stanley - une comp\xE9tition virtuelle\
+      \ visant \xE0 cr\xE9er des solutions technologiques cr\xE9atives pour les organismes\
+      \ sans but lucratif de Montr\xE9al.Inscrivez-vous \xE0 Code to Give d\xE8s aujourd'hui\
+      \ pour avoir l'occasion d'avoir un impact r\xE9el, de collaborer avec les technologues\
+      \ de Morgan Stanley, de gagner des prix et d'\xEAtre consid\xE9r\xE9 pour un\
+      \ stage!La nouvelle date limite d'inscription est le 8 septembre! Le lien d'inscription\
+      \ est dans la bio."
     photos:
     - 2021-09-02_20-28-16_UTC.jpg
 - post:
@@ -695,10 +695,10 @@
       \ Web3 space.Students from universities across Ontario and Quebec that wish\
       \ to participate in person would be fully accommodated in terms of transportation,\
       \ food, and hacking space. This includes applicants from the following institutions:@macengsociety\
-      \ @conengsoc @guelphengsoc The hackathon and workshops will be live-streamed\
-      \ on the event's official Twitch and Twitter accounts.\u27A0To sign up, applications\
-      \ must be submitted via the Typeform available in our bio.This event is officially\
-      \ sponsored by Terra."
+      \ @guelphengsoc The hackathon and workshops will be live-streamed on the event's\
+      \ official Twitch and Twitter accounts.\u27A0To sign up, applications must be\
+      \ submitted via the Typeform available in our bio.This event is officially sponsored\
+      \ by Terra."
     fr: '@mcgilleus '
     photos:
     - 2022-02-16_16-01-29_UTC.jpg
@@ -1078,6 +1078,12 @@
     - 2022-10-31_18-39-10_UTC_1.jpg
     - 2022-10-31_18-39-10_UTC_2.jpg
 - post:
+    date_time: 2022-11-01_17-39-46
+    en: ''
+    fr: ''
+    photos:
+    - 2022-11-01_17-39-46_UTC_profile_pic.jpg
+- post:
     date_time: 2022-11-10_00-49-27
     en: Hey Comp Sci! Check out our updated office hours :)Come by SITE 4076 to hang
       out, get some homework help or buy our awesome merch!
@@ -1107,3 +1113,24 @@
     photos:
     - 2022-11-12_02-17-21_UTC_1.jpg
     - 2022-11-12_02-17-21_UTC_2.jpg
+- post:
+    date_time: 2022-11-23_20-18-49
+    en: "Hi everyone\U0001F44B, Come watch Home Alone on December 2nd from 7-10PM.\
+      \ Snacks are on us\U0001F37F\U0001F964!! Tickets will cost $5 per person and\
+      \ all of our proceeds will be going towards the Ottawa food bank. This event\
+      \ is organized by ESS, DSA, SSA, Arts and CSSA. In order to purchase your tickets\
+      \ please look into the locations of the offices of these student associations.\
+      \ For more information please don\u2019t be afraid to contact us. PS: The movie\
+      \ will be in English and with French subtitles."
+    fr: "Salut tout le monde\U0001F44B, Venez regarder \xAB Maman, j\u2019ai rat\xE9\
+      \ l\u2019avion\xBB\_ le 2 d\xE9cembre de 19h \xE0 22h avec nous. Nous offrons\
+      \ des collations\U0001F37F\U0001F964!! Les billets co\xFBteront 5 $ par personne\
+      \ et tous nos profits iront \xE0 la banque alimentaire d\u2019Ottawa. Cet \xE9\
+      v\xE9nement est organis\xE9 par A\xC9G, A\xC9D, A\xC9S, Arts et AEI. Afin d\u2019\
+      acheter vos billets, veuillez vous renseigner sur les emplacements des bureaux\
+      \ de ces associations \xE9tudiantes. Pour plus d\u2019informations, n\u2019\
+      h\xE9sitez pas \xE0 nous contacter. P.S : le film sera en anglais et sous-titr\xE9\
+      \ en fran\xE7ais."
+    photos:
+    - 2022-11-23_20-18-49_UTC_1.jpg
+    - 2022-11-23_20-18-49_UTC_2.jpg
