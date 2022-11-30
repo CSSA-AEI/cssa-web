@@ -1078,12 +1078,6 @@
     - 2022-10-31_18-39-10_UTC_1.jpg
     - 2022-10-31_18-39-10_UTC_2.jpg
 - post:
-    date_time: 2022-11-01_17-39-46
-    en: ''
-    fr: ''
-    photos:
-    - 2022-11-01_17-39-46_UTC_profile_pic.jpg
-- post:
     date_time: 2022-11-10_00-49-27
     en: Hey Comp Sci! Check out our updated office hours :)Come by SITE 4076 to hang
       out, get some homework help or buy our awesome merch!
@@ -1134,3 +1128,30 @@
     photos:
     - 2022-11-23_20-18-49_UTC_1.jpg
     - 2022-11-23_20-18-49_UTC_2.jpg
+- post:
+    date_time: 2022-11-26_00-28-34
+    en: "Hack the Hill applications are now OPEN \U0001F4ED\U0001F4EC Put your hacking\
+      \ skills to the test in Canada\u2019s capital at Hack the Hill\u2019s hybrid\
+      \ hackathon, taking place from February 3rd to 5th 2023 in Ottawa and hosting\
+      \ 750+ students from around the world! \U0001F5FA Compete with the best in game\
+      \ development, hardware/embedded development, and web development to make your\
+      \ mark on Parliament Hill. Don\u2019t miss this unforgettable weekend of hacking\
+      \ and networking! Register now using the link in the @hackthehill bio before\
+      \ you lose your seat to the opposition\U0001F482\u200D\u2640\uFE0FCheck out\
+      \ their website for more insight on this prime event. #hackthehill #computerscience\
+      \ #computerengineering #softwareengineering #electricalengineering #computertechnology\
+      \ #uottawa #ottawau #uottawaengineering #carletonengineering #carletonu #canadascapital\
+      \ #hackathon"
+    fr: "Les inscriptions \xE0 Hack the Hill sont maintenant OUVERTES \U0001F4ED\U0001F4EC\
+      \ Mets tes talents de codage au d\xE9fi \xE0 Hack the Hill, le hackathon hybride\
+      \ de la capitale du Canada, prenant place du 3 au 5 f\xE9vrier 2023 en accueillant\
+      \ plus de 750 \xE9tudiants de partout au monde! \U0001F5FA Comp\xE9titionne\
+      \ avec les meilleurs en d\xE9veloppement de jeux vid\xE9os, d\xE9veloppement\
+      \ mat\xE9riel/embarqu\xE9, et d\xE9veloppement web afin de laisser ta marque\
+      \ sur la colline parlementaire. Ne manque pas ce week-end inoubliable de hacking\
+      \ et de r\xE9seautage! Inscris-toi au plus t\xF4t en utilisant le lien dans\
+      \ la bio @hackthehill avant que tu perdes ta place \xE0 l\u2019opposition!\U0001F482\
+      \u200D\u2640\uFE0FVeuillez visiter le site web Hack the Hill 2023 pour plus\
+      \ d\u2019infos sur cet \xE9v\xE9nement majeur. "
+    photos:
+    - 2022-11-26_00-28-34_UTC.jpg

@@ -34,20 +34,15 @@ folders_in_yaml = set()
 
 for  object in current_file:
     folders_in_yaml.add(object['post']['date_time']) 
-print(folders_in_yaml)
 
 post_folders = sorted([folder for folder in os.listdir(post_path) if (os.path.isdir(post_path+folder) and folder not in folders_in_yaml)])
-#folder not in folders_in_yaml and 
 posts = []
 
 for folder in post_folders:
-    #if folder in folders_in_yaml.keys():
-     #  continue
     files = os.listdir(post_path+folder)
     
     date_time = {'date_time': folder}
     text_file = next((text for text in files if '.txt' in text),'')
-    #print(post_path+folder+'/'+text_file)
     
     if text_file!='':
         caption = split_text(post_path+folder+'/'+text_file)
