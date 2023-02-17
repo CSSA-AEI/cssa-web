@@ -24,7 +24,7 @@ Our office is located at <b>SITE 4076</b>, feel free to stop by.
 			<h2 class="post-card-title">{{ member.position.[page.lang] }}<br/>{{ member.name }}</h2>
 		</header>
 		<section class="post-card-excerpt">
-			<p>{{ member.contact] }}</p>
+			<p>{{ member.contact }}</p>
 		</section>
 	</a>
 	{% endfor %}

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Minutes
-permalink: /minutes/
+permalink: /archived_pages/minutes/
 ref: minutes
 lang: en
 ---
