@@ -1,5 +1,5 @@
 ---
-layout: page-archive
+layout: page
 title: Comptes-rendus
 permalink: /comptes-rendus/
 ref: minutes

@@ -10,10 +10,6 @@ collections:
     output: true
   opportunities:
     output: true
-  archived_posts:
-    output: true
-  archived_pages:
-    output: true
 
 # Site settings
 title-short:
@@ -95,4 +91,3 @@ opportunities-url:
 opportunities-more-button:
   en: See more opportunities
   fr: Voir plus d'opportunités
-

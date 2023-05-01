@@ -1,5 +1,5 @@
 ---
-layout: post-archive
+layout: post
 title:  "Résultats des élections"
 ref: welcome
 date:   2018-03-30
