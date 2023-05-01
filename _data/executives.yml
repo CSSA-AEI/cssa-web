@@ -2,13 +2,6 @@
     en: President
     fr: Présidente
   contact: president@cssa-aei.ca
-  name: Elian Karpov
-  photo: karpov.jpg
-
-- position:
-    en: VP Social
-    fr: VP Sociale
-  contact: social@cssa-aei.ca
   name: Tomer Szulsztein
   photo: szulsztein.jpg
 
@@ -16,29 +9,36 @@
     en: VP Finance
     fr: VP Finance
   contact: finance@cssa-aei.ca
-  name: Ali Raza Bhangu
-  photo: bhangu.jpg
+  name: Aashish Suresh
+  photo: suresh.jpg
 
 - position:
     en: VP Academic
     fr: VP Académique
   contact: academic@cssa-aei.ca
-  name: Zahra Suleymanova
-  photo: suleymanova.jpg
+  name: Ali Raza Bhangu
+  photo: bhangu.jpg
 
 - position:
-    en: VP Communications
-    fr: VP Communications
-  contact: comms@cssa-aei.ca
-  name: Natasa Bolic
-  photo: bolic.jpg
+    en: VP Social
+    fr: VP Sociale
+  contact: social@cssa-aei.ca
+  name: Meriem Mostefai
+  photo: mostefai.jpg
+
+# - position:
+#     en: VP Communications
+#     fr: VP Communications
+#   contact: comms@cssa-aei.ca
+#   name: Vacant
+#   photo: vacant.jpg
 
 - position: 
     en: VP Internal
     fr: VP Interne
   contact: internal@cssa-aei.ca
-  name: Christiane Meherete
-  photo: meherete.jpg
+  name: Cedric Luiz Dimatulac
+  photo: dimatulac.jpg
 
 - position:
     en: VP External
@@ -51,8 +51,22 @@
     en: VP Philanthropy
     fr: VP Philanthropie
   contact: phil@cssa-aei.ca
-  name: Yasin Elmi
-  photo: elmi.jpg
+  name: Fay Lee
+  photo: lee.jpg
+
+- position:
+    en: VP Equity
+    fr: VP Équité
+  contact: equity@cssa-aei.ca
+  name: Chelsea Brown
+  photo: brown.jpg
+
+- position:
+    en: VP Executive Affairs
+    fr: VP Affaires Exécutives
+  contact: execaffairs@cssa-aei.ca
+  name: Angeleeca Jocson
+  photo: jocson.jpg
 
 - position:
     en: VP Logistics
@@ -62,22 +76,8 @@
   photo: mao.jpg
 
 - position:
-    en: VP Equity
-    fr: VP Équité
-  contact: equity@cssa-aei.ca
-  name: Meriem Mostefai 
-  photo: mostefai.jpg
-
-- position:
-    en: VP Executive Affairs
-    fr: VP Affaires Exécutives
-  contact: execaffairs@cssa-aei.ca
-  name: Vanisha Bagga
-  photo: bagga.jpg
-
-- position:
     en: VP IT
     fr: VP IT
   contact: it@cssa-aei.ca
-  name: Anthony Mahanna
-  photo: mahanna.jpg 
+  name: Aydin Yalcinkaya
+  photo: yalcinkaya.jpg 
