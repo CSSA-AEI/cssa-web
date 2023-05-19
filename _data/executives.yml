@@ -26,12 +26,12 @@
   name: Meriem Mostefai
   photo: mostefai.jpg
 
-# - position:
-#     en: VP Communications
-#     fr: VP Communications
-#   contact: comms@cssa-aei.ca
-#   name: Vacant
-#   photo: vacant.jpg
+- position:
+    en: VP Communications
+    fr: VP Communications
+  contact: comms@cssa-aei.ca
+  name: Connor States
+  photo: states.jpeg
 
 - position: 
     en: VP Internal
