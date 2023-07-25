@@ -132,7 +132,7 @@ Hi, my name is Samuel Saint-Fleur and I am a second year computer scientist at t
 
 _Omer Abubaker_
 
-<img style="max-width:200px;height:auto;width:auto" src="https://lh4.googleusercontent.com/mOCqTkTJJefOjz2RLpdXblSeoDA3Tp3_eeuUXgC0Dt-vAt1xqAhBsaxGY-rugS7olcQSLcpSAd0m9_Uc2aWulaG02k5GnDviX3kg--x9I63XXTu6gOJGnSr6jAO_YiqulDKwVLGj">
+<img style="max-width:200px;height:auto;width:auto">
 
 Hello, My name is Omer Abubaker and I am running to be VP Financial Advisor for the Computer Science Student Association! I believe that I am fit for the position because I have had previous experience managing the finances of various student clubs and associations. I have also had volunteer work experience in an accounting firm preparing financial reports/statements. If I am elected as VP Finance, I will not only focus on the finances of the association but also work with other executive members to create more events and help the CSSA get sponsorships to allow students have more connections with the tech industry and much more. If you have any questions don't hesitate to contact me on social media or even if you see me around!
 
