@@ -1,20 +1,16 @@
-<footer class="site-foot">
 
-  <div class="site-foot-nav container">
+				<!-- Footer -->
+        <footer id="footer" class="wrapper" style="padding-top: 25px;">
+          <div class="inner">
+            <ul class="icons">
+              <li><a href="https://instagram.com/cssa.aei" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="https://github.com/cssa-aei" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+              <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            </ul>
+            <ul class="copyright">
+              <li>&copy; Computer Science Student Association</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+          </div>
+        </footer>
 
-    <div class="site-foot-nav-left">
-       <a aria-current="page" class="" href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{site.title-long[page.lang]}}</a> © 2022
-    </div>
 
-    <div class="site-foot-nav-right">
-      {% assign pages=site.pages | where:"lang", page.lang %}
-        {% for my_page in pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-    </div>
-
-  </div>
-
-</footer>

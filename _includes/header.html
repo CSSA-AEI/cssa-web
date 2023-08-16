@@ -1,54 +1,19 @@
-<header class="site-head" style="background-image: url(&quot;https://cssa-aei.ca/images/headerbg.jpg&quot;);">
+				<!-- Header -->
+        <header id="header" class="alt">
+          <a href="/" class="logo"><strong>CSSA</strong></a>
+          <nav>
+            <a href="#menu">Menu</a>
+          </nav>
+        </header>
 
-  <div class="container">
-
-    <div class="site-mast">
-
-      <div class="site-mast-left">
-        <a aria-current="page" class="" href="{{ site.baseurl }}/{{ site.index[page.lang] }}">
-          <img class="site-logo" src="/images/cssa-logo-transparent-render.png" alt="{{ site.title-short[page.lang] }}">
-        </a>
-      </div>
-
-      <div class="site-mast-right">
-          {% if site.github_username %}
-            {% include icon-github.html username=site.github_username %}
-          {% endif %}
-
-          {% if site.twitter_username %}
-            {% include icon-twitter.html username=site.twitter_username %}
-          {% endif %}
-      </div>
-    </div>
-    <div class="site-banner">
-        <p class="site-banner-desc">{{ site.school-name[page.lang] }}</p>
-        <h1 class="site-banner-title">{{ site.header-title[page.lang] }}</h1>
-        <p class="site-banner-desc">{{ site.office[page.lang] }}</p>
-    </div>  
-    <nav class="site-nav">
-      <!-- <div class="trigger"> -->
-      <div class="site-nav-left">
-        {% assign pages=site.pages | where:"lang", page.lang %}
+      <!-- Menu -->
+        <nav id="menu">
+          <ul class="links">
+            {% assign pages=site.pages | where:"lang", page.lang %}
         {% for my_page in pages %}
           {% if my_page.title %}
-          <a aria-current="page" class="site-nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{my_page.title}}</a>
+          <li><a aria-current="page" href="{{ my_page.url | prepend: site.baseurl }}">{{my_page.title}}</a></li>
           {% endif %}
         {% endfor %}
-      </div>
-      <div class="site-nav-right">  
-        {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-        {% for post in posts %} <a class="site-nav-button" href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
-        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-        {% for page in pages %} <a class="site-nav-button" href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %}
-      </div>
-    </nav>
-  </div>
-</header>
-
-<script>
-  $(document).ready(function(){
-    $("#nav-button").click(function () {
-      $("#navigationbar").toggle();
-    });
-  });
-</script>
+          </ul>
+        </nav>
