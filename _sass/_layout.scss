@@ -3,8 +3,7 @@
  */
  .main-header{
    width: 100%;
-   background: black;
-   background-image: url(../images/headerbg.jpg);
+   background: white;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -342,7 +341,7 @@
 
         .heading-page{
           font-size: 30px;
-          color: black;
+          color: white;
           padding: 5px;
           display: inline;
         }
@@ -382,7 +381,6 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
-    background-image: url(../images/headerbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -554,14 +552,14 @@
 
         .heading{
           font-size: 30px;
-          color: black;
+          color: white;
           padding: 5px;
           display: inline;
         }
 
         .heading-page{
           font-size: 30px;
-          color: black;
+          color: white;
           padding: 5px;
           display: inline;
         }
