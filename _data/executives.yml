@@ -27,11 +27,11 @@
   photo: mostefai.jpg
 
 - position:
-    en: Director of Communications
-    fr: Directeur des Communications
+    en: VP Communications
+    fr: VP Communications
   contact: comms@cssa-aei.ca
-  name: Connor States
-  photo: states.jpeg
+  name: Zachary Djerdjouri
+  photo: djerdjouri.jpg
 
 - position: 
     en: VP Internal
@@ -83,8 +83,29 @@
   photo: yalcinkaya.jpg 
 
 - position:
-    en: 101 Week Coordinator
-    fr: Coordinateur de la Semaine 101
-  contact: 101coordinator@cssa-aei.ca
-  name: Justin Wang
-  photo: wang.jpeg
+    en: Jr. VP Social
+    fr: Jr. VP Sociale
+  contact: jr.social@cssa-aei.ca
+  name: Ayaan Nawab
+  photo: nawab.jpeg
+
+- position:
+    en: Jr. VP Academic
+    fr: Jr. VP Académique
+  contact: jr.academic@cssa-aei.ca
+  name: Zain Rizvi
+  photo: rizvi.jpg
+
+- position:
+    en: Jr. VP Finance
+    fr: Jr. VP Finance
+  contact: jr.finance@cssa-aei.ca
+  name: Rachel Qi
+  photo: qi.png
+
+- position:
+    en: Jr. VP Communications
+    fr: Jr. VP Communications
+  contact: comms@cssa-aei.ca
+  name: Sofia El Ouazzani
+  photo: ouazzani.jpg
