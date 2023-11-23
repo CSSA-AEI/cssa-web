@@ -1,6 +1,5 @@
 ---
 layout: page
-title: 101 Week
 permalink: /101week/
 ref: 101week 
 lang: en
