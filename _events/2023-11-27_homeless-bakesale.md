@@ -6,6 +6,7 @@ associations: CSSA
 time: 11:00AM - 4:00PM
 facebooklink: https://www.restoringhope.ca/
 ref: 2023-11-27-homeless-bakesale
+date: 2023-11-27
 lang: en
 permalink: /events/homeless-bakesale
 ---
