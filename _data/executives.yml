@@ -1,9 +1,9 @@
 - position:
-    en: President
-    fr: Présidente
+    en: Director, President
+    fr: Directeur, Présidente
   contact: president@cssa-aei.ca
-  name: Tomer Szulsztein
-  photo: szulsztein.jpg
+  name: Ali Raza Bhangu
+  photo: bhangu.jpg
 
 - position:
     en: VP Finance
@@ -11,13 +11,6 @@
   contact: finance@cssa-aei.ca
   name: Aashish Suresh
   photo: suresh.jpg
-
-- position:
-    en: VP Academic
-    fr: VP Académique
-  contact: academic@cssa-aei.ca
-  name: Ali Raza Bhangu
-  photo: bhangu.jpg
 
 - position:
     en: VP Social
@@ -90,8 +83,8 @@
   photo: nawab.jpeg
 
 - position:
-    en: Jr. VP Academic
-    fr: Jr. VP Académique
+    en: Director, Academic
+    fr: Directeur, Académique
   contact: jr.academic@cssa-aei.ca
   name: Zain Rizvi
   photo: rizvi.jpg
