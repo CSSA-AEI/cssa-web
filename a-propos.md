@@ -6,7 +6,7 @@ lang: fr
 ---
 Nous nous appellons l’Association d’étudiants en Informatique (AÉI) de l’Université d’Ottawa. Gouverné par la constitution de l’université, nous sommes responsables pour la gestion de tout les resources disponsibles pour les membres de la programme baccaleauréate de l’université d’Ottawa en informatique. Nous sommes devoué à vous fournir des programmes sociales, services académiques, et opportunités d’emplois. Ainsi, notre but est d'établir une communauté stable entre nos étudiant(e)s, professeur(e)s et autres membres du département avec ces évènements et services. 
 
-Voyez notre constitution en anglais [ici.]({{ site.url }}/constitutions/2022-2023.pdf) Nous sommes désolés de vous dire que nous sommes en train de traduire notre constitution en français.
+Voyez notre constitution en anglais [ici.]({{ site.url }}/constitutions/2024-Ammended.pdf) Nous sommes désolés de vous dire que nous sommes en train de traduire notre constitution en français.
 
 ## Le bureau
 Notre bureau est situé à <b>SITE 4076</b>, n'hésitez pas à passer.
