@@ -9,6 +9,10 @@ lang: en
 You can access our meeting minutes for the two latest executive terms below:
 
 <h2>
+    <a href="https://drive.google.com/drive/folders/11-bCRH3T3_ONt1bp9S5c5sQ_Xh8kNjN3" target="_blank">2023 - 2024</a>
+</h2>
+
+<h2>
     <a href="https://drive.google.com/drive/u/1/folders/1Wr3UTq4kh9pEseFfk8hpMOwYWqX9DErt" target="_blank">2021 - 2022</a>
 </h2>
 
