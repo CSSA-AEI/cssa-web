@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import NavLogo from '../images/small_logo.png';
 import './navbar-styling.css';
 
 interface NavbarProps {
@@ -16,7 +17,9 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
     
     return (
         <div className='navbar'>
-            <div className='logo'>{title}</div>
+            <div className='navbar-logo'>
+                <img src={NavLogo} />
+            </div>
             <ul className={showDropdown ? 'navbar-links dropdown-menu' : 'navbar-links'}>
                 {links.map((link, index) => (
                 <li className='navbar-link' key={index}>

@@ -19,13 +19,15 @@ const HomeLayer1: React.FC = () => {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
     var flexDirection = 'row';
 
+    //The below part of the code is for the display when we have a porttrait screen, i.e phones and tablets
+
     if(windowDimensions.width / windowDimensions.height <= 1){
         flexDirection = 'column'
         return(
             <div className='home-layer-1-container' style={{flexDirection: 'column'}}>
                 <InformationLayer windowSize={windowDimensions} flexDirection={flexDirection}/>
                 <div className='layer-1-circle-container' style={{marginTop: '4em'}}>
-                    <div className='circle'>
+                    <div className='circle' style={{height: `100vw`, width: `100vw`}}>
                         <div className='image1-container'>
                             <img style={{height: 'inherit', zIndex: '2', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -15%)'}} src={Connor}/>
                             <img style={{height: 'auto', width: '100vw', zIndex: '1', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-55%, -12%)'}} src={Tim}/>
@@ -41,7 +43,15 @@ const HomeLayer1: React.FC = () => {
     return(
         <div className='home-layer-1-container' style={{flexDirection: 'row'}}>
             <InformationLayer windowSize={windowDimensions} flexDirection={flexDirection}/>
-            <div style={{height: `200px`, width:`200px`, backgroundColor: 'red'}}></div>
+            <div className='layer-1-circle-container'>
+                <div className='circle' style={{height: `45vw`, width: `45vw`, transform: `translate(10%, 20%)`}}>
+                    <div className='image1-container'>
+                        <img style={{height: 'inherit', zIndex: '2', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -15%)'}} src={Connor}/>
+                        <img style={{height: 'auto', width: '45vw', zIndex: '1', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -12%)'}} src={Tim}/>
+                        <img style={{height: 'auto', width: '45vw', zIndex: '3', position: 'absolute', bottom: '0', transform: 'translateY(-20%)'}} src={CouchCarry}/>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 };

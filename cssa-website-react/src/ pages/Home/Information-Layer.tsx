@@ -20,6 +20,7 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
     else{
         logoWidth = windowSize.width/2 - 50;
     }
+    console.log(flexDirection)
     
     return(
         <div className='information-layer1'>
