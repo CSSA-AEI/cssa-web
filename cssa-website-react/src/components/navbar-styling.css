@@ -39,6 +39,7 @@
     transition: all 0.3s ease-in-out; 
     opacity: 0; 
     transform: translateY(-10px);
+    z-index: 99;
 }
 
 .dropdown-menu.active {

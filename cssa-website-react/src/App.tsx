@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import HomeLayer1 from './ pages/Home/HomeLayer1';
 
 const App: React.FC = () => {
   const links = [
@@ -14,7 +15,8 @@ const App: React.FC = () => {
     <div>
       <Navbar title="My Navbar" links={links} />
       <div className='home-layer-1'>
-        <h2>Welcome to my website</h2>
+        <HomeLayer1 />
+        <div style={{width: '100vw', height: '500px', backgroundColor:'red'}}></div>
         {/* Add your other components here */}
       </div>
     </div>
