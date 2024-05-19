@@ -5,18 +5,12 @@ import Tim from '../../images/Tim.png';
 import CouchCarry from '../../images/CouchCarry.png';
 import './home-layer-1.css';
 
-export function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    };
+interface HomeLayer1Props {
+    windowDimensions: { width: number; height: number };
 }
 
+const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
 
-const HomeLayer1: React.FC = () => {
-
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
     var flexDirection = 'row';
 
     //The below part of the code is for the display when we have a porttrait screen, i.e phones and tablets

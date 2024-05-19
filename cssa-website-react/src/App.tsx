@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import HomeLayer1 from './ pages/Home/HomeLayer1';
+import HomeLayer2 from './ pages/Home/HomeLayer2';
+
+export function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
 
 const App: React.FC = () => {
   const links = [
@@ -11,12 +20,14 @@ const App: React.FC = () => {
     { name: 'About', url: '/about' },
   ];
 
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
   return (
     <div>
       <Navbar title="My Navbar" links={links} />
-      <div className='home-layer-1'>
-        <HomeLayer1 />
-        <div style={{width: '100vw', height: '500px', backgroundColor:'red'}}></div>
+      <div className='home-layers'>
+        <HomeLayer1 windowDimensions={windowDimensions}/>
+        <HomeLayer2 windowDimensions={windowDimensions}/>
         {/* Add your other components here */}
       </div>
     </div>
