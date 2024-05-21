@@ -22,7 +22,7 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
     }
     
     return(
-        <div className='information-layer1'>
+        <div className='information-layer1' style={{ height: flexDirection !== 'column' ? '92vh' : '', marginTop: flexDirection !== 'column' ? '0em' : '' ,}}>
             <div className='information-layer1-container'>
                 <div className='info-layer-logo-container'>
                     <img className='info-layer-logo' src={logo} alt="The CSSA Logo" style={{ width: `${logoWidth}px`, height: 'auto' }}/>

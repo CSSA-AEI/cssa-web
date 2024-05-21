@@ -2,11 +2,6 @@
     --easing: cubic-bezier(0.18, 0.89, 0.32, 1.27);
     --duration: 0.5s;
 }
-/* .wheel {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    transition: transform var(--duration) var(--easing);
-} */
 .wheel {
     width: 65vmin;
     height: 65vmin;
@@ -14,18 +9,19 @@
     position: relative;
     top: 0%;
     left: 0%;
+    margin: 0;
 }
 .slide {
-    width: 18vw;
-    height: 18vw;
+    width: 20vw;
+    height: 20vw;
+    max-width: 150px;
+    max-height: 150px;
     border-radius: 50%;
-    /* overflow: hidden; */
     cursor: pointer;
     transition: transform var(--duration) var(--easing);
     border: 0.3vmin solid white;
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
+    box-sizing: border-box;
 }
 .slide img {
     border-radius: 50%;
@@ -41,18 +37,27 @@
     user-select: none;
 }
   
-  .slide.active {
+.slide.active-mobile {
     border-width: 1.3vmin;
-  }
-/* .slide {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    transition: transform var(--duration) var(--easing);
-    border: 0.3vmin solid white;
-    z-index: 80;
-  } */
+    /* height: 20vw;
+    width: 20vw; */
+    /*I want to make the highlighted one bigger - Low priority task*/
+}
+.slide.active-landscape{
+    border-width: 1vmin;
+    height: 20vw;
+    width: 20vw;
+}
+.wheel-border{
+    border: 3px #326491 dashed;
+    margin: 0;
+    animation: spin 30s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

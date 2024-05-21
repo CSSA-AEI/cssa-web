@@ -6,6 +6,8 @@ import Angie from '../../images/angie.jpg';
 import Tim from '../../images/Tim.png';
 import Connor from '../../images/Connor.png';
 import Tara from '../../images/tara.jpg';
+import Ali from '../../images/ali.jpg';
+import { getWindowDimensions } from "../../App";
 
 const images = [
     RachelQ,
@@ -15,8 +17,12 @@ const images = [
     Connor,
     Tara,
     Angie,
-    RachelO
+    Ali
 ];
+
+interface CircularCarouselProps {
+  flexDirection: string;
+}
   
 const initialSlidesState = images.map((slide, index) => ({
     coords: {
@@ -33,7 +39,7 @@ const angle = 360 / numSlides;
 
 
 
-const CircularCarousel: React.FC = () => {
+const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection}) => {
 
     const wheelRef = useRef<any>(null);
 
@@ -42,6 +48,10 @@ const CircularCarousel: React.FC = () => {
     const [wheelWidth, setWheelWidth] = useState(0);
     const [center, setCenter] = useState({ x: 0, y: 0 });
     const [rotate, setRotate] = useState(0);
+
+    var screenDimensions = getWindowDimensions();
+
+    console.log(screenDimensions.width / screenDimensions.height)
 
     const getInitialPositions = () => {
         const center = {
@@ -71,7 +81,13 @@ const CircularCarousel: React.FC = () => {
             // Calculate angle increment based on total slides,
             //we're doing this in radians for simplification
             const angleIncrement = (2 * Math.PI) / slides.length;
-            const newTheta = angleIncrement * index; // Calculate angle for current slide
+            var newTheta = angleIncrement * index;
+
+            //This is done so the middle one is highlighted and not the top one
+            if(flexDirection === 'row'){
+              newTheta = angleIncrement * (index - 1);
+            }
+            // Calculate angle for current slide
 
             const wheelRadius = wheelWidth / 2;
             var y = -wheelRadius * Math.cos(newTheta); // Calculate x-coordinatewheel
@@ -107,18 +123,56 @@ const CircularCarousel: React.FC = () => {
         setRotate((prevRotate) => prevRotate + angle * numOfRotations);
     };
 
+    if(flexDirection === 'column'){
+      return (
+        <div className="container" style={{width: `100vw`, height: `60vw`, overflow: `hidden`}}>
+          <div
+            className="wheel"
+            style={{
+              transform: `translate(0%, 30%) rotate(${rotate}deg)`,
+              width: `100vw`,
+              height: `100vw`,
+              borderRadius: `50%`
+            }}
+          >
+            <div className="wheel-border" style={{height: 'inherit', width: 'inherit', borderRadius: `50%`, transform: `translate(0%, 30%) rotate(${rotate}deg)`,}}></div>
+            {slides &&
+            slides.map((slide, index) => {
+              return (
+                <div
+                  onClick={(e) => {handleSlideClick(e);}}
+                  key={index}
+                  ref={wheelRef}
+                  className={`slide ${slide.index === activeSlide.index ? 'active-mobile' : ''}`}
+                  data-index={index + 1}
+                  style={{
+                    top: center.x + slide.coords.x,
+                    left: center.y + slide.coords.y,
+                    transform: `rotate(${-rotate}deg)`
+                  }}
+                >
+                  <img src={slide.image} alt='cssa member'/>
+                </div>
+              );
+            })}
+          </div>
+    
+        </div>
+      );
+    }
+
     return (
-      <div className="container" style={{width: `100vw`, height: `60vw`, overflow: `hidden`, marginTop:'5em'}}>
+      <div className="container" style={{width: `55vw`, height: `100vh`, overflow: `hidden`}}>
         <div
           className="wheel"
           style={{
-            transform: `translate(0%, 30%) rotate(${rotate}deg)`,
-            backgroundColor: `red`,
-            width: `100vw`,
-            height: `100vw`,
+            transform: `translate(-40%, 40%) rotate(${rotate}deg)`,
+            width: `100vh`,
+            height: `100vh`,
             borderRadius: `50%`
           }}
         >
+          <div className="wheel-border" style={{height: 'inherit', width: 'inherit', borderRadius: `50%`, transform: ` rotate(${rotate}deg)`,}}></div>
           {slides &&
           slides.map((slide, index) => {
             return (
@@ -126,12 +180,14 @@ const CircularCarousel: React.FC = () => {
                 onClick={(e) => {handleSlideClick(e);}}
                 key={index}
                 ref={wheelRef}
-                className={`slide ${slide.index === activeSlide.index ? 'active' : ''}`}
+                className={`slide ${slide.index === activeSlide.index ? 'active-landscape' : ''}`}
                 data-index={index + 1}
                 style={{
                   top: center.x + slide.coords.x,
                   left: center.y + slide.coords.y,
-                  transform: `translate(0%, 0%) rotate(${-rotate}deg)`
+                  transform: `translate(0%, 0%) rotate(${-rotate}deg)`,
+                  height: `8vw`,
+                  width: `8vw`
                 }}
               >
                 <img src={slide.image} alt='cssa member'/>
