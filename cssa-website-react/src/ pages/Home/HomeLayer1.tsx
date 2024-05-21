@@ -16,14 +16,20 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
     var screenDimensions = getWindowDimensions();
     var desiredHeight = 0;
 
-    if(screenDimensions.width <= 1441){
-        desiredHeight = 700;
+    if(screenDimensions.width <= 768){
+        desiredHeight = 60;
     }
-    else if (screenDimensions.width <= 2000){
-        desiredHeight = 900;
+    else if (screenDimensions.width <= 1439){
+        desiredHeight = 40;
+    }
+    else if (screenDimensions.width >= 2000 && screenDimensions.height > 2000){
+        desiredHeight = 50;
+    }
+    else if (screenDimensions.width >= 1440 && screenDimensions.height > 950){
+        desiredHeight = 45;
     }
     else{
-        desiredHeight = 1100;
+        desiredHeight = 35;
     }
 
     //The below part of the code is for the display when we have a porttrait screen, i.e phones and tablets
@@ -51,7 +57,7 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
         <div className='home-layer-1-container' style={{flexDirection: 'row', }}>
             <InformationLayer windowSize={windowDimensions} flexDirection={flexDirection}/>
             <div className='layer-1-circle-container' style={{ height: flexDirection === 'row' ? '92vh' : '' , justifyContent: `flex-end`, alignItems: `center`, display: `flex`}}>
-                <div className='circle' style={{height: `45vw`, width: `45vw`, transform: `translate(10%, 60%)`}}>
+                <div className='circle' style={{height: `45vw`, width: `45vw`, transform: `translate(10%, ${desiredHeight}%)`}}>
                     <div className='image1-container'>
                         <img style={{height: 'inherit', zIndex: '2', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -15%)'}} src={Connor}/>
                         <img style={{height: 'auto', width: '45vw', zIndex: '1', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -12%)'}} src={Tim}/>

@@ -9,7 +9,6 @@ interface HomeLayer2Props {
 const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
 
     //The below part of the code is for the display when we have a portrait screen, i.e phones and tablets
-    console.log(windowDimensions)
 
     if(windowDimensions.width / windowDimensions.height <= 1){
         return(
