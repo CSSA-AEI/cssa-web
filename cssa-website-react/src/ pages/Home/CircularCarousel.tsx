@@ -15,13 +15,18 @@ const images = [
     Angie,
     Tim,
     Connor,
-    Tara,
+    // Tara,
     Angie,
-    Ali
+    Ali, 
+    RachelO,
+    RachelQ,
+    Ali,
+    Angie,
 ];
 
 interface CircularCarouselProps {
   flexDirection: string;
+  getCurrentMember: (value:  any) => void;
 }
   
 const initialSlidesState = images.map((slide, index) => ({
@@ -39,7 +44,7 @@ const angle = 360 / numSlides;
 
 
 
-const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection}) => {
+const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCurrentMember}) => {
 
     const wheelRef = useRef<any>(null);
 
@@ -50,8 +55,6 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection}) => {
     const [rotate, setRotate] = useState(0);
 
     var screenDimensions = getWindowDimensions();
-
-    console.log(screenDimensions.width / screenDimensions.height)
 
     const getInitialPositions = () => {
         const center = {
@@ -107,8 +110,7 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection}) => {
         const currentIndex = activeSlide.index;
     
         setActiveSlide(slides[nextIndex - 1]);
-
-        console.log(slides[nextIndex - 1])
+        getCurrentMember(slides[nextIndex - 1])
     
         let numOfRotations = nextIndex - currentIndex;
     
@@ -162,11 +164,11 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection}) => {
     }
 
     return (
-      <div className="container" style={{width: `55vw`, height: `100vh`, overflow: `hidden`}}>
+      <div className="container" style={{width: `55vw`, height: `70vh`, overflow: `hidden`}}>
         <div
           className="wheel"
           style={{
-            transform: `translate(-40%, 40%) rotate(${rotate}deg)`,
+            transform: `translate(-40%, 20%) rotate(${rotate}deg)`,
             width: `100vh`,
             height: `100vh`,
             borderRadius: `50%`

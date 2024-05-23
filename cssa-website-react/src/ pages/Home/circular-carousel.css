@@ -47,6 +47,10 @@
     border-width: 1vmin;
     height: 20vw;
     width: 20vw;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
 }
 .wheel-border{
     border: 3px #326491 dashed;
@@ -60,4 +64,10 @@
     100% {
         transform: rotate(360deg);
     }
+}
+.slide{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
 }

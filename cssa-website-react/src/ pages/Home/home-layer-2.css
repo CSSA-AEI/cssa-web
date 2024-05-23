@@ -1,6 +1,7 @@
 .home-layer-2-container{
     box-sizing: border-box;
     height: 100vh;
+    font-family: 'Barlow Condensed';
 }
 .home-layer-2-title{
     font-size: 2em;
@@ -10,10 +11,15 @@
     height: 10vh;
     padding: 0 2rem;
     box-sizing: border-box;
+    color: #326491;
+    font-weight: 800;
 }
 .tv-screen-container{
-    height: 60vh;
+    height: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .tv-screen{
     border: 1em solid #D9D9D9;
@@ -32,4 +38,30 @@
     flex-direction: column;
     width: 55vw;
     box-sizing: border-box;
+    justify-content: space-between;
+}
+.meet-the-team-blurb{
+    padding: 0 2rem;
+    color: #808080;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+.meet-the-team-blurb > p{
+    font-size: 1em;
+}
+.about-page-button-container{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meet-the-team-blurb > button {
+    width: 50%;
+    border-radius: 3em;
+    height: 20%;
+    border: 0;
+    background-color: #326491;
+    color: white;
+    font-family: local('Intervogue Soft');
+    font-size: 0.8em;
 }

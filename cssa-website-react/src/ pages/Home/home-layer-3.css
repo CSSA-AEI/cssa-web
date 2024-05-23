@@ -1,0 +1,57 @@
+.home-layer-3-container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.layer-3-title > p{
+    font-size: 3em;
+    margin: 0 0 0 2rem;
+}
+#bump-off{
+    position: absolute;
+    bottom: 0;
+    height: 40vh;
+    width: auto;
+    z-index: 6;
+}
+#water-dunk{
+    position: absolute;
+    bottom: 0;
+    height: 60vh;
+    width: auto;
+}
+#bull-riding{
+    position: absolute;
+    bottom: 0;
+    transform: translate(50%, -40%);
+    height: 51vh;
+    width: auto;
+}
+#bowling{
+    position: absolute;
+    bottom: 0;
+    transform: translate(80%, 0%);
+    height: 40vh;
+    width: auto;
+}
+#justin{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+    width: auto;
+    transform: translate(-80%,10%);
+}
+.event-nav-circle{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-color: #326491;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(40%, 40%);
+}

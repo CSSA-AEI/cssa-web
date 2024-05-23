@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import HomeLayer1 from './ pages/Home/HomeLayer1';
 import HomeLayer2 from './ pages/Home/HomeLayer2';
+import HomeLayer3 from './ pages/Home/HomeLayer3';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -28,6 +29,7 @@ const App: React.FC = () => {
       <div className='home-layers'>
         <HomeLayer1 windowDimensions={windowDimensions}/>
         <HomeLayer2 windowDimensions={windowDimensions}/>
+        <HomeLayer3 windowDimensions={windowDimensions}/>
         {/* Add your other components here */}
       </div>
     </div>
