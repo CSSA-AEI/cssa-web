@@ -40,10 +40,10 @@
 #justin{
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     height: 50vh;
     width: auto;
-    transform: translate(-80%,10%);
+    transform: translate(176%,15%);
 }
 .event-nav-circle{
     width: 30vw;
@@ -54,4 +54,22 @@
     bottom: 0;
     right: 0;
     transform: translate(40%, 40%);
+}
+.events-scroller{
+    /* height: 40vh; */
+    width: 50vw;
+    display: flex;
+    top: 5%;
+    right: 0;
+    padding: 2em;
+    overflow: scroll;
+    position: absolute;
+    box-sizing: content-box;
+}
+.scroller{
+    min-width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: content-box;
 }

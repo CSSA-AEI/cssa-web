@@ -38,14 +38,14 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
                 {flexDirection === 'column' ? 
                     (
                         <div className='info-layer-invite' style={{alignItems: 'center'}}>
-                            <div>COME VISIT OUR OFFICE</div>
+                            <div>SWING BY OUR OFFICE</div>
                             <div>AT</div>
                             <div>SITE 4076</div>
                         </div>
                     ) :
                     (
                         <div className='info-layer-invite'>
-                            <div>COME VISIT OUR OFFICE</div>
+                            <div>SWING BY OUR OFFICE</div>
                             <div>AT</div>
                             <div>SITE 4076</div>
                         </div>
