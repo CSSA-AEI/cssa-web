@@ -2,13 +2,20 @@
     height: 100vh;
     width: 100vw;
     position: relative;
-    padding-top: 2rem;
     box-sizing: border-box;
     overflow: hidden;
 }
+.layer-3-title{
+    width: 100%;
+    height: fit-content;
+    background-color: #326491;
+    padding: 1em 0 1em 2em;
+    box-sizing: border-box;
+}
 .layer-3-title > p{
     font-size: 3em;
-    margin: 0 0 0 2rem;
+    margin: 0;
+    color: white;
 }
 #bump-off{
     position: absolute;
