@@ -1,5 +1,4 @@
 .cssa-event{
-    height: 100%;
     width: 40%;
     max-width:20vw ;
     background-color: white;
@@ -8,26 +7,40 @@
     flex-direction: column;
     align-items: center;
     border: 2px solid white;
+    box-sizing: border-box;
+    justify-content: space-between;
+    cursor: pointer;
 }
 .cssa-event > img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.event-image-container > img{
     height: auto;
     width: 100%;
     object-fit: contain;
     border-radius: 8px;
 }
+.event-image-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .event-data-circle{
-    width: 30%;
-    height: 20%;
     border-radius: 50%;
     background-color: #326491;
     position: relative;
-    top: -10%;
-    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    font-size: 0.8em;
     border: 2px solid white;
+    transform: translateY(-50%);
+    width: 5vw;
+    height: 5vw;
 }
 .event-info{
     width: 100%;
@@ -37,39 +50,58 @@
     top: -7%;
     right: 0;
 }
+.event-info-tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
 .event-title{
     width: 100%;
+    box-sizing: border-box;
 }
 .event-description{
     color: #A9A9A9;
     font-size: 0.6em;
+    box-sizing: border-box;
 }
-@media only screen and (min-width: 800px){
-    .events-scroller{
-        height: 30vw;
-    }
-}
-@media only screen and (max-height: 720px){
-    .cssa-event{
-        max-width: 20vw;
-    }
-    .events-scroller{
-        height: 28vw;
+@media only screen and (max-width: 399px){
+    .event-info{
+        /* max-width: 35vw; */
+        background-color: antiquewhite;
     }
 }
-@media only screen and (min-width: 2560px){
-    .cssa-event{
-        max-width: 13vw;
+@media only screen and (max-width: 500px){
+    .event-info{
+        font-size: 0.8em;
     }
-    .events-scroller{
-        height: 20vw;
+    .event-data-circle{
+        font-size: 0.6em;
     }
-}
-@media only screen and (min-width: 2560px) and (min-width: 1440px){
-    .cssa-event{
-        max-width: 20vw;
+    .event-title{
+        font-size: 0.8em;
     }
-    .events-scroller{
-        height: 30vw;
+    .event-description{
+        font-size: 0.6em;
     }
 }
+/* @media screen and (max-width: 1600px){
+    .event-title{
+        font-size: 1.2em;
+    }
+    .event-description{
+        font-size: 1em;
+    }
+    .event-data-circle{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 1440px){
+    .event-title{
+        font-size: 1em;
+    }
+    .event-description{
+        font-size: 0.8em;
+    }
+} */

@@ -9,7 +9,7 @@ import Event1 from '../../images/event1.png';
 import Event2 from '../../images/webdevevent.png';
 import Event3 from '../../images/halloween_event.png';
 import Event4 from '../../images/pancakevent.png';
-import CouchCarry2023 from '../../images/couchCarry2023.png';
+import CouchCarry2023 from '../../images/couchCarry23.png';
 
 interface HomeLayer3Props {
     windowDimensions: { width: number; height: number };
@@ -17,12 +17,38 @@ interface HomeLayer3Props {
 
 const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
 
-    var translationDistance = {x: 0, y: 0}; 
+    var displayOrientation = 'desktop'; 
 
     var renderExtra1 = false;
 
     if(windowDimensions.width / windowDimensions.height > 1.6){
         renderExtra1 = true
+    }
+
+    if(windowDimensions.width / windowDimensions.height <= 1){
+        displayOrientation = 'mobile';
+        return(
+            <div className='home-layer-3-container'>
+                <div className='top-layer-banner'></div>
+                <div className='layer-3-title'>
+                    <p>COME VISIT</p>
+                    <p>SOME OF OUR</p>
+                    <p>EVENTS</p>
+                </div>
+                <img src={BumpOff} alt='bump-off' id='bump-off' style={{ height: `30vh`}}/>
+                <img src={WaterDunk} alt='water-dunk' id='water-dunk' style={{height: `40vh`}}/>
+                <img src={BullRiding} alt='bull-riding' id='bull-riding' style={{height: `40vh`,  transform: `translate(80%, -5%)`}}/>
+                <img src={Bowling} alt='bowling' id='bowling' style={{ height:`30vh`}}/>
+                <div className='events-scroller' style={{top: `18%`, left: `0%`, height:`35vh`, width: `100vw`, boxSizing: `content-box`}}>
+                    <div className='scroller' style={{padding: `0.5em 1em`, minWidth: `240vw`}}>
+                        <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
+                        <EventCard title='Pancake Breakfast' date='Jan 8th' description='Join us for some pancakes' image={Event1} orientation={displayOrientation} link=''/>
+                        <EventCard title='Web Dev for Dummies' date='Jan 10th' description='Learn how to build lovely sites like ours!' image={Event2} orientation={displayOrientation} link=''/>
+                        <EventCard title='Sweets and Skating' date='Jan 11th' description='Eat sweets and skate' image={Event1} orientation={displayOrientation} link=''/>
+                    </div>
+                </div>
+            </div>
+        )
     }
 
     return(
@@ -38,20 +64,14 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
             <img src={BullRiding} alt='bull-riding' id='bull-riding'/>
             <img src={Bowling} alt='bowling' id='bowling'/>
             <img src={CouchCarry2023} alt='justin' id='justin'/>
-            {/* {
-                (<img src={CouchCarry2023} alt='justin' id='justin'/>) 
-            } */}
             <div className='events-scroller'>
-                <div className='scroller'>
-                    <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3}/>
-                    <EventCard title='Pancake Breakfast' date='Jan 8th' description='Join us for some pancakes' image={Event4}/>
-                    <EventCard title='Web Dev for Dummies' date='Jan 10th' description='Learn how to build lovely sites like ours!' image={Event2}/>
-                    <EventCard title='Sweets and Skating' date='Jan 11th' description='Eat sweets and skate' image={Event1}/>
+                <div className='scroller' style={{padding: `2em`}}>
+                    <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
+                    <EventCard title='Pancake Breakfast' date='Jan 8th' description='Join us for some pancakes' image={Event1} orientation={displayOrientation} link=''/>
+                    <EventCard title='Web Dev for Dummies' date='Jan 10th' description='Learn how to build lovely sites like ours!' image={Event2} orientation={displayOrientation} link=''/>
+                    <EventCard title='Sweets and Skating' date='Jan 11th' description='Eat sweets and skate' image={Event1} orientation={displayOrientation} link=''/>
                 </div>
             </div>
-            {/* <div className='event-nav-circle'>
-            </div> */}
-
         </div>
     )
 }
