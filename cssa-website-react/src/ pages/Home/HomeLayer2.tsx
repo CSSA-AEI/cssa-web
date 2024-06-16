@@ -16,7 +16,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
     if(windowDimensions.width / windowDimensions.height <= 1){
         return(
             <div className='home-layer-2-container' style={{display: `flex`, flexDirection: `column`, height:`100vh`,  justifyContent: `space-between`, alignItems: `space-between`}}>
-                <div className='home-layer-2-title' style={{justifyContent: `center`}}>Meet the Team</div>
+                <div className='home-layer-2-title' style={{justifyContent: `center`, backgroundColor: `#326491`, color: `white`}}>MEET THE TEAM</div>
                 <div className='meet-the-team-container' style={{width: `100vw`, height: `fit-content`, alignItems: `center`}}>
                     <div className='tv-screen' style={{width: `90vw`, height: `30vh`}}>
                         <div className='tv-rims' style={{ height: `calc(100% - 1em)` }}>

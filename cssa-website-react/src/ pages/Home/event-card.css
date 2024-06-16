@@ -66,6 +66,17 @@
     font-size: 0.6em;
     box-sizing: border-box;
 }
+@media screen and (max-width: 1600px){
+    .event-title{
+        font-size: 1em;
+    }
+    .event-description{
+        font-size: 1em;
+    }
+    .event-data-circle{
+        font-size: 1em;
+    }
+}
 @media only screen and (max-width: 399px){
     .event-info{
         /* max-width: 35vw; */
@@ -86,18 +97,7 @@
         font-size: 0.6em;
     }
 }
-/* @media screen and (max-width: 1600px){
-    .event-title{
-        font-size: 1.2em;
-    }
-    .event-description{
-        font-size: 1em;
-    }
-    .event-data-circle{
-        font-size: 1em;
-    }
-}
-@media screen and (max-width: 1440px){
+/* @media screen and (max-width: 1440px){
     .event-title{
         font-size: 1em;
     }

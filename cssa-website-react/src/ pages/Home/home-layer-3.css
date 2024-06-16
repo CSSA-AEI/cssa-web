@@ -17,6 +17,14 @@
     margin: 0;
     color: white;
 }
+#group21{
+    bottom: 0;
+    width: 102vw;
+    height: auto;
+    transform: translateY(20%);
+    position: absolute;
+    z-index: -4;
+}
 #bump-off{
     position: absolute;
     bottom: 0;

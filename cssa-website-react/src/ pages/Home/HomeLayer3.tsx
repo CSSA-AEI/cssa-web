@@ -8,8 +8,7 @@ import EventCard from './EventCard';
 import Event1 from '../../images/event1.png';
 import Event2 from '../../images/webdevevent.png';
 import Event3 from '../../images/halloween_event.png';
-import Event4 from '../../images/pancakevent.png';
-import CouchCarry2023 from '../../images/couchCarry23.png';
+import Group20 from '../../images/Group-20.png';
 
 interface HomeLayer3Props {
     windowDimensions: { width: number; height: number };
@@ -59,11 +58,7 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
                 <p>SOME OF OUR</p>
                 <p>EVENTS</p>
             </div>
-            <img src={BumpOff} alt='bump-off' id='bump-off'/>
-            <img src={WaterDunk} alt='water-dunk' id='water-dunk'/>
-            <img src={BullRiding} alt='bull-riding' id='bull-riding'/>
-            <img src={Bowling} alt='bowling' id='bowling'/>
-            <img src={CouchCarry2023} alt='justin' id='justin'/>
+            <img src={Group20} alt='bump-off' id='group21'/>
             <div className='events-scroller'>
                 <div className='scroller' style={{padding: `2em`}}>
                     <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
