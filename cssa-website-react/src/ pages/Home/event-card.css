@@ -77,10 +77,20 @@
         font-size: 1em;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .event-title{
+        font-size: 1em;
+    }
+    .event-description{
+        font-size: 0.8em;
+    }
+    .event-data-circle{
+        font-size: 0.8em;
+    }
+}
 @media only screen and (max-width: 399px){
     .event-info{
         /* max-width: 35vw; */
-        background-color: antiquewhite;
     }
 }
 @media only screen and (max-width: 500px){

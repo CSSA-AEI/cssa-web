@@ -61,7 +61,7 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
                     <div className='image1-container'>
                         <img style={{height: 'inherit', zIndex: '2', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -15%)'}} src={Connor}/>
                         <img style={{height: 'auto', width: '45vw', zIndex: '1', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -12%)'}} src={Tim}/>
-                        <img style={{height: 'auto', width: '45vw', zIndex: '3', position: 'absolute', bottom: '0', transform: 'translateY(-20%)'}} src={CouchCarry}/>
+                        <img style={{height: 'auto', width: '45vw', zIndex: '3', position: 'absolute', bottom: '0', transform: 'translateY(-10%)'}} src={CouchCarry}/>
                     </div>
                 </div>
             </div>

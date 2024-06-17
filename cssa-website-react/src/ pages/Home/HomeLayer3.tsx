@@ -17,12 +17,9 @@ interface HomeLayer3Props {
 const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
 
     var displayOrientation = 'desktop'; 
+    var screenRatio = windowDimensions.width / windowDimensions.height
 
     var renderExtra1 = false;
-
-    if(windowDimensions.width / windowDimensions.height > 1.6){
-        renderExtra1 = true
-    }
 
     if(windowDimensions.width / windowDimensions.height <= 1){
         displayOrientation = 'mobile';
@@ -58,7 +55,10 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
                 <p>SOME OF OUR</p>
                 <p>EVENTS</p>
             </div>
-            <img src={Group20} alt='bump-off' id='group21'/>
+            {
+                screenRatio > 1.7 ? (<img src={Group20} alt='bump-off' id='group21' style={{height: `auto`, width: `100vw`}}/>) :
+                (<img src={Group20} alt='bump-off' id='group21' style={{height: `70vh`, width: `auto`}}/>)
+            }
             <div className='events-scroller'>
                 <div className='scroller' style={{padding: `2em`}}>
                     <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>

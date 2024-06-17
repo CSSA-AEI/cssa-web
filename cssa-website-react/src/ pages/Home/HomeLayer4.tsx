@@ -42,24 +42,22 @@ const EventCard: React.FC<HomeLayer4Props> = () => {
     }
    return(
        <div className="home-layer-4-container" style={{overflowY: `visible`}}>
-           {/* <div style={{overflowX: `hidden`, width: `100vw`, height: `40vh`, position: `absolute`, top: `0%`, transform: `translate(0%, -22%)`}}> */}
-               <img className="image-header" src={Group22} style={{width: `102vw`, transform: `translate(-1%, -55%)`, height: `auto`}}/>
-            {/* </div> */}
-           <div className="get-involved-container" style={{height: `60vh`}}>
-                <div className="get-involved-header">
-                    <p>GET INVOLVED</p>
-                    <p>WITH CSSA</p>
-                </div>
-                <div className="get-involved-grid">
-                    <div className="grid-item">VOLUNTEER</div>
-                    <div className="grid-item">MINUTES</div>
-                    <div className="grid-item">BLOG</div>
-                    <div className="grid-item">MERCH</div>
-                    <div className="grid-item">1</div>
-                    <div className="grid-item">CONTACT</div>
-                </div>
-           </div>
-           <img className="image-footer" src={LaptopFooter}/>
+            <img className="image-header" src={Group22} style={{width: `102vw`, transform: `translate(-1%, -55%)`, height: `auto`}}/>
+            <div className="get-involved-container" style={{height: `70vh`}}>
+                    <div className="get-involved-header">
+                        <p>GET INVOLVED</p>
+                        <p>WITH CSSA</p>
+                    </div>
+                    <div className="get-involved-grid">
+                        <div className="grid-item">VOLUNTEER</div>
+                        <div className="grid-item">MINUTES</div>
+                        <div className="grid-item">BLOG</div>
+                        <div className="grid-item">MERCH</div>
+                        <div className="grid-item">1</div>
+                        <div className="grid-item">CONTACT</div>
+                    </div>
+            </div>
+            <img className="image-footer" src={LaptopFooter}/>
        </div>
    )
 }

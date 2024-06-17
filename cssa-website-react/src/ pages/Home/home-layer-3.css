@@ -72,7 +72,7 @@
 .events-scroller{
     width: 50vw;
     display: flex;
-    top: 5%;
+    top: 12%;
     right: 0;
     overflow: scroll;
     position: absolute;
