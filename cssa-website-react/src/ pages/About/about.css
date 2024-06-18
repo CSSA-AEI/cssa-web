@@ -1,0 +1,98 @@
+.about-page-container{
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.exec-team-image-container{
+    height: 60vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.exec-team-image-container img{
+    /* width: 100vw;
+    height: auto; */
+    max-width: 100%;
+    object-fit: cover;
+    transform: translate(0%, -20%);
+}
+.about-page-blurb{
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    font-family: 'Advent Pro';
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.members-container{
+    padding: 1em 0;
+    box-sizing: border-box;
+    font-family: 'Advent Pro';
+    font-size: 1.5em;
+    margin: 0 2em;
+}
+.members-header{
+    background-color: #326491;
+    margin-bottom: 2em;
+    color: white;
+    padding: 2em;
+    font-size: 2em;
+}
+.members-list{
+    width: 100%;
+    height: fit-content;
+    padding: 2em 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.member-info{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 800px) {
+    .members-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width: 800px) {
+    .member-name{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .member-position{
+        font-size: 0.8em;
+    }
+    .member-year-of-study{
+        font-size: 0.8em;
+    }
+    .member-program{
+        font-size: 0.8em;
+    }
+
+}
+@media only screen and (min-width: 1024px) {
+    .member-name{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .member-position{
+        font-size: 0.8em;
+    }
+    .member-year-of-study{
+        font-size: 0.8em;
+    }
+    .member-program{
+        font-size: 0.8em;
+    }
+
+}
+@media only screen and (min-width: 2000px) {
+    .member-blurb{
+        font-size: 2.5em;
+    }
+}

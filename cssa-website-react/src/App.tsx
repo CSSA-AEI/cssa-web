@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import HomeLayer1 from './ pages/Home/HomeLayer1';
-import HomeLayer2 from './ pages/Home/HomeLayer2';
-import HomeLayer3 from './ pages/Home/HomeLayer3';
-import HomeLayer4 from './ pages/Home/HomeLayer4';
+import Home from './ pages/Home/Home';
+import About from './ pages/About/About';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -26,16 +25,15 @@ const App: React.FC = () => {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   return (
-    <div>
-      <Navbar title="My Navbar" links={links} />
-      <div className='home-layers'>
-        <HomeLayer1 windowDimensions={windowDimensions}/>
-        <HomeLayer2 windowDimensions={windowDimensions}/>
-        <HomeLayer3 windowDimensions={windowDimensions}/>
-        <HomeLayer4 />
-        {/* Add your other components here */}
+    <Router>
+      <div>
+        <Navbar title="My Navbar" links={links} />
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/about" Component={About} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 };
 

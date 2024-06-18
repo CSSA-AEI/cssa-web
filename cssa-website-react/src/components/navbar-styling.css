@@ -66,7 +66,11 @@
     color: white;
     cursor: pointer;
 }
-
+@media only screen and (min-width: 1440px) {
+    .navbar-link{
+        font-size: 1.3em;
+    }
+}
 @media (max-width: 730px) {
     .navbar-links {
       flex: 2;
