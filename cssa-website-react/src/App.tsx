@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './ pages/Home/Home';
 import About from './ pages/About/About';
+import Minutes from './ pages/Minutes/Minutes';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -31,6 +32,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/about" Component={About} />
+          <Route path="/minutes" Component={Minutes} />
         </Routes>
       </div>
     </Router>

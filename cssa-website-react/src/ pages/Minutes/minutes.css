@@ -1,0 +1,44 @@
+.minutes-page-container{
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    padding: 2em;
+    box-sizing: border-box;
+}
+.minutes-list{
+    width: 50%;
+    box-sizing: border-box;
+}
+.minutes-header{
+    font-size: 3em;
+}
+.minutes-description{
+    box-sizing: border-box;
+    padding: 2em 0;
+}
+.minute-links{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.minute-links > a{
+    font-size: 1.5em;
+    padding: 1em ;
+    width: fit-content;
+    text-decoration: none;
+    background-color: #326491;
+    color: white;
+    border-radius: 3em;
+    margin-bottom: 1.5em;
+    box-sizing: border-box;
+}
+.minute-links > a:hover{
+    background-color: white;
+    border: 1px solid #326491;
+    color: #326491;
+    animation: colorFade 0.5s ;
+}
+@keyframes colorFade {
+    0% { background-color: #326491; }
+    100% { background-color: white; opacity: 100%; }
+}

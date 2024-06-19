@@ -16,11 +16,15 @@
     width: 80%;
 }
 .image-container{
-    height: 20vw;
-    /* width: 20vw; */
-    /* border-radius: 50%; */
-    /* border: 1px solid blue; */
+    height: 40vw;
+    width: auto;
+    border-radius: 10% 10% 0% 0%;
+    border: 1px solid #14283a;
     overflow: hidden;
+}
+.image-container:hover{
+    transform: translate(-1%, -3%);
+    box-shadow: 10px 6px #14283a;
 }
 .image-container > img {
     height: 100%;

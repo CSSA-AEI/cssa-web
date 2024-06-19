@@ -53,6 +53,7 @@ const About: React.FC = () => {
                 <img src={TeamPhoto}/>
             </div>
             <div className='about-page-blurb'>
+                <div className='about-us'>About Us</div>
                 {aboutBlurb['english']}
                 <p>View our constitution in English here.</p>
             </div>

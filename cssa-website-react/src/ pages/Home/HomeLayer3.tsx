@@ -25,7 +25,6 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
         displayOrientation = 'mobile';
         return(
             <div className='home-layer-3-container'>
-                <div className='top-layer-banner'></div>
                 <div className='layer-3-title'>
                     <p>COME VISIT</p>
                     <p>SOME OF OUR</p>
@@ -49,7 +48,6 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
 
     return(
         <div className='home-layer-3-container'>
-            <div className='top-layer-banner'></div>
             <div className='layer-3-title'>
                 <p>COME VISIT</p>
                 <p>SOME OF OUR</p>

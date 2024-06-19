@@ -4,24 +4,33 @@
     box-sizing: border-box;
 }
 .exec-team-image-container{
-    height: 60vh;
+    height: 100vh;
     width: 100vw;
     overflow: hidden;
 }
+.about-us{
+    font-size: 2em;
+    font-family: 'Intervogue Soft';
+}
 .exec-team-image-container img{
-    /* width: 100vw;
-    height: auto; */
     max-width: 100%;
     object-fit: cover;
-    transform: translate(0%, -20%);
 }
 .about-page-blurb{
     width: 100%;
+    height: 60vh;
     padding: 2em;
     box-sizing: border-box;
     font-family: 'Advent Pro';
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-us{
+    width: fit-content;
+    border-bottom: 3px solid #326491;
 }
 .members-container{
     padding: 1em 0;

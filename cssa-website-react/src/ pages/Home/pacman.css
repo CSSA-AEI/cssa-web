@@ -31,6 +31,11 @@
     animation: move-forward 14s linear infinite;
     transform: translateX(-40px);
 }
+
+.pacman:hover{
+    background-color: #E1C16E;
+    cursor: pointer;
+}
   
 .preloader-pacman .dot:nth-child(1) {
     animation-delay: .5s;
