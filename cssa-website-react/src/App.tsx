@@ -6,6 +6,7 @@ import Home from './ pages/Home/Home';
 import About from './ pages/About/About';
 import Minutes from './ pages/Minutes/Minutes';
 import Volunteer from './ pages/Volunteer/Volunteer';
+import Blog from './ pages/Blog/Blog';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -35,6 +36,7 @@ const App: React.FC = () => {
           <Route path="/about" Component={About} />
           <Route path="/minutes" Component={Minutes} />
           <Route path="/volunteer" Component={Volunteer} />
+          <Route path="/blog" Component={Blog} />
         </Routes>
       </div>
     </Router>

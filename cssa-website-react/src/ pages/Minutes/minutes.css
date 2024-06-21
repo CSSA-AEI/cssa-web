@@ -2,12 +2,14 @@
     height: 92vh;
     width: 100vw;
     display: flex;
-    padding: 2em;
     box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
 }
 .minutes-list{
     width: fit-content;
     box-sizing: border-box;
+    padding: 2em;
 }
 .minutes-header{
     font-size: 3em;
@@ -50,4 +52,13 @@
 @keyframes colorFade {
     0% { background-color: #E5E4E2; }
     100% { background-color: white; opacity: 100%; }
+}
+@media only screen and (max-width: 900px) {
+    .minutes-page-container{
+        flex-direction: column;
+    }
+    .minute-links{
+        width: calc(100vw - 4em);
+        height: fit-content;
+    }
 }

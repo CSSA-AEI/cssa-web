@@ -1,0 +1,8 @@
+.blog-body{
+    height: 92vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+}

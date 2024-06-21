@@ -20,7 +20,7 @@
 }
 @media only screen and (max-width: 500px){
     .binary-numbers{
-        padding: 0.5em;
+        padding: 0;
     }
     .binary-digits{
         font-size: 1.2em;

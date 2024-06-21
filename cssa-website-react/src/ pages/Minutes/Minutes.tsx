@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BinaryBackground from '../Home/BinaryBackground';
 import './minutes.css';
 
 const Minutes: React.FC = () => {
@@ -6,6 +7,7 @@ const Minutes: React.FC = () => {
   return (
 
     <div className='minutes-page-container'>
+      <BinaryBackground />
       <div className='minutes-list'>
         <div className='minutes-header'>Meeting Minutes</div>
         <div className='minutes-description'>You can access our minutes through the links below:</div>

@@ -5,6 +5,7 @@
     display: flex;
     position: absolute;
     overflow: hidden;
+    justify-content: space-between;
 }
 .volunteer-events-container{
     height: 100%;
@@ -25,6 +26,9 @@
     width: fit-content;
     height: fit-content;
     display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: space-between;
 }
 .volunteer-event > button{
     margin-left: 1.5em;
@@ -33,6 +37,7 @@
     border-radius: 50%;
     box-shadow: 3px 3px #14283A;
     border: 1px solid #14283A;
+    font-family: 'Tiny5';
 }
 .volunteer-event > button:hover{
     transform: translate(-3%, -3%);
@@ -90,7 +95,6 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    overflow: hidden;
 }
 .volunteer-image{
     width: 30%;
@@ -105,5 +109,28 @@
 }
 .volunteer-image:nth-child(1) > img{
     width: 80%;
-    transform: rotate(-10deg);
+    transform: rotate(-10deg) translate(10%,20%);
+}
+.volunteer-image:nth-child(3) > img{
+    width: 80%;
+    transform: rotate(10deg) translate(10%,20%);
+}
+@media only screen and (max-width: 800px) {
+    .volunteer-header{
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    .volunteer-info{
+        font-size: 0.8em;
+    }
+    .volunteer-event > button{
+        height: 3em;
+        width: 3em;
+    }
+    .description-header{
+        font-size: 1.5em;
+    }
+    .description-details{
+        font-size: 0.8em;
+    }
 }
