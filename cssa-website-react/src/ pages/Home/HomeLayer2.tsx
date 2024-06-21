@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import CircularCarousel from './CircularCarousel';
+import BinaryBackground from './BinaryBackground';
 import './home-layer-2.css';
 
 interface HomeLayer2Props {
@@ -15,8 +16,40 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
 
     if(windowDimensions.width / windowDimensions.height <= 1){
         return(
-            <div className='home-layer-2-container' style={{display: `flex`, flexDirection: `column`, height:`100vh`,  justifyContent: `space-between`, alignItems: `space-between`}}>
-                <div className='home-layer-2-title' style={{justifyContent: `center`, backgroundColor: `#326491`, color: `white`}}>MEET THE TEAM</div>
+            <div className='home-layer-2-container' style={{display: `flex`, flexDirection: `column`, height:`100vh`,  justifyContent: `space-between`, alignItems: `space-between`, overflow: `hidden`}}>
+                <div className='home-layer-2-title' style={{justifyContent: `space-between`, backgroundColor: `#326491`, color: `white`, margin: `0`, alignItems: `center`, flexDirection: `column`, height: `15vh`}}>
+                    <div className='sliding-numbers-container'>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                    </div>
+                    MEET THE TEAM
+                    <div className='sliding-numbers-container'>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                        <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
+                    </div>
+                </div>
+                <div className='meet-the-team-blurb' style={{margin: `1em`, boxSizing: `border-box`}}> 
+                    <p>
+                    The CSSA is student elected student organization dedicated to 
+                    advocating for Computer Science Students at the University of Ottawa.
+                    </p>
+                    <p>
+                        Check out some of our members below.
+                    </p>
+                    <a href='/about'><button>Learn More</button></a>
+                </div>
                 <div className='meet-the-team-container' style={{width: `100vw`, height: `fit-content`, alignItems: `center`}}>
                     <div className='tv-screen' style={{width: `90vw`, height: `30vh`}}>
                         <div className='tv-rims' style={{ height: `calc(100% - 1em)` }}>
@@ -25,7 +58,8 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                         </div>
                     </div>
                 </div>
-                <CircularCarousel flexDirection='column' getCurrentMember={setCurrentMember}/>
+                <CircularCarousel flexDirection='column' getCurrentMember={setCurrentMember} />
+                <BinaryBackground />
             </div>
         )
 
@@ -65,7 +99,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                     <p>
                         Check out some of our members below.
                     </p>
-                    <button>Learn More</button>
+                    <a href='/about'><button>Learn More</button></a>
                 </div>
                 <CircularCarousel flexDirection='row' getCurrentMember={setCurrentMember}/>
             </div>
@@ -77,8 +111,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                     </div>
                 </div>
             </div>
-            
-            
+            <BinaryBackground />
         </div>
     )
 };

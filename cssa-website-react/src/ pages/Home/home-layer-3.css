@@ -24,7 +24,7 @@
     bottom: 0;
     width: 102vw;
     height: auto;
-    transform: translateY(20%);
+    transform: translateY(10%);
     position: absolute;
     z-index: -4;
 }
@@ -88,9 +88,8 @@
     justify-content: space-between;
     box-sizing: border-box;
 }
-
 @media only screen and (max-width: 800px){
     .layer-3-title > p{
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 }

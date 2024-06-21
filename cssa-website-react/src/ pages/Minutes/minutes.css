@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .minutes-list{
-    width: 50%;
+    width: fit-content;
     box-sizing: border-box;
 }
 .minutes-header{
@@ -15,30 +15,39 @@
 .minutes-description{
     box-sizing: border-box;
     padding: 2em 0;
+    width: fit-content;
 }
 .minute-links{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    background-color: #326491;
+    box-shadow: 3px 3px #14283a;
+    padding: 1em;
+    height: 60vh;
 }
 .minute-links > a{
-    font-size: 1.5em;
-    padding: 1em ;
+    font-size: 1em;
     width: fit-content;
     text-decoration: none;
-    background-color: #326491;
-    color: white;
-    border-radius: 3em;
+    background-color: #E5E4E2;
+    color: #326491;
     margin-bottom: 1.5em;
+    padding: 1em 0.5em;
     box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #14283a;
+    box-shadow: 3px 3px #14283a;
 }
 .minute-links > a:hover{
     background-color: white;
-    border: 1px solid #326491;
+    border: 1px solid #14283a;
     color: #326491;
     animation: colorFade 0.5s ;
+    transform: translate(-1%, -1%);
+    box-shadow: 4px 4px #14283a;
 }
 @keyframes colorFade {
-    0% { background-color: #326491; }
+    0% { background-color: #E5E4E2; }
     100% { background-color: white; opacity: 100%; }
 }

@@ -50,7 +50,7 @@ const About: React.FC = () => {
   return (
         <div className='about-page-container'>
             <div className='exec-team-image-container'>
-                <img src={TeamPhoto}/>
+                {/* <img src={TeamPhoto}/> */}
             </div>
             <div className='about-page-blurb'>
                 <div className='about-us'>About Us</div>

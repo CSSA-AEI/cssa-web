@@ -131,13 +131,13 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
           <div
             className="wheel"
             style={{
-              transform: `translate(0%, 30%) rotate(${rotate}deg)`,
+              transform: `translate(0%, 20%) rotate(${rotate}deg)`,
               width: `100vw`,
               height: `100vw`,
               borderRadius: `50%`
             }}
           >
-            <div className="wheel-border" style={{height: 'inherit', width: 'inherit', borderRadius: `50%`, transform: `translate(0%, 30%) rotate(${rotate}deg)`,}}></div>
+            <div className="wheel-border" style={{height: 'inherit', width: 'inherit', borderRadius: `50%`, transform: `translate(0%, 30%) rotate(${rotate}deg)`, backgroundColor: `transparent`}}></div>
             {slides &&
             slides.map((slide, index) => {
               return (

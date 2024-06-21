@@ -10,6 +10,7 @@
     top: 0%;
     left: 0%;
     margin: 0;
+    background-color: transparent;
 }
 .slide {
     width: 20vw;
@@ -52,6 +53,7 @@
     border: 3px #326491 dashed;
     margin: 0;
     animation: spin 30s linear infinite;
+    background-color: transparent;
 }
 @keyframes spin {
     0% {

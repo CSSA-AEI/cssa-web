@@ -6,12 +6,21 @@
     align-items: center;
     box-sizing: border-box;
 }
+.layer-4-top{
+    width: 100vw;
+    height: 15vh;
+    position: absolute;
+    top: 0%;
+    background-color: #14283a;
+    z-index: -3;
+}
 .image-header{
     position: absolute;
     top: 0%;
     width: 100vw;
     height: auto;
     z-index: -2;
+    animation: shake4 16s infinite;
 }
 .get-involved-container{
     height: 75%;
@@ -46,7 +55,7 @@
     align-items: center;
     cursor: pointer;
     background-color: #E5E4E2;
-    /* box-shadow: 6px 3px #14283a; */
+    box-shadow: 3px 3px #14283a;
     box-sizing: border-box;
     padding: 0.5em;
     z-index: 5;
@@ -133,5 +142,26 @@
     }
     .get-involved-grid > .grid-item{
         font-size: 0.8em;
+    }
+}
+@keyframes shake4 {
+    0% {
+        transform: translate(-1%, -55%);
+    }
+    20% {
+        transform: translate(-1%, -60%);
+    }
+    40% {
+        
+        transform: translate(-1%, -60%) rotate(2deg);
+    }
+    60% {
+        transform:  translate(-1%, -60%) rotate(-2deg);
+    }
+    80%{
+        transform: translate(-1%, -58%);
+    }
+    100% {
+        transform: translate(-1%, -55%);
     }
 }

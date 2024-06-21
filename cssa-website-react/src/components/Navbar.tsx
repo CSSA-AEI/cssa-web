@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
     return (
         <div className='navbar'>
             <div className='navbar-logo'>
-                <img src={NavLogo} />
+                <a href='/'><img src={NavLogo} /></a>
             </div>
             <ul className={showDropdown ? 'navbar-links dropdown-menu' : 'navbar-links'}>
                 {links.map((link, index) => (

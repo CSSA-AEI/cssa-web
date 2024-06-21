@@ -5,6 +5,7 @@ import './App.css';
 import Home from './ pages/Home/Home';
 import About from './ pages/About/About';
 import Minutes from './ pages/Minutes/Minutes';
+import Volunteer from './ pages/Volunteer/Volunteer';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -18,7 +19,7 @@ const App: React.FC = () => {
   const links = [
     { name: 'Events', url: '/' },
     { name: 'Blog', url: '/blog' },
-    { name: 'Merch', url: '/merch' },
+    { name: 'Volunteer', url: '/volunteer' },
     { name: 'Minutes', url: '/minutes' },
     { name: 'About', url: '/about' },
   ];
@@ -33,6 +34,7 @@ const App: React.FC = () => {
           <Route path="/" Component={Home} />
           <Route path="/about" Component={About} />
           <Route path="/minutes" Component={Minutes} />
+          <Route path="/volunteer" Component={Volunteer} />
         </Routes>
       </div>
     </Router>

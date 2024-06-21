@@ -35,7 +35,7 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
                 <div className='pacman-layer'>
                     <Pacman />
                 </div>
-                {flexDirection === 'column' ? 
+                <a href='https://maps.app.goo.gl/qHmKpCVCdSNHVBso9' className='address-tag'>{flexDirection === 'column' ? 
                     (
                         <div className='info-layer-invite' style={{alignItems: 'center'}}>
                             <div>SWING BY OUR OFFICE</div>
@@ -44,13 +44,13 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
                         </div>
                     ) :
                     (
-                        <div className='info-layer-invite'>
+                        <div className='info-layer-invite' id='info-layer-desktop'>
                             <div>SWING BY OUR OFFICE</div>
                             <div>AT</div>
                             <div>SITE 4076</div>
                         </div>
                     )
-                }
+                }</a>
             </div>
         </div>
     )

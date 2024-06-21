@@ -9,10 +9,28 @@
 .info-layer-logo-container{
     margin-bottom: 2em;
 }
+#info-layer-desktop{
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: #326491;
+    box-shadow: 3px 3px #14283a;
+    border: 1px solid #14283a;
+}
+#info-layer-desktop:hover{
+    cursor: pointer;
+    box-shadow: 6px 6px #14283a;
+    transform: translate(-1%,-2%);
+}
+#info-layer-desktop > div{
+    color: white;
+}
 .cssa-title{
     font-size: 1.5em;
     margin-bottom: 2em;
     display: flex;
+}
+.address-tag{
+    text-decoration: none;
 }
 .info-layer-invite{
     display: flex;
