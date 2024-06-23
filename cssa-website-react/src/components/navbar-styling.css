@@ -29,12 +29,14 @@
     justify-content: center;
     align-items: center;
 }
-.navbar-link a{
-    display: none;
+.navbar-link  a{
     text-decoration: none;
     color: white;
 }
-.navbar-link a.active{
+.dropdown-menu > .navbar-link  a{
+    display: none;
+}
+.dropdown-menu > .navbar-link  a.ready{
     display: inline;
 }
 .dropdown-menu {
