@@ -30,8 +30,12 @@
     align-items: center;
 }
 .navbar-link a{
+    display: none;
     text-decoration: none;
     color: white;
+}
+.navbar-link a.active{
+    display: inline;
 }
 .dropdown-menu {
     display: none;
