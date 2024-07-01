@@ -52,9 +52,6 @@ const Calendar: React.FC<CalendarProps> = ({ year, month, setMonth, setActiveDay
     const [date, setDate] = useState('');
     const [loading, setLoading] = useState(true);
 
-
-    console.log(month)
-
     useEffect(() => {
         setLoading(true);
         const getEvents = async () => {
