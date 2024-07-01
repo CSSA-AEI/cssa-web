@@ -1,0 +1,124 @@
+.calendar-container{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+    color: black;
+    background-color: white;
+    padding: 1em;
+}
+.calendar-header{
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px dashed #326491;
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-button{
+    font-size: 2rem;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-right: 1em;
+    color: #326491;
+    cursor: pointer;
+}
+.right-button{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #326491;
+    cursor: pointer;
+}
+.left-side > h2{
+    /* margin: 0;
+    margin: 1em ; */
+}
+.calendar-table{
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.month-row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 1em;
+}
+.days-rows > div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    box-sizing: border-box;
+    height: calc((40vw - 3em)/7 - 1.5em);
+    column-gap: 12px; 
+    margin-bottom: 1em;
+}
+.month-row > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em 0;
+}
+.calendar-day{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0.8em 0;
+    border-radius: 50%;
+    flex-direction: column;
+    /* background-color: #D9D9D9; */
+}
+.calendar-day:hover{
+    background-color: #E5E4E2;
+    animation: colorFadeCalendar 0.5s;
+}
+.calendar-day.active-day{
+    background-color: #326491;
+    color: white;
+    animation: none;
+    box-shadow: 2px 2px #14283A;
+    border: 1px solid #14283A;
+}
+.event-indicator{
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color:  transparent;
+    border-radius: 50%;
+}
+.event-indicator.active-event{
+    background-color: #326491;
+}
+.calendar-day.active-day > .event-indicator.active-event{
+    background-color: #E5E4E2;
+}
+@keyframes colorFadeCalendar {
+    0% { background-color: white; }
+    100% { background-color: #E5E4E2; opacity: 100%; }
+}
+@media only screen and (max-width: 900px) {
+    .calendar-table{
+        height: fit-content;
+        box-sizing: border-box;
+    }
+    .days-rows{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .days-rows > div{
+        margin-bottom: 3em;
+    }
+}

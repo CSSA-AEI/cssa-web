@@ -101,8 +101,11 @@
     align-items: center;
     justify-content: center;
 }
-.meet-the-team-blurb > a > button {
+.meet-the-team-blurb > a{
     width: 50%;
+}
+.meet-the-team-blurb > a > button {
+    width: 100%;
     border-radius: 3em;
     border: 0;
     background-color: #E5E4E2;

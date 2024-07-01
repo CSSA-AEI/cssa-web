@@ -28,6 +28,7 @@
     background-color: #326491;
     padding: 1em;
     box-sizing: border-box;
+    border-top: 2px solid #14283a;
 }
 .get-involved-header{
     width: 100%;
@@ -65,7 +66,14 @@
     transform: translate(-1%, -8%);
     box-shadow: 6px 6px #14283a;
 }
-
+.grid-item > a{
+    text-decoration: none;
+    color: #326491;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .image-footer{
     position: absolute;
     bottom: 0%;

@@ -50,10 +50,11 @@
     border: 1px solid #14283A;
     justify-content: space-between;
     margin-bottom: 1em;
+    cursor: pointer;
 }
 .newsletter-content{
     box-shadow: 3px 3px #14283A;
-    background-color: #326491;
+    background-color: white;
     border: 1px solid #14283A;
     width: 45vw;
     height: 100%;

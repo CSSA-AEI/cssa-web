@@ -2,106 +2,20 @@
     width: 100vw;
     overflow: hidden;
     box-sizing: border-box;
-}
-.exec-team-image-container{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
-.about-us{
-    font-size: 2em;
-    font-family: 'Intervogue Soft';
-}
-.exec-team-image-container img{
-    max-width: 100%;
-    object-fit: cover;
-}
-.about-page-blurb{
-    width: 100%;
-    height: 60vh;
-    padding: 2em;
-    box-sizing: border-box;
-    font-family: 'Advent Pro';
-    font-weight: 400;
-    font-size: 1.5em;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-.about-us{
-    width: fit-content;
-    border-bottom: 3px solid #326491;
-}
-.members-container{
-    padding: 1em 0;
+.team-member-display-container{
+    width: 50vw;
+    height: 92vh;
     box-sizing: border-box;
-    font-family: 'Advent Pro';
-    font-size: 1.5em;
-    margin: 0 2em;
-}
-.members-header{
-    background-color: #326491;
-    margin-bottom: 2em;
-    color: white;
     padding: 2em;
-    font-size: 2em;
 }
-.members-list{
+.team-member-display{
     width: 100%;
-    height: fit-content;
-    padding: 2em 0;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #14283A;
+    box-shadow: 3px 3px #14283A;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-.member-info{
-    width: 100%;
-    height: fit-content;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-}
-
-@media only screen and (max-width: 800px) {
-    .members-list{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media only screen and (min-width: 800px) {
-    .member-name{
-        font-size: 1em;
-        font-weight: 600;
-    }
-    .member-position{
-        font-size: 0.8em;
-    }
-    .member-year-of-study{
-        font-size: 0.8em;
-    }
-    .member-program{
-        font-size: 0.8em;
-    }
-
-}
-@media only screen and (min-width: 1024px) {
-    .member-name{
-        font-size: 1em;
-        font-weight: 600;
-    }
-    .member-position{
-        font-size: 0.8em;
-    }
-    .member-year-of-study{
-        font-size: 0.8em;
-    }
-    .member-program{
-        font-size: 0.8em;
-    }
-
-}
-@media only screen and (min-width: 2000px) {
-    .member-blurb{
-        font-size: 2.5em;
-    }
+    padding: 1em;
 }

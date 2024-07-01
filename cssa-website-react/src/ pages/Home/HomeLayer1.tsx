@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import InformationLayer from './Information-Layer';
 import Connor from '../../images/Connor.png';
 import Tim from '../../images/Tim.png';
 import CouchCarry from '../../images/CouchCarry.png';
 import { getWindowDimensions } from '../../App';
+import BinaryBackground from './BinaryBackground';
 import './home-layer-1.css';
 
 interface HomeLayer1Props {
@@ -55,6 +56,7 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
 
     return(
         <div className='home-layer-1-container' style={{flexDirection: 'row', }}>
+            <BinaryBackground />
             <InformationLayer windowSize={windowDimensions} flexDirection={flexDirection}/>
             <div className='layer-1-circle-container' style={{ height: flexDirection === 'row' ? '92vh' : '' , justifyContent: `flex-end`, alignItems: `center`, display: `flex`}}>
                 <div className='circle' style={{height: `45vw`, width: `45vw`, transform: `translate(10%, ${desiredHeight}%)`}}>

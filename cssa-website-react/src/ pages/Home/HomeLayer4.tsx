@@ -1,5 +1,6 @@
 import React from "react";
 import { getWindowDimensions } from "../../App";
+import { Link } from "react-router-dom";
 import FooterTablet from '../../images/FooterImageTablet.png';
 import HeaderTablet from '../../images/HeaderImageTablet.png';
 import LaptopFooter from '../../images/Laptopfooter.png';
@@ -30,11 +31,12 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
                             <p>WITH CSSA</p>
                         </div>
                         <div className="get-involved-grid">
-                            <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}>VOLUNTEER</div>
-                            <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}>MINUTES</div>
-                            <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}>BLOG</div>
+                            <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/volunteer">VOLUNTEER</Link></div>
+                            <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/minutes">MINUTES</Link></div>
+                            <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/blog">BLOG</Link></div>
                             <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}>MERCH</div>
-                            <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}>CONTACT</div>
+                            <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/about">CONTACT</Link></div>
+                            <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</a></div>
                         </div>
                 </div>
                 <img className="image-footer" src={FooterTablet}/>
@@ -51,11 +53,12 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
                         <p>WITH CSSA</p>
                     </div>
                     <div className="get-involved-grid">
-                        <div className="grid-item">VOLUNTEER</div>
-                        <div className="grid-item">MINUTES</div>
-                        <div className="grid-item">BLOG</div>
+                        <div className="grid-item"><Link to="/volunteer">VOLUNTEER</Link></div>
+                        <div className="grid-item"><Link to="/minutes">MINUTES</Link></div>
+                        <div className="grid-item"><Link to="/blog">BLOG</Link></div>
                         <div className="grid-item">MERCH</div>
-                        <div className="grid-item">CONTACT</div>
+                        <div className="grid-item"><Link to="/about">CONTACT</Link></div>
+                        <div className="grid-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</a></div>
                     </div>
             </div>
             <img className="image-footer" src={LaptopFooter}/>

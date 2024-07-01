@@ -7,6 +7,7 @@ import About from './ pages/About/About';
 import Minutes from './ pages/Minutes/Minutes';
 import Volunteer from './ pages/Volunteer/Volunteer';
 import Blog from './ pages/Blog/Blog';
+import Events from './ pages/Events/Events';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -18,7 +19,7 @@ export function getWindowDimensions() {
 
 const App: React.FC = () => {
   const links = [
-    { name: 'Events', url: '/' },
+    { name: 'Events', url: '/events' },
     { name: 'Blog', url: '/blog' },
     { name: 'Volunteer', url: '/volunteer' },
     { name: 'Minutes', url: '/minutes' },
@@ -37,6 +38,7 @@ const App: React.FC = () => {
           <Route path="/minutes" Component={Minutes} />
           <Route path="/volunteer" Component={Volunteer} />
           <Route path="/blog" Component={Blog} />
+          <Route path="/events" Component={Events} />
         </Routes>
       </div>
     </Router>

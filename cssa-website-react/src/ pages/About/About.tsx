@@ -1,29 +1,6 @@
 import React, { useState } from 'react';
 import './about.css';
-import RachelQ from '../../images/rachelqi.jpg';
-import RachelO from '../../images/rachelo.jpg';
-import Angie2 from '../../images/angie2.png';
-import Tim from '../../images/Tim.png';
-import Connor from '../../images/Connor.png';
-import Tara from '../../images/tara.jpg';
-import Ali from '../../images/ali.jpg';
-import Carousel from './Carousel';
-import TeamPhoto from '../../images/TeamPhoto.jpg';
-
-const images = [
-    RachelQ,
-    RachelO,
-    Angie2,
-    Tim,
-    Connor,
-    // Tara,
-    Angie2,
-    Ali, 
-    RachelO,
-    RachelQ,
-    Ali,
-    Angie2,
-];
+import TeamImagesSelector from './TeamImagesSelector';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -49,21 +26,18 @@ const About: React.FC = () => {
 
   return (
         <div className='about-page-container'>
-            <div className='exec-team-image-container'>
-                {/* <img src={TeamPhoto}/> */}
+          <div style={{width: `50vw`, height: `92vh`}}>
+            <TeamImagesSelector />
+          </div>
+          <div className='team-member-display-container'>
+            <div className='team-member-display'>
+
             </div>
-            <div className='about-page-blurb'>
-                <div className='about-us'>About Us</div>
-                {aboutBlurb['english']}
-                <p>View our constitution in English here.</p>
-            </div>
-            <div className='members-header'>Executive Team 2024-25</div>
-            <div className='members-container'>
-                <div className='member-info'>
-                    <Carousel images={images}/>
-                </div>
-            </div>
-            
+          </div>
+          {/* <div className='about-page-blurb'>
+            <div className='about-us'>About Us</div>
+            <p>{aboutBlurb['english']}</p>
+          </div> */}
         </div>
   );
 };

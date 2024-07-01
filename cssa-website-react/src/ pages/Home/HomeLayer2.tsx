@@ -12,7 +12,6 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
     //The below part of the code is for the display when we have a portrait screen, i.e phones and tablets
 
     const [currentMember, setCurrentMember] = useState();
-    console.log(currentMember)
 
     if(windowDimensions.width / windowDimensions.height <= 1){
         return(

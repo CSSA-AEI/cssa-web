@@ -27,8 +27,8 @@ const Volunteer: React.FC<VolunteerProps> = () => {
               {descriptionHeader}
             </div>
             <div className='description-details'>
-              {descriptionText.map((text) => (
-                <p>{text}</p>
+              {descriptionText.map((text, index) => (
+                <p key={index}>{text}</p>
               ))}
             </div>
           </div>
@@ -101,8 +101,8 @@ const Volunteer: React.FC<VolunteerProps> = () => {
             {descriptionHeader}
           </div>
           <div className='description-details'>
-            {descriptionText.map((text) => (
-              <p>{text}</p>
+            {descriptionText.map((text, index) => (
+              <p key={index}>{text}</p>
             ))}
           </div>
         </div>
