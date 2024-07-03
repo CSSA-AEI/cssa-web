@@ -133,8 +133,10 @@
 @media only screen and (max-width: 500px){
     .sliding-numbers-container > .digits{
         font-size: 0.4rem;
+        line-height: 1.2em;
     }
     .home-layer-2-title{
         font-size: 1em;
+        line-height: 1.4em;
     }
 }

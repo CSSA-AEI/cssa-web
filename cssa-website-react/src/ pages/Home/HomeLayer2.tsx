@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from "react-router-dom";
 import CircularCarousel from './CircularCarousel';
 import BinaryBackground from './BinaryBackground';
 import './home-layer-2.css';
@@ -47,7 +48,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                     <p>
                         Check out some of our members below.
                     </p>
-                    <a href='/about'><button>Learn More</button></a>
+                    <Link to='/about'><button>Learn More</button></Link>
                 </div>
                 <div className='meet-the-team-container' style={{width: `100vw`, height: `fit-content`, alignItems: `center`}}>
                     <div className='tv-screen' style={{width: `90vw`, height: `30vh`}}>

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from "react-router-dom";
 import NavLogo from '../images/small_logo.png';
 import './navbar-styling.css';
 
@@ -23,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
             <ul className={showDropdown ? 'navbar-links dropdown-menu' : 'navbar-links'}>
                 {links.map((link, index) => (
                 <li className='navbar-link' key={index}>
-                    <a href={link.url}>{link.name}</a>
+                    <Link to={link.url}>{link.name}</Link>
                 </li>
                 ))}
             </ul>
@@ -33,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
             <ul className={showDropdown ? 'dropdown-menu active' : 'dropdown-menu'}>
                 {links.map((link, index) => (
                 <li className='navbar-link' key={index}>
-                    <a className={showDropdown ? 'ready' : ''} href={link.url}>{link.name}</a>
+                    <Link className={showDropdown ? 'ready' : ''} to={link.url}>{link.name}</Link>
                 </li>
                 ))}
             </ul>
