@@ -1,11 +1,11 @@
 import React from "react";
 import { getWindowDimensions } from "../../App";
 import { Link } from "react-router-dom";
-import FooterTablet from '../../images/FooterImageTablet.png';
-import HeaderTablet from '../../images/HeaderImageTablet.png';
-import LaptopFooter from '../../images/Laptopfooter.png';
-import LaptopHeader from '../../images/LaptopHeader.png';
-import Group22 from '../../images/Group-22.png';
+import FooterTablet from '../../images/scrapbook-images/FooterImageTablet.png';
+import HeaderTablet from '../../images/scrapbook-images/HeaderImageTablet.png';
+import LaptopFooter from '../../images/scrapbook-images/Laptopfooter.png';
+import LaptopHeader from '../../images/scrapbook-images/LaptopHeader.png';
+import Group22 from '../../images/scrapbook-images/Group22.png';
 import BinaryBackground from "./BinaryBackground";
 import './home-layer-4.css';
 
@@ -15,9 +15,6 @@ interface HomeLayer4Props {
 const HomeLayer4: React.FC<HomeLayer4Props> = () => {
 
     var dimensions = getWindowDimensions();
-    var cardHeight = `45vh`;
-
-    
 
     if(dimensions.width / dimensions.height <= 1){
         return(
@@ -39,14 +36,14 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
                             <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</a></div>
                         </div>
                 </div>
-                <img className="image-footer" src={FooterTablet}/>
+                <img className="image-footer" src={FooterTablet} alt='event-cutout'/>
             </div>
         )
 
     }
    return(
        <div className="home-layer-4-container" style={{overflowY: `visible`}}>
-            <img className="image-header" src={Group22} style={{width: `105vw`, transform: `translate(-1%, -55%)`, height: `auto`}}/>
+            <img className="image-header" src={Group22} style={{width: `105vw`, height: `auto`}} alt='event-poster'/>
             <div className="get-involved-container" style={{height: `70vh`}}>
                     <div className="get-involved-header">
                         <p>GET INVOLVED</p>
@@ -61,7 +58,7 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
                         <div className="grid-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</a></div>
                     </div>
             </div>
-            <img className="image-footer" src={LaptopFooter}/>
+            <img className="image-footer" src={LaptopFooter} alt='event-poster'/>
        </div>
    )
 }

@@ -24,7 +24,7 @@
     bottom: 0;
     width: 102vw;
     height: auto;
-    transform: translateY(10%);
+    transform: translateY(12%);
     position: absolute;
     z-index: -4;
 }
@@ -75,7 +75,7 @@
 .events-scroller{
     width: 50vw;
     display: flex;
-    top: 12%;
+    top: 15%;
     right: 0;
     overflow: scroll;
     position: absolute;
@@ -88,7 +88,7 @@
     justify-content: space-between;
     box-sizing: border-box;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
     .layer-3-title > p{
         font-size: 1.25em;
     }

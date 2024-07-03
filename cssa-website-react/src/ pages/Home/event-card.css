@@ -1,6 +1,6 @@
 .cssa-event{
     width: 40%;
-    max-width:20vw ;
+    max-width:20vw;
     background-color: white;
     border-radius: 8px;
     display: flex;
@@ -98,6 +98,17 @@
         /* max-width: 35vw; */
     }
 }
+@media only screen and (max-width: 900px){
+    .event-title{
+        font-size: 0.8em;
+    }
+    .event-description{
+        font-size: 0.6em;
+    }
+    .event-data-circle{
+        font-size: 0.6em;
+    }
+}
 @media only screen and (max-width: 500px){
     .event-info{
         font-size: 0.8em;
@@ -112,11 +123,3 @@
         font-size: 0.6em;
     }
 }
-/* @media screen and (max-width: 1440px){
-    .event-title{
-        font-size: 1em;
-    }
-    .event-description{
-        font-size: 0.8em;
-    }
-} */

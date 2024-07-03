@@ -1,5 +1,4 @@
-import React, { useRef, useState, useEffect,} from "react";
-import { useNavigate } from 'react-router-dom';
+import React from "react";
 import { getWindowDimensions } from "../../App";
 import './event-card.css';
 
@@ -20,37 +19,67 @@ const EventCard: React.FC<EventCardProps> = ({title, date, description, image, l
     if(dimensions.width/dimensions.height >= 2.2){
         cardHeight = `50vh`;
     }
-    else if(dimensions.width/dimensions.height >= 1.7){
+    else if(dimensions.width/dimensions.height >= 1.6){
         cardHeight = `53vh`
     }
-    else if(dimensions.width/dimensions.height < 1.4){
-        cardHeight = `38vh`
+    else if(dimensions.width/dimensions.height < 1.4 && dimensions.width < 850){
+        cardHeight = `35vh`
+    }
+    else if(dimensions.width/dimensions.height < 1.4 && dimensions.width > 850){
+        cardHeight = `40vh`
     }
 
     //mobile screens e.g. phones and tablets
     if(orientation ===  'mobile'){
-        return(
-            <div className='cssa-event' style={{width: `fit-content`, maxWidth: `100%`, maxHeight: `100%`,  alignItems: 'stretch'}} onClick={() => { window.location.href = 'https://www.instagram.com/p/C10hIRuRVw5/?img_index=1'}}>
-                <div className="event-image-container" style={{height: `70%`}}>
-                    <img src={image} style={{height: `90%`, width: `auto`}}/>
-                    <div className="event-data-circle" style={{width: `10vw`, minHeight: `10vw`}}>
-                        {date}
+
+        if(dimensions.width < 768){
+            if(dimensions.height > 720){
+                var eventWidth = 55;
+            }
+            else{
+                eventWidth = 45;
+            }
+            return(
+                <div className='cssa-event' style={{width: `fit-content`, maxWidth: `${eventWidth}vw`, justifyContent: `space-between`, height:`100%`}} onClick={() => { window.location.href = link}}>
+                    <div className="event-image-container" style={{height: `70%`, width: `100%`}}>
+                        <img src={image} style={{height: `auto`, width: `100%`}} alt='event-poster'/>
+                        <div className="event-data-circle" style={{width: `10vw`, minHeight: `10vw`}}>
+                            {date}
+                        </div>
+                    </div>
+                    <div className='event-info' style={{width: `45vw`, height: `fit-content`, padding: `0`}}>
+                        <div className="event-title" style={{padding: `0 0.5em`}}>{title}</div>
+                        <div className="event-description" style={{padding: `0 0.5em`, wordWrap: `break-word`}}>{description}</div>
                     </div>
                 </div>
-                <div className='event-info' style={{height: `fit-content`, width: `21vh`, padding: `0`}}>
-                    <div className="event-title" style={{padding: `0 0.5em`}}>{title}</div>
-                    <div className="event-description" style={{padding: `0 0.5em`, wordWrap: `break-word`}}>{description}</div>
+            )
+        }
+        else{
+            return(
+                <div className='cssa-event' style={{width: `fit-content`, maxWidth: `35vw`, justifyContent: `space-between`, height:`100%`}} onClick={() => { window.location.href = link}}>
+                    <div className="event-image-container" style={{height: `70%`, width: `100%`}}>
+                        <img src={image} style={{height: `auto`, width: `100%`}} alt='event-poster'/>
+                        <div className="event-data-circle" style={{width: `10vw`, minHeight: `10vw`}}>
+                            {date}
+                        </div>
+                    </div>
+                    <div className='event-info' style={{width: `35vw`, height: `fit-content`, padding: `0`}}>
+                        <div className="event-title" style={{padding: `0 0.5em`}}>{title}</div>
+                        <div className="event-description" style={{padding: `0 0.5em`, wordWrap: `break-word`}}>{description}</div>
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        }
+
+        
     }
 
     //For ultrawide screens, more convenient to do this way because only ration that has problems is 2.2+(21:9 aspect ratio)
     if(dimensions.width/dimensions.height >= 2.2){
         return(
-            <div className='cssa-event' style={{height: cardHeight, maxWidth: `15vw`}} onClick={() => { window.location.href = 'https://www.instagram.com/p/C10hIRuRVw5/?img_index=1'}}>
+            <div className='cssa-event' style={{height: cardHeight, maxWidth: `15vw`}} onClick={() => { window.location.href = link}}>
                 <div className="event-image-container">
-                    <img src={image} style={{height: `auto`, width:`100%`}}/>
+                    <img src={image} style={{height: `auto`, width:`100%`}} alt='event-poster'/>
                     <div className="event-data-circle" >
                         {date}
                     </div>
@@ -65,9 +94,9 @@ const EventCard: React.FC<EventCardProps> = ({title, date, description, image, l
 
     //Regular screens
     return(
-        <div className='cssa-event' style={{height: cardHeight}} onClick={() => { window.location.href = 'https://www.instagram.com/p/C10hIRuRVw5/?img_index=1'}}>
+        <div className='cssa-event' style={{height: cardHeight}} onClick={() => { window.location.href = link}}>
             <div className="event-image-container">
-                <img src={image} />
+                <img src={image} alt='event-poster'/>
                 <div className="event-data-circle" >
                     {date}
                 </div>

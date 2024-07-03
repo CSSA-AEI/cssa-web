@@ -3,11 +3,9 @@ import './circular-carousel.css';
 import RachelQ from '../../images/rachelqi.jpg';
 import RachelO from '../../images/rachelo.jpg';
 import Angie from '../../images/angie.jpg';
-import Tim from '../../images/Tim.png';
-import Connor from '../../images/Connor.png';
-import Tara from '../../images/tara.jpg';
+import Tim from '../../images/home-layer-1-images/Tim.png';
+import Connor from '../../images/home-layer-1-images/Connor.png';
 import Ali from '../../images/ali.jpg';
-import { getWindowDimensions } from "../../App";
 
 const images = [
     RachelQ,
@@ -53,8 +51,6 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
     const [wheelWidth, setWheelWidth] = useState(0);
     const [center, setCenter] = useState({ x: 0, y: 0 });
     const [rotate, setRotate] = useState(0);
-
-    var screenDimensions = getWindowDimensions();
 
     const getInitialPositions = () => {
         const center = {
@@ -103,7 +99,7 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
         });
     
         setSlides(positionedSlides);
-    }, [wheelWidth]);
+    }, [wheelWidth, flexDirection]);
     
     const handleSlideClick = (e: any) => {
         const nextIndex = parseFloat(e.currentTarget.dataset.index);

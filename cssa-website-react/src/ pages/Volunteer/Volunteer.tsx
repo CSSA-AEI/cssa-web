@@ -14,7 +14,7 @@ const Volunteer: React.FC<VolunteerProps> = () => {
   );
   const [descriptionHeader, setDescriptionHeader] = useState('101 WEEK');
 
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  var windowDimensions = getWindowDimensions();
 
   if(windowDimensions.width/windowDimensions.height <= 1){
     return(
@@ -82,7 +82,7 @@ const Volunteer: React.FC<VolunteerProps> = () => {
           </button>
         </div>
         <div className='volunteer-event'>
-          <a href='https://docs.google.com/forms/d/e/1FAIpQLScB4UU4UGIFrI9-8npt3WEHIF9deqTQg2sdDplnlUGcAE6rog/viewform'>
+          <a href='/volunteer'>
             <div className='volunteer-info'>
               BECOME A CSSA JUNIOR
             </div>
@@ -108,13 +108,13 @@ const Volunteer: React.FC<VolunteerProps> = () => {
         </div>
         <div className='volunteer-images-container'>
           <div className='volunteer-image'>
-            <img src={Ali}/>
+            <img src={Ali} alt='volunteer-poster'/>
           </div>
           <div className='volunteer-image'>
-            <img src={Ali}/>
+            <img src={Ali} alt='volunteer-poster'/>
           </div>
           <div className='volunteer-image'>
-            <img src={Ali}/>
+            <img src={Ali} alt='volunteer-poster'/>
           </div>
         </div>
       </div>

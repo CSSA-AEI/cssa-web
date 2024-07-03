@@ -125,14 +125,16 @@
     0% { transform: translate(0%, 0%); }
     100% { transform: translate(-400%, 0%); }
 }
+@media only screen and (max-width: 800px){
+    .meet-the-team-blurb > p{
+        font-size: 0.75em;
+    }
+}
 @media only screen and (max-width: 400px){
     .sliding-numbers-container > .digits{
         font-size: 0.4rem;
     }
     .home-layer-2-title{
         font-size: 1.5em;
-    }
-    .meet-the-team-blurb{
-        font-size: 0.75em;
     }
 }

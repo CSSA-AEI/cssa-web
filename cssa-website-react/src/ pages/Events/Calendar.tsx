@@ -30,7 +30,7 @@ export function doesDayContainEvent(events : any[]){
         }
         else{
             var holder = []
-            var eventDetails = {
+            eventDetails = {
                 "date": day.toLocaleDateString(),
                 "startTime": day.toTimeString(),
                 "endTime": new Date(calendarEvent.end.dateTime).toTimeString(),
@@ -49,7 +49,6 @@ export function doesDayContainEvent(events : any[]){
 const Calendar: React.FC<CalendarProps> = ({ year, month, setMonth, setActiveDay, activeDay, setEventsList}) => {
 
     const [events, setEvents] = useState<any[]>([]);
-    const [date, setDate] = useState('');
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -62,7 +61,7 @@ const Calendar: React.FC<CalendarProps> = ({ year, month, setMonth, setActiveDay
         };
     
         getEvents();
-    }, [year, month]);
+    }, [year, month, setEventsList]);
 
 
     var currentDay = new Date().toLocaleDateString().split('/');

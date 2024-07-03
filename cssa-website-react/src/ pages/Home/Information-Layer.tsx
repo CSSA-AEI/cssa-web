@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import logo from '../../images/cssalogo.png';
+import React from 'react';
+import logo from '../../images/home-layer-1-images/cssalogo.png';
 import Pacman from './Pacman';
 import './information-layer.css';
 
@@ -28,7 +28,7 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
                     <img className='info-layer-logo' src={logo} alt="The CSSA Logo" style={{ width: `${logoWidth}px`, height: 'auto' }}/>
                 </div>
                 {flexDirection === 'column' ? 
-                    (<div className='cssa-title' style={{justifyContent: 'center'}}>COMPUTER SCIENCE STUDENTS ASSOCIATION</div>)
+                    (<div className='cssa-title' style={{justifyContent: 'center', textAlign: `center`}}>COMPUTER SCIENCE STUDENTS ASSOCIATION</div>)
                     :
                     (<div className='cssa-title'>COMPUTER SCIENCE STUDENTS ASSOCIATION</div>)
                 }

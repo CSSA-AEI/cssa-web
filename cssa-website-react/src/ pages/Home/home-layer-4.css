@@ -136,12 +136,16 @@
         gap: 30px;
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .get-involved-header > p {
       font-size: 2em;
     }
     .get-involved-grid > .grid-item{
         font-size: 1.3em;
+    }
+    .image-header{
+        animation: none;
+        transform: translate(-1%, -48%);
     }
 }
 @media only screen and (max-width: 550px) {
@@ -154,22 +158,22 @@
 }
 @keyframes shake4 {
     0% {
-        transform: translate(-1%, -55%);
+        transform: translate(-1%, -48%);
     }
     20% {
-        transform: translate(-1%, -60%);
+        transform: translate(-1%, -53%);
     }
     40% {
         
-        transform: translate(-1%, -60%) rotate(2deg);
+        transform: translate(-1%, -50%) rotate(2deg);
     }
     60% {
-        transform:  translate(-1%, -60%) rotate(-2deg);
+        transform:  translate(-1%, -53%) rotate(-2deg);
     }
     80%{
-        transform: translate(-1%, -58%);
+        transform: translate(-1%, -50%);
     }
     100% {
-        transform: translate(-1%, -55%);
+        transform: translate(-1%, -48%);
     }
 }

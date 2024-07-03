@@ -1,8 +1,8 @@
 import React from 'react';
 import InformationLayer from './Information-Layer';
-import Connor from '../../images/Connor.png';
-import Tim from '../../images/Tim.png';
-import CouchCarry from '../../images/CouchCarry.png';
+import Connor from '../../images/home-layer-1-images/Connor.png';
+import Tim from '../../images/home-layer-1-images/Tim.png';
+import CouchCarry from '../../images/home-layer-1-images/CouchCarry.png';
 import { getWindowDimensions } from '../../App';
 import BinaryBackground from './BinaryBackground';
 import './home-layer-1.css';
@@ -43,9 +43,9 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
                 <div className='layer-1-circle-container' style={{marginTop: '4em'}}>
                     <div className='circle' style={{height: `100vw`, width: `100vw`, maxHeight: `1200px`, maxWidth: `1200px`, transform: `translate(0%, 20%)`}}>
                         <div className='image1-container'>
-                            <img style={{height: 'inherit', zIndex: '2', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -15%)'}} src={Connor}/>
-                            <img style={{height: 'auto', width: '100vw', zIndex: '1', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-55%, -12%)'}} src={Tim}/>
-                            <img style={{height: 'auto', width: '100vw', zIndex: '3', position: 'absolute', bottom: '0', transform: 'translateY(-27%)'}} src={CouchCarry}/>
+                            <img style={{height: 'inherit', zIndex: '2', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -15%)'}} src={Connor} alt='event-poster'/>
+                            <img style={{height: 'auto', width: '100vw', zIndex: '1', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-55%, -12%)'}} src={Tim} alt='event-poster'/>
+                            <img style={{height: 'auto', width: '100vw', zIndex: '3', position: 'absolute', bottom: '0', transform: 'translateY(-27%)'}} src={CouchCarry} alt='event-poster'/>
                         </div>
                     </div>
                 </div>
@@ -61,9 +61,9 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
             <div className='layer-1-circle-container' style={{ height: flexDirection === 'row' ? '92vh' : '' , justifyContent: `flex-end`, alignItems: `center`, display: `flex`}}>
                 <div className='circle' style={{height: `45vw`, width: `45vw`, transform: `translate(10%, ${desiredHeight}%)`}}>
                     <div className='image1-container'>
-                        <img style={{height: 'inherit', zIndex: '2', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -15%)'}} src={Connor}/>
-                        <img style={{height: 'auto', width: '45vw', zIndex: '1', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -12%)'}} src={Tim}/>
-                        <img style={{height: 'auto', width: '45vw', zIndex: '3', position: 'absolute', bottom: '0', transform: 'translateY(-10%)'}} src={CouchCarry}/>
+                        <img style={{height: 'inherit', zIndex: '2', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -15%)'}} src={Connor} alt='event-poster'/>
+                        <img style={{height: 'auto', width: '45vw', zIndex: '1', position: 'absolute', bottom: '0', left: '50%', transform: 'translate(-50%, -12%)'}} src={Tim} alt='event-poster'/>
+                        <img style={{height: 'auto', width: '45vw', zIndex: '3', position: 'absolute', bottom: '0', transform: 'translateY(-10%)'}} src={CouchCarry} alt='event-poster'/>
                     </div>
                 </div>
             </div>
