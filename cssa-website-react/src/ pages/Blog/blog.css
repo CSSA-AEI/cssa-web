@@ -68,6 +68,7 @@
     .newsletter-container{
         flex-direction: column;
         padding: 2em 1em;
+        height: fit-content;
     }
     .newsletter-body{
         width: 100%;
