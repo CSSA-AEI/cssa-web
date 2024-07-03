@@ -72,6 +72,7 @@
     .newsletter-body{
         width: 100%;
         margin-bottom: 1em;
+        height: 50vh;
     }
     .newsletter-list{
         width: 100%;

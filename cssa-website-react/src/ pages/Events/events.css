@@ -90,3 +90,8 @@
     z-index: -10;
     transform: translate(0%, 20%);
 }
+@media only screen and (max-width: 800px) {
+    .events-header{
+        margin-top: 1em;
+    }
+}
