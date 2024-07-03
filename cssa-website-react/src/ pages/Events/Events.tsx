@@ -31,14 +31,12 @@ const Events: React.FC = () => {
     setEvents(dayEvents)
   }, [eventsList, activeDay]);
 
-  console.log(calendarMonth)
-
   if(windowDimensions.width / windowDimensions.height <= 1){
     return(
             <div className='events-page-container' style={{height: `fit-content`}}>
                 <BinaryEvents />
-                <div className='event-body' style={{flexDirection: `column`}}>
-                    <div className='events-list-container' style={{width: `100%`, padding: `1em`}}>
+                <div className='event-body' style={{flexDirection: `column`, height: `fit-content`, width: `100vw`}}>
+                    <div className='events-list-container' style={{width: `100%`, padding: `1em`, height: `80vh`}}>
                         <div className='events-header-container'>
                             <div className='events-header'>Events</div>
                             <div className='events-blurb'>Check out our events!</div>
