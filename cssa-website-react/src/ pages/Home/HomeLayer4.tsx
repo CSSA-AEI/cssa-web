@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { getWindowDimensions } from "../../App";
 import { Link } from "react-router-dom";
 import FooterTablet from '../../images/scrapbook-images/FooterImageTablet.png';
@@ -12,11 +12,34 @@ import './home-layer-4.css';
 interface HomeLayer4Props {
 
 }
+
+const useOrientation = () => {
+    const [orientation, setOrientation] = useState(window.matchMedia("(orientation: portrait)").matches ? 'portrait' : 'landscape');
+  
+    useEffect(() => {
+      const handleOrientationChange = (e : any) => {
+        setOrientation(e.matches ? 'portrait' : 'landscape');
+      };
+  
+      const mediaQuery = window.matchMedia("(orientation: portrait)");
+      mediaQuery.addListener(handleOrientationChange);
+  
+      return () => {
+        mediaQuery.removeListener(handleOrientationChange);
+      };
+    }, []);
+  
+    return orientation;
+  };
+
+
 const HomeLayer4: React.FC<HomeLayer4Props> = () => {
 
     var dimensions = getWindowDimensions();
+    const orientation = useOrientation();
+    console.log(orientation)
 
-    if(dimensions.width / dimensions.height <= 1){
+    if(orientation === 'portrait' || dimensions.width < 768){
 
         //Phones
         if(dimensions.width < 500){
@@ -65,7 +88,8 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
         }
 
     }
-   return(
+    console.log('not in portrait')
+    return(
        <div className="home-layer-4-container" style={{overflowY: `visible`}}>
             <img className="image-header" src={Group22} style={{width: `105vw`, height: `auto`}} alt='event-poster'/>
             <div className="get-involved-container" style={{height: `70vh`}}>
