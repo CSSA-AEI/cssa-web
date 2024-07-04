@@ -22,10 +22,8 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
         if(dimensions.width < 500){
             return(
                 <div className="home-layer-4-container">
-                    {/* <img className="image-header" src={HeaderTablet}/> */}
-                    <div className="layer-4-top"></div>
-                    <div className="get-involved-container">
-                        <BinaryBackground />
+                    <img className="image-header" src={HeaderTablet} style={{transform: `translate(-8%,-45%)`, zIndex: 2, width: `110vw`, animation: `none`}}/>
+                    <div className="get-involved-container" style={{zIndex: 3}}>
                             <div className="get-involved-header">
                                 <p>GET INVOLVED</p>
                                 <p>WITH CSSA</p>
@@ -39,15 +37,14 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
                                 <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</a></div>
                             </div>
                     </div>
-                    <img className="image-footer" src={FooterTablet} alt='event-cutout'/>
+                    <img className="image-footer" src={FooterTablet} alt='event-cutout' style={{zIndex:4}}/>
                 </div>
             )
         }
         else{
             return(
                 <div className="home-layer-4-container">
-                    <img className="image-header" src={HeaderTablet} style={{transform: `translate(-8%,-45%)`, zIndex: 2, width: `110vw`}}/>
-                    {/* <div className="layer-4-top"></div> */}
+                    <img className="image-header" src={HeaderTablet} style={{transform: `translate(-8%,-45%)`, zIndex: 2, width: `110vw`, animation: `none`}}/>
                     <div className="get-involved-container" style={{zIndex: 3}}>
                             <div className="get-involved-header">
                                 <p>GET INVOLVED</p>
