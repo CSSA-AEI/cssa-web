@@ -29,6 +29,7 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
     if(windowDimensions.width / windowDimensions.height <= 1){
         displayOrientation = 'mobile';
 
+        //phones
         if(windowDimensions.width < 768){
 
             if(windowDimensions.height > 700){
@@ -57,6 +58,7 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
                 </div>
             )
         }
+        //tablets
         else{
             return(
                 <div className='home-layer-3-container'>

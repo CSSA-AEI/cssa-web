@@ -33,7 +33,7 @@
     bottom: 0;
     height: 40vh;
     width: auto;
-    z-index: 6;
+    z-index: 1;
 }
 #water-dunk{
     position: absolute;
