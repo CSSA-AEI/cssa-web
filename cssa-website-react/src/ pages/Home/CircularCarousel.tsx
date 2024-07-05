@@ -1,50 +1,31 @@
 import React, { useRef, useState, useEffect} from "react";
 import './circular-carousel.css';
-import RachelQ from '../../images/rachelqi.jpg';
-import RachelO from '../../images/rachelo.jpg';
-import Angie from '../../images/angie.jpg';
-import Tim from '../../images/home-layer-1-images/Tim.png';
-import Connor from '../../images/home-layer-1-images/Connor.png';
-import Ali from '../../images/ali.jpg';
-
-const images = [
-    RachelQ,
-    RachelO,
-    Angie,
-    Tim,
-    Connor,
-    // Tara,
-    Angie,
-    Ali, 
-    RachelO,
-    RachelQ,
-    Ali,
-    Angie,
-];
 
 interface CircularCarouselProps {
   flexDirection: string;
   getCurrentMember: (value:  any) => void;
+  images: any[];
 }
-  
-const initialSlidesState = images.map((slide, index) => ({
-    coords: {
-      x: 0,
-      y: 0
-    },
-    theta: 0,
-    index: index + 1,
-    image: slide
-}));
-  
-const numSlides = images.length;
-const angle = 360 / numSlides;
 
-
-
-const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCurrentMember}) => {
+const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCurrentMember, images}) => {
 
     const wheelRef = useRef<any>(null);
+    const initialSlidesState = images.map((slide, index) => ({
+        coords: {
+          x: 0,
+          y: 0
+        },
+        theta: 0,
+        index: index + 1,
+        image: slide.frontImage,
+        name: slide.name,
+        blurb: slide.blurb,
+        position: slide.position,
+        year: slide.year
+    }));
+
+    const numSlides = images.length;
+    const angle = 360 / numSlides;
 
     const [slides, setSlides] = useState(initialSlidesState);
     const [activeSlide, setActiveSlide] = useState(slides[0]);
@@ -164,7 +145,7 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
         <div
           className="wheel"
           style={{
-            transform: `translate(-40%, 20%) rotate(${rotate}deg)`,
+            transform: `translate(-40%, 15%) rotate(${rotate}deg)`,
             width: `100vh`,
             height: `100vh`,
             borderRadius: `50%`

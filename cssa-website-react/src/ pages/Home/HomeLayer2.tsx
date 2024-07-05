@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 import CircularCarousel from './CircularCarousel';
 import BinaryBackground from './BinaryBackground';
+import { teamInfo } from '../../resources/teamImagesInfo';
 import './home-layer-2.css';
 
 interface HomeLayer2Props {
@@ -12,7 +13,8 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
 
     //The below part of the code is for the display when we have a portrait screen, i.e phones and tablets
 
-    const [currentMember, setCurrentMember] = useState();
+    const [currentMember, setCurrentMember] = useState(teamInfo[0]);
+    console.log(currentMember)
 
     if(windowDimensions.width / windowDimensions.height <= 1){
         return(
@@ -58,7 +60,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                         </div>
                     </div>
                 </div>
-                <CircularCarousel flexDirection='column' getCurrentMember={setCurrentMember} />
+                <CircularCarousel flexDirection='column' getCurrentMember={setCurrentMember} images={teamInfo}/>
                 <BinaryBackground />
             </div>
         )
@@ -101,12 +103,16 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                     </p>
                     <a href='/about'><button>Learn More</button></a>
                 </div>
-                <CircularCarousel flexDirection='row' getCurrentMember={setCurrentMember}/>
+                <CircularCarousel flexDirection='row' getCurrentMember={setCurrentMember} images={teamInfo}/>
             </div>
             <div className='tv-screen-container'>
                 <div className='tv-screen' style={{width: `45vw`, height: `50vh`}}>
                     <div className='tv-rims' style={{ height: `calc(100% - 1em)` }}>
                         <div className='tv-content'>
+                            <p>{currentMember.name}</p>
+                            <p>{currentMember.position}</p>
+                            <p>{currentMember.year}</p>
+                            <p>{currentMember.blurb}</p>
                         </div>
                     </div>
                 </div>
