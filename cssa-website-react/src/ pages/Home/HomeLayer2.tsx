@@ -56,6 +56,10 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                     <div className='tv-screen' style={{width: `90vw`, height: `30vh`}}>
                         <div className='tv-rims' style={{ height: `calc(100% - 1em)` }}>
                             <div className='tv-content'>
+                                <p>{currentMember.name}</p>
+                                <p>{currentMember.position}</p>
+                                <p>{currentMember.year}</p>
+                                <p>{currentMember.blurb}</p>
                             </div>
                         </div>
                     </div>
