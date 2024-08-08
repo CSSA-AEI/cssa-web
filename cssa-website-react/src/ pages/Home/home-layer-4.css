@@ -5,6 +5,8 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    flex-direction: column;
+    overflow-y: visible;
 }
 .layer-4-top{
     width: 100vw;
@@ -15,9 +17,10 @@
     z-index: -3;
 }
 .image-header{
-    position: absolute;
-    top: 0%;
-    width: 100vw;
+    position: relative;
+    bottom: 0%;
+    width: 105vw;
+    transform: translate(-1%,-40%);
     height: auto;
     z-index: -2;
     animation: shake4 16s infinite;
@@ -156,9 +159,9 @@
         font-size: 0.8em;
     }
 }
-@keyframes shake4 {
+/* @keyframes shake4 {
     0% {
-        transform: translate(-1%, -48%);
+        transform: translate(-1%, -45%);
     }
     20% {
         transform: translate(-1%, -53%);
@@ -174,6 +177,6 @@
         transform: translate(-1%, -50%);
     }
     100% {
-        transform: translate(-1%, -48%);
+        transform: translate(-1%, -45%);
     }
-}
+} */

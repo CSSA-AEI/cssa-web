@@ -13,7 +13,7 @@ interface HomeLayer4Props {
 
 }
 
-const useOrientation = () => {
+export const useOrientation = () => {
     const [orientation, setOrientation] = useState(window.matchMedia("(orientation: portrait)").matches ? 'portrait' : 'landscape');
   
     useEffect(() => {
@@ -30,7 +30,7 @@ const useOrientation = () => {
     }, []);
   
     return orientation;
-  };
+};
 
 
 const HomeLayer4: React.FC<HomeLayer4Props> = () => {
@@ -38,20 +38,21 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
     var dimensions = getWindowDimensions();
     const orientation = useOrientation();
     console.log(orientation)
+    
 
     if(orientation === 'portrait' || dimensions.width < 768){
 
-        //Phones
-        if(dimensions.width < 500){
             return(
                 <div className="home-layer-4-container">
-                    <img className="image-header" src={HeaderTablet} style={{transform: `translate(-8%,-45%)`, zIndex: 2, width: `110vw`, animation: `none`}}/>
+                    <div className="image-top-conatiner" style={{height: `20vh`, width: `100vw`, position: 'relative', overflow: `visible`, zIndex: 2}}>
+                        <img className="image-header" src={HeaderTablet} style={{width: `110vw`, transform: `translate(-8%, -35%)`}} alt='event-poster'/>
+                    </div>
                     <div className="get-involved-container" style={{zIndex: 3}}>
                             <div className="get-involved-header">
                                 <p>GET INVOLVED</p>
                                 <p>WITH CSSA</p>
                             </div>
-                            <div className="get-involved-grid">
+                            <div className="get-involved-grid" style={{zIndex:4}}>
                                 <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/volunteer">VOLUNTEER</Link></div>
                                 <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/minutes">MINUTES</Link></div>
                                 <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/blog">BLOG</Link></div>
@@ -63,36 +64,14 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
                     <img className="image-footer" src={FooterTablet} alt='event-cutout' style={{zIndex:4}}/>
                 </div>
             )
-        }
-        else{
-            return(
-                <div className="home-layer-4-container">
-                    <img className="image-header" src={HeaderTablet} style={{transform: `translate(-8%,-45%)`, zIndex: 2, width: `110vw`, animation: `none`}}/>
-                    <div className="get-involved-container" style={{zIndex: 3}}>
-                            <div className="get-involved-header">
-                                <p>GET INVOLVED</p>
-                                <p>WITH CSSA</p>
-                            </div>
-                            <div className="get-involved-grid">
-                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/volunteer">VOLUNTEER</Link></div>
-                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/minutes">MINUTES</Link></div>
-                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/blog">BLOG</Link></div>
-                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}>MERCH</div>
-                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/about">CONTACT</Link></div>
-                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</a></div>
-                            </div>
-                    </div>
-                    <img className="image-footer" src={FooterTablet} alt='event-cutout' style={{zIndex:4}}/>
-                </div>
-            )
-        }
 
     }
-    console.log('not in portrait')
     return(
-       <div className="home-layer-4-container" style={{overflowY: `visible`}}>
-            <img className="image-header" src={Group22} style={{width: `105vw`, height: `auto`}} alt='event-poster'/>
-            <div className="get-involved-container" style={{height: `70vh`}}>
+       <div className="home-layer-4-container" style={{overflowY: `visible`, flexDirection: `column`}}>
+            <div className="image-top-conatiner" style={{height: `20vh`, width: `100vw`, position: 'relative', overflow: `visible`}}>
+                <img className="image-header" src={Group22} style={{width: `105vw`, height: `auto`}} alt='event-poster'/>
+            </div>
+            <div className="get-involved-container" style={{height: `80vh`}}>
                     <div className="get-involved-header">
                         <p>GET INVOLVED</p>
                         <p>WITH CSSA</p>

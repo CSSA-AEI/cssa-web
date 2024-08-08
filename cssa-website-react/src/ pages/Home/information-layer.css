@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2em;
     align-items: center;
-    margin-top: 2em;
+    box-sizing: border-box;
 }
 .info-layer-logo-container{
     margin-bottom: 2em;

@@ -20,16 +20,16 @@ const Events: React.FC = () => {
 
   const [calendarMonth, setCalendarMonth] = useState(new Date().getMonth()+ 1);
   const [eventsList, setEventsList] =  useState<any[]>([]);
-  const [activeDay, setActiveDay] = useState<number>(new Date().getDay());
+  const [activeDay, setActiveDay] = useState<number>(new Date().getDate());
   const [activeYear, setActiveYear] = useState<number>(new Date().getFullYear());
   const [events, setEvents] = useState<object[] | undefined>([]);
 
-  var eventsOnDay = doesDayContainEvent(eventsList)
-
   useEffect(() => {
-    var dayEvents = eventsOnDay.get(activeDay);
-    setEvents(dayEvents)
+        var eventsOnDay = doesDayContainEvent(eventsList)
+        var dayEvents = eventsOnDay.get(activeDay);
+        setEvents(dayEvents)
   }, [eventsList, activeDay]);
+
 
   if(windowDimensions.width / windowDimensions.height <= 1){
     return(

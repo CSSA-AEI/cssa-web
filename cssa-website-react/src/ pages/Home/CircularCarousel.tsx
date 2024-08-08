@@ -145,7 +145,7 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
         <div
           className="wheel"
           style={{
-            transform: `translate(-40%, 15%) rotate(${rotate}deg)`,
+            transform: `translate(-45%, 10%) rotate(${rotate}deg)`,
             width: `100vh`,
             height: `100vh`,
             borderRadius: `50%`

@@ -21,12 +21,17 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
     var screenRatio = windowDimensions.width / windowDimensions.height
 
     var minWidth = 160;
+    var cardHeight = 500;
+
+    if(windowDimensions.height >= 1600){
+        cardHeight = 800;
+    }
 
     if(windowDimensions.width < 500){
         minWidth = 240;
     }
 
-    if(windowDimensions.width / windowDimensions.height <= 1){
+    if(windowDimensions.width / windowDimensions.height < 1){
         displayOrientation = 'mobile';
 
         //phones
@@ -101,7 +106,7 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
                 ) :
                 (<img src={Group20} alt='group-activities' id='group21' style={{height: `70vh`, width: `auto`}}/>)
             }
-            <div className='events-scroller'>
+            <div className='events-scroller' style={{maxHeight: `${cardHeight}px`}}>
                 <div className='scroller' style={{padding: `2em`}}>
                     <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
                     <EventCard title='Pancake Breakfast' date='Jan 8th' description='Join us for some pancakes' image={Event1} orientation={displayOrientation} link=''/>

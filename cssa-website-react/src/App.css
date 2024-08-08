@@ -32,6 +32,11 @@
   overflow: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

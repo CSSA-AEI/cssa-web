@@ -94,7 +94,7 @@ const EventCard: React.FC<EventCardProps> = ({title, date, description, image, l
 
     //Regular screens
     return(
-        <div className='cssa-event' style={{height: cardHeight}} onClick={() => { window.location.href = link}}>
+        <div className='cssa-event' onClick={() => { window.location.href = link}}>
             <div className="event-image-container">
                 <img src={image} alt='event-poster'/>
                 <div className="event-data-circle" >

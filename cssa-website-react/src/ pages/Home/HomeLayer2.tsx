@@ -14,12 +14,11 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
     //The below part of the code is for the display when we have a portrait screen, i.e phones and tablets
 
     const [currentMember, setCurrentMember] = useState(teamInfo[0]);
-    console.log(currentMember)
 
     if(windowDimensions.width / windowDimensions.height <= 1){
         return(
-            <div className='home-layer-2-container' style={{display: `flex`, flexDirection: `column`, height:`100vh`,  justifyContent: `space-between`, alignItems: `space-between`, overflow: `hidden`}}>
-                <div className='home-layer-2-title' style={{justifyContent: `space-between`, backgroundColor: `#326491`, color: `white`, margin: `0`, alignItems: `center`, flexDirection: `column`, height: `15vh`}}>
+            <div className='home-layer-2-container' style={{display: `flex`, flexDirection: `column`, justifyContent: `space-between`, alignItems: `space-between`}}>
+                <div className='home-layer-2-title' style={{justifyContent: `space-between`, margin: `0`, alignItems: `center`, flexDirection: `column`}}>
                     <div className='sliding-numbers-container'>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
@@ -42,7 +41,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
                     </div>
                 </div>
-                <div className='meet-the-team-blurb' style={{margin: `1em`, boxSizing: `border-box`}}> 
+                <div className='meet-the-team-blurb' style={{margin: `1em`}}> 
                     <p>
                     The CSSA is student elected student organization dedicated to 
                     advocating for Computer Science Students at the University of Ottawa.
@@ -54,7 +53,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                 </div>
                 <div className='meet-the-team-container' style={{width: `100vw`, height: `fit-content`, alignItems: `center`}}>
                     <div className='tv-screen' style={{width: `90vw`, height: `30vh`}}>
-                        <div className='tv-rims' style={{ height: `calc(100% - 1em)` }}>
+                        <div className='tv-rims'>
                             <div className='tv-content'>
                                 <p>{currentMember.name}</p>
                                 <p>{currentMember.position}</p>
@@ -74,7 +73,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
     return(
         <div className='home-layer-2-container' style={{display:`grid`, gridTemplateColumns: `1fr 1fr`}}>
             <div className='meet-the-team-container'>
-                <div className='home-layer-2-title' style={{flexDirection: `column`}}>
+                <div className='home-layer-2-title' style={{flexDirection: `column`, height: `fit-content`}}>
                     <div className='sliding-numbers-container'>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
@@ -111,7 +110,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
             </div>
             <div className='tv-screen-container'>
                 <div className='tv-screen' style={{width: `45vw`, height: `50vh`}}>
-                    <div className='tv-rims' style={{ height: `calc(100% - 1em)` }}>
+                    <div className='tv-rims'>
                         <div className='tv-content'>
                             <p>{currentMember.name}</p>
                             <p>{currentMember.position}</p>

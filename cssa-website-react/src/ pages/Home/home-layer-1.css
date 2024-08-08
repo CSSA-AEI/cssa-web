@@ -16,13 +16,15 @@
     background-color: #bbb;
     border-radius: 50%;
     position: relative; /* Ensure absolute positioning is relative to this container */
+    bottom: 0%;
+    /* transform: translateY(35%); */
 }
 
 .image1-container{
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
     width: inherit;
     height: inherit;
 }
@@ -41,12 +43,12 @@
 }
 
 @keyframes shake1 {
-    0% { transform: translate(-50%, -15%); }
-    20% { transform: translate(-55%, -20%); }
-    40% { transform: translate(-50%, -15%); }
-    60% { transform: translate(-45%, -15%); }
-    80% { transform: translate(-45%, -20%); }
-    100% { transform: translate(-50%, -15%); }
+    0% { transform: translate(0%, -50%); }
+    20% { transform: translate(5%, -53%); }
+    40% { transform: translate(10%, -50%); }
+    60% { transform: translate(5%, -50%); }
+    80% { transform: translate(5%, -53%); }
+    100% { transform: translate(0%, -50%); }
 }
 @keyframes shake2 {
     0% { transform: translate(-55%, -15%); }
@@ -55,9 +57,9 @@
     100% { transform: translate(-55%, -15%); }
 }
 @keyframes shake3 {
-    0% { transform: translate(0%, -10%); }
-    25% { transform: translate(0%, -5%); }
-    50% { transform: translate(0%, -15%); }
-    75% { transform: translate(0%, -10%); }
-    100% { transform: translate(0%, -10%); }
+    0% { transform: translate(-20%, -230%); }
+    25% { transform: translate(-20%, -225%); }
+    50% { transform: translate(-20%, -220%); }
+    75% { transform: translate(-20%, -225%); }
+    100% { transform: translate(-20%, -230%); }
 }
