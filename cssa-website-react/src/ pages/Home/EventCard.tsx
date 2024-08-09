@@ -40,14 +40,14 @@ const EventCard: React.FC<EventCardProps> = ({title, date, description, image, l
                 eventWidth = 45;
             }
             return(
-                <div className='cssa-event' style={{width: `fit-content`, maxWidth: `${eventWidth}vw`, justifyContent: `space-between`, height:`100%`}} onClick={() => { window.location.href = link}}>
+                <div className='cssa-event' style={{width: `fit-content`, maxWidth: `${eventWidth}vw`, justifyContent: `space-between`, height:`fit-content`}} onClick={() => { window.location.href = link}}>
                     <div className="event-image-container" style={{height: `70%`, width: `100%`}}>
                         <img src={image} style={{height: `auto`, width: `100%`}} alt='event-poster'/>
                         <div className="event-data-circle" style={{width: `10vw`, minHeight: `10vw`}}>
                             {date}
                         </div>
                     </div>
-                    <div className='event-info' style={{width: `45vw`, height: `fit-content`, padding: `0`}}>
+                    <div className='event-info' style={{width: `45vw`, height: `fit-content`, padding: `0`, top: `10%`}}>
                         <div className="event-title" style={{padding: `0 0.5em`}}>{title}</div>
                         <div className="event-description" style={{padding: `0 0.5em`, wordWrap: `break-word`}}>{description}</div>
                     </div>
@@ -96,7 +96,9 @@ const EventCard: React.FC<EventCardProps> = ({title, date, description, image, l
     return(
         <div className='cssa-event' onClick={() => { window.location.href = link}}>
             <div className="event-image-container">
-                <img src={image} alt='event-poster'/>
+                <div style={{height: `50%`, width: `100%`}}>
+                    <img src={image} alt='event-poster' style={{height: `auto`, width: `100%`}}/>
+                </div>
                 <div className="event-data-circle" >
                     {date}
                 </div>

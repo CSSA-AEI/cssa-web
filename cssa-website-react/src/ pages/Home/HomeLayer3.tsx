@@ -51,8 +51,8 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
                     <img src={WaterDunk} alt='water-dunk' id='water-dunk' style={{height: `40vh`}}/>
                     <img src={BullRiding} alt='bull-riding' id='bull-riding' style={{height: `40vh`,  transform: `translate(80%, -5%)`}}/>
                     <img src={Bowling} alt='bowling' id='bowling' style={{ height:`30vh`}}/>
-                    <div className='events-scroller' style={{top: `18%`, left: `0%`, height:`39vh`, width: `100vw`, boxSizing: `content-box`}}>
-                        <div className='scroller' style={{padding: `0.5em 1em`, minWidth: `${minWidth}vw`}}>
+                    <div className='events-scroller' style={{top: `18%`, left: `0%`, height:`fit-content`, width: `100vw`, boxSizing: `content-box`}}>
+                        <div className='scroller' style={{padding: `0.5em 1em`, minWidth: `${minWidth}vw`, height:`fit-content`}}>
                             <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
                             <EventCard title='Pancake Breakfast' date='Jan 8th' description='Join us for some pancakes' image={Event1} orientation={displayOrientation} link=''/>
                             <EventCard title='Web Dev for Dummies' date='Jan 10th' description='Learn how to build lovely sites like ours!' image={Event2} orientation={displayOrientation} link=''/>
@@ -76,8 +76,8 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
                     <img src={WaterDunk} alt='water-dunk' id='water-dunk' style={{height: `40vh`}}/>
                     <img src={BullRiding} alt='bull-riding' id='bull-riding' style={{height: `40vh`,  transform: `translate(80%, -5%)`}}/>
                     <img src={Bowling} alt='bowling' id='bowling' style={{ height:`30vh`}}/>
-                    <div className='events-scroller' style={{top: `18%`, left: `0%`, height:`38vh`, width: `100vw`, boxSizing: `content-box`}}>
-                        <div className='scroller' style={{padding: `0.5em 1em`, minWidth: `${minWidth}vw`}}>
+                    <div className='events-scroller' style={{top: `18%`, left: `0%`, height:`fit-content`, width: `100vw`, boxSizing: `content-box`}}>
+                        <div className='scroller' style={{padding: `0.5em 1em`, minWidth: `${minWidth}vw`, height: `fit-content`}}>
                             <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
                             <EventCard title='Pancake Breakfast' date='Jan 8th' description='Join us for some pancakes' image={Event1} orientation={displayOrientation} link=''/>
                             <EventCard title='Web Dev for Dummies' date='Jan 10th' description='Learn how to build lovely sites like ours!' image={Event2} orientation={displayOrientation} link=''/>
@@ -106,7 +106,7 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
                 ) :
                 (<img src={Group20} alt='group-activities' id='group21' style={{height: `70vh`, width: `auto`}}/>)
             }
-            <div className='events-scroller' style={{maxHeight: `${cardHeight}px`}}>
+            <div className='events-scroller'>
                 <div className='scroller' style={{padding: `2em`}}>
                     <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
                     <EventCard title='Pancake Breakfast' date='Jan 8th' description='Join us for some pancakes' image={Event1} orientation={displayOrientation} link=''/>

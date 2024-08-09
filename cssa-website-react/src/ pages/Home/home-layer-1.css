@@ -35,12 +35,12 @@
     z-index: 1;
 }
 
-.image1-container img:nth-child(1){
+/* .image1-container img:nth-child(1){
     animation: shake1 10s infinite;
 }
 .image1-container img:nth-child(3){
     animation: shake3 7.5s infinite;
-}
+} */
 
 @keyframes shake1 {
     0% { transform: translate(0%, -50%); }

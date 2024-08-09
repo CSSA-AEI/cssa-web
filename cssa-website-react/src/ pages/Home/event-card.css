@@ -11,6 +11,8 @@
     justify-content: space-between;
     cursor: pointer;
     box-shadow: 10px 5px #14283a;
+    height: fit-content;
+    overflow: hidden;
 }
 .cssa-event:hover{
     transform: translate(-1%, -2%);
@@ -21,17 +23,17 @@
     height: auto;
     border-radius: 8px;
 }
-.event-image-container > img{
-    height: auto;
-    width: 100%;
-    object-fit: contain;
-    border-radius: 8px;
-}
 .event-image-container{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.event-image-container > img{
+    height: 50%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
 }
 .event-data-circle{
     border-radius: 50%;
@@ -52,8 +54,7 @@
     padding: 0 1em ;
     box-sizing: border-box;
     position: relative;
-    top: -7%;
-    right: 0;
+    min-height: 5rem;
 }
 .event-info-tablet{
     display: flex;
