@@ -22,7 +22,13 @@
 .member-image-container{
     height: 7vw;
     width: 7vw;
-    background-color: cadetblue;
     border-radius: 50%;
     cursor: pointer;
+    border: 3px solid red;
+    overflow: hidden;
+}
+.member-image-container > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }

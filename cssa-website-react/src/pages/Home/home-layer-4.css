@@ -41,13 +41,14 @@
 .get-involved-header > p{
     color: white;
     margin: 0;
+    font-size: 2em;
 }
 .get-involved-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     color: white;
-    gap: 10px;
+    gap: 20px;
     padding-top: 1em;
     box-sizing: border-box;
     height: 40%;
@@ -56,14 +57,16 @@
 .grid-item{
     border-bottom: 1px solid white;
     display: flex;
+    height: fit-content;
     align-items: center;
     cursor: pointer;
     background-color: #E5E4E2;
     box-shadow: 3px 3px #14283a;
     box-sizing: border-box;
-    padding: 0.5em;
+    padding: 1em 0.5em;
     z-index: 5;
     color: #326491;
+    font-size: 1.25em;
 }
 .grid-item:hover{
     transform: translate(-1%, -8%);
@@ -84,7 +87,7 @@
     height: auto;
 }
 
-@media only screen and (max-width: 4000px) {
+/* @media only screen and (max-width: 4000px) {
     .get-involved-header > p {
         font-size: 4.5em;
       }
@@ -127,13 +130,13 @@
     .get-involved-grid{
         gap: 30px;
     }
-}
-@media only screen and (max-width: 1024px) {
+} */
+@media only screen and (max-width: 1023px) {
     .get-involved-header > p {
         font-size: 2em;
       }
     .get-involved-grid > .grid-item{
-        font-size: 1.3em;
+        font-size: 1.25em;
     }
     .get-involved-grid{
         gap: 30px;
@@ -141,10 +144,10 @@
 }
 @media only screen and (max-width: 900px) {
     .get-involved-header > p {
-      font-size: 2em;
+      font-size: 1.5em;
     }
     .get-involved-grid > .grid-item{
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .image-header{
         animation: none;
@@ -159,24 +162,3 @@
         font-size: 0.8em;
     }
 }
-/* @keyframes shake4 {
-    0% {
-        transform: translate(-1%, -45%);
-    }
-    20% {
-        transform: translate(-1%, -53%);
-    }
-    40% {
-        
-        transform: translate(-1%, -50%) rotate(2deg);
-    }
-    60% {
-        transform:  translate(-1%, -53%) rotate(-2deg);
-    }
-    80%{
-        transform: translate(-1%, -50%);
-    }
-    100% {
-        transform: translate(-1%, -45%);
-    }
-} */

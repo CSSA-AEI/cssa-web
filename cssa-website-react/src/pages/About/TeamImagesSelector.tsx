@@ -9,11 +9,29 @@ export function getWindowDimensions() {
   };
 }
 
+const getImagePaths = () => {
+  const imagePaths = [];
+  
+  // Adjust the folder path according to your project structure
+  for (let i = 1; i <= 12; i++) {
+    var imageMap =  new Map();
+    for (let j = 0; j < 9; j++) {
+      imageMap.set(j, `images/${i}/${j}.jpg`);
+    }
+    imagePaths.push(imageMap)
+  }
+  
+  return imagePaths;
+};
+
 const TeamImagesSelector: React.FC = () => {
 
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const memberSpotRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+    const imageMapping = getImagePaths();
+    console.log(imageMapping)
 
     useEffect(() => {
       const handleMouseMove = (event: MouseEvent) => {
@@ -44,17 +62,16 @@ const TeamImagesSelector: React.FC = () => {
         const deltaX = mouseX - elementX;
         const deltaY = mouseY - elementY;
     
-        if (Math.abs(deltaX) <= threshold && deltaY < -threshold) return 'purple'; // directly above
-        if (Math.abs(deltaX) <= threshold && deltaY > threshold) return 'orange'; // directly below
-        if (Math.abs(deltaY) <= threshold && deltaX < -threshold) return 'cyan'; // directly left
-        if (Math.abs(deltaY) <= threshold && deltaX > threshold) return 'magenta'; // directly right
+        if (Math.abs(deltaX) <= threshold && deltaY < -threshold) return 1; // directly above
+        if (deltaX > threshold && deltaY < -threshold) return 2; // top-right quadrant
+        if (Math.abs(deltaY) <= threshold && deltaX > threshold) return 3; // directly right
+        if (deltaX > threshold && deltaY > threshold) return 4; // bottom-right quadrant
+        if (Math.abs(deltaX) <= threshold && deltaY > threshold) return 5; // directly below
+        if (deltaX < -threshold && deltaY > threshold) return 6; // bottom-left quadrant
+        if (Math.abs(deltaY) <= threshold && deltaX < -threshold) return 7; // directly left
+        if (deltaX < -threshold && deltaY < -threshold) return 8; // top-left quadrant
     
-        if (deltaX < -threshold && deltaY < -threshold) return 'red'; // top-left quadrant
-        if (deltaX > threshold && deltaY < -threshold) return 'green'; // top-right quadrant
-        if (deltaX < -threshold && deltaY > threshold) return 'blue'; // bottom-left quadrant
-        if (deltaX > threshold && deltaY > threshold) return 'yellow'; // bottom-right quadrant
-    
-        return 'white'; // default color
+        return 0; // default color
     };
     
   
@@ -77,14 +94,17 @@ const TeamImagesSelector: React.FC = () => {
         };
   
         const elementPosition = getElementPosition();
-        const backgroundColor = getQuadrantColor(mousePosition.x, mousePosition.y, elementPosition.x, elementPosition.y, elementPosition.width);
+        const backgroundImagePath = getQuadrantColor(mousePosition.x, mousePosition.y, elementPosition.x, elementPosition.y, elementPosition.width);
+        var imageDisplay = imageMapping.at(index)?.get(backgroundImagePath);
   
         return (
             <div
             key={index}
             className="member-spot"
             >
-            <div className="member-image-container" ref={ref} style={{ backgroundColor }}></div>
+            <div className="member-image-container" ref={ref} >
+              <img src={imageDisplay} alt={`spot-${index}`}/>
+            </div>
             </div>
         );
     });
