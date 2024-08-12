@@ -16,7 +16,7 @@ const getImagePaths = () => {
   for (let i = 1; i <= 12; i++) {
     var imageMap =  new Map();
     for (let j = 0; j < 9; j++) {
-      imageMap.set(j, `images/${i}/${j}.jpg`);
+      imageMap.set(j, `/images/${i}/${j}.jpg`);
     }
     imagePaths.push(imageMap)
   }
