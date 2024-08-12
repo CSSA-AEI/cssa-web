@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './ pages/Home/Home';
-import About from './ pages/About/About';
-import Minutes from './ pages/Minutes/Minutes';
-import Volunteer from './ pages/Volunteer/Volunteer';
-import Blog from './ pages/Blog/Blog';
-import Events from './ pages/Events/Events';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Minutes from './pages/Minutes/Minutes';
+import Volunteer from './pages/Volunteer/Volunteer';
+import Blog from './pages/Blog/Blog';
+import Events from './pages/Events/Events';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
