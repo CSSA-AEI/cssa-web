@@ -16,7 +16,7 @@ const getImagePaths = () => {
   for (let i = 1; i <= 12; i++) {
     var imageMap =  new Map();
     for (let j = 0; j < 9; j++) {
-      imageMap.set(j, `/images/${i}/${j}.jpg`);
+      imageMap.set(j, `/execs/${i}/${j}.jpg`);
     }
     imagePaths.push(imageMap)
   }
@@ -57,7 +57,7 @@ const TeamImagesSelector: React.FC = () => {
 
     const getQuadrantColor = (mouseX: number, mouseY: number, elementX: number, elementY: number, rectW: number) => {
 
-        const threshold = rectW-10; // Threshold for determining if the mouse is directly above or below 
+        const threshold = rectW-50; // Threshold for determining if the mouse is directly above or below 
     
         const deltaX = mouseX - elementX;
         const deltaY = mouseY - elementY;
