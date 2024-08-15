@@ -81,7 +81,7 @@ const Events: React.FC = () => {
   return (
         <div className='events-page-container'>
             <BinaryEvents />
-            {/* <img src={EventsPage} id="events-page-footer"/> */}
+            <img src={EventsPage} id="events-page-footer"/>
             <div className='event-body' style={(windowDimensions.width / windowDimensions.height <= 1) ? { display: 'flex', flexDirection: 'column' } : {}}>
                 <div className='events-list-container'>
                     <div className='events-header-container'>
