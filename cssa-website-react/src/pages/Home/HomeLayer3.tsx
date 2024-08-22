@@ -100,7 +100,7 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
             {
                 screenRatio > 1.7 ? (
                     <div className='image-containers'>
-                        <img src={Group20} alt='group-activities' id='group21' style={{height: `auto`, width: `100vw`}}/>
+                        <img src={Group20} alt='group-activities' id='group21' style={{height: `auto`, width: `100vw`, transform: `translateY(30%)`}}/>
                     </div>
                     
                 ) :

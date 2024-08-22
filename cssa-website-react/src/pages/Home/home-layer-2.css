@@ -145,3 +145,64 @@
         line-height: 1.4em;
     }
 }
+@media only screen and (max-width: 2600px) {
+    .layer-3-title > p{
+        font-size: 3em;
+    }
+    .layer-3-title{
+        border-top: 2px solid #14283a;
+        border-bottom: 2px solid #14283a;
+    }
+}
+@media only screen and (max-width: 2100px) {
+    .layer-3-title > p{
+        font-size: 3em;
+    }
+    .layer-3-title{
+        border-top: 2px solid #14283a;
+        border-bottom: 2px solid #14283a;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .layer-3-title > p{
+        font-size: 2em;
+    }
+    .layer-3-title{
+        border-top: 1px solid #14283a;
+        border-bottom: 1px solid #14283a;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .layer-3-title > p{
+        font-size: 1.5em;
+    }
+    .layer-3-title{
+        border-top: 1px solid #14283a;
+        border-bottom: 1px solid #14283a;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .sliding-numbers-container > .digits{
+        font-size: 0.4rem;
+        line-height: 2rem;
+    }
+    .meet-team-header{
+        font-size: 1.2rem;
+    }
+    .meet-the-team-blurb > p{
+        font-size: 0.7rem;
+    }
+    .meet-the-team-blurb > a{
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .sliding-numbers-container > .digits{
+        font-size: 0.4rem;
+        line-height: 1.2em;
+    }
+    .home-layer-2-title{
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+}

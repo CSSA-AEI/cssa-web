@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { execMapping } from '../../resources/execInfo';
 import './team-images-selector.css';
 
 export function getWindowDimensions() {
@@ -11,11 +12,9 @@ export function getWindowDimensions() {
 
 const getImagePaths = () => {
   const imagePaths = [];
-  
-  // Adjust the folder path according to your project structure
   for (let i = 1; i <= 12; i++) {
     var imageMap =  new Map();
-    for (let j = 0; j < 9; j++) {
+    for (let j = 0; j < 10; j++) {
       imageMap.set(j, `/execs/${i}/${j}.jpg`);
     }
     imagePaths.push(imageMap)
@@ -23,15 +22,16 @@ const getImagePaths = () => {
   
   return imagePaths;
 };
+interface TeamImagesSelectorProps {
+  setSelectedExecMember: React.Dispatch<React.SetStateAction<string | undefined>>;
+}
 
-const TeamImagesSelector: React.FC = () => {
+const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecMember}) => {
 
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const memberSpotRefs = useRef<(HTMLDivElement | null)[]>([]);
-
     const imageMapping = getImagePaths();
-    console.log(imageMapping)
 
     useEffect(() => {
       const handleMouseMove = (event: MouseEvent) => {
@@ -103,7 +103,12 @@ const TeamImagesSelector: React.FC = () => {
             className="member-spot"
             >
             <div className="member-image-container" ref={ref} >
-              <img src={imageDisplay} alt={`spot-${index}`}/>
+              <img id={`member-img-${index}`} src={imageDisplay} alt={`spot-${index}`} 
+                onClick={(e) => { 
+                  e.currentTarget.src = imageMapping.at(index)?.get(9); console.log(imageMapping.at(index)?.get(9));
+                  setSelectedExecMember(execMapping.get(index+1));
+                }}
+              />
             </div>
             </div>
         );

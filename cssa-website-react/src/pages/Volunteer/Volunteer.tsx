@@ -3,6 +3,8 @@ import './volunteer.css';
 import BinaryBackground from '../Home/BinaryBackground';
 import { getWindowDimensions } from '../../App';
 import Ali from '../../images/ali.jpg';
+import ConnorxChad from '../../images/volunteer-images/ConnorxChad.jpg';
+import JustinBack from '../../images/volunteer-images/justinBack.jpg';
 
 interface VolunteerProps {
 }
@@ -108,10 +110,10 @@ const Volunteer: React.FC<VolunteerProps> = () => {
         </div>
         <div className='volunteer-images-container'>
           <div className='volunteer-image'>
-            <img src={Ali} alt='volunteer-poster'/>
+            <img src={JustinBack} alt='volunteer-poster'/>
           </div>
           <div className='volunteer-image'>
-            <img src={Ali} alt='volunteer-poster'/>
+            <img src={ConnorxChad} alt='volunteer-poster'/>
           </div>
           <div className='volunteer-image'>
             <img src={Ali} alt='volunteer-poster'/>

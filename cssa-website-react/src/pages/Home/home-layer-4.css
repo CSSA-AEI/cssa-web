@@ -86,68 +86,60 @@
     width: 100vw;
     height: auto;
 }
-
-/* @media only screen and (max-width: 4000px) {
+@media only screen and (max-width: 2600px) {
     .get-involved-header > p {
-        font-size: 4.5em;
-      }
-    .get-involved-grid > .grid-item{
-        font-size: 3em;
+      font-size: 3em;
     }
-    .get-involved-grid{
-        gap: 30px;
+    .get-involved-grid > .grid-item{
+        font-size: 1.5em;
+    }
+    .image-header{
+        animation: none;
+        transform: translate(-1%, -48%);
     }
 }
-@media only screen and (max-width: 3000px) {
+@media only screen and (max-width: 2100px) {
     .get-involved-header > p {
-        font-size: 3.5em;
-      }
-    .get-involved-grid > .grid-item{
-        font-size: 2em;
+      font-size: 2.5em;
     }
-    .get-involved-grid{
-        gap: 30px;
+    .get-involved-grid > .grid-item{
+        font-size: 1.2em;
+    }
+    .image-header{
+        animation: none;
+        transform: translate(-1%, -48%);
     }
 }
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1500px) {
     .get-involved-header > p {
-        font-size: 3em;
-      }
-    .get-involved-grid > .grid-item{
-        font-size: 1.6em;
+      font-size: 1.8em;
     }
-    .get-involved-grid{
-        gap: 30px;
+    .get-involved-grid > .grid-item{
+        font-size: 0.9em;
+    }
+    .image-header{
+        animation: none;
+        transform: translate(-1%, -48%);
     }
 }
-@media only screen and (max-width: 1440px) {
-    .get-involved-header > p {
-        font-size: 2em;
-      }
-    .get-involved-grid > .grid-item{
-        font-size: 1em;
-    }
-    .get-involved-grid{
-        gap: 30px;
-    }
-} */
-@media only screen and (max-width: 1023px) {
-    .get-involved-header > p {
-        font-size: 2em;
-      }
-    .get-involved-grid > .grid-item{
-        font-size: 1.25em;
-    }
-    .get-involved-grid{
-        gap: 30px;
-    }
-}
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
     .get-involved-header > p {
       font-size: 1.5em;
     }
     .get-involved-grid > .grid-item{
-        font-size: 1em;
+        font-size: 0.7em;
+    }
+    .image-header{
+        animation: none;
+        transform: translate(-1%, -48%);
+    }
+}
+@media only screen and (max-width: 900px) {
+    .get-involved-header > p {
+      font-size: 1.2em;
+    }
+    .get-involved-grid > .grid-item{
+        font-size: 0.6em;
     }
     .image-header{
         animation: none;
@@ -156,9 +148,9 @@
 }
 @media only screen and (max-width: 550px) {
     .get-involved-header > p {
-      font-size: 1.5em;
+      font-size: 1em;
     }
-    .get-involved-grid > .grid-item{
-        font-size: 0.8em;
+    .get-involved-grid > .grid-item > a{
+        font-size: 0.5em;
     }
 }

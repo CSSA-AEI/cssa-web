@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 .team-body{
     width: 100%;
@@ -24,11 +25,17 @@
     width: 7vw;
     border-radius: 50%;
     cursor: pointer;
-    border: 3px solid red;
     overflow: hidden;
 }
 .member-image-container > img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    filter: brightness(140%);
+}
+#member-img-1{
+    filter: brightness(120%);
+}
+#member-img-7{
+    filter: brightness(90%);
 }
