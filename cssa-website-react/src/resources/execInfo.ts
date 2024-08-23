@@ -31,6 +31,17 @@ import Ali7 from "../images/execs/3/7.jpg";
 import Ali8 from "../images/execs/3/8.jpg";
 import Ali9 from "../images/execs/3/9.jpg";
 
+import Meriem0 from "../images/execs/4/0.jpg";
+import Meriem1 from "../images/execs/4/1.jpg";
+import Meriem2 from "../images/execs/4/2.jpg";
+import Meriem3 from "../images/execs/4/3.jpg";
+import Meriem4 from "../images/execs/4/4.jpg";
+import Meriem5 from "../images/execs/4/5.jpg";
+import Meriem6 from "../images/execs/4/6.jpg";
+import Meriem7 from "../images/execs/4/7.jpg";
+import Meriem8 from "../images/execs/4/8.jpg";
+import Meriem9 from "../images/execs/4/9.jpg";
+
 export const execMapping = new Map ([
     [1, 'Justin Wang'],
     [2, 'Angie Jocson'],
@@ -85,16 +96,16 @@ export const execImageMap = [
         [9, Ali9],
     ]),
     new Map([
-        [0, Ali0],
-        [1, Ali1],
-        [2, Ali2],
-        [3, Ali3],
-        [4, Ali4],
-        [5, Ali5],
-        [6, Ali6],
-        [7, Ali7],
-        [8, Ali8],
-        [9, Ali9],
+        [0, Meriem0],
+        [1, Meriem1],
+        [2, Meriem2],
+        [3, Meriem3],
+        [4, Meriem4],
+        [5, Meriem5],
+        [6, Meriem6],
+        [7, Meriem7],
+        [8, Meriem8],
+        [9, Meriem9],
     ]),
     new Map([
         [0, Ali0],
