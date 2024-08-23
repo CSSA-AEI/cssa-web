@@ -105,8 +105,9 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
             <div className="member-image-container" ref={ref} >
               <img id={`member-img-${index}`} src={imageDisplay} alt={`spot-${index}`} 
                 onClick={(e) => { 
-                  // e.currentTarget.src = imageMapping.at(index)?.get(9); console.log(imageMapping.at(index)?.get(9));
-                  // setSelectedExecMember(execMapping.get(index+1));
+                  const newImage = imageMapping.at(index)?.get(9) || ''; 
+                  e.currentTarget.src = newImage;
+                  setSelectedExecMember(execMapping.get(index+1));
                 }}
               />
             </div>
