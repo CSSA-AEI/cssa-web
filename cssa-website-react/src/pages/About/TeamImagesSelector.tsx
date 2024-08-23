@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { execMapping } from '../../resources/execInfo';
+import { execMapping, execImageMap } from '../../resources/execInfo';
 import './team-images-selector.css';
 
 export function getWindowDimensions() {
@@ -31,7 +31,7 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const memberSpotRefs = useRef<(HTMLDivElement | null)[]>([]);
-    const imageMapping = getImagePaths();
+    const imageMapping = execImageMap;
 
     useEffect(() => {
       const handleMouseMove = (event: MouseEvent) => {
@@ -105,8 +105,8 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
             <div className="member-image-container" ref={ref} >
               <img id={`member-img-${index}`} src={imageDisplay} alt={`spot-${index}`} 
                 onClick={(e) => { 
-                  e.currentTarget.src = imageMapping.at(index)?.get(9); console.log(imageMapping.at(index)?.get(9));
-                  setSelectedExecMember(execMapping.get(index+1));
+                  // e.currentTarget.src = imageMapping.at(index)?.get(9); console.log(imageMapping.at(index)?.get(9));
+                  // setSelectedExecMember(execMapping.get(index+1));
                 }}
               />
             </div>
