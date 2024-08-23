@@ -16,8 +16,12 @@
 }
 .minutes-description{
     box-sizing: border-box;
-    padding: 2em 0;
     width: fit-content;
+    background-color: white;
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #14283a;
+    box-shadow: 2px 2px #14283a;
 }
 .minute-links{
     display: flex;
@@ -27,6 +31,7 @@
     box-shadow: 3px 3px #14283a;
     padding: 1em;
     height: 60vh;
+    border: 1px solid #14283a;
 }
 .minute-links > a{
     font-size: 1em;

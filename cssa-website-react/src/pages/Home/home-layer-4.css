@@ -71,6 +71,8 @@
 .grid-item:hover{
     transform: translate(-1%, -8%);
     box-shadow: 6px 6px #14283a;
+    animation: colorFade 0.5s ;
+    background-color: white;
 }
 .grid-item > a{
     text-decoration: none;

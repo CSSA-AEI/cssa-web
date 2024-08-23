@@ -37,9 +37,16 @@ const About: React.FC = () => {
                 <img className='info-layer-logo' src={logo} alt="The CSSA Logo" style={{ width: `100%`, height: 'auto' }}/>
               </div>
               <div className='about-cssa-blurb'>
-                We, the Computer Science Student Association (CSSA) of the University of Ottawa, provide by this Constitution 
+                <p>We, the Computer Science Student Association (CSSA) of the University of Ottawa, provide by this Constitution 
                 an organization dedicated to the pursuit of obtaining and managing resources for all members of the undergraduate 
-                Computer Science community at the University of Ottawa.
+                Computer Science community at the University of Ottawa.</p>
+                <p>
+                We are also dedicated to providing social programming, academic services and employment resource opportunities to all our members. 
+                We are dedicated to fostering a sense of community among students, professors and members of the computer science department through these events and services.
+                </p>
+                <p>
+                View our constitution in English <a href='/'>here.</a> We are working on the French translation for our constitution.
+                </p>
               </div>
             </div>
           </div>

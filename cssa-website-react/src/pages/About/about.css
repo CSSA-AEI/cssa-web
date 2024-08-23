@@ -18,12 +18,19 @@
 .about-cssa-blurb{
     color: white;
     line-height: 2em;
-    height: fit-content;
+    height: 100%;
     background-color: #326491;
     box-sizing: border-box;
     padding: 1em;
     box-shadow: 3px 3px #14283A;
     border: 1px solid #14283A;
+}
+.about-cssa-blurb > p{
+    color: white;
+    line-height: 2em;
+}
+.about-cssa-blurb > p > a {
+    color: white;
 }
 .team-member-display-container{
     width: 50vw;
@@ -41,13 +48,12 @@
     padding: 1em;
 }
 .cssa-info-container{
-    height: 58vh;
+    height: 68vh;
     width: 100vw;
     display: flex;
     overflow: hidden;
-    padding: 2em;
+    padding: 1em 2em;
     box-sizing: border-box;
-
 }
 .team-title{
     width: 100vw;
