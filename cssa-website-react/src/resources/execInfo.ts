@@ -119,6 +119,17 @@ import RachelO7 from "../images/execs/11/7.jpg";
 import RachelO8 from "../images/execs/11/8.jpg";
 import RachelO9 from "../images/execs/11/9.jpg";
 
+import lO0 from "../images/execs/12/0.jpg";
+import lO1 from "../images/execs/12/1.jpg";
+import lO2 from "../images/execs/12/2.jpg";
+import lO3 from "../images/execs/12/3.jpg";
+import lO4 from "../images/execs/12/4.jpg";
+import lO5 from "../images/execs/12/5.jpg";
+import lO6 from "../images/execs/12/6.jpg";
+import lO7 from "../images/execs/12/7.jpg";
+import lO8 from "../images/execs/12/8.jpg";
+import lO9 from "../images/execs/12/9.jpg";
+
 export const execMapping = new Map ([
     [1, 'Ali Raza Bhangu'],
     [2, 'Justin Wang'],
@@ -269,15 +280,15 @@ export const execImageMap = [
         [9, RachelO9],
     ]),
     new Map([
-        [0, Ali0],
-        [1, Ali1],
-        [2, Ali2],
-        [3, Ali3],
-        [4, Ali4],
-        [5, Ali5],
-        [6, Ali6],
-        [7, Ali7],
-        [8, Ali8],
-        [9, Ali9],
+        [0, lO0],
+        [1, lO1],
+        [2, lO2],
+        [3, lO3],
+        [4, lO4],
+        [5, lO5],
+        [6, lO6],
+        [7, lO7],
+        [8, lO8],
+        [9, lO9],
     ]),
 ];
