@@ -67,15 +67,21 @@
     color: white;
     font-family: 'Tiny5';
     box-sizing: border-box;
-    padding: 2em;
+    padding: 1em;
     font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.tv-content > p{
+    margin: 0;
 }
 .tv-content > div > p{
     margin: 0;
 }
-.tv-content > p:nth-child(2){
+/* .tv-content > p:nth-child(2){
     line-height: 1.5em;
-}
+} */
 .meet-the-team-container{
     display: flex;
     flex-direction: column;
@@ -147,6 +153,9 @@
     .home-layer-2-title{
         font-size: 1em;
         line-height: 1.4em;
+    }
+    .tv-content{
+        font-size: 0.6em;
     }
 }
 @media only screen and (max-width: 2600px) {

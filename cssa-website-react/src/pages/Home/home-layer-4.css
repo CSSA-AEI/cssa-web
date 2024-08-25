@@ -138,10 +138,10 @@
 }
 @media only screen and (max-width: 900px) {
     .get-involved-header > p {
-      font-size: 1.2em;
+      font-size: 1.5em;
     }
     .get-involved-grid > .grid-item{
-        font-size: 0.6em;
+        font-size: 1em;
     }
     .image-header{
         animation: none;
@@ -150,9 +150,9 @@
 }
 @media only screen and (max-width: 550px) {
     .get-involved-header > p {
-      font-size: 1em;
+      font-size: 1.5em;
     }
     .get-involved-grid > .grid-item > a{
-        font-size: 0.5em;
+        font-size: 1.5em;
     }
 }

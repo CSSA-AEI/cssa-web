@@ -71,31 +71,6 @@
     font-size: 0.6em;
     box-sizing: border-box;
 }
-/* @media screen and (max-width: 1600px){
-    .event-title{
-        font-size: 1em;
-    }
-    .event-description{
-        font-size: 1em;
-    }
-    .event-data-circle{
-        font-size: 1em;
-    }
-} */
-@media only screen and (max-width: 500px){
-    .event-info{
-        font-size: 0.8em;
-    }
-    .event-data-circle{
-        font-size: 0.6em;
-    }
-    .event-title{
-        font-size: 0.8em;
-    }
-    .event-description{
-        font-size: 0.6em;
-    }
-}
 @media only screen and (max-width: 2000px){
     .event-title{
         font-size: 0.8em;
@@ -127,5 +102,19 @@
     }
     .event-data-circle{
         font-size: 0.4em;
+    }
+}
+@media only screen and (max-width: 500px){
+    .event-info{
+        font-size: 0.8em;
+    }
+    .event-data-circle{
+        font-size: 0.6em;
+    }
+    .event-title{
+        font-size: 0.8em;
+    }
+    .event-description{
+        font-size: 0.6em;
     }
 }

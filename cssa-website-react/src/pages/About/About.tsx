@@ -62,7 +62,15 @@ const About: React.FC = () => {
                     <div className='team-member-body'>
                       <div className='member-name'>{selectedExecMember}</div>
                       <div className='exec-content'>
-                        <div className='exec-socials'></div>
+                        <div className='exec-member-info'>
+                          <div className='exec-image-container'>
+
+                          </div>
+                          <div className='exec-contact-info'>
+                            <p>Position: </p>
+                            <p>Office Email address: </p>
+                          </div>
+                        </div>
                         <div className='exec-intro-blurb'>Hand</div>
                       </div>
                     </div>
