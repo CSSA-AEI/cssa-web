@@ -112,9 +112,12 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                 <div className='tv-screen' style={{width: `45vw`, height: `50vh`}}>
                     <div className='tv-rims'>
                         <div className='tv-content'>
-                            <p>{currentMember.name}</p>
-                            <p>{currentMember.position}</p>
-                            <p>{currentMember.year}</p>
+                            <div>
+                                <p>{currentMember.name}</p>
+                                <p>{currentMember.position}</p>
+                                <p>{currentMember.year}</p>
+                            </div>
+                            
                             <p>{currentMember.blurb}</p>
                         </div>
                     </div>

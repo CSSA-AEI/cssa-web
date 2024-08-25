@@ -68,9 +68,13 @@
     font-family: 'Tiny5';
     box-sizing: border-box;
     padding: 2em;
+    font-size: 1.2em;
 }
-.tv-content > p{
+.tv-content > div > p{
     margin: 0;
+}
+.tv-content > p:nth-child(2){
+    line-height: 1.5em;
 }
 .meet-the-team-container{
     display: flex;

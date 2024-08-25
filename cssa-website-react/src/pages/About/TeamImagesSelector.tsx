@@ -10,18 +10,22 @@ export function getWindowDimensions() {
   };
 }
 
-const getImagePaths = () => {
-  const imagePaths = [];
-  for (let i = 1; i <= 12; i++) {
-    var imageMap =  new Map();
-    for (let j = 0; j < 10; j++) {
-      imageMap.set(j, `/execs/${i}/${j}.jpg`);
-    }
-    imagePaths.push(imageMap)
-  }
-  
-  return imagePaths;
+const preloadImages = (imageMapping: Map<number, string>[]) => {
+  const promises = imageMapping.flatMap(map =>
+    Array.from(map.values()).map(
+      (src) =>
+        new Promise<void>((resolve, reject) => {
+          const img = new Image();
+          img.src = src;
+          img.onload = () => resolve();
+          img.onerror = reject;
+        })
+    )
+  );
+
+  return Promise.all(promises);
 };
+
 interface TeamImagesSelectorProps {
   setSelectedExecMember: React.Dispatch<React.SetStateAction<string | undefined>>;
 }
@@ -32,6 +36,15 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const memberSpotRefs = useRef<(HTMLDivElement | null)[]>([]);
     const imageMapping = execImageMap;
+    const [imagesPreloaded, setImagesPreloaded] = useState(false);
+
+    useEffect(() => {
+      preloadImages(execImageMap).then(() => {
+        setImagesPreloaded(true);
+      }).catch((error) => {
+        console.error("Image preloading failed", error);
+      });
+    }, []);
 
     useEffect(() => {
       const handleMouseMove = (event: MouseEvent) => {
@@ -71,7 +84,7 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
         if (Math.abs(deltaY) <= threshold && deltaX < -threshold) return 7; // directly left
         if (deltaX < -threshold && deltaY < -threshold) return 8; // top-left quadrant
     
-        return 0; // default color
+        return 0; // default image
     };
     
   
@@ -103,21 +116,25 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
             className="member-spot"
             >
             <div className="member-image-container" ref={ref} >
-              <img id={`member-img-${index}`} src={imageDisplay} alt={`spot-${index}`} 
-                onClick={(e) => { 
-                  const newImage = imageMapping.at(index)?.get(9) || ''; 
+              {imagesPreloaded ? (
+              <img
+                id={`member-img-${index}`}
+                src={imageDisplay}
+                alt={`spot-${index}`}
+                onClick={(e) => {
+                  const newImage = imageMapping.at(index)?.get(9) || '';
                   e.currentTarget.src = newImage;
-                  setSelectedExecMember(execMapping.get(index+1));
+                  setSelectedExecMember(execMapping.get(index + 1));
                 }}
               />
+            ) : (
+              <div>Loading...</div> // You can customize this placeholder
+            )}
             </div>
             </div>
         );
     });
   
-    
-    
-
     return (
             <div className='team-container'>
                 <div className='team-body'>

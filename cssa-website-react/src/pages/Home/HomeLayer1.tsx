@@ -65,7 +65,7 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
                 </div>
                 <div className='image1-container' style={{position: `absolute`, height: `50vw`, width: `50vw`, right: `0%`, transform: 'translate(30%, 60%)'}}>
                     <img style={{height: '50vw', zIndex: '2', position: 'relative', bottom: '0',transform: 'translate(10%, -50%)', maxHeight: `80vh`}} src={Connor} alt='event-poster'/>
-                    <img style={{height: '50vw', width: 'auto', zIndex: '1', position: 'relative', bottom: '0',transform: 'translate(-20%, -150%)', maxHeight: `80vh`}} src={Tim} alt='event-poster'/>
+                    <img style={{height: '50vw', width: 'auto', zIndex: '1', position: 'relative', bottom: '0',transform: 'translate(-20%, -140%)', maxHeight: `80vh`}} src={Tim} alt='event-poster'/>
                     <img style={{height: '50vw', width: 'auto', zIndex: '3', position: 'relative', bottom: '0', transform: 'translate(-20%, -225%)', maxHeight: `80vh`}} src={CouchCarry} alt='event-poster'/>
                 </div>
             </div>
