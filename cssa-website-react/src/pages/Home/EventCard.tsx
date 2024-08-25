@@ -99,7 +99,7 @@ const EventCard: React.FC<EventCardProps> = ({title, date, description, image, l
                 <div style={{height: `50%`, width: `100%`}}>
                     <img src={image} alt='event-poster' style={{height: `auto`, width: `100%`}}/>
                 </div>
-                <div className="event-data-circle" >
+                <div className="event-data-circle">
                     {date}
                 </div>
             </div>

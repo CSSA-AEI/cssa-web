@@ -43,7 +43,6 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 0.8em;
     border: 2px solid white;
     transform: translateY(-50%);
     width: 5vw;
@@ -72,7 +71,7 @@
     font-size: 0.6em;
     box-sizing: border-box;
 }
-@media screen and (max-width: 1600px){
+/* @media screen and (max-width: 1600px){
     .event-title{
         font-size: 1em;
     }
@@ -82,34 +81,7 @@
     .event-data-circle{
         font-size: 1em;
     }
-}
-@media only screen and (max-width: 1024px) {
-    .event-title{
-        font-size: 1em;
-    }
-    .event-description{
-        font-size: 0.8em;
-    }
-    .event-data-circle{
-        font-size: 0.8em;
-    }
-}
-@media only screen and (max-width: 399px){
-    .event-info{
-        /* max-width: 35vw; */
-    }
-}
-@media only screen and (max-width: 900px){
-    .event-title{
-        font-size: 0.8em;
-    }
-    .event-description{
-        font-size: 0.6em;
-    }
-    .event-data-circle{
-        font-size: 0.6em;
-    }
-}
+} */
 @media only screen and (max-width: 500px){
     .event-info{
         font-size: 0.8em;
@@ -122,5 +94,38 @@
     }
     .event-description{
         font-size: 0.6em;
+    }
+}
+@media only screen and (max-width: 2000px){
+    .event-title{
+        font-size: 0.8em;
+    }
+    .event-description{
+        font-size: 0.6em;
+    }
+    .event-data-circle{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 1440px){
+    .event-title{
+        font-size: 0.8em;
+    }
+    .event-description{
+        font-size: 0.6em;
+    }
+    .event-data-circle{
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .event-title{
+        font-size: 0.8em;
+    }
+    .event-description{
+        font-size: 0.6em;
+    }
+    .event-data-circle{
+        font-size: 0.4em;
     }
 }
