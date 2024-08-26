@@ -43,13 +43,13 @@ const EventCard: React.FC<EventCardProps> = ({title, date, description, image, l
                 <div className='cssa-event' style={{width: `fit-content`, maxWidth: `${eventWidth}vw`, justifyContent: `space-between`, height:`fit-content`}} onClick={() => { window.location.href = link}}>
                     <div className="event-image-container" style={{height: `70%`, width: `100%`}}>
                         <img src={image} style={{height: `auto`, width: `100%`}} alt='event-poster'/>
-                        <div className="event-data-circle" style={{width: `10vw`, minHeight: `10vw`}}>
+                        <div className="event-data-circle">
                             {date}
                         </div>
                     </div>
-                    <div className='event-info' style={{width: `45vw`, height: `fit-content`, padding: `0`, top: `10%`}}>
-                        <div className="event-title" style={{padding: `0 0.5em`}}>{title}</div>
-                        <div className="event-description" style={{padding: `0 0.5em`, wordWrap: `break-word`}}>{description}</div>
+                    <div className='event-info' style={{top: `10%`}}>
+                        <div className="event-title">{title}</div>
+                        <div className="event-description">{description}</div>
                     </div>
                 </div>
             )
@@ -59,13 +59,13 @@ const EventCard: React.FC<EventCardProps> = ({title, date, description, image, l
                 <div className='cssa-event' style={{width: `fit-content`, maxWidth: `35vw`, justifyContent: `space-between`, height:`100%`}} onClick={() => { window.location.href = link}}>
                     <div className="event-image-container" style={{height: `70%`, width: `100%`}}>
                         <img src={image} style={{height: `auto`, width: `100%`}} alt='event-poster'/>
-                        <div className="event-data-circle" style={{width: `10vw`, minHeight: `10vw`}}>
+                        <div className="event-data-circle">
                             {date}
                         </div>
                     </div>
-                    <div className='event-info' style={{width: `35vw`, height: `fit-content`, padding: `0`}}>
-                        <div className="event-title" style={{padding: `0 0.5em`}}>{title}</div>
-                        <div className="event-description" style={{padding: `0 0.5em`, wordWrap: `break-word`}}>{description}</div>
+                    <div className='event-info'>
+                        <div className="event-title">{title}</div>
+                        <div className="event-description">{description}</div>
                     </div>
                 </div>
             )

@@ -42,7 +42,7 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
             }
             return(
                 <div className='home-layer-3-container'>
-                    <div className='layer-3-title' style={{padding: `0.5em 1em`}}>
+                    <div className='layer-3-title'>
                         <p>COME VISIT</p>
                         <p>SOME OF OUR</p>
                         <p>EVENTS</p>
@@ -67,7 +67,7 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
         else{
             return(
                 <div className='home-layer-3-container'>
-                    <div className='layer-3-title' style={{padding: `0.5em 1em`}}>
+                    <div className='layer-3-title'>
                         <p>COME VISIT</p>
                         <p>SOME OF OUR</p>
                         <p>EVENTS</p>

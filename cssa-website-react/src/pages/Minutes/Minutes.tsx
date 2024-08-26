@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import BinaryBackground from '../Home/BinaryBackground';
 import { getWindowDimensions } from '../Home/Home';
+import OfficeRoom from "../../images/scrapbook-images/officeRoom.png";
 import './minutes.css';
 
 const Minutes: React.FC = () => {
@@ -11,7 +12,7 @@ const Minutes: React.FC = () => {
     return(
       <div className='minutes-page-container' style={{height: `fit-content`}}>
         <BinaryBackground />
-        <div className='minutes-list' style={{width: `100vw`, height: `fit-content`}}>
+        <div className='minutes-list' style={{width: `100vw`, height: `92vh`}}>
           <div className='minutes-header' style={{marginBottom: `0.5em`}}>Meeting Minutes</div>
           <div className='minutes-description' style={{marginBottom: `0.5em`}}>
             <p>Minutes give you a snapshot of what was discussed during our weekly meetings.</p>
@@ -32,7 +33,7 @@ const Minutes: React.FC = () => {
   return (
     <div className='minutes-page-container'>
       <BinaryBackground />
-      <div className='minutes-list'>
+      <div className='minutes-list' style={{width: `50vw`}}>
         <div className='minutes-header'>Meeting Minutes</div>
         <div className='minutes-description'>
           <p>Minutes give you a snapshot of what was discussed during our weekly meetings.</p>
@@ -46,8 +47,8 @@ const Minutes: React.FC = () => {
           <a href='https://drive.google.com/drive/u/2/folders/1KqXnjxT9VXXSdnW_efvrZA0dZoIUUyc-'>2018-19</a>
         </div>
       </div>
-      <div className='minutes-image'>
-
+      <div className='minutes-image' style={{width: `50vw`}}>
+        <img src={OfficeRoom} style={{transform: `translate(0%, 70%)`}}/>
       </div>
     </div>
   );

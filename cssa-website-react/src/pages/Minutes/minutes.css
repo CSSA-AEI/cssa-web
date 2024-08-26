@@ -59,6 +59,14 @@
     transform: translate(-1%, -1%);
     box-shadow: 4px 4px #14283a;
 }
+.minutes-image{
+    width: 50vw;
+    height: 100%;
+}
+.minutes-image > img{
+    width: 100%;
+    height: auto;
+}
 @keyframes colorFade {
     0% { background-color: #E5E4E2; }
     100% { background-color: white; opacity: 100%; }
@@ -70,5 +78,23 @@
     .minute-links{
         width: calc(100vw - 4em);
         height: fit-content;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .minutes-page-container{
+        flex-direction: column;
+    }
+    .minute-links{
+        width: calc(100vw - 4em);
+        height: fit-content;
+    }
+    .minute-links > a{
+        font-size: 0.8em;
+    }
+    .minutes-header{
+        font-size: 2.5em;
+    }
+    .minutes-description{
+        font-size: 0.8em;
     }
 }

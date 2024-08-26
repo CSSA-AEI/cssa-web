@@ -5,6 +5,7 @@ import { getWindowDimensions } from '../../App';
 import Ali from '../../images/ali.jpg';
 import ConnorxChad from '../../images/volunteer-images/ConnorxChad.jpg';
 import JustinBack from '../../images/volunteer-images/justinBack.jpg';
+import CedricxZahra from '../../images/volunteer-images/CedricxZahra.jpg';
 
 interface VolunteerProps {
 }
@@ -116,7 +117,7 @@ const Volunteer: React.FC<VolunteerProps> = () => {
             <img src={ConnorxChad} alt='volunteer-poster'/>
           </div>
           <div className='volunteer-image'>
-            <img src={Ali} alt='volunteer-poster'/>
+            <img src={CedricxZahra} alt='volunteer-poster'/>
           </div>
         </div>
       </div>

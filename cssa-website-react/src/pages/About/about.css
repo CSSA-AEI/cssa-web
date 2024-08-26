@@ -99,6 +99,9 @@
 .exec-intro-blurb{
     height: 100%;
     width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .exec-image-container{
     height: 55%;
@@ -114,4 +117,12 @@
     box-sizing: border-box;
     padding: 1em;
     color: white;
+}
+.exec-social{
+    height: 10%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

@@ -71,7 +71,10 @@ const About: React.FC = () => {
                             <p>Office Email address: </p>
                           </div>
                         </div>
-                        <div className='exec-intro-blurb'>Hand</div>
+                        <div className='exec-intro-blurb'>
+                          <div className='exec-about-info'>Something</div>
+                          <div className='exec-social'>Something</div>
+                        </div>
                       </div>
                     </div>
                   )  : (
