@@ -40,10 +40,10 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
     if(orientation === 'portrait'){
         flexDirection = 'column'
         return(
-            <div className='home-layer-1-container' style={{flexDirection: 'column'}}>
+            <div className='home-layer-1-container'>
                 <InformationLayer windowSize={windowDimensions} flexDirection={flexDirection}/>
-                <div className='layer-1-circle-container' style={{marginTop: '4em'}}>
-                    <div className='circle' style={{height: `100vw`, width: `100vw`, maxHeight: `1200px`, maxWidth: `1200px`, transform: `translate(0%, 20%)`}}>
+                <div className='layer-1-circle-container'>
+                    <div className='circle'>
                         <div className='image1-container'>
                             <img  src={Connor} alt='event-poster'/>
                             <img  src={Tim} alt='event-poster'/>
@@ -60,10 +60,10 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
         <div className='home-layer-1-container' style={{flexDirection: 'row', }}>
             <BinaryBackground />
             <InformationLayer windowSize={windowDimensions} flexDirection={flexDirection}/>
-            <div className='layer-1-circle-container' style={{ height: flexDirection === 'row' ? '92vh' : '' , justifyContent: `flex-end`, alignItems: `center`, display: `flex`, width: `50%`}}>
-                <div className='circle' style={{height: `50vw`, width: `50vw`, position: `absolute`, right: `0%`, transform: 'translate(10%, 40%)'}}>
+            <div className='layer-1-circle-container'>
+                <div className='circle'>
                 </div>
-                <div className='image1-container' style={{position: `absolute`, height: `50vw`, width: `50vw`, right: `0%`, transform: 'translate(30%, 60%)'}}>
+                <div className='image1-container'>
                     <img src={Connor} alt='event-poster'/>
                     <img src={Tim} alt='event-poster'/>
                     <img src={CouchCarry} alt='event-poster'/>

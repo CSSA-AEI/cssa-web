@@ -36,6 +36,30 @@
 }
 
 @media only screen and (orientation:landscape) {
+    .home-layer-1-container{
+        flex-direction: row;
+    }
+    .layer-1-circle-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+        height: 92vh;
+    }
+    .circle{
+        height: 50vw;
+        width: 50vw;
+        position: absolute;
+        right: 0%;
+        transform: translate(10%, 40%);
+    }
+    .image1-container{
+        position: absolute;
+        height: 50vw;
+        width: 50vw;
+        right: 0%;
+        transform: translate(30%, 60%);
+    }
     .image1-container img{
         height: 50vw;
         max-height: 80vh;
@@ -60,6 +84,19 @@
 }
 
 @media only screen and (orientation:portrait) {
+    .home-layer-1-container{
+        flex-direction: column;
+    }
+    .layer-1-circle-container{
+        margin-top: 4em;
+    }
+    .circle{
+        height: 100vw;
+        width: 100vw;
+        max-height: 1200px;
+        max-width: 1200px;
+        transform: translate(0%, 20%);
+    }
     .image1-container img{
         bottom: 0;
         position: relative;
