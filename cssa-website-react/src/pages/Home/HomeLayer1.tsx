@@ -45,9 +45,9 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
                 <div className='layer-1-circle-container' style={{marginTop: '4em'}}>
                     <div className='circle' style={{height: `100vw`, width: `100vw`, maxHeight: `1200px`, maxWidth: `1200px`, transform: `translate(0%, 20%)`}}>
                         <div className='image1-container'>
-                            <img style={{height: 'inherit', zIndex: '2', position: 'relative', bottom: '0', left: '50%', transform: 'translate(-50%, -15%)'}} src={Connor} alt='event-poster'/>
-                            <img style={{height: 'auto', width: '100vw', zIndex: '1', position: 'relative', bottom: '0', left: '50%', transform: 'translate(-55%, -110%)'}} src={Tim} alt='event-poster'/>
-                            <img style={{height: 'auto', width: '100vw', zIndex: '3', position: 'relative', bottom: '0', transform: 'translate(-15%, -250%)'}} src={CouchCarry} alt='event-poster'/>
+                            <img  src={Connor} alt='event-poster'/>
+                            <img  src={Tim} alt='event-poster'/>
+                            <img  src={CouchCarry} alt='event-poster'/>
                         </div>
                     </div>
                 </div>
@@ -64,9 +64,9 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
                 <div className='circle' style={{height: `50vw`, width: `50vw`, position: `absolute`, right: `0%`, transform: 'translate(10%, 40%)'}}>
                 </div>
                 <div className='image1-container' style={{position: `absolute`, height: `50vw`, width: `50vw`, right: `0%`, transform: 'translate(30%, 60%)'}}>
-                    <img style={{height: '50vw', zIndex: '2', position: 'relative', bottom: '0',transform: 'translate(10%, -50%)', maxHeight: `80vh`}} src={Connor} alt='event-poster'/>
-                    <img style={{height: '50vw', width: 'auto', zIndex: '1', position: 'relative', bottom: '0',transform: 'translate(-20%, -140%)', maxHeight: `80vh`}} src={Tim} alt='event-poster'/>
-                    <img style={{height: '50vw', width: 'auto', zIndex: '3', position: 'relative', bottom: '0', transform: 'translate(-20%, -225%)', maxHeight: `80vh`}} src={CouchCarry} alt='event-poster'/>
+                    <img src={Connor} alt='event-poster'/>
+                    <img src={Tim} alt='event-poster'/>
+                    <img src={CouchCarry} alt='event-poster'/>
                 </div>
             </div>
         </div>

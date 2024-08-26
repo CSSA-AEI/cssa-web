@@ -35,11 +35,56 @@
     z-index: 1;
 }
 
-.image1-container img:nth-child(1){
-    animation: shake1 10s infinite;
+@media only screen and (orientation:landscape) {
+    .image1-container img{
+        height: 50vw;
+        max-height: 80vh;
+        bottom: 0;
+        position: relative;
+        width: auto;
+    }
+    .image1-container img:nth-child(1){
+        animation: shake1 10s infinite;
+        z-index: 2;
+        transform: translate(10%, -50%);
+    }
+    .image1-container img:nth-child(2){
+        z-index: 1;
+        transform: translate(-20%, -140%);
+    }
+    .image1-container img:nth-child(3){
+        animation: shake3 7.5s infinite;
+        transform: translate(-20%, -225%);
+        z-index: 3;
+    }
 }
-.image1-container img:nth-child(3){
-    animation: shake3 7.5s infinite;
+
+@media only screen and (orientation:portrait) {
+    .image1-container img{
+        bottom: 0;
+        position: relative;
+    }
+    .image1-container img:nth-child(1){
+        animation: mobileShake1 10s infinite;
+        z-index: 2;
+        transform: translate(-50%, -15%);
+        left: 50%;
+        height: inherit;
+    }
+    .image1-container img:nth-child(2){
+        z-index: 1;
+        transform: translate(-55%, -110%);
+        left: 50%;
+        height: auto;
+        width: 100vw;
+    }
+    .image1-container img:nth-child(3){
+        animation: mobileShake3 7.5s infinite;
+        transform: translate(-15%, -240%);
+        z-index: 3;
+        height: auto;
+        width: 100vw;
+    }
 }
 
 @keyframes shake1 {
@@ -62,4 +107,19 @@
     50% { transform: translate(-20%, -220%); }
     75% { transform: translate(-20%, -225%); }
     100% { transform: translate(-20%, -230%); }
+}
+@keyframes mobileShake1 {
+    0% { transform: translate(-50%, -15%); }
+    20% { transform: translate(-55%, -18%); }
+    40% { transform: translate(-50%, -15%); }
+    60% { transform: translate(-45%, -15%); }
+    80% { transform: translate(-45%, -18%); }
+    100% { transform: translate(-50%, -15%); }
+}
+@keyframes mobileShake3 {
+    0% { transform: translate(-20%, -240%); }
+    25% { transform: translate(-20%, -235%); }
+    50% { transform: translate(-20%, -230%); }
+    75% { transform: translate(-20%, -235%); }
+    100% { transform: translate(-20%, -240%); }
 }

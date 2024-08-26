@@ -25,13 +25,9 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
         <div className='information-layer1' style={{ height: flexDirection !== 'column' ? '92vh' : '', marginTop: flexDirection !== 'column' ? '0em' : '2em' , width: flexDirection !== 'column' ? '50%' : ''}}>
             <div className='information-layer1-container'>
                 <div className='info-layer-logo-container'>
-                    <img className='info-layer-logo' src={logo} alt="The CSSA Logo" style={{ width: `${logoWidth}px`, height: 'auto' }}/>
+                    <img className='info-layer-logo' src={logo} alt="The CSSA Logo"/>
                 </div>
-                {flexDirection === 'column' ? 
-                    (<div className='cssa-title' style={{justifyContent: 'center', textAlign: `center`}}>COMPUTER SCIENCE STUDENTS ASSOCIATION</div>)
-                    :
-                    (<div className='cssa-title'>COMPUTER SCIENCE STUDENTS ASSOCIATION</div>)
-                }
+                <div className='cssa-title'>COMPUTER SCIENCE STUDENTS ASSOCIATION</div>
                 <div className='pacman-layer'>
                     <Pacman />
                 </div>

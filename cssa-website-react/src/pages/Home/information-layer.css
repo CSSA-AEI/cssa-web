@@ -43,13 +43,35 @@
 .info-layer-invite > div:hover{
     text-decoration: underline #326491;
 }
-
-@media (max-width: 1023px) {
+@media only screen and (max-width: 600px) {
     .cssa-title{
-        font-size: 0.8em;
-        display: flex;
+        font-size: 0.75em;
     }
-    .info-layer-invite{
+    .info-layer-invite > div{
         font-size: 0.5em;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .cssa-title{
+        font-size: 1.2em;
+    }
+    .info-layer-invite > div{
+        font-size: 0.85em;
+    }
+}
+@media screen and (orientation: landscape){
+    .info-layer-logo{
+        width: 45vw;
+        height: auto;
+    }
+}
+@media screen and (orientation: portrait){
+    .info-layer-logo{
+        width: 80vw;
+        height: auto;
+    }
+    .cssa-title{
+        justify-content: center;
+        text-align: center;
     }
 }
