@@ -37,8 +37,6 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
 
     var dimensions = getWindowDimensions();
     const orientation = useOrientation();
-    console.log(orientation)
-    
 
     if(orientation === 'portrait' || dimensions.width < 768){
 

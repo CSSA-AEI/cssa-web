@@ -9,8 +9,6 @@ export const fetchEvents = async (year : number, month : number) => {
     var url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`;
 
     if(year !== undefined && month !== undefined){
-      console.log(year)
-      console.log(month)
       const startDate = new Date(year, month - 1, 1).toISOString();
       const endDate = new Date(year, month, 0); 
       endDate.setHours(23, 59, 59, 999);

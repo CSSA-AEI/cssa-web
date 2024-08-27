@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BinaryBackground from '../Home/BinaryBackground';
 import { getWindowDimensions } from '../Home/Home';
-import OfficeRoom from "../../images/scrapbook-images/officeRoom.png";
+import MeetingImage from '../../images/scrapbook-images/MinutesImage.png';
 import './minutes.css';
 
 const Minutes: React.FC = () => {
@@ -48,7 +48,7 @@ const Minutes: React.FC = () => {
         </div>
       </div>
       <div className='minutes-image' style={{width: `50vw`}}>
-        <img src={OfficeRoom} style={{transform: `translate(0%, 70%)`}}/>
+        <img src={MeetingImage}/>
       </div>
     </div>
   );

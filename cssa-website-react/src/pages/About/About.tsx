@@ -26,7 +26,6 @@ const About: React.FC = () => {
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
   const [selectedExecMember, setSelectedExecMember] = useState<string | undefined>('');
-  console.log(selectedExecMember)
 
   return (
         <div className='about-page-container'>
