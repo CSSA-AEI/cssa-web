@@ -5,6 +5,7 @@ import logo from '../../images/home-layer-1-images/cssalogo.png';
 import BinaryEvents from '../Events/BinaryEvents';
 import { teamInfo, TeamMember } from '../../resources/teamImagesInfo';
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import Carousel from './Carousel';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -79,7 +80,7 @@ const About: React.FC = () => {
                       <div className='exec-content'>
                         <div className='exec-member-info'>
                           <div className='exec-image-container'>
-
+                            <div className='image-holder'><img src={execMemberObject?.frontImage}/></div>
                           </div>
                           <div className='exec-contact-info'>
                             <p>{execMemberObject?.year}</p>
@@ -88,7 +89,13 @@ const About: React.FC = () => {
                           </div>
                         </div>
                         <div className='exec-intro-blurb'>
-                          <div className='exec-about-info'>Something</div>
+                          <div className='exec-about-info'>
+                            <Carousel questions={execMemberObject?.questions || [[]]}/>
+                          </div>
+                          <a className='music-button' href={execMemberObject?.songLink}>
+                            <img src={execMemberObject?.songImage} />
+                            <p>{execMemberObject?.song}</p>
+                          </a>
                           <div className='exec-social'>
                             {execMemberObject?.instagram && (
                               <a href={execMemberObject.instagram} target="_blank" rel="noopener noreferrer">
