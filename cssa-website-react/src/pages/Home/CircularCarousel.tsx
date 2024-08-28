@@ -104,17 +104,9 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
 
     if(flexDirection === 'column'){
       return (
-        <div className="container" style={{width: `100vw`, height: `60vw`, overflow: `hidden`}}>
-          <div
-            className="wheel"
-            style={{
-              transform: `translate(0%, 20%) rotate(${rotate}deg)`,
-              width: `100vw`,
-              height: `100vw`,
-              borderRadius: `50%`
-            }}
-          >
-            <div className="wheel-border" style={{height: 'inherit', width: 'inherit', borderRadius: `50%`, transform: `translate(0%, 30%) rotate(${rotate}deg)`, backgroundColor: `transparent`}}></div>
+        <div className="container">
+          <div className="wheel" style={{ transform: `translate(0%, 20%) rotate(${rotate}deg)`}}>
+            <div className="wheel-border" style={{transform: `translate(0%, 30%) rotate(${rotate}deg)`}}></div>
             {slides &&
             slides.map((slide, index) => {
               return (
@@ -141,17 +133,9 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
     }
 
     return (
-      <div className="container" style={{width: `55vw`, height: `70vh`, overflow: `hidden`}}>
-        <div
-          className="wheel"
-          style={{
-            transform: `translate(-45%, 10%) rotate(${rotate}deg)`,
-            width: `100vh`,
-            height: `100vh`,
-            borderRadius: `50%`
-          }}
-        >
-          <div className="wheel-border" style={{height: 'inherit', width: 'inherit', borderRadius: `50%`, transform: ` rotate(${rotate}deg)`,}}></div>
+      <div className="container">
+        <div className="wheel" style={{ transform: `translate(-45%, 10%) rotate(${rotate}deg)`}}>
+          <div className="wheel-border" style={{transform: `rotate(${rotate}deg)`}}></div>
           {slides &&
           slides.map((slide, index) => {
             return (

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './about.css';
 import TeamImagesSelector from './TeamImagesSelector';
 import logo from '../../images/home-layer-1-images/cssalogo.png';
 import BinaryEvents from '../Events/BinaryEvents';
+import { teamInfo, TeamMember } from '../../resources/teamImagesInfo';
+import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -22,10 +24,24 @@ const aboutBlurb = {
     services.`
 }
 
+function getTeamMemberByName(name: string) {
+  return teamInfo.find(member => member.name === name);
+}
+
 const About: React.FC = () => {
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
   const [selectedExecMember, setSelectedExecMember] = useState<string | undefined>('');
+  const [execMemberObject, setExecMemberObject] = useState<TeamMember | undefined>(undefined);
+  
+  useEffect(() => {
+    if (selectedExecMember) {
+      const member = getTeamMemberByName(selectedExecMember);
+      setExecMemberObject(member);
+      console.log(member);
+    }
+  }, [selectedExecMember]);
+
 
   return (
         <div className='about-page-container'>
@@ -66,13 +82,30 @@ const About: React.FC = () => {
 
                           </div>
                           <div className='exec-contact-info'>
-                            <p>Position: </p>
-                            <p>Office Email address: </p>
+                            <p>{execMemberObject?.year}</p>
+                            <p>Position: {execMemberObject?.position}</p>
+                            <p>Email address: {execMemberObject?.email || 'Email not available'}</p>
                           </div>
                         </div>
                         <div className='exec-intro-blurb'>
                           <div className='exec-about-info'>Something</div>
-                          <div className='exec-social'>Something</div>
+                          <div className='exec-social'>
+                            {execMemberObject?.instagram && (
+                              <a href={execMemberObject.instagram} target="_blank" rel="noopener noreferrer">
+                                <FaInstagram />
+                              </a>
+                            )}
+                            {execMemberObject?.linkedIn && (
+                              <a href={execMemberObject.linkedIn} target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin />
+                              </a>
+                            )}
+                            {execMemberObject?.personalEmail && (
+                              <a href={`/mailto:${execMemberObject.personalEmail}`}>
+                                <FaEnvelope />
+                              </a>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>

@@ -10,7 +10,19 @@ import AashishFront from '../images/Aashish_Suresh.jpg';
 import ToluFront from '../images/Tolu_Emoruwa.jpg';
 import TaraFront from '../images/Tara_DenaudJoseph.jpg';
 
-export const teamInfo =  [
+export interface TeamMember {
+    name: string;
+    position: string;
+    year: string;
+    blurb: string;
+    frontImage: string; // Assuming this is a string representing a URL or a path to the image
+    email?: string; // Optional, as some members might not have an email
+    linkedIn?: string;
+    personalEmail?: string;
+    instagram?: string;
+}
+
+export const teamInfo: TeamMember[] =  [
     {
         name: 'Rachel Qi',
         position: 'VP Academic',
@@ -18,7 +30,8 @@ export const teamInfo =  [
         blurb: `Hi! I'm Rachel, a 2nd year CS & math student from Aurora. Outside of studying, I spend my time gaming, 
         hanging out with friends, or learning about something new (currently planes!). I can't wait to meet you all! 🥰 `,
         frontImage: RachelQiFront,
-        email: 'academic@cssa-aei.ca'
+        email: 'academic@cssa-aei.ca',
+
     },
     {
         name: 'Ali Raza Bhangu',
@@ -26,7 +39,8 @@ export const teamInfo =  [
         year: '4th Year',
         blurb: "I'm a yapaholic",
         frontImage: AliFront,
-        email: 'president@cssa-aei.ca'
+        email: 'president@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/alirazabhangu/',
     },
     {
         name: 'Angeleeca Jocson',
@@ -34,7 +48,8 @@ export const teamInfo =  [
         year: '4th Year',
         blurb: "I'm a yapaholic",
         frontImage: AngieFront,
-        email: 'execaffairs@cssa-aei.ca'
+        email: 'execaffairs@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/angeleeca-jocson/',
     },
     {
         name: 'Justin Wang',
@@ -43,7 +58,8 @@ export const teamInfo =  [
         blurb: `You come here often? I'm Justin and I'm currently going into my 4th year. If you see me walking around 
         with a Hawaiian shirt or a jersey, you'll know it's me!`,
         frontImage: JustinFront,
-        
+        email: '',
+        linkedIn: 'https://www.linkedin.com/in/justin-wang-181b28203/'
     },
     {
         name: 'Aashish Suresh',
@@ -55,6 +71,8 @@ export const teamInfo =  [
         the guitar.`,
         frontImage: AashishFront,
         email: 'finance@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/aashish-suresh-a36639246/',
+        instagram: 'https://www.instagram.com/asuresh37/'
     },
     {
         name: 'Timothy Mao',
@@ -63,7 +81,8 @@ export const teamInfo =  [
         blurb: `Hey, I'm Tim and I'm now in my 4th year! I'm the guy who keeps track of merch and games -- 
         pretty sweet gig, right? I also love listening to music and trying to survive the everyday!`,
         frontImage: TimFront,
-        email: 'logistics@cssa-aei.ca'
+        email: 'logistics@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/the-offliner/',
     },
     {
         name: 'Fay Lee',
@@ -72,7 +91,8 @@ export const teamInfo =  [
         blurb: `Hi, my name's Fay and I'm in third year! When I'm not procrastinating assignments or pretending to be busy at work, I love going on 
         hot girl walks, spending time with friends, and watching reality tv/teen dramas!`,
         frontImage: FayFront,
-        email: 'phil@cssa-aei.ca'
+        email: 'phil@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/fay-lee/',
     },
     {
         name: 'Chelsea Brown',
@@ -82,7 +102,8 @@ export const teamInfo =  [
         things related to our office. I'm responsible for keeping our office orderly, fun, and stocked with snacks!! When I'm not frantically doing homework, I'm likely playing piano/guitar, cooking, 
         perfecting my latte art, or trying to nurse my tomato plants back to health. If you have any office questions, come find me during my office hours!!`,
         frontImage: AngieFront,
-        email: 'internal@cssa-aei.ca'
+        email: 'internal@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/chelsea-brown-89340a245/',
     },
     {
         name: 'Rachel Olugbemiro',
@@ -91,7 +112,9 @@ export const teamInfo =  [
         blurb: `Hey everyone! My name is Rachel and I'm your VP Equity of the CSSA this year! I'm in my 2nd year of CS and my job is to promote equity in and outside of the CSSA. 
         When I'm not doing my assignments I enjoy going to the gym and hanging out with friends.`,
         frontImage: RachelOFront,
-        email: 'equity@cssa-aei.ca'
+        email: 'equity@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/rachel-olugbemiro/',
+
     },
     {
         name: 'Erik Ang',
@@ -103,7 +126,9 @@ export const teamInfo =  [
         frantically doing homework, I'm likely playing piano/guitar, cooking, perfecting my latte art, or trying to 
         nurse my tomato plants back to health. If you have any office questions, come find me during my office hours!!`,
         frontImage: AngieFront,
-        email: 'external@cssa-aei.ca'
+        email: 'external@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/erik-ang-97773b260/',
+        instagram: 'https://www.instagram.com/erik_ang_/'
     },
     {
         name: 'Toluwanimi Emoruwa',
@@ -112,7 +137,10 @@ export const teamInfo =  [
         blurb: `Hey, I'm Tolu and I'm a current 4th year student here. When I'm not in the office working on school you can find me on campus at different intramurals. 
         Hope to see you around campus!`,
         frontImage: ToluFront,
-        email: 'it@cssa-aei.ca'
+        email: 'it@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/toluwanimi-emoruwa-1417ab218/',
+        instagram: 'https://www.instagram.com/t.o.l.u.e/',
+        personalEmail: 'emoruwatoluwanimi@gmail.com'
     },
     {
         name: 'Meriem Mostefai',
@@ -121,7 +149,9 @@ export const teamInfo =  [
         blurb: `I'm an alleged comp sci major and hater of proofs! I love to draw and be very loud. This is my second year being vp social and it's been my pleasure :D 
         I love this student association and I hope you'll come by to say hi to us at the office.`,
         frontImage: MeriemFront,
-        email: 'social@cssa-aei.ca'
+        email: 'social@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/meriemmostefai/',
+
     },
     {
         name: 'Tara Denaud Joseph',
@@ -132,6 +162,7 @@ export const teamInfo =  [
         When I'm not frantically doing homework, I'm likely playing piano/guitar, cooking, perfecting my latte art, or trying to nurse my tomato plants back to health. 
         If you have any office questions, come find me during my office hours!!`,
         frontImage: TaraFront,
-        email: 'comms@cssa-aei.ca'
+        email: 'comms@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/taradenaud/'
     },
 ]

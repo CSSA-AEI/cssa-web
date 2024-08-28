@@ -135,6 +135,7 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
         );
     });
   
+
     return (
             <div className='team-container'>
                 <div className='team-body'>
