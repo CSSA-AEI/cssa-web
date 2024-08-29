@@ -4,22 +4,11 @@ import Pacman from './Pacman';
 import './information-layer.css';
 
 interface InformationLayerProps {
-    windowSize: { width: number, height: number};
-    flexDirection: string
+
 }
 
-const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDirection}) => {
+const InformationLayer: React.FC<InformationLayerProps> = () => {
 
-    var logoWidth = 0;
-
-    //The block below is to be able to dynamically resize the logo on the home page.
-    //This way we can more easily prepare for other device sizes
-    if(flexDirection === 'column'){
-        logoWidth = windowSize.width-100;
-    }
-    else{
-        logoWidth = windowSize.width/2 - 50;
-    }
     
     return(
         <div className='information-layer1'>
@@ -32,7 +21,7 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
                     <Pacman />
                 </div>
                 <a href='https://maps.app.goo.gl/qHmKpCVCdSNHVBso9' className='address-tag'>
-                        <div className='info-layer-invite' id='info-layer-desktop'>
+                        <div className='info-layer-invite'>
                             <div>SWING BY OUR OFFICE</div>
                             <div>AT</div>
                             <div>SITE 4076</div>

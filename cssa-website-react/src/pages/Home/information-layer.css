@@ -8,13 +8,6 @@
 .info-layer-logo-container{
     margin-bottom: 2em;
 }
-#info-layer-desktop{
-    box-sizing: border-box;
-    padding: 1em;
-    background-color: #326491;
-    box-shadow: 3px 3px #14283a;
-    border: 1px solid #14283a;
-}
 #info-layer-desktop:hover{
     cursor: pointer;
     box-shadow: 6px 6px #14283a;
@@ -34,6 +27,11 @@
 .info-layer-invite{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: #326491;
+    box-shadow: 3px 3px #14283a;
+    border: 1px solid #14283a;
 }
 .info-layer-invite > div {
     width: fit-content;
@@ -69,6 +67,9 @@
         margin-top: 0;
         width: 50%;
     }
+    .home-layer-1-container{
+        flex-direction: row;
+    }
 }
 @media screen and (orientation: portrait){
     .info-layer-logo{
@@ -84,5 +85,8 @@
     }
     .info-layer-invite{
         align-items: center;
+    }
+    .home-layer-1-container{
+        flex-direction: column;
     }
 }

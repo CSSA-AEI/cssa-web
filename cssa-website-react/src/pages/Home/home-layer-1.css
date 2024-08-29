@@ -24,7 +24,6 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-40%);
     width: inherit;
     height: inherit;
 }
@@ -104,23 +103,24 @@
     .image1-container img:nth-child(1){
         animation: mobileShake1 10s infinite;
         z-index: 2;
-        transform: translate(-50%, -15%);
+        transform: translate(-50%, 160%);
         left: 50%;
-        height: inherit;
+        height: auto;
+        width: 80vw;
     }
     .image1-container img:nth-child(2){
         z-index: 1;
-        transform: translate(-55%, -110%);
+        transform: translate(-55%, 70%);
         left: 50%;
         height: auto;
         width: 100vw;
     }
     .image1-container img:nth-child(3){
         animation: mobileShake3 7.5s infinite;
-        transform: translate(-15%, -240%);
+        transform: translate(-17%, 20%);
         z-index: 3;
         height: auto;
-        width: 100vw;
+        width: 110vw;
     }
 }
 
@@ -146,17 +146,17 @@
     100% { transform: translate(-20%, -230%); }
 }
 @keyframes mobileShake1 {
-    0% { transform: translate(-50%, -15%); }
-    20% { transform: translate(-55%, -18%); }
-    40% { transform: translate(-50%, -15%); }
-    60% { transform: translate(-45%, -15%); }
-    80% { transform: translate(-45%, -18%); }
-    100% { transform: translate(-50%, -15%); }
+    0% { transform: translate(-50%, 170%); }
+    20% { transform: translate(-55%, 173%); }
+    40% { transform: translate(-50%, 170%); }
+    60% { transform: translate(-45%, 170%); }
+    80% { transform: translate(-45%, 173%); }
+    100% { transform: translate(-50%, 170%); }
 }
 @keyframes mobileShake3 {
-    0% { transform: translate(-20%, -240%); }
-    25% { transform: translate(-20%, -235%); }
-    50% { transform: translate(-20%, -230%); }
-    75% { transform: translate(-20%, -235%); }
-    100% { transform: translate(-20%, -240%); }
+    0% { transform: translate(-17%, 20%); }
+    25% { transform: translate(-17%, 15%); }
+    50% { transform: translate(-17%, 10%); }
+    75% { transform: translate(-17%, 15%); }
+    100% { transform: translate(-17%, 20%); }
 }
