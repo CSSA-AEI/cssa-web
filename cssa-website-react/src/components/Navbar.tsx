@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
     return (
         <div className='navbar'>
             <div className='navbar-logo'>
-                <Link to='/'><img src={NavLogo} /></Link>
+                <Link to='/'><img src={NavLogo} alt={"CSSA Logo"} /></Link>
             </div>
             <ul className={showDropdown ? 'navbar-links dropdown-menu' : 'navbar-links'}>
                 {links.map((link, index) => (

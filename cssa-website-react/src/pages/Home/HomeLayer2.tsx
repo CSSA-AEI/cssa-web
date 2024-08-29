@@ -104,7 +104,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                     <p>
                         Check out some of our members below.
                     </p>
-                    <a href='/about'><button>Learn More</button></a>
+                    <Link to='/about'><button>Learn More</button></Link>
                 </div>
                 <CircularCarousel flexDirection='row' getCurrentMember={setCurrentMember} images={teamInfo}/>
             </div>
