@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BinaryBackground from '../Home/BinaryBackground';
 import { getWindowDimensions } from '../Home/Home';
-import MeetingImage from '../../images/scrapbook-images/MinutesImage.png';
+import MeetingImage from '../../images/scrapbook-images/MinutesImage.webp';
 import './minutes.css';
 
 const Minutes: React.FC = () => {

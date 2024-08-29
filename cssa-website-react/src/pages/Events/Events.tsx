@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Calendar from './Calendar';
 import BinaryEvents from './BinaryEvents';
 import { doesDayContainEvent } from './Calendar';
-import EventsPage from '../../images/scrapbook-images/EventsPage.png';
+import EventsPage from '../../images/scrapbook-images/EventsPage.webp';
 import DayEvent from './DayEvent';
 import './events.css';
 

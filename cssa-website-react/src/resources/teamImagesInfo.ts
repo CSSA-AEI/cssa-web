@@ -1,14 +1,14 @@
-import AliFront from '../images/ali.jpg';
-import AngieFront from '../images/angie.jpg';
-import RachelQiFront from '../images/rachelqi.jpg';
-import RachelOFront from '../images/rachelo.jpg';
-import TimFront from '../images/Tim_Mao.jpg';
+import AliFront from '../images/ali.webp';
+import AngieFront from '../images/angie.webp';
+import RachelQiFront from '../images/rachelqi.webp';
+import RachelOFront from '../images/rachelo.webp';
+import TimFront from '../images/Tim_Mao.webp';
 import FayFront from '../images/Fay_Lee.jpeg';
-import MeriemFront from '../images/Meriem_Mostefai.jpg';
+import MeriemFront from '../images/Meriem_Mostefai.webp';
 import JustinFront from '../images/Justin_Wang.jpg';
-import AashishFront from '../images/Aashish_Suresh.jpg';
+import AashishFront from '../images/Aashish_Suresh.webp';
 import ToluFront from '../images/Tolu_Emoruwa.jpg';
-import TaraFront from '../images/Tara_DenaudJoseph.jpg';
+import TaraFront from '../images/Tara_DenaudJoseph.webp';
 
 export interface TeamMember {
     name: string;
