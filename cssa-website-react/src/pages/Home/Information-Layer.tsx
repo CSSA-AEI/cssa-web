@@ -22,7 +22,7 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
     }
     
     return(
-        <div className='information-layer1' style={{ height: flexDirection !== 'column' ? '92vh' : '', marginTop: flexDirection !== 'column' ? '0em' : '2em' , width: flexDirection !== 'column' ? '50%' : ''}}>
+        <div className='information-layer1'>
             <div className='information-layer1-container'>
                 <div className='info-layer-logo-container'>
                     <img className='info-layer-logo' src={logo} alt="The CSSA Logo"/>
@@ -31,22 +31,13 @@ const InformationLayer: React.FC<InformationLayerProps> = ({windowSize, flexDire
                 <div className='pacman-layer'>
                     <Pacman />
                 </div>
-                <a href='https://maps.app.goo.gl/qHmKpCVCdSNHVBso9' className='address-tag'>{flexDirection === 'column' ? 
-                    (
-                        <div className='info-layer-invite' style={{alignItems: 'center'}}>
-                            <div>SWING BY OUR OFFICE</div>
-                            <div>AT</div>
-                            <div>SITE 4076</div>
-                        </div>
-                    ) :
-                    (
+                <a href='https://maps.app.goo.gl/qHmKpCVCdSNHVBso9' className='address-tag'>
                         <div className='info-layer-invite' id='info-layer-desktop'>
                             <div>SWING BY OUR OFFICE</div>
                             <div>AT</div>
                             <div>SITE 4076</div>
                         </div>
-                    )
-                }</a>
+                </a>
             </div>
         </div>
     )

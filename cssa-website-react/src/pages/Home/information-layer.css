@@ -64,6 +64,11 @@
         width: 45vw;
         height: auto;
     }
+    .information-layer1{
+        height: 92vh;
+        margin-top: 0;
+        width: 50%;
+    }
 }
 @media screen and (orientation: portrait){
     .info-layer-logo{
@@ -73,5 +78,11 @@
     .cssa-title{
         justify-content: center;
         text-align: center;
+    }
+    .information-layer1{
+        margin-top: 2em;
+    }
+    .info-layer-invite{
+        align-items: center;
     }
 }
