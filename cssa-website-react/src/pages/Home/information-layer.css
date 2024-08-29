@@ -8,11 +8,6 @@
 .info-layer-logo-container{
     margin-bottom: 2em;
 }
-#info-layer-desktop:hover{
-    cursor: pointer;
-    box-shadow: 6px 6px #14283a;
-    transform: translate(-1%,-2%);
-}
 #info-layer-desktop > div{
     color: white;
 }
@@ -23,6 +18,8 @@
 }
 .address-tag{
     text-decoration: none;
+    z-index: 10;
+    position: relative;
 }
 .info-layer-invite{
     display: flex;
@@ -33,10 +30,15 @@
     box-shadow: 3px 3px #14283a;
     border: 1px solid #14283a;
 }
+.info-layer-invite:hover{
+    cursor: pointer;
+    box-shadow: 6px 6px #14283a;
+    transform: translate(-1%,-2%);
+}
 .info-layer-invite > div {
     width: fit-content;
     margin-bottom: 10px;
-    color: #808080;
+    color: white;
 }
 .info-layer-invite > div:hover{
     text-decoration: underline #326491;

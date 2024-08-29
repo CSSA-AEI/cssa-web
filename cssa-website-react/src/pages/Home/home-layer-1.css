@@ -24,6 +24,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
+    transform: translateX(-40%);
     width: inherit;
     height: inherit;
 }
@@ -95,6 +96,9 @@
         max-height: 1200px;
         max-width: 1200px;
         transform: translate(0%, 20%);
+    }
+    .image1-container{
+        height: fit-content;
     }
     .image1-container img{
         bottom: 0;
