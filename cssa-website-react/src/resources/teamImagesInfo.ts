@@ -197,9 +197,9 @@ export const teamInfo: TeamMember[] =  [
             ["Do you think a spring roll is a burrito?", "No. A spring roll would be a chimichanga more than anything"],
             ["", ""]
         ],
-        song: 'Brasileiro - Bawo, Danny Sanchez, & Kxmel',
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/00/cb/68/00cb683d-7804-da31-d857-bc4be549362f/5059324390040_Cover.jpg/592x592bb.webp',
-        songLink: 'https://music.apple.com/us/album/brasileiro/1650448330?i=1650448547'
+        song: 'Next Levels - King Geedorah',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8d/90/7e/8d907ef8-b448-849d-5858-238ac35a2063/dj.nwgymcvg.jpg/632x632bb.webp',
+        songLink: 'https://music.apple.com/us/album/next-levels-feat-4-winds-lil-sci-stahhr/416318858?i=416318865'
     },
     {
         name: 'Meriem Mostefai',

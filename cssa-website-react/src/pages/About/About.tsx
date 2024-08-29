@@ -39,7 +39,6 @@ const About: React.FC = () => {
     if (selectedExecMember) {
       const member = getTeamMemberByName(selectedExecMember);
       setExecMemberObject(member);
-      console.log(member);
     }
   }, [selectedExecMember]);
 
