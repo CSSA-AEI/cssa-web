@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-const ResponsiveImage: React.FC<{ src: string; alt: string; width: number }> = ({ src, alt, width }) => {
+interface ResponsiveImageProps {
+    src: string;
+    alt: string;
+    width: number; // The desired width of the image
+}
+
+const ResponsiveImage: React.FC<ResponsiveImageProps> = ({ src, alt, width }) => {
     const [aspectRatio, setAspectRatio] = useState<number | null>(null);
 
     useEffect(() => {
@@ -12,7 +18,14 @@ const ResponsiveImage: React.FC<{ src: string; alt: string; width: number }> = (
     }, [src]);
 
     return (
-        <div style={{ width: `${width}px`, height: aspectRatio ? `${width / aspectRatio}px` : 'auto' }}>
+        <div
+            style={{
+                width: `${width}px`,
+                height: aspectRatio ? `${width / aspectRatio}px` : 'auto',
+                overflow: 'hidden',
+                position: 'relative',
+            }}
+        >
             <img
                 src={src}
                 alt={alt}
@@ -20,6 +33,9 @@ const ResponsiveImage: React.FC<{ src: string; alt: string; width: number }> = (
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
                 }}
             />
         </div>

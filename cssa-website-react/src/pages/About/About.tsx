@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './about.css';
 import TeamImagesSelector from './TeamImagesSelector';
-import logo from '../../images/home-layer-1-images/cssalogo.png';
+import logo from '../../images/home-layer-1-images/cssalogo.webp';
 import BinaryEvents from '../Events/BinaryEvents';
 import { teamInfo, TeamMember } from '../../resources/teamImagesInfo';
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';

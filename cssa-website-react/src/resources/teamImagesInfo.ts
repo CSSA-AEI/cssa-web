@@ -3,11 +3,11 @@ import AngieFront from '../images/angie.webp';
 import RachelQiFront from '../images/rachelqi.webp';
 import RachelOFront from '../images/rachelo.webp';
 import TimFront from '../images/Tim_Mao.webp';
-import FayFront from '../images/Fay_Lee.jpeg';
+import FayFront from '../images/Fay_Lee.webp';
 import MeriemFront from '../images/Meriem_Mostefai.webp';
-import JustinFront from '../images/Justin_Wang.jpg';
+import JustinFront from '../images/Justin_Wang.webp';
 import AashishFront from '../images/Aashish_Suresh.webp';
-import ToluFront from '../images/Tolu_Emoruwa.jpg';
+import ToluFront from '../images/Tolu_Emoruwa.webp';
 import TaraFront from '../images/Tara_DenaudJoseph.webp';
 
 export interface TeamMember {

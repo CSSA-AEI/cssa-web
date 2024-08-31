@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/home-layer-1-images/cssalogo.png';
+import logo from '../../images/home-layer-1-images/cssalogo.webp';
 import Pacman from './Pacman';
 import './information-layer.css';
 

@@ -5,9 +5,9 @@ import WaterDunk from '../../images/scrapbook-images/water_dunk.png';
 import BullRiding from '../../images/scrapbook-images/bull_riding.png';
 import Bowling from '../../images/scrapbook-images/bowling.png';
 import EventCard from './EventCard';
-import Event1 from '../../images/events-posters/event1.png';
-import Event2 from '../../images/events-posters/webdevevent.png';
-import Event3 from '../../images/events-posters/halloween_event.png';
+import Event1 from '../../images/events-posters/event1.webp';
+import Event2 from '../../images/events-posters/webdevevent.webp';
+import Event3 from '../../images/events-posters/halloween_event.webp';
 import Group20 from '../../images/scrapbook-images/Group-20.png';
 import BinaryBackground from './BinaryBackground';
 
