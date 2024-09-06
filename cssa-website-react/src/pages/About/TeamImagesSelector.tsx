@@ -88,7 +88,7 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
     };
     
   
-    const memberSpots = Array.from({ length: 12 }).map((_, index) => {
+    const memberSpots = Array.from({ length: 13 }).map((_, index) => {
         const ref = (el: HTMLDivElement) => {
             memberSpotRefs.current[index] = el;
         };
@@ -112,25 +112,25 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
   
         return (
             <div
-            key={index}
-            className="member-spot"
+              key={index}
+              className= {`member-spot ${index === 0 ? 'whole-row' : ''}`}
             >
-            <div className="member-image-container" ref={ref} >
-              {imagesPreloaded ? (
-              <img
-                id={`member-img-${index}`}
-                src={imageDisplay}
-                alt={`spot-${index}`}
-                onClick={(e) => {
-                  const newImage = imageMapping.at(index)?.get(9) || '';
-                  e.currentTarget.src = newImage;
-                  setSelectedExecMember(execMapping.get(index + 1));
-                }}
-              />
-            ) : (
-              <div>Loading...</div> // You can customize this placeholder
-            )}
-            </div>
+              <div className="member-image-container" ref={ref} >
+                {imagesPreloaded ? (
+                  <img
+                    id={`member-img-${index}`}
+                    src={imageDisplay}
+                    alt={`spot-${index}`}
+                    onClick={(e) => {
+                      const newImage = imageMapping.at(index)?.get(9) || '';
+                      e.currentTarget.src = newImage;
+                      setSelectedExecMember(execMapping.get(index + 1));
+                    }}
+                  />
+                  ) : (
+                  <div>Loading...</div> // You can customize this placeholder
+                )}
+              </div>
             </div>
         );
     });

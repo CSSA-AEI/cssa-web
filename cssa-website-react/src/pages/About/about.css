@@ -34,7 +34,7 @@
 }
 .team-member-display-container{
     width: 50vw;
-    height: 92vh;
+    /* height: 92vh; */
     box-sizing: border-box;
     padding: 2em;
 }
@@ -46,6 +46,13 @@
     box-shadow: 3px 3px #14283A;
     box-sizing: border-box;
     padding: 1em;
+}
+.team-info-container{
+    height: 92vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
 }
 .team-member-body{
     display: flex;
@@ -103,6 +110,7 @@
     height: 50%;
     width: 100%;
     display: flex;
+    font-size: 0.85em;
 }
 .exec-intro-blurb{
     height: 100%;
@@ -141,6 +149,7 @@
     padding: 1em;
     color: white;
     max-height: 40%;
+    font-size: 0.85em;
 }
 .exec-social{
     height: 10%;
@@ -182,4 +191,83 @@
     width: fit-content;
     text-align: end;
     font-size: 0.85em;
+}
+@media only screen and (orientation:portrait) {
+    .about-page-container{
+        
+    }
+    .team-info-container{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .team-member-display-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .team-container{
+        height: 40vh;
+    }
+    .team-member-display{
+        height: 60vh;
+    }
+    .exec-intro-blurb{
+        height: 100%;
+    }
+    .music-button > img{
+        height: 5vh;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width: 767px) {
+    .team-info-container{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .team-member-display-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .team-container{
+        height: 40vh;
+    }
+    .team-member-display{
+        height: fit-content;
+    }
+    .team-member-body{
+        height: fit-content;
+    }
+    .exec-image-container{
+        height: fit-content;
+        margin-bottom: 1em;
+    }
+    .exec-intro-blurb{
+        height: 100%;
+        width: 100%;
+    }
+    .music-button > img{
+        height: 5vh;
+    }
+    .exec-contact-info{
+        font-size: 0.8em;
+    }
+    .exec-content{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .exec-about-info{
+        padding: 0 1em;
+        box-sizing: border-box;
+        margin: 1em 0;
+        font-size: 0.8em;
+    }
+    .exec-member-info{
+        width: 100%;
+    }
+    .exec-social{
+        box-sizing: border-box;
+        padding: 1em 0;
+    }
+    .exec-social > a {
+        display: flex;
+        align-items: center;
+    }
 }

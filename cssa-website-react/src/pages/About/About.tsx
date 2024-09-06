@@ -68,9 +68,9 @@ const About: React.FC = () => {
           <div className='team-title'>
             MEET OUR 2024-25 TEAM
           </div>
-          <div className='team-info-container' style={{width: `100vw`, height: `92vh`, boxSizing: `border-box`, overflow: `hidden`, display: `flex`}}>
+          <div className='team-info-container'>
             <TeamImagesSelector setSelectedExecMember={setSelectedExecMember}/>
-            <div className='team-member-display-container' style={{flex: 1}}>
+            <div className='team-member-display-container'>
               <div className='team-member-display'>
                 {
                   selectedExecMember ? (

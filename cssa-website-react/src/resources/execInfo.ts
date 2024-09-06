@@ -291,4 +291,16 @@ export const execImageMap = [
         [8, Justin8],
         [9, Justin9],
     ]),
+    new Map([
+        [0, Justin0],
+        [1, Justin1],
+        [2, Justin2],
+        [3, Justin3],
+        [4, Justin4],
+        [5, Justin5],
+        [6, Justin6],
+        [7, Justin7],
+        [8, Justin8],
+        [9, Justin9],
+    ]),
 ];
