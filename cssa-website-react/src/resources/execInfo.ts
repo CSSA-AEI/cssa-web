@@ -119,16 +119,16 @@ import RachelO7 from "../images/execs/11/7.jpg";
 import RachelO8 from "../images/execs/11/8.jpg";
 import RachelO9 from "../images/execs/11/9.jpg";
 
-// import lO0 from "../images/execs/12/0.jpg";
-// import lO1 from "../images/execs/12/1.jpg";
-// import lO2 from "../images/execs/12/2.jpg";
-// import lO3 from "../images/execs/12/3.jpg";
-// import lO4 from "../images/execs/12/4.jpg";
-// import lO5 from "../images/execs/12/5.jpg";
-// import lO6 from "../images/execs/12/6.jpg";
-// import lO7 from "../images/execs/12/7.jpg";
-// import lO8 from "../images/execs/12/8.jpg";
-// import lO9 from "../images/execs/12/9.jpg";
+import Chelsea0 from "../images/execs/12/0.webp";
+import Chelsea1 from "../images/execs/12/1.webp";
+import Chelsea2 from "../images/execs/12/2.webp";
+import Chelsea3 from "../images/execs/12/3.webp";
+import Chelsea4 from "../images/execs/12/4.webp";
+import Chelsea5 from "../images/execs/12/5.webp";
+import Chelsea6 from "../images/execs/12/6.webp";
+import Chelsea7 from "../images/execs/12/7.webp";
+import Chelsea8 from "../images/execs/12/8.webp";
+import Chelsea9 from "../images/execs/12/9.webp";
 
 export const execMapping = new Map ([
     [1, 'Ali Raza Bhangu'],
@@ -292,15 +292,15 @@ export const execImageMap = [
         [9, Justin9],
     ]),
     new Map([
-        [0, Justin0],
-        [1, Justin1],
-        [2, Justin2],
-        [3, Justin3],
-        [4, Justin4],
-        [5, Justin5],
-        [6, Justin6],
-        [7, Justin7],
-        [8, Justin8],
-        [9, Justin9],
+        [0, Chelsea0],
+        [1, Chelsea1],
+        [2, Chelsea2],
+        [3, Chelsea3],
+        [4, Chelsea4],
+        [5, Chelsea5],
+        [6, Chelsea6],
+        [7, Chelsea7],
+        [8, Chelsea8],
+        [9, Chelsea9],
     ]),
 ];

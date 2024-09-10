@@ -47,7 +47,7 @@ const EventCard: React.FC<EventCardProps> = ({title, date, description, image, l
                             {date}
                         </div>
                     </div>
-                    <div className='event-info' style={{top: `10%`}}>
+                    <div className='event-info'>
                         <div className="event-title">{title}</div>
                         <div className="event-description">{description}</div>
                     </div>
