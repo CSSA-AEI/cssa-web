@@ -28,7 +28,7 @@ const HomeLayer1: React.FC<HomeLayer1Props> = ({ windowDimensions }) => {
                 <div className='image1-container'>
                     <img src={Connor} alt='event-poster'/>
                     <img src={Tim} alt='event-poster'/>
-                    <img src={`/images/CouchCarry.webp`} alt='event-poster'/>
+                    <img src={CouchCarry} alt='event-poster'/>
                 </div>
             </div>
         </div>

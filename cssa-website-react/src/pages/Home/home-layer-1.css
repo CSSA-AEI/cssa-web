@@ -103,6 +103,7 @@
     }
     .image1-container{
         height: fit-content;
+        position: absolute;
     }
     .image1-container img{
         bottom: 0;

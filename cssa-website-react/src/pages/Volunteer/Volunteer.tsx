@@ -6,6 +6,7 @@ import Ali from '../../images/ali.jpg';
 import ConnorxChad from '../../images/volunteer-images/ConnorxChad.jpg';
 import JustinBack from '../../images/volunteer-images/justinBack.jpg';
 import CedricxZahra from '../../images/volunteer-images/CedricxZahra.jpg';
+import VolunteerImage from '../../images/volunteer-images/volunteer-image.png';
 
 interface VolunteerProps {
 }
@@ -21,7 +22,7 @@ const Volunteer: React.FC<VolunteerProps> = () => {
 
   if(windowDimensions.width/windowDimensions.height <= 1){
     return(
-      <div className="volunteer-body" style={{height: `fit-content`}}>
+      <div className="volunteer-body">
         <BinaryBackground />
         <div className='volunteer-events-container' style={{height: `fit-content`}}>
           <div className='volunteer-header'>VOLUNTEERING OPPORTUNITIES</div>
@@ -62,6 +63,7 @@ const Volunteer: React.FC<VolunteerProps> = () => {
             </button>
           </div>
         </div>
+        <img src={VolunteerImage}/>
       </div>
     )
   }
@@ -109,7 +111,9 @@ const Volunteer: React.FC<VolunteerProps> = () => {
             ))}
           </div>
         </div>
-        <div className='volunteer-images-container'>
+        <img src={VolunteerImage}/>
+        {/* <div className='volunteer-images-container'>
+          
           <div className='volunteer-image'>
             <img src={JustinBack} alt='volunteer-poster'/>
           </div>
@@ -119,7 +123,7 @@ const Volunteer: React.FC<VolunteerProps> = () => {
           <div className='volunteer-image'>
             <img src={CedricxZahra} alt='volunteer-poster'/>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
