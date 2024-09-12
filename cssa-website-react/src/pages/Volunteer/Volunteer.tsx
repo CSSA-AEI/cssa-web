@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import './volunteer.css';
 import BinaryBackground from '../Home/BinaryBackground';
 import { getWindowDimensions } from '../../App';
-import Ali from '../../images/ali.jpg';
-import ConnorxChad from '../../images/volunteer-images/ConnorxChad.jpg';
-import JustinBack from '../../images/volunteer-images/justinBack.jpg';
-import CedricxZahra from '../../images/volunteer-images/CedricxZahra.jpg';
-import VolunteerImage from '../../images/volunteer-images/volunteer-image.png';
+import VolunteerImage from '../../images/volunteer-images/volunteer-image.webp';
 
 interface VolunteerProps {
 }

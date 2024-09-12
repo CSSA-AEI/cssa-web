@@ -21,7 +21,7 @@
     box-sizing: border-box;
     width: fit-content;
     background-color: white;
-    /* margin: 1em 0; */
+    width: calc(50vw - 4em);
     padding: 1em;
     border: 1px solid #14283a;
     box-shadow: 2px 2px #14283a;
@@ -58,6 +58,7 @@
     animation: colorFade 0.5s ;
     transform: translate(-1%, -1%);
     box-shadow: 4px 4px #14283a;
+    cursor: pointer;
 }
 .minutes-image{
     width: 50vw;
