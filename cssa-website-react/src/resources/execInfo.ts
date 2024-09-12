@@ -1,123 +1,123 @@
-import Justin0 from "../images/execs/1/0.jpg";
-import Justin1 from "../images/execs/1/1.jpg";
-import Justin2 from "../images/execs/1/2.jpg";
-import Justin3 from "../images/execs/1/3.jpg";
-import Justin4 from "../images/execs/1/4.jpg";
-import Justin5 from "../images/execs/1/5.jpg";
-import Justin6 from "../images/execs/1/6.jpg";
-import Justin7 from "../images/execs/1/7.jpg";
-import Justin8 from "../images/execs/1/8.jpg";
-import Justin9 from "../images/execs/1/9.jpg";
+import Justin0 from "../images/execs/1/0.webp";
+import Justin1 from "../images/execs/1/1.webp";
+import Justin2 from "../images/execs/1/2.webp";
+import Justin3 from "../images/execs/1/3.webp";
+import Justin4 from "../images/execs/1/4.webp";
+import Justin5 from "../images/execs/1/5.webp";
+import Justin6 from "../images/execs/1/6.webp";
+import Justin7 from "../images/execs/1/7.webp";
+import Justin8 from "../images/execs/1/8.webp";
+import Justin9 from "../images/execs/1/9.webp";
 
-import Angie0 from "../images/execs/2/0.jpg";
-import Angie1 from "../images/execs/2/1.jpg";
-import Angie2 from "../images/execs/2/2.jpg";
-import Angie3 from "../images/execs/2/3.jpg";
-import Angie4 from "../images/execs/2/4.jpg";
-import Angie5 from "../images/execs/2/5.jpg";
-import Angie6 from "../images/execs/2/6.jpg";
-import Angie7 from "../images/execs/2/7.jpg";
-import Angie8 from "../images/execs/2/8.jpg";
-import Angie9 from "../images/execs/2/9.jpg";
+import Angie0 from "../images/execs/2/0.webp";
+import Angie1 from "../images/execs/2/1.webp";
+import Angie2 from "../images/execs/2/2.webp";
+import Angie3 from "../images/execs/2/3.webp";
+import Angie4 from "../images/execs/2/4.webp";
+import Angie5 from "../images/execs/2/5.webp";
+import Angie6 from "../images/execs/2/6.webp";
+import Angie7 from "../images/execs/2/7.webp";
+import Angie8 from "../images/execs/2/8.webp";
+import Angie9 from "../images/execs/2/9.webp";
 
-import Ali0 from "../images/execs/3/0.jpg";
-import Ali1 from "../images/execs/3/1.jpg";
-import Ali2 from "../images/execs/3/2.jpg";
-import Ali3 from "../images/execs/3/3.jpg";
-import Ali4 from "../images/execs/3/4.jpg";
-import Ali5 from "../images/execs/3/5.jpg";
-import Ali6 from "../images/execs/3/6.jpg";
-import Ali7 from "../images/execs/3/7.jpg";
-import Ali8 from "../images/execs/3/8.jpg";
-import Ali9 from "../images/execs/3/9.jpg";
+import Ali0 from "../images/execs/3/0.webp";
+import Ali1 from "../images/execs/3/1.webp";
+import Ali2 from "../images/execs/3/2.webp";
+import Ali3 from "../images/execs/3/3.webp";
+import Ali4 from "../images/execs/3/4.webp";
+import Ali5 from "../images/execs/3/5.webp";
+import Ali6 from "../images/execs/3/6.webp";
+import Ali7 from "../images/execs/3/7.webp";
+import Ali8 from "../images/execs/3/8.webp";
+import Ali9 from "../images/execs/3/9.webp";
 
-import Meriem0 from "../images/execs/4/0.jpg";
-import Meriem1 from "../images/execs/4/1.jpg";
-import Meriem2 from "../images/execs/4/2.jpg";
-import Meriem3 from "../images/execs/4/3.jpg";
-import Meriem4 from "../images/execs/4/4.jpg";
-import Meriem5 from "../images/execs/4/5.jpg";
-import Meriem6 from "../images/execs/4/6.jpg";
-import Meriem7 from "../images/execs/4/7.jpg";
-import Meriem8 from "../images/execs/4/8.jpg";
-import Meriem9 from "../images/execs/4/9.jpg";
+import Meriem0 from "../images/execs/4/0.webp";
+import Meriem1 from "../images/execs/4/1.webp";
+import Meriem2 from "../images/execs/4/2.webp";
+import Meriem3 from "../images/execs/4/3.webp";
+import Meriem4 from "../images/execs/4/4.webp";
+import Meriem5 from "../images/execs/4/5.webp";
+import Meriem6 from "../images/execs/4/6.webp";
+import Meriem7 from "../images/execs/4/7.webp";
+import Meriem8 from "../images/execs/4/8.webp";
+import Meriem9 from "../images/execs/4/9.webp";
 
-import Aashish0 from "../images/execs/5/0.jpg";
-import Aashish1 from "../images/execs/5/1.jpg";
-import Aashish2 from "../images/execs/5/2.jpg";
-import Aashish3 from "../images/execs/5/3.jpg";
-import Aashish4 from "../images/execs/5/4.jpg";
-import Aashish5 from "../images/execs/5/5.jpg";
-import Aashish6 from "../images/execs/5/6.jpg";
-import Aashish7 from "../images/execs/5/7.jpg";
-import Aashish8 from "../images/execs/5/8.jpg";
-import Aashish9 from "../images/execs/5/9.jpg";
+import Aashish0 from "../images/execs/5/0.webp";
+import Aashish1 from "../images/execs/5/1.webp";
+import Aashish2 from "../images/execs/5/2.webp";
+import Aashish3 from "../images/execs/5/3.webp";
+import Aashish4 from "../images/execs/5/4.webp";
+import Aashish5 from "../images/execs/5/5.webp";
+import Aashish6 from "../images/execs/5/6.webp";
+import Aashish7 from "../images/execs/5/7.webp";
+import Aashish8 from "../images/execs/5/8.webp";
+import Aashish9 from "../images/execs/5/9.webp";
 
-import Erik0 from "../images/execs/6/0.jpg";
-import Erik1 from "../images/execs/6/1.jpg";
-import Erik2 from "../images/execs/6/2.jpg";
-import Erik3 from "../images/execs/6/3.jpg";
-import Erik4 from "../images/execs/6/4.jpg";
-import Erik5 from "../images/execs/6/5.jpg";
-import Erik6 from "../images/execs/6/6.jpg";
-import Erik7 from "../images/execs/6/7.jpg";
-import Erik8 from "../images/execs/6/8.jpg";
-import Erik9 from "../images/execs/6/9.jpg";
+import Erik0 from "../images/execs/6/0.webp";
+import Erik1 from "../images/execs/6/1.webp";
+import Erik2 from "../images/execs/6/2.webp";
+import Erik3 from "../images/execs/6/3.webp";
+import Erik4 from "../images/execs/6/4.webp";
+import Erik5 from "../images/execs/6/5.webp";
+import Erik6 from "../images/execs/6/6.webp";
+import Erik7 from "../images/execs/6/7.webp";
+import Erik8 from "../images/execs/6/8.webp";
+import Erik9 from "../images/execs/6/9.webp";
 
-import Tara0 from "../images/execs/7/0.jpg";
-import Tara1 from "../images/execs/7/1.jpg";
-import Tara2 from "../images/execs/7/2.jpg";
-import Tara3 from "../images/execs/7/3.jpg";
-import Tara4 from "../images/execs/7/4.jpg";
-import Tara5 from "../images/execs/7/5.jpg";
-import Tara6 from "../images/execs/7/6.jpg";
-import Tara7 from "../images/execs/7/7.jpg";
-import Tara8 from "../images/execs/7/8.jpg";
-import Tara9 from "../images/execs/7/9.jpg";
+import Tara0 from "../images/execs/7/0.webp";
+import Tara1 from "../images/execs/7/1.webp";
+import Tara2 from "../images/execs/7/2.webp";
+import Tara3 from "../images/execs/7/3.webp";
+import Tara4 from "../images/execs/7/4.webp";
+import Tara5 from "../images/execs/7/5.webp";
+import Tara6 from "../images/execs/7/6.webp";
+import Tara7 from "../images/execs/7/7.webp";
+import Tara8 from "../images/execs/7/8.webp";
+import Tara9 from "../images/execs/7/9.webp";
 
-import Fay0 from "../images/execs/8/0.jpg";
-import Fay1 from "../images/execs/8/1.jpg";
-import Fay2 from "../images/execs/8/2.jpg";
-import Fay3 from "../images/execs/8/3.jpg";
-import Fay4 from "../images/execs/8/4.jpg";
-import Fay5 from "../images/execs/8/5.jpg";
-import Fay6 from "../images/execs/8/6.jpg";
-import Fay7 from "../images/execs/8/7.jpg";
-import Fay8 from "../images/execs/8/8.jpg";
-import Fay9 from "../images/execs/8/9.jpg";
+import Fay0 from "../images/execs/8/0.webp";
+import Fay1 from "../images/execs/8/1.webp";
+import Fay2 from "../images/execs/8/2.webp";
+import Fay3 from "../images/execs/8/3.webp";
+import Fay4 from "../images/execs/8/4.webp";
+import Fay5 from "../images/execs/8/5.webp";
+import Fay6 from "../images/execs/8/6.webp";
+import Fay7 from "../images/execs/8/7.webp";
+import Fay8 from "../images/execs/8/8.webp";
+import Fay9 from "../images/execs/8/9.webp";
 
-import Tolu0 from "../images/execs/9/0.jpg";
-import Tolu1 from "../images/execs/9/1.jpg";
-import Tolu2 from "../images/execs/9/2.jpg";
-import Tolu3 from "../images/execs/9/3.jpg";
-import Tolu4 from "../images/execs/9/4.jpg";
-import Tolu5 from "../images/execs/9/5.jpg";
-import Tolu6 from "../images/execs/9/6.jpg";
-import Tolu7 from "../images/execs/9/7.jpg";
-import Tolu8 from "../images/execs/9/8.jpg";
-import Tolu9 from "../images/execs/9/9.jpg";
+import Tolu0 from "../images/execs/9/0.webp";
+import Tolu1 from "../images/execs/9/1.webp";
+import Tolu2 from "../images/execs/9/2.webp";
+import Tolu3 from "../images/execs/9/3.webp";
+import Tolu4 from "../images/execs/9/4.webp";
+import Tolu5 from "../images/execs/9/5.webp";
+import Tolu6 from "../images/execs/9/6.webp";
+import Tolu7 from "../images/execs/9/7.webp";
+import Tolu8 from "../images/execs/9/8.webp";
+import Tolu9 from "../images/execs/9/9.webp";
 
-import RachelQ0 from "../images/execs/10/0.jpg";
-import RachelQ1 from "../images/execs/10/1.jpg";
-import RachelQ2 from "../images/execs/10/2.jpg";
-import RachelQ3 from "../images/execs/10/3.jpg";
-import RachelQ4 from "../images/execs/10/4.jpg";
-import RachelQ5 from "../images/execs/10/5.jpg";
-import RachelQ6 from "../images/execs/10/6.jpg";
-import RachelQ7 from "../images/execs/10/7.jpg";
-import RachelQ8 from "../images/execs/10/8.jpg";
-import RachelQ9 from "../images/execs/10/9.jpg";
+import RachelQ0 from "../images/execs/10/0.webp";
+import RachelQ1 from "../images/execs/10/1.webp";
+import RachelQ2 from "../images/execs/10/2.webp";
+import RachelQ3 from "../images/execs/10/3.webp";
+import RachelQ4 from "../images/execs/10/4.webp";
+import RachelQ5 from "../images/execs/10/5.webp";
+import RachelQ6 from "../images/execs/10/6.webp";
+import RachelQ7 from "../images/execs/10/7.webp";
+import RachelQ8 from "../images/execs/10/8.webp";
+import RachelQ9 from "../images/execs/10/9.webp";
 
-import RachelO0 from "../images/execs/11/0.jpg";
-import RachelO1 from "../images/execs/11/1.jpg";
-import RachelO2 from "../images/execs/11/2.jpg";
-import RachelO3 from "../images/execs/11/3.jpg";
-import RachelO4 from "../images/execs/11/4.jpg";
-import RachelO5 from "../images/execs/11/5.jpg";
-import RachelO6 from "../images/execs/11/6.jpg";
-import RachelO7 from "../images/execs/11/7.jpg";
-import RachelO8 from "../images/execs/11/8.jpg";
-import RachelO9 from "../images/execs/11/9.jpg";
+import RachelO0 from "../images/execs/11/0.webp";
+import RachelO1 from "../images/execs/11/1.webp";
+import RachelO2 from "../images/execs/11/2.webp";
+import RachelO3 from "../images/execs/11/3.webp";
+import RachelO4 from "../images/execs/11/4.webp";
+import RachelO5 from "../images/execs/11/5.webp";
+import RachelO6 from "../images/execs/11/6.webp";
+import RachelO7 from "../images/execs/11/7.webp";
+import RachelO8 from "../images/execs/11/8.webp";
+import RachelO9 from "../images/execs/11/9.webp";
 
 import Chelsea0 from "../images/execs/12/0.webp";
 import Chelsea1 from "../images/execs/12/1.webp";
@@ -129,6 +129,17 @@ import Chelsea6 from "../images/execs/12/6.webp";
 import Chelsea7 from "../images/execs/12/7.webp";
 import Chelsea8 from "../images/execs/12/8.webp";
 import Chelsea9 from "../images/execs/12/9.webp";
+
+import Tim0 from "../images/execs/13/0.webp";
+import Tim1 from "../images/execs/13/1.webp";
+import Tim2 from "../images/execs/13/2.webp";
+import Tim3 from "../images/execs/13/3.webp";
+import Tim4 from "../images/execs/13/4.webp";
+import Tim5 from "../images/execs/13/5.webp";
+import Tim6 from "../images/execs/13/6.webp";
+import Tim7 from "../images/execs/13/7.webp";
+import Tim8 from "../images/execs/13/8.webp";
+import Tim9 from "../images/execs/13/9.webp";
 
 export const execMapping = new Map ([
     [1, 'Ali Raza Bhangu'],
@@ -280,16 +291,16 @@ export const execImageMap = [
         [9, RachelO9],
     ]),
     new Map([
-        [0, Justin0],
-        [1, Justin1],
-        [2, Justin2],
-        [3, Justin3],
-        [4, Justin4],
-        [5, Justin5],
-        [6, Justin6],
-        [7, Justin7],
-        [8, Justin8],
-        [9, Justin9],
+        [0, Tim0],
+        [1, Tim1],
+        [2, Tim2],
+        [3, Tim3],
+        [4, Tim4],
+        [5, Tim5],
+        [6, Tim6],
+        [7, Tim7],
+        [8, Tim8],
+        [9, Tim9],
     ]),
     new Map([
         [0, Chelsea0],

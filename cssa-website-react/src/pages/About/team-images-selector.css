@@ -49,6 +49,9 @@
 #member-img-10{
     filter: brightness(90%);
 }
+#member-img-11{
+    filter: brightness(90%);
+}
 @media only screen and (orientation:portrait) {
     .team-container{
         min-height: 30vh;
