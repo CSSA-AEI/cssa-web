@@ -21,7 +21,7 @@
     box-sizing: border-box;
     width: fit-content;
     background-color: white;
-    width: calc(50vw - 4em);
+    max-width: calc(100vw - 4em);
     padding: 1em;
     border: 1px solid #14283a;
     box-shadow: 2px 2px #14283a;
@@ -66,14 +66,22 @@
     position: relative;
 }
 .minutes-image > img{
-    width: 100%;
+    width: 85vw;
     height: auto;
     bottom: 0%;
     position: absolute;
+    transform: translate(-35%, 5%);
+    z-index: -2;
 }
 @keyframes colorFade {
     0% { background-color: #E5E4E2; }
     100% { background-color: white; opacity: 100%; }
+}
+@media only screen and (orientation: landscape){
+    .minutes-description{
+        max-width: none;
+        min-width: calc(50vw - 4em);
+    }
 }
 @media only screen and (max-width: 900px) {
     .minutes-page-container{

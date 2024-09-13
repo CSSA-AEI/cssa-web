@@ -43,7 +43,7 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
             return(
                 <div className="home-layer-4-container">
                     <div className="image-top-conatiner" style={{height: `20vh`, width: `100vw`, position: 'relative', overflow: `visible`, zIndex: 2}}>
-                        <img className="image-header" src={HeaderTablet} style={{width: `110vw`, transform: `translate(-8%, -35%)`}} alt='event-poster'/>
+                        <img className="image-header" src={HeaderTablet} style={{width: `110vw`, transform: `translate(-8%, -31.5%)`}} alt='event-poster'/>
                     </div>
                     <div className="get-involved-container" style={{zIndex: 3}}>
                             <div className="get-involved-header">

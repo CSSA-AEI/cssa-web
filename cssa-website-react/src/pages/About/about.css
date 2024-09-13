@@ -193,9 +193,6 @@
     font-size: 0.85em;
 }
 @media only screen and (orientation:portrait) {
-    .about-page-container{
-        
-    }
     .team-info-container{
         flex-direction: column;
         height: fit-content;

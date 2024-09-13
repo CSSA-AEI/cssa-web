@@ -46,7 +46,7 @@ export const teamInfo: TeamMember[] =  [
         name: 'Ali Raza Bhangu',
         position: 'President',
         year: '4th Year',
-        blurb: "I'm a yapaholic",
+        blurb: "I'm Ali, I'm in my 4th year of CS with one co-op term left and I'm a 4x CSSA Executive. I like long walks on the beach, biking, and Software development. You can catch me working on projects in the CSSA office or just hanging out",
         frontImage: AliFront,
         email: 'president@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/alirazabhangu/',
@@ -61,10 +61,16 @@ export const teamInfo: TeamMember[] =  [
         name: 'Angeleeca Jocson',
         position: 'VP Executive Affairs',
         year: '4th Year',
-        blurb: "I'm a yapaholic",
+        blurb: "hallooo 🥭 ! :3 my name is angie and im ur vp exec affairs !! i'm a helping hand and i work internally with the team to help them be the best exec team for u guys ! i love mangoes and hanging out w my friends and i cant wait to meet all of u !!",
         frontImage: AngieFront,
         email: 'execaffairs@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/angeleeca-jocson/',
+        song: 'Tsundere Twintails - Sunshine',
+        songImage:'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ce/1d/24/ce1d24df-96e1-0d59-6765-0da458c9f3b3/artwork.jpg/632x632bb.webp',
+        songLink: 'https://music.apple.com/us/album/sunshine/1590773462?i=1590773463',
+        questions: [
+            ['Do you think a spring roll is a burrito?', "No, I get they're rolled the same way, but it's dishonorable to think one is the other when they come from different cultures (I do NOT know how to make a good burrito but I can make a bomb ass spring roll)"]
+        ]
     },
     {
         name: 'Justin Wang',
