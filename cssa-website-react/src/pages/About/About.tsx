@@ -48,9 +48,9 @@ const About: React.FC = () => {
           <div className='cssa-info-container'>
 
             <div className='about-blurb-container'>
-              <div className='info-layer-logo-container'>
+              {/* <div className='info-layer-logo-container'>
                 <img className='info-layer-logo' src={logo} alt="The CSSA Logo" style={{ width: `100%`, height: 'auto' }}/>
-              </div>
+              </div> */}
               <div className='about-cssa-blurb'>
                 <p>We, the Computer Science Student Association (CSSA) of the University of Ottawa, provide by this Constitution 
                 an organization dedicated to the pursuit of obtaining and managing resources for all members of the undergraduate 
@@ -62,6 +62,7 @@ const About: React.FC = () => {
                 <p>
                 View our constitution in English <a href='/'>here.</a> We are working on the French translation for our constitution.
                 </p>
+                <p>Take a look below to see the current members of our team.</p>
               </div>
             </div>
           </div>

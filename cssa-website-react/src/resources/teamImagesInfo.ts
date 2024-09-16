@@ -40,7 +40,9 @@ export const teamInfo: TeamMember[] =  [
         ],
         song: "You're On Your Own, Kid - Taylor Swift",
         songLink: "https://music.apple.com/us/album/youre-on-your-own-kid/1649434004?i=1649434298",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/b6/28/23/b6282315-240d-78f0-0f7d-bec9f71be33e/Job99958555-3bb9-421c-a723-ef66635dcdab-139171365-PreviewImage_preview_image_nonvideo_sdr-Time1668634899071.png/632x632bb.webp"
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/b6/28/23/b6282315-240d-78f0-0f7d-bec9f71be33e/Job99958555-3bb9-421c-a723-ef66635dcdab-139171365-PreviewImage_preview_image_nonvideo_sdr-Time1668634899071.png/632x632bb.webp",
+        personalEmail: "rqi041@uottawa.ca",
+        instagram: "https://www.instagram.com/r.chel.i/"
     },
     {
         name: 'Ali Raza Bhangu',
@@ -55,7 +57,9 @@ export const teamInfo: TeamMember[] =  [
         ],
         song: 'Pressure - Rushy',
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/dc/55/d0/dc55d0f2-c3bc-2256-a990-6450c9354c83/5063268878120_cover.jpg/592x592bb.webp',
-        songLink: 'https://music.apple.com/us/album/pressure/1692834373?i=1692834648'
+        songLink: 'https://music.apple.com/us/album/pressure/1692834373?i=1692834648',
+        personalEmail: 'alibhangu1@outlook.com',
+        instagram: "https://www.instagram.com/notalibhangu/"
     },
     {
         name: 'Angeleeca Jocson',
@@ -70,7 +74,9 @@ export const teamInfo: TeamMember[] =  [
         songLink: 'https://music.apple.com/us/album/sunshine/1590773462?i=1590773463',
         questions: [
             ['Do you think a spring roll is a burrito?', "No, I get they're rolled the same way, but it's dishonorable to think one is the other when they come from different cultures (I do NOT know how to make a good burrito but I can make a bomb ass spring roll)"]
-        ]
+        ],
+        instagram: "https://www.instagram.com/altth3a/",
+
     },
     {
         name: 'Justin Wang',
@@ -138,6 +144,8 @@ export const teamInfo: TeamMember[] =  [
         songLink: 'https://music.apple.com/us/album/mirrorball-the-long-pond-studio-sessions/1541904688?i=1541905080',
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0f/a0/14/0fa0144d-6cd5-792a-1589-3e1f0c25db49/20UM1IM08851.rgb.jpg/632x632bb.webp',
         song: 'mirrorball (the long pod studio sessions) - Taylor Swift',
+        instagram: "https://www.instagram.com/fayy.lee/",
+        personalEmail: "flee081@uottawa.ca",
     },
     {
         name: 'Chelsea Brown',
@@ -186,7 +194,9 @@ export const teamInfo: TeamMember[] =  [
         ],
         song: "Get Lucky - Daft Punk, Pharrell Williams, Nile Rodgers",
         songLink: "https://music.apple.com/us/album/get-lucky/617154241?i=617154366",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/632x632bb.webp"
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/632x632bb.webp",
+        personalEmail: "eang030@uottawa.ca",
+
     },
     {
         name: 'Toluwanimi Emoruwa',

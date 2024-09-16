@@ -1,15 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BinaryBackground from '../Home/BinaryBackground';
 import { getWindowDimensions } from '../Home/Home';
 import MeetingImage from '../../images/scrapbook-images/MinutesImage.webp';
 import './minutes.css';
 
 const Minutes: React.FC = () => {
-
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const preloadImage = new Image();
+    preloadImage.src = MeetingImage;
+    preloadImage.onload = () => {
+      setImageLoaded(true); // Set to true when the image has loaded
+    };
+  }, []);
+
+  if (!imageLoaded) {
+    return <div>Loading...</div>; // Optionally, you can return a loading spinner here
+  }
 
   if(windowDimensions.height / windowDimensions.width >= 1){
-    return(
+    return (
       <div className='minutes-page-container' style={{height: `fit-content`}}>
         <BinaryBackground />
         <div className='minutes-list' style={{width: `100vw`, height: `92vh`}}>
@@ -48,7 +60,7 @@ const Minutes: React.FC = () => {
         </div>
       </div>
       <div className='minutes-image' style={{width: `50vw`}}>
-        <img src={MeetingImage}/>
+        <img src={MeetingImage} alt='images of people in the office together'/>
       </div>
     </div>
   );
