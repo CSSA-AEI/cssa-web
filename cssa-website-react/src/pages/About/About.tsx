@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './about.css';
 import TeamImagesSelector from './TeamImagesSelector';
-import AboutWall from '../../images/scrapbook-images/aboutWall.png';
+import AboutWall from '../../images/scrapbook-images/aboutPageWall.webp';
 import ExecTeam from '../../images/scrapbook-images/execTeam.jpg';
 import BinaryEvents from '../Events/BinaryEvents';
 import { teamInfo, TeamMember } from '../../resources/teamImagesInfo';
@@ -47,9 +47,6 @@ const About: React.FC = () => {
   return (
         <div className='about-page-container'>
           <div className='cssa-info-container'>
-            <div className='about-wall-holder'>
-              <img src={AboutWall}/>
-            </div>
             <div className='about-info-body'>
               <div className='about-blurb-container'>
                 <div className='about-cssa-blurb'>
@@ -60,22 +57,25 @@ const About: React.FC = () => {
                   We are also dedicated to providing social programming, academic services and employment resource opportunities to all our members. 
                   We are dedicated to fostering a sense of community among students, professors and members of the computer science department through these events and services.
                   </p>
-                  <p>
-                  View our constitution in English <a href='/'>here.</a> We are working on the French translation for our constitution.
-                  </p>
                   <p>Take a look below to see the current members of our team.</p>
                 </div>
+                <a className='constitution-link' href='https://www.cssa-aei.ca/constitutions/CSSA-Constitution-June-3-2024.pdf'>
+                  View our constitution in English here. We are working on the French translation for our constitution.
+                </a>
               </div>
               <div className='exec-main-image'>
                 <div className='exec-main-image-container'>
                   <div className='exec-main-image-polaroid'>
                     <img src={ExecTeam}/>
                   </div>
-                  <div className='exec-office-hours'>
-                    Every exec has office hours. Click the link to see when the execs will be in office.
-                  </div>
+                  <a className='exec-office-hours' href='https://www.instagram.com/p/DABR82sx1Zo/?img_index=1'>
+                    Every exec has office hours. Click here to see when the execs will be in office.
+                  </a>
                 </div>
               </div>
+            </div>
+            <div className='about-wall-holder'>
+              <img src={AboutWall}/>
             </div>
           </div>
           <div className='team-title'>

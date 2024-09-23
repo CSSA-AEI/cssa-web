@@ -16,22 +16,23 @@
     padding: 1em;
 }
 .about-info-body{
-    position: absolute;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     width: 100vw;
     padding: 1em;
+    position: absolute;
 }
 .about-wall-holder{
+    display: flex;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     overflow: hidden;
+    z-index: -2;
 }
 .about-wall-holder > img{
     width: 110vw;
     height: auto;
-    transform: translateX(-5%);
 }
 .about-cssa-blurb{
     color: white;
@@ -50,9 +51,20 @@
 .about-cssa-blurb > p > a {
     color: white;
 }
+.constitution-link{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    border: 3px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+    margin-top: 2em;
+}
 .team-member-display-container{
     width: 50vw;
-    /* height: 92vh; */
     box-sizing: border-box;
     padding: 2em;
 }
@@ -106,6 +118,8 @@
     height: 15%;
     background-color: white;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
 .team-member-body{
     display: flex;
@@ -245,6 +259,37 @@
     font-size: 0.85em;
 }
 @media only screen and (orientation:portrait) {
+    .about-page-container{
+        height: fit-content;
+    }
+    .cssa-info-container{
+        min-height: 100vh;
+        height: fit-content;
+        flex-direction: column;
+        position: relative;
+    }
+    .about-info-body{
+        flex-direction: column;
+        height: fit-content;
+        position: relative;
+    }
+    .about-wall-holder{
+        position: absolute;
+        bottom: 0%;
+        z-index: -2;
+    }
+    .about-wall-holder{
+        transform: translateY(1%);
+    }
+    .about-blurb-container{
+        width: 100%;
+        padding: 1em;
+    }
+    .exec-main-image{
+        width: 100%;
+        padding: 1em;
+        margin-top: 1em;
+    }
     .team-info-container{
         flex-direction: column;
         height: fit-content;
@@ -262,11 +307,45 @@
     .exec-intro-blurb{
         height: 100%;
     }
+    .music-button{
+        padding: 0.5em;
+    }
     .music-button > img{
         height: 5vh;
     }
 }
 @media only screen and (orientation:portrait) and (max-width: 767px) {
+    .about-page-container{
+        height: fit-content;
+    }
+    .about-cssa-blurb{
+        font-size: 0.8em;
+    }
+    .constitution-link{
+        font-size: 0.8em;
+    }
+    .exec-office-hours{
+        font-size: 0.8em;
+    }
+    .cssa-info-container{
+        height: fit-content;
+    }
+    .about-info-body{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .about-blurb-container{
+        width: 100%;
+        padding: 0;
+    }
+    .exec-main-image{
+        width: 100%;
+        padding: 0;
+        margin-top: 1em;
+    }
+    .about-wall-holder{
+        transform: translateY(1%);
+    }
     .team-info-container{
         flex-direction: column;
         height: fit-content;
@@ -291,6 +370,9 @@
     .exec-intro-blurb{
         height: 100%;
         width: 100%;
+    }
+    .music-button{
+        padding: 0.5em;
     }
     .music-button > img{
         height: 5vh;
