@@ -179,6 +179,7 @@ export const teamInfo: TeamMember[] =  [
         song: "Red Wine Supernova - Chappell Roan",
         songLink: "https://music.apple.com/us/album/red-wine-supernova/1686988889?i=1686988896",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ca/8e/78/ca8e7878-4c53-0c23-acff-85f69a4803a7/23UMGIM46981.rgb.jpg/632x632bb.webp",
+        personalEmail: "rachelolugbemiro16@gmail.com"
     },
     {
         name: 'Erik Ang',

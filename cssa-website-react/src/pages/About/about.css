@@ -15,6 +15,24 @@
     box-sizing: border-box;
     padding: 1em;
 }
+.about-info-body{
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 1em;
+}
+.about-wall-holder{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.about-wall-holder > img{
+    width: 110vw;
+    height: auto;
+    transform: translateX(-5%);
+}
 .about-cssa-blurb{
     color: white;
     line-height: 2em;
@@ -54,6 +72,41 @@
     overflow: hidden;
     display: flex;
 }
+.exec-main-image{
+    width: 50vw;
+    padding: 1em 1em 1em 2em;
+    box-sizing: border-box;
+}
+.exec-main-image-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.exec-main-image-polaroid{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 3px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+}
+.exec-main-image-polaroid > img{
+    width: 100%;
+    object-fit: cover;
+}
+.exec-office-hours{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 1em;
+    border: 3px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+    height: 15%;
+    background-color: white;
+    align-items: center;
+}
 .team-member-body{
     display: flex;
     flex-direction: column;
@@ -62,11 +115,10 @@
     box-sizing: border-box;
 }
 .cssa-info-container{
-    height: fit-content;
+    height: 100vh;
     width: 100vw;
     display: flex;
     overflow: hidden;
-    padding: 1em 2em;
     box-sizing: border-box;
 }
 .team-title{

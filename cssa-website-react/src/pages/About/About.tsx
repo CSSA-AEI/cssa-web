@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './about.css';
 import TeamImagesSelector from './TeamImagesSelector';
-import logo from '../../images/home-layer-1-images/cssalogo.webp';
+import AboutWall from '../../images/scrapbook-images/aboutWall.png';
+import ExecTeam from '../../images/scrapbook-images/execTeam.jpg';
 import BinaryEvents from '../Events/BinaryEvents';
 import { teamInfo, TeamMember } from '../../resources/teamImagesInfo';
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
@@ -46,23 +47,34 @@ const About: React.FC = () => {
   return (
         <div className='about-page-container'>
           <div className='cssa-info-container'>
-
-            <div className='about-blurb-container'>
-              {/* <div className='info-layer-logo-container'>
-                <img className='info-layer-logo' src={logo} alt="The CSSA Logo" style={{ width: `100%`, height: 'auto' }}/>
-              </div> */}
-              <div className='about-cssa-blurb'>
-                <p>We, the Computer Science Student Association (CSSA) of the University of Ottawa, provide by this Constitution 
-                an organization dedicated to the pursuit of obtaining and managing resources for all members of the undergraduate 
-                Computer Science community at the University of Ottawa.</p>
-                <p>
-                We are also dedicated to providing social programming, academic services and employment resource opportunities to all our members. 
-                We are dedicated to fostering a sense of community among students, professors and members of the computer science department through these events and services.
-                </p>
-                <p>
-                View our constitution in English <a href='/'>here.</a> We are working on the French translation for our constitution.
-                </p>
-                <p>Take a look below to see the current members of our team.</p>
+            <div className='about-wall-holder'>
+              <img src={AboutWall}/>
+            </div>
+            <div className='about-info-body'>
+              <div className='about-blurb-container'>
+                <div className='about-cssa-blurb'>
+                  <p>We, the Computer Science Student Association (CSSA) of the University of Ottawa, provide by this Constitution 
+                  an organization dedicated to the pursuit of obtaining and managing resources for all members of the undergraduate 
+                  Computer Science community at the University of Ottawa.</p>
+                  <p>
+                  We are also dedicated to providing social programming, academic services and employment resource opportunities to all our members. 
+                  We are dedicated to fostering a sense of community among students, professors and members of the computer science department through these events and services.
+                  </p>
+                  <p>
+                  View our constitution in English <a href='/'>here.</a> We are working on the French translation for our constitution.
+                  </p>
+                  <p>Take a look below to see the current members of our team.</p>
+                </div>
+              </div>
+              <div className='exec-main-image'>
+                <div className='exec-main-image-container'>
+                  <div className='exec-main-image-polaroid'>
+                    <img src={ExecTeam}/>
+                  </div>
+                  <div className='exec-office-hours'>
+                    Every exec has office hours. Click the link to see when the execs will be in office.
+                  </div>
+                </div>
               </div>
             </div>
           </div>

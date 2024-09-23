@@ -6,6 +6,8 @@
     align-items: center;
     padding: 0 2em;
     box-shadow: 3px 3px #14283a;
+    z-index: 3;
+    position: relative;
 }
 .navbar-logo{
     flex: 1;
