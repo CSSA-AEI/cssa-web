@@ -54,7 +54,11 @@ const Events: React.FC = () => {
                                     </div>
                                     :
                                     <div className='events-list-body'>
-
+                                        <div className='events-list-body'>
+                                            {events.map((event, index) => (
+                                                <DayEvent key={index} eventsOnDay={event} />
+                                            ))}
+                                        </div>
                                     </div>
                                 }
                             </div> 
@@ -69,7 +73,6 @@ const Events: React.FC = () => {
                                 setEventsList={setEventsList} 
                                 activeDay={activeDay} 
                                 setActiveDay={setActiveDay}
-                                
                             />
                         </div>
                     </div>
@@ -118,7 +121,6 @@ const Events: React.FC = () => {
                             setEventsList={setEventsList} 
                             activeDay={activeDay} 
                             setActiveDay={setActiveDay}
-                            
                         />
                     </div>
                 </div>

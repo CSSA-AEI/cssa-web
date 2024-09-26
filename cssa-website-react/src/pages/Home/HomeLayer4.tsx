@@ -54,9 +54,9 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
                                 <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/volunteer">VOLUNTEER</Link></div>
                                 <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/minutes">MINUTES</Link></div>
                                 <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/blog">BLOG</Link></div>
-                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/blog">MERCH</Link></div>
+                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="https://cssa-aei--101week-kits.square.site/">MERCH</Link></div>
                                 <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="/about">CONTACT</Link></div>
-                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</a></div>
+                                <div className="grid-item" style={{boxShadow: `6px 6px #14283a`}}><Link to="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</Link></div>
                             </div>
                     </div>
                     <img className="image-footer" src={FooterTablet} alt='event-cutout' style={{zIndex:4}}/>
@@ -78,9 +78,9 @@ const HomeLayer4: React.FC<HomeLayer4Props> = () => {
                         <div className="grid-item"><Link to="/volunteer">VOLUNTEER</Link></div>
                         <div className="grid-item"><Link to="/minutes">MINUTES</Link></div>
                         <div className="grid-item"><Link to="/blog">BLOG</Link></div>
-                        <div className="grid-item"><Link to="/blog">MERCH</Link></div>
+                        <div className="grid-item"><Link to="https://cssa-aei--101week-kits.square.site/">MERCH</Link></div>
                         <div className="grid-item"><Link to="/about">CONTACT</Link></div>
-                        <div className="grid-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</a></div>
+                        <div className="grid-item"><Link to="https://docs.google.com/forms/d/e/1FAIpQLSfxvdZL2eKyZj15OGu6VKBEWURQQ9kW7LGDidkwsXRUg-x3Ug/viewform">REQUEST ITEM</Link></div>
                     </div>
             </div>
             <img className="image-footer" src={LaptopFooter} alt='event-poster'/>
