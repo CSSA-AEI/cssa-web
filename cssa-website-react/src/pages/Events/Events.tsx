@@ -4,6 +4,7 @@ import BinaryEvents from './BinaryEvents';
 import { doesDayContainEvent } from './Calendar';
 import EventsPage from '../../images/scrapbook-images/EventsPage.webp';
 import DayEvent from './DayEvent';
+import { useTranslation } from 'react-i18next';
 import './events.css';
 
 export function getWindowDimensions() {
@@ -23,6 +24,8 @@ const Events: React.FC = () => {
   const [activeDay, setActiveDay] = useState<number>(new Date().getDate());
   const [activeYear, setActiveYear] = useState<number>(new Date().getFullYear());
   const [events, setEvents] = useState<object[] | undefined>([]);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
         var eventsOnDay = doesDayContainEvent(eventsList)
@@ -88,7 +91,7 @@ const Events: React.FC = () => {
             <div className='event-body' style={(windowDimensions.width / windowDimensions.height <= 1) ? { display: 'flex', flexDirection: 'column' } : {}}>
                 <div className='events-list-container'>
                     <div className='events-header-container'>
-                        <div className='events-header'>Events</div>
+                        <div className='events-header'>{t("Events")}</div>
                         <div className='events-blurb'>Check out our events!</div>
                     </div>
                     <div className='events-list'>
