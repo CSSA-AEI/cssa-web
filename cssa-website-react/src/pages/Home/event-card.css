@@ -160,18 +160,35 @@
         font-size: 1em;
     }
 }
-@media only screen and (min-width: 992px) and (orientation:landscape) {
+@media only screen and (min-width: 768px) and (orientation:landscape) {
     .event-info{
         padding: 0 1em;
         width: 100%;
     }
     .event-data-circle{
-        font-size: 1em;
+        font-size: 0.75em;
         width: 5vw;
         height: 5vw;
     }
     .event-title{
-        font-size: 1.2em;
+        font-size: 1em;
+    }
+    .event-description{
+        font-size: 0.6em;
+    }
+}
+@media only screen and (min-width: 1023px) and (orientation:landscape) {
+    .event-info{
+        padding: 0 1em;
+        width: 100%;
+    }
+    .event-data-circle{
+        font-size: 0.85em;
+        width: 5vw;
+        height: 5vw;
+    }
+    .event-title{
+        font-size: 1em;
     }
     .event-description{
         font-size: 0.85em;
