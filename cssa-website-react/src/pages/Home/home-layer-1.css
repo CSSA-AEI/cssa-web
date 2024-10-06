@@ -1,0 +1,171 @@
+.home-layer-1-container {
+    height: fit-content;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.layer-1-circle-container {
+    overflow: hidden;
+    width: 100vw; /*So the circle starts from halfway through*/
+    top: 50%;
+    left: 50%;
+}
+.circle {
+    height: 100vw; /* Adjusted to 100vw */
+    width: 100vw; /* Adjusted to 100vw */
+    background-color: #bbb;
+    border-radius: 50%;
+    position: relative; /* Ensure absolute positioning is relative to this container */
+    bottom: 0%;
+    /* transform: translateY(35%); */
+}
+
+.image1-container{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-40%);
+    width: inherit;
+    padding-top: 56.25%;
+    height: inherit;
+}
+
+.image1-container img {
+    width: auto;
+    height: auto;
+    max-height: 80vh; /* or another appropriate max height */
+    object-fit: cover;
+    z-index: 1;
+}
+
+@media only screen and (orientation:landscape) {
+    .home-layer-1-container{
+        flex-direction: row;
+    }
+    .layer-1-circle-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+        height: 92vh;
+    }
+    .circle{
+        height: 50vw;
+        width: 50vw;
+        position: absolute;
+        right: 0%;
+        transform: translate(10%, 40%);
+    }
+    .image1-container{
+        position: absolute;
+        height: 50vw;
+        width: 50vw;
+        right: 0%;
+        transform: translate(30%, 60%);
+        padding-top: 0%;
+    }
+    .image1-container img{
+        height: 50vw;
+        max-height: 80vh;
+        bottom: 0;
+        position: relative;
+        width: auto;
+    }
+    .image1-container img:nth-child(1){
+        animation: shake1 10s infinite;
+        z-index: 2;
+        transform: translate(10%, -50%);
+    }
+    .image1-container img:nth-child(2){
+        z-index: 1;
+        transform: translate(-20%, -140%);
+    }
+    .image1-container img:nth-child(3){
+        animation: shake3 7.5s infinite;
+        transform: translate(-20%, -225%);
+        z-index: 3;
+    }
+}
+
+@media only screen and (orientation:portrait) {
+    .home-layer-1-container{
+        flex-direction: column;
+    }
+    .layer-1-circle-container{
+        margin-top: 4em;
+    }
+    .circle{
+        height: 100vw;
+        width: 100vw;
+        max-height: 1200px;
+        max-width: 1200px;
+        transform: translate(0%, 20%);
+    }
+    .image1-container{
+        height: fit-content;
+        position: absolute;
+    }
+    .image1-container img{
+        bottom: 0;
+        position: relative;
+    }
+    .image1-container img:nth-child(1){
+        animation: mobileShake1 10s infinite;
+        z-index: 2;
+        transform: translate(-50%, 160%);
+        left: 50%;
+        height: auto;
+        width: 80vw;
+    }
+    .image1-container img:nth-child(2){
+        z-index: 1;
+        transform: translate(-55%, 70%);
+        left: 50%;
+        height: auto;
+        width: 100vw;
+    }
+    .image1-container img:nth-child(3){
+        animation: mobileShake3 7.5s infinite;
+        transform: translate(-17%, 20%);
+        z-index: 3;
+        height: auto;
+        width: 110vw;
+    }
+}
+
+@keyframes shake1 {
+    0% { transform: translate(0%, -50%); }
+    20% { transform: translate(5%, -53%); }
+    40% { transform: translate(10%, -50%); }
+    60% { transform: translate(5%, -50%); }
+    80% { transform: translate(5%, -53%); }
+    100% { transform: translate(0%, -50%); }
+}
+@keyframes shake2 {
+    0% { transform: translate(-55%, -15%); }
+    33% { transform: translate(-50%, -18%); }
+    66% { transform: translate(-50%, -15%); }
+    100% { transform: translate(-55%, -15%); }
+}
+@keyframes shake3 {
+    0% { transform: translate(-20%, -230%); }
+    25% { transform: translate(-20%, -225%); }
+    50% { transform: translate(-20%, -220%); }
+    75% { transform: translate(-20%, -225%); }
+    100% { transform: translate(-20%, -230%); }
+}
+@keyframes mobileShake1 {
+    0% { transform: translate(-50%, 170%); }
+    20% { transform: translate(-55%, 173%); }
+    40% { transform: translate(-50%, 170%); }
+    60% { transform: translate(-45%, 170%); }
+    80% { transform: translate(-45%, 173%); }
+    100% { transform: translate(-50%, 170%); }
+}
+@keyframes mobileShake3 {
+    0% { transform: translate(-17%, 20%); }
+    25% { transform: translate(-17%, 15%); }
+    50% { transform: translate(-17%, 10%); }
+    75% { transform: translate(-17%, 15%); }
+    100% { transform: translate(-17%, 20%); }
+}

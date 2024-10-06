@@ -1,0 +1,101 @@
+:root {
+    --easing: cubic-bezier(0.18, 0.89, 0.32, 1.27);
+    --duration: 0.5s;
+}
+.wheel {
+    width: 65vmin;
+    height: 65vmin;
+    transition: transform var(--duration) var(--easing);
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    background-color: transparent;
+}
+.slide {
+    width: 20vw;
+    height: 20vw;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform var(--duration) var(--easing);
+    border: 0.3vmin solid white;
+    position: absolute;
+    box-sizing: border-box;
+}
+.slide img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide img {
+    user-select: none;
+}
+  
+.slide.active-mobile {
+    border-width: 1.3vmin;
+    /* height: 20vw;
+    width: 20vw; */
+    /*I want to make the highlighted one bigger - Low priority task*/
+}
+.slide.active-landscape{
+    border-width: 1vmin;
+    height: 20vw;
+    width: 20vw;
+}
+.wheel-border{
+    border: 3px #326491 dashed;
+    margin: 0;
+    animation: spin 30s linear infinite;
+    background-color: transparent;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media only screen and (orientation: portrait){
+    .container{
+        width: 100vw;
+        height: 60vw;
+        overflow: hidden;
+    }
+    .wheel{
+        width: 100vw;
+        height: 100vw;
+        border-radius: 50%;
+    }
+    .wheel-border{
+        height: inherit;
+        width: inherit;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+}
+@media only screen and (orientation: landscape){
+    .container{
+        width: 55vw;
+        height: 70vh;
+        overflow: hidden;
+    }
+    .wheel{
+        width: 100vh;
+        height: 100vh;
+        border-radius: 50%;
+    }
+    .wheel-border{
+        height: inherit;
+        width: inherit;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,203 @@
+.volunteer-body{
+    height: 92vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.volunteer-events-container{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 2em;
+    flex-direction: column;
+}
+.volunteer-header{
+    width: fit-content;
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+.volunteer-event{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+.volunteer-event > button{
+    margin-left: 1.5em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    box-shadow: 3px 3px #14283A;
+    border: 1px solid #14283A;
+    font-family: 'Tiny5';
+}
+.volunteer-event > button:hover{
+    transform: translate(-3%, -3%);
+    box-shadow: 4px 4px #14283A;
+    cursor: pointer;
+}
+.volunteer-event > a{
+    text-decoration: none;
+    color: white;
+}
+.volunteer-info{
+    width: 35vw;
+    box-sizing: border-box;
+    font-size: 1em;
+    padding: 1em;
+    background-color: #326491;
+    box-shadow: 3px 3px #14283A;
+    border: 1px solid #14283A;
+}
+.volunteer-info:hover{
+    transform: translate(-1%, -1%);
+    box-shadow: 4px 4px #14283A;
+    cursor: pointer;
+}
+.volunteer-description-container{
+    height: 100%;
+    width: 55vw;
+    box-sizing: border-box;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.volunteer-description{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid #14283A;
+    box-shadow: 4px 4px #14283A;
+    box-sizing: border-box;
+    padding: 1em;
+}
+.description-header{
+    font-size: 1.75em;
+    width: 100%;
+    border-bottom: 1px dashed #326491;
+}
+.description-details > p{
+    font-size: 1em;
+    color: #606060;
+}
+.volunteer-images-container{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+.volunteer-description-container > img{
+    width: 105vw;
+    height: auto;
+    transform: translate(-42.5%, 0%);
+    z-index: -2;
+}
+.volunteer-image{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.volunteer-image > img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 3px solid white;
+}
+.volunteer-image:nth-child(1) > img{
+    width: 64%;
+    height: 80%;
+    transform: rotate(-10deg) translate(10%,0%);
+}
+.volunteer-image:nth-child(2) > img{
+    transform: translate(0%, -15%);
+}
+.volunteer-image:nth-child(3) > img{
+    width: 64%;
+    height: 80%;
+    transform: rotate(10deg) translate(10%, 0%);
+}
+@media only screen and (orientation:portrait) {
+    .volunteer-body{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        min-height: 92vh;
+    }
+    .volunteer-body > img{
+        position: relative;
+        bottom: 0%;
+        width: 150vw;
+        height: auto;
+        transform: translate(-15%, 5%);
+    }
+    .volunteer-header{
+        min-width: calc(100vw - 4em);
+    }
+    .volunteer-event{
+        min-width: calc(100vw - 4em);
+    }
+}
+@media only screen and (orientation:portrait) and (max-width: 399px){
+    .volunteer-events-container{
+        padding: 1.5em;
+    }
+}
+@media only screen and (max-width: 1339px) {
+    .volunteer-description-container{
+        padding: 1em 1em;
+    }
+    .volunteer-header{
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    .volunteer-info{
+        font-size: 0.8em;
+    }
+    .volunteer-event > button{
+        height: 3em;
+        width: 3em;
+    }
+    .description-header{
+        font-size: 1.5em;
+    }
+    .description-details{
+        font-size: 0.75em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .volunteer-description-container{
+        padding: 1em 1em;
+    }
+    .volunteer-header{
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    .volunteer-info{
+        font-size: 0.8em;
+    }
+    .volunteer-event > button{
+        height: 3em;
+        width: 3em;
+    }
+    .description-header{
+        font-size: 1.5em;
+    }
+    .description-details{
+        font-size: 0.75em;
+    }
+}

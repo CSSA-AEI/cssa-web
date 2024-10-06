@@ -1,0 +1,126 @@
+.home-layer-4-container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow-y: visible;
+}
+.layer-4-top{
+    width: 100vw;
+    height: 15vh;
+    position: absolute;
+    top: 0%;
+    background-color: #14283a;
+    z-index: -3;
+}
+.image-header{
+    position: relative;
+    bottom: 0%;
+    width: 105vw;
+    transform: translate(-1%,-40%);
+    height: auto;
+    z-index: -2;
+    animation: shake4 16s infinite;
+}
+.get-involved-container{
+    height: 75%;
+    width: 100%;
+    background-color: #326491;
+    padding: 2em;
+    box-sizing: border-box;
+    border-top: 2px solid #14283a;
+}
+.get-involved-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.get-involved-header > p{
+    color: white;
+    margin: 0;
+    font-size: 2em;
+}
+.get-involved-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: white;
+    gap: 20px;
+    padding-top: 1em;
+    box-sizing: border-box;
+    height: 40%;
+    margin-top: 1.5em;
+}
+.grid-item{
+    border-bottom: 1px solid white;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    cursor: pointer;
+    background-color: #E5E4E2;
+    box-shadow: 3px 3px #14283a;
+    box-sizing: border-box;
+    padding: 1em 0.5em;
+    z-index: 5;
+    color: #326491;
+}
+.grid-item:hover{
+    transform: translate(-1%, -8%);
+    box-shadow: 6px 6px #14283a;
+    animation: colorFade 0.5s ;
+    background-color: white;
+}
+.grid-item > a{
+    text-decoration: none;
+    color: #326491;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.image-footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+    height: auto;
+}
+@media only screen and (max-width: 600px) {
+    .get-involved-header > p {
+      font-size: 1.5em;
+    }
+    .get-involved-grid > .grid-item > a{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .get-involved-container{
+        padding: 1em;
+    }
+    .get-involved-header > p {
+        font-size: 1em;
+      }
+      .get-involved-grid > .grid-item > a{
+          font-size: 0.75em;
+      }
+}
+@media only screen and (min-width: 600px) {
+    .get-involved-header > p {
+      font-size: 1.75em;
+    }
+    .get-involved-grid > .grid-item > a{
+        font-size: 1.25em;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .get-involved-header > p {
+      font-size: 2em;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .get-involved-grid > .grid-item > a{
+        font-size: 1em;
+    }
+}

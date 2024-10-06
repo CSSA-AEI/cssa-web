@@ -1,0 +1,406 @@
+.about-page-container{
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.about-blurb-container{
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1em;
+}
+.about-info-body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 1em;
+    position: absolute;
+}
+.about-wall-holder{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+    z-index: -2;
+}
+.about-wall-holder > img{
+    width: 110vw;
+    height: auto;
+}
+.about-cssa-blurb{
+    color: white;
+    line-height: 2em;
+    height: 100%;
+    background-color: #326491;
+    box-sizing: border-box;
+    padding: 1em;
+    box-shadow: 3px 3px #14283A;
+    border: 1px solid #14283A;
+}
+.about-cssa-blurb > p{
+    color: white;
+    line-height: 2em;
+}
+.about-cssa-blurb > p > a {
+    color: white;
+}
+.constitution-link{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    border: 3px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+    margin-top: 2em;
+}
+.team-member-display-container{
+    width: 50vw;
+    box-sizing: border-box;
+    padding: 2em;
+}
+.team-member-display{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+    box-sizing: border-box;
+    padding: 1em;
+}
+.team-info-container{
+    height: 92vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+}
+.exec-main-image{
+    width: 50vw;
+    padding: 1em 1em 1em 2em;
+    box-sizing: border-box;
+}
+.exec-main-image-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.exec-main-image-polaroid{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 3px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+}
+.exec-main-image-polaroid > img{
+    width: 100%;
+    object-fit: cover;
+}
+.exec-office-hours{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 1em;
+    border: 3px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+    height: 15%;
+    background-color: white;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.team-member-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.cssa-info-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.team-title{
+    width: 100vw;
+    height: fit-content;
+    color: white;
+    background-color: #326491;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+}
+.member-name{
+    width: 100%;
+    height: fit-content;
+    color: white;
+    background-color: #326491;
+    border: 1px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+    box-sizing: border-box;
+    padding: 1em;
+    max-height: 12%;
+}
+.exec-content{
+    height: 88%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.exec-member-info{
+    height: 100%;
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.exec-about-info{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    font-size: 0.85em;
+}
+.exec-intro-blurb{
+    height: 100%;
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.exec-image-container{
+    height: fit-content;
+    width: 100%;
+    background-color: #E5E4E2;
+    padding: 1em;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 65%;
+    margin-bottom: 1em;
+}
+.image-holder{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.image-holder > img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+.exec-contact-info{
+    /* height: 30%; */
+    width: 100%;
+    background-color: #326491;
+    border: 1px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+    box-sizing: border-box;
+    padding: 1em;
+    color: white;
+    max-height: 40%;
+    font-size: 0.85em;
+}
+.exec-social{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.exec-social > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #326491;
+}
+.music-button{
+    height: 20%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: #14283A;
+    box-shadow: 3px 3px #CECDCB;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.music-button:hover{
+    transform: translate(-2%, -2%);
+    box-shadow: 6px 6px #CECDCB;
+    cursor: pointer;
+}
+.music-button > img{
+    height: 100%;
+    width: auto;
+    max-height: 100%;
+}
+.music-button > p{
+    margin: 0;
+    width: fit-content;
+    text-align: end;
+    font-size: 0.85em;
+}
+@media only screen and (orientation:portrait) {
+    .about-page-container{
+        height: fit-content;
+    }
+    .cssa-info-container{
+        min-height: 100vh;
+        height: fit-content;
+        flex-direction: column;
+        position: relative;
+    }
+    .about-info-body{
+        flex-direction: column;
+        height: fit-content;
+        position: relative;
+    }
+    .about-wall-holder{
+        position: absolute;
+        bottom: 0%;
+        z-index: -2;
+    }
+    .about-wall-holder{
+        transform: translateY(1%);
+    }
+    .about-blurb-container{
+        width: 100%;
+        padding: 1em;
+    }
+    .exec-main-image{
+        width: 100%;
+        padding: 1em;
+        margin-top: 1em;
+    }
+    .team-info-container{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .team-member-display-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .team-container{
+        height: 40vh;
+    }
+    .team-member-display{
+        height: 60vh;
+    }
+    .exec-intro-blurb{
+        height: 100%;
+    }
+    .music-button{
+        padding: 0.5em;
+    }
+    .music-button > img{
+        height: 5vh;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width: 767px) {
+    .about-page-container{
+        height: fit-content;
+    }
+    .about-cssa-blurb{
+        font-size: 0.8em;
+    }
+    .constitution-link{
+        font-size: 0.8em;
+    }
+    .exec-office-hours{
+        font-size: 0.8em;
+    }
+    .cssa-info-container{
+        height: fit-content;
+    }
+    .about-info-body{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .about-blurb-container{
+        width: 100%;
+        padding: 0;
+    }
+    .exec-main-image{
+        width: 100%;
+        padding: 0;
+        margin-top: 1em;
+    }
+    .about-wall-holder{
+        transform: translateY(1%);
+    }
+    .team-info-container{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .team-member-display-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .team-container{
+        height: 40vh;
+    }
+    .team-member-display{
+        height: fit-content;
+    }
+    .team-member-body{
+        height: fit-content;
+    }
+    .exec-image-container{
+        height: fit-content;
+        margin-bottom: 1em;
+    }
+    .exec-intro-blurb{
+        height: 100%;
+        width: 100%;
+    }
+    .music-button{
+        padding: 0.5em;
+    }
+    .music-button > img{
+        height: 5vh;
+    }
+    .exec-contact-info{
+        font-size: 0.8em;
+    }
+    .exec-content{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .exec-about-info{
+        padding: 0 1em;
+        box-sizing: border-box;
+        margin: 1em 0;
+        font-size: 0.8em;
+    }
+    .exec-member-info{
+        width: 100%;
+    }
+    .exec-social{
+        box-sizing: border-box;
+        padding: 1em 0;
+    }
+    .exec-social > a {
+        display: flex;
+        align-items: center;
+    }
+}
