@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
             <ul className={showDropdown ? 'dropdown-menu active' : 'dropdown-menu'}>
                 {links.map((link, index) => (
                 <li className='navbar-link' key={index}>
-                    <Link className={showDropdown ? 'ready' : ''} to={link.url}>{link.name}</Link>
+                    <Link className={showDropdown ? 'ready' : ''} to={link.url}>{t(link.name)}</Link>
                 </li>
                 ))}
             </ul>

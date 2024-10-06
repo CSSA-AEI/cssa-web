@@ -10,6 +10,7 @@ import Event2 from '../../images/events-posters/webdevevent.webp';
 import Event3 from '../../images/events-posters/halloween_event.webp';
 import Group20 from '../../images/scrapbook-images/Group-20.png';
 import BinaryBackground from './BinaryBackground';
+import { useTranslation } from 'react-i18next';
 
 interface HomeLayer3Props {
     windowDimensions: { width: number; height: number };
@@ -19,6 +20,7 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
 
     var displayOrientation = 'desktop'; 
     var screenRatio = windowDimensions.width / windowDimensions.height
+    const { t } = useTranslation();
 
     var minWidth = 160;
     var cardHeight = 500;
@@ -43,9 +45,9 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
             return(
                 <div className='home-layer-3-container'>
                     <div className='layer-3-title'>
-                        <p>COME VISIT</p>
-                        <p>SOME OF OUR</p>
-                        <p>EVENTS</p>
+                        <p>{t("COME VISIT")}</p>
+                        <p>{t("SOME OF OUR")}</p>
+                        <p>{t("EVENTS")}</p>
                     </div>
                     <img src={BumpOff} alt='bump-off' id='bump-off' style={{ height: `30vh`}}/>
                     <img src={WaterDunk} alt='water-dunk' id='water-dunk' style={{height: `40vh`}}/>
@@ -68,9 +70,9 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
             return(
                 <div className='home-layer-3-container'>
                     <div className='layer-3-title'>
-                        <p>COME VISIT</p>
-                        <p>SOME OF OUR</p>
-                        <p>EVENTS</p>
+                        <p>{t("COME VISIT")}</p>
+                        <p>{t("SOME OF OUR")}</p>
+                        <p>{t("EVENTS")}</p>
                     </div>
                     <img src={BumpOff} alt='bump-off' id='bump-off' style={{ height: `30vh`}}/>
                     <img src={WaterDunk} alt='water-dunk' id='water-dunk' style={{height: `40vh`}}/>
@@ -93,9 +95,9 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
     return(
         <div className='home-layer-3-container'>
             <div className='layer-3-title'>
-                <p>COME VISIT</p>
-                <p>SOME OF OUR</p>
-                <p>EVENTS</p>
+                <p>{t("COME VISIT")}</p>
+                <p>{t("SOME OF OUR")}</p>
+                <p>{t("EVENTS")}</p>
             </div>
             {
                 screenRatio > 1.7 ? (

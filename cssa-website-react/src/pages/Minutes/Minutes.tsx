@@ -3,10 +3,12 @@ import BinaryBackground from '../Home/BinaryBackground';
 import { getWindowDimensions } from '../Home/Home';
 import MeetingImage from '../../images/scrapbook-images/MinutesImage.webp';
 import './minutes.css';
+import { useTranslation } from 'react-i18next';
 
 const Minutes: React.FC = () => {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
   const [imageLoaded, setImageLoaded] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const preloadImage = new Image();
@@ -25,10 +27,10 @@ const Minutes: React.FC = () => {
       <div className='minutes-page-container' style={{height: `fit-content`}}>
         <BinaryBackground />
         <div className='minutes-list' style={{width: `100vw`, height: `92vh`}}>
-          <div className='minutes-header' style={{marginBottom: `0.5em`}}>Meeting Minutes</div>
+          <div className='minutes-header' style={{marginBottom: `0.5em`}}>{t('Meeting Minutes')}</div>
           <div className='minutes-description' style={{marginBottom: `0.5em`}}>
-            <p>Minutes give you a snapshot of what was discussed during our weekly meetings.</p>
-            <p>You can access our minutes through the links below:</p>
+            <p>{t('Minutes give you a snapshot of what was discussed during our weekly meetings.')}</p>
+            <p>{t('You can access our minutes through the links below:')}</p>
           </div>
           <div className='minute-links'>
             <a href='https://drive.google.com/drive/u/2/folders/11-bCRH3T3_ONt1bp9S5c5sQ_Xh8kNjN3'>2023-24</a>
@@ -46,10 +48,10 @@ const Minutes: React.FC = () => {
     <div className='minutes-page-container'>
       <BinaryBackground />
       <div className='minutes-list' style={{width: `50vw`}}>
-        <div className='minutes-header'>Meeting Minutes</div>
+        <div className='minutes-header'>{t('Meeting Minutes')}</div>
         <div className='minutes-description'>
-          <p>Minutes give you a snapshot of what was discussed during our weekly meetings.</p>
-          <p>You can access our minutes through the links below:</p>
+          <p>{t('Minutes give you a snapshot of what was discussed during our weekly meetings.')}</p>
+          <p>{t('You can access our minutes through the links below:')}</p>
         </div>
         <div className='minute-links'>
           <a href='https://drive.google.com/drive/u/2/folders/11-bCRH3T3_ONt1bp9S5c5sQ_Xh8kNjN3'>2023-24</a>

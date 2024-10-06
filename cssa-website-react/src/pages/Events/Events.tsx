@@ -41,8 +41,8 @@ const Events: React.FC = () => {
                 <div className='event-body' style={{flexDirection: `column`, height: `fit-content`, width: `100vw`}}>
                     <div className='events-list-container' style={{width: `100%`, padding: `1em`, height: `80vh`}}>
                         <div className='events-header-container'>
-                            <div className='events-header'>Events</div>
-                            <div className='events-blurb'>Check out our events!</div>
+                            <div className='events-header'>{t('Events')}</div>
+                            <div className='events-blurb'>{t("Check out our events!")}</div>
                         </div>
                         <div className='events-list'>
                             <div className='events-container'>
@@ -52,8 +52,8 @@ const Events: React.FC = () => {
                                 {
                                 (events === undefined) ? 
                                     <div className='events-list-body-empty'>
-                                        <p>Unfortunately there are no events today :(</p>
-                                        <p>Feel free to stop by the office though!</p>
+                                        <p>{t('Unfortunately there are no events today :(')}</p>
+                                        <p>{t('Feel free to stop by the office though!')}</p>
                                     </div>
                                     :
                                     <div className='events-list-body'>
@@ -92,7 +92,7 @@ const Events: React.FC = () => {
                 <div className='events-list-container'>
                     <div className='events-header-container'>
                         <div className='events-header'>{t("Events")}</div>
-                        <div className='events-blurb'>Check out our events!</div>
+                        <div className='events-blurb'>{t('Check out our events!')}</div>
                     </div>
                     <div className='events-list'>
                         <div className='events-container'>
@@ -102,8 +102,8 @@ const Events: React.FC = () => {
                             {
                             (events === undefined) ? 
                                 <div className='events-list-body-empty'>
-                                    <p>Unfortunately there are no events today :(</p>
-                                    <p>Feel free to stop by the office though!</p>
+                                    <p>{t('Unfortunately there are no events today :(')}</p>
+                                    <p>{t('Feel free to stop by the office though!')}</p>
                                 </div>
                                 :
                                 <div className='events-list-body'>

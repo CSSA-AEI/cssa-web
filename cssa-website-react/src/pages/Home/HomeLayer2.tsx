@@ -4,6 +4,7 @@ import CircularCarousel from './CircularCarousel';
 import BinaryBackground from './BinaryBackground';
 import { teamInfo } from '../../resources/teamImagesInfo';
 import './home-layer-2.css';
+import { useTranslation } from 'react-i18next';
 
 interface HomeLayer2Props {
     windowDimensions: { width: number; height: number };
@@ -14,6 +15,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
     //The below part of the code is for the display when we have a portrait screen, i.e phones and tablets
 
     const [currentMember, setCurrentMember] = useState(teamInfo[0]);
+    const { t } = useTranslation();
 
     if(windowDimensions.width / windowDimensions.height <= 1){
         return(
@@ -29,7 +31,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
                     </div>
-                    MEET THE TEAM
+                    {t("MEET THE TEAM")}
                     <div className='sliding-numbers-container'>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
@@ -43,13 +45,12 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                 </div>
                 <div className='meet-the-team-blurb'> 
                     <p>
-                    The CSSA is student elected student organization dedicated to 
-                    advocating for Computer Science Students at the University of Ottawa.
+                    {t("The CSSA is student elected student organization dedicated to advocating for Computer Science Students at the University of Ottawa.")}
                     </p>
                     <p>
-                        Check out some of our members below.
+                        {t("Check out some of our members below.")}
                     </p>
-                    <Link to='/about'><button>Learn More</button></Link>
+                    <Link to='/about'><button>{t("Learn More")}</button></Link>
                 </div>
                 <div className='meet-the-team-container'>
                     <div className='tv-screen'>
@@ -84,7 +85,7 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
                     </div>
-                    <div className='meet-team-header'>MEET THE TEAM</div>
+                    <div className='meet-team-header'>{t("MEET THE TEAM")}</div>
                     <div className='sliding-numbers-container'>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
                         <span className='digits'>01000011 ~~ 01010011 ~~ 01010011 ~~ 01000001 ~~ </span>
@@ -97,14 +98,11 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                     </div>
                 </div>
                 <div className='meet-the-team-blurb'> 
+                    <p>{t("The CSSA is student elected student organization dedicated to advocating for Computer Science Students at the University of Ottawa.")}</p>
                     <p>
-                    The CSSA is student elected student organization dedicated to 
-                    advocating for Computer Science Students at the University of Ottawa.
+                        {t("Check out some of our members below.")}
                     </p>
-                    <p>
-                        Check out some of our members below.
-                    </p>
-                    <Link to='/about'><button>Learn More</button></Link>
+                    <Link to='/about'><button>{t("Learn More")}</button></Link>
                 </div>
                 <CircularCarousel flexDirection='row' getCurrentMember={setCurrentMember} images={teamInfo}/>
             </div>
