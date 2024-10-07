@@ -5,7 +5,9 @@
     display: flex;
     height: fit-content;
     display: flex;
+    top: 8vh;
     flex-direction: column;
+    position: absolute;
 }
 .about-blurb-container{
     width: 50vw;

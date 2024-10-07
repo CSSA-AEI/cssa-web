@@ -74,8 +74,7 @@ const Volunteer: React.FC<VolunteerProps> = () => {
               setDescriptionText([
                 "Are you a freshman looking to get involved with CSSA events?",
                 "Juniors work with members of the CSSA Exec team to plan events and ensure the smooth running of the association.",
-                "Apply to become a junior today!",
-                "Meet some of our previous juniors below."
+                "Apply to become a junior today!"
               ]);
               setDescriptionHeader('CSSA JUNIOR APPLICATION');
             }}>
@@ -121,8 +120,7 @@ const Volunteer: React.FC<VolunteerProps> = () => {
             setDescriptionText([
               "Are you a freshman looking to get involved with CSSA events?",
               "Juniors work with members of the CSSA Exec team to plan events and ensure the smooth running of the association.",
-              "Apply to become a junior today!",
-              "Meet some of our previous juniors below."
+              "Apply to become a junior today!"
             ]);
             setDescriptionHeader('CSSA JUNIOR APPLICATION');
           }}>

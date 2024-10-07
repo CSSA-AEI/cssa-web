@@ -9,6 +9,8 @@ import JustinFront from '../images/Justin_Wang.webp';
 import AashishFront from '../images/Aashish_Suresh.webp';
 import ToluFront from '../images/Tolu_Emoruwa.webp';
 import TaraFront from '../images/Tara_DenaudJoseph.webp';
+import ErikFront from '../images/Erik.webp';
+import ChelseaFront from '../images/chelsea.webp';
 
 export interface TeamMember {
     name: string;
@@ -30,7 +32,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Rachel Qi',
         position: 'VP Academic',
-        year: '3rd Year',
+        year: '2nd Year',
         blurb: `Hi! I'm Rachel, a 2nd year CS & math student from Aurora. Outside of studying, I spend my time gaming, 
         hanging out with friends, or learning about something new (currently planes!). I can't wait to meet you all! 🥰 `,
         frontImage: RachelQiFront,
@@ -41,8 +43,9 @@ export const teamInfo: TeamMember[] =  [
         song: "You're On Your Own, Kid - Taylor Swift",
         songLink: "https://music.apple.com/us/album/youre-on-your-own-kid/1649434004?i=1649434298",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/b6/28/23/b6282315-240d-78f0-0f7d-bec9f71be33e/Job99958555-3bb9-421c-a723-ef66635dcdab-139171365-PreviewImage_preview_image_nonvideo_sdr-Time1668634899071.png/632x632bb.webp",
-        personalEmail: "rqi041@uottawa.ca",
-        instagram: "https://www.instagram.com/r.chel.i/"
+        // personalEmail: "rqi041@uottawa.ca",
+        instagram: "https://www.instagram.com/r.chel.i/",
+        linkedIn: 'https://www.linkedin.com/in/rachel-q/'
     },
     {
         name: 'Ali Raza Bhangu',
@@ -58,7 +61,7 @@ export const teamInfo: TeamMember[] =  [
         song: 'Pressure - Rushy',
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/dc/55/d0/dc55d0f2-c3bc-2256-a990-6450c9354c83/5063268878120_cover.jpg/592x592bb.webp',
         songLink: 'https://music.apple.com/us/album/pressure/1692834373?i=1692834648',
-        personalEmail: 'alibhangu1@outlook.com',
+        // personalEmail: 'alibhangu1@outlook.com',
         instagram: "https://www.instagram.com/notalibhangu/"
     },
     {
@@ -81,7 +84,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Justin Wang',
         position: '101 Week Coordinator',
-        year: '3rd Year',
+        year: '4th Year',
         blurb: `You come here often? I'm Justin and I'm currently going into my 4th year. If you see me walking around 
         with a Hawaiian shirt or a jersey, you'll know it's me!`,
         frontImage: JustinFront,
@@ -116,7 +119,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Timothy Mao',
         position: 'VP Logistics',
-        year: '2nd Year',
+        year: '4th Year',
         blurb: `Hey, I'm Tim and I'm now in my 4th year! I'm the guy who keeps track of merch and games -- 
         pretty sweet gig, right? I also love listening to music and trying to survive the everyday!`,
         frontImage: TimFront,
@@ -145,7 +148,7 @@ export const teamInfo: TeamMember[] =  [
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0f/a0/14/0fa0144d-6cd5-792a-1589-3e1f0c25db49/20UM1IM08851.rgb.jpg/632x632bb.webp',
         song: 'mirrorball (the long pod studio sessions) - Taylor Swift',
         instagram: "https://www.instagram.com/fayy.lee/",
-        personalEmail: "flee081@uottawa.ca",
+        // personalEmail: "flee081@uottawa.ca",
     },
     {
         name: 'Chelsea Brown',
@@ -154,7 +157,7 @@ export const teamInfo: TeamMember[] =  [
         blurb: `Hello! I'm Chelsea, if you were confused about that. I'm this year's VP Internal, which means I'm responsible for all 
         things related to our office. I'm responsible for keeping our office orderly, fun, and stocked with snacks!! When I'm not frantically doing homework, I'm likely playing piano/guitar, cooking, 
         perfecting my latte art, or trying to nurse my tomato plants back to health. If you have any office questions, come find me during my office hours!!`,
-        frontImage: AngieFront,
+        frontImage: ChelseaFront,
         email: 'internal@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/chelsea-brown-89340a245/',
         questions: [
@@ -179,14 +182,14 @@ export const teamInfo: TeamMember[] =  [
         song: "Red Wine Supernova - Chappell Roan",
         songLink: "https://music.apple.com/us/album/red-wine-supernova/1686988889?i=1686988896",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ca/8e/78/ca8e7878-4c53-0c23-acff-85f69a4803a7/23UMGIM46981.rgb.jpg/632x632bb.webp",
-        personalEmail: "rachelolugbemiro16@gmail.com"
+        // personalEmail: "rachelolugbemiro16@gmail.com"
     },
     {
         name: 'Erik Ang',
         position: 'VP External Affairs',
         year: '3rd Year',
         blurb: `Hi! I'm Erik and I am a current third year student here. When life and school isn't too busy I enjoy 3D printing, working out and playing video games.`,
-        frontImage: AngieFront,
+        frontImage: ErikFront,
         email: 'external@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/erik-ang-97773b260/',
         instagram: 'https://www.instagram.com/erik_ang_/',
@@ -196,20 +199,20 @@ export const teamInfo: TeamMember[] =  [
         song: "Get Lucky - Daft Punk, Pharrell Williams, Nile Rodgers",
         songLink: "https://music.apple.com/us/album/get-lucky/617154241?i=617154366",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/632x632bb.webp",
-        personalEmail: "eang030@uottawa.ca",
+        // personalEmail: "eang030@uottawa.ca",
 
     },
     {
         name: 'Toluwanimi Emoruwa',
         position: 'VP IT',
-        year: '3rd Year',
+        year: '4th Year',
         blurb: `Hey, I'm Tolu and I'm a current 4th year student here. When I'm not in the office working on school you can find me on campus at different intramurals. 
         Hope to see you around campus!`,
         frontImage: ToluFront,
         email: 'it@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/toluwanimi-emoruwa-1417ab218/',
         instagram: 'https://www.instagram.com/t.o.l.u.e/',
-        personalEmail: 'emoruwatoluwanimi@gmail.com',
+        // personalEmail: 'emoruwatoluwanimi@gmail.com',
         questions: [
             ["Do you think a spring roll is a burrito?", "No. A spring roll would be a chimichanga more than anything"],
             ["", ""]
@@ -221,7 +224,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Meriem Mostefai',
         position: 'VP Social',
-        year: '3rd Year',
+        year: '4th Year',
         blurb: `I'm an alleged comp sci major and hater of proofs! I love to draw and be very loud. This is my second year being vp social and it's been my pleasure :D 
         I love this student association and I hope you'll come by to say hi to us at the office.`,
         frontImage: MeriemFront,
@@ -238,13 +241,15 @@ export const teamInfo: TeamMember[] =  [
         name: 'Tara Denaud Joseph',
         position: 'VP Communications',
         year: '3rd Year',
-        blurb: `Hello! I'm Chelsea, if you were confused about that. I'm this year's VP Internal, which means I'm responsible for all things related to our office 
-        (located at SITE 4076 by the way, very cool place, come hang out!). I'm responsible for keeping our office orderly, fun, and stocked with snacks!! 
-        When I'm not frantically doing homework, I'm likely playing piano/guitar, cooking, perfecting my latte art, or trying to nurse my tomato plants back to health. 
-        If you have any office questions, come find me during my office hours!!`,
+        blurb: `Hi everyone! My name is Tara, I am in 3rd year and I am this year's VP Comms! To put it shortly, I take care of the communication between the CSSA executive team and all the Computer Science students. Outside from everything CompSci related, I love doing my nails, spending time with friends, watching shows and doing random crafty things!`,
         frontImage: TaraFront,
         email: 'comms@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/taradenaud/',
-
+        questions: [
+            ["Do you think a spring roll is a burrito?", "I mean why not, we can think of one as tasty mini version! We can think of them as second cousins maybe??"]
+        ],
+        song: "Rocketeer - Far East Movement",
+        songLink: "https://music.apple.com/us/album/rocketeer-feat-ryan-tedder/1443121422?i=1443121691",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5f/69/26/5f6926ea-5a7f-17d9-25ce-dbcddfbc14d8/10UMGIM25431.rgb.jpg/592x592bb.webp"
     },
 ]
