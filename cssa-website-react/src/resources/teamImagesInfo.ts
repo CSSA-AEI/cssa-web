@@ -44,7 +44,8 @@ export const teamInfo: TeamMember[] =  [
         songLink: "https://music.apple.com/us/album/youre-on-your-own-kid/1649434004?i=1649434298",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/b6/28/23/b6282315-240d-78f0-0f7d-bec9f71be33e/Job99958555-3bb9-421c-a723-ef66635dcdab-139171365-PreviewImage_preview_image_nonvideo_sdr-Time1668634899071.png/632x632bb.webp",
         personalEmail: "rqi041@uottawa.ca",
-        instagram: "https://www.instagram.com/r.chel.i/"
+        instagram: "https://www.instagram.com/r.chel.i/",
+        linkedIn: 'https://www.linkedin.com/in/rachel-q/'
     },
     {
         name: 'Ali Raza Bhangu',
