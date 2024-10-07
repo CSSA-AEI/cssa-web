@@ -15,6 +15,7 @@
     "expo-screen-orientation": "^7.0.5",
     "fs": "^0.0.1-security",
     "gapi-script": "^1.2.0",
+    "gh-pages": "^6.1.1",
     "i18next": "^23.15.1",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.6.1",
@@ -35,7 +36,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm tun build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
