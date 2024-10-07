@@ -43,7 +43,7 @@ export const teamInfo: TeamMember[] =  [
         song: "You're On Your Own, Kid - Taylor Swift",
         songLink: "https://music.apple.com/us/album/youre-on-your-own-kid/1649434004?i=1649434298",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/b6/28/23/b6282315-240d-78f0-0f7d-bec9f71be33e/Job99958555-3bb9-421c-a723-ef66635dcdab-139171365-PreviewImage_preview_image_nonvideo_sdr-Time1668634899071.png/632x632bb.webp",
-        personalEmail: "rqi041@uottawa.ca",
+        // personalEmail: "rqi041@uottawa.ca",
         instagram: "https://www.instagram.com/r.chel.i/",
         linkedIn: 'https://www.linkedin.com/in/rachel-q/'
     },
@@ -61,7 +61,7 @@ export const teamInfo: TeamMember[] =  [
         song: 'Pressure - Rushy',
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/dc/55/d0/dc55d0f2-c3bc-2256-a990-6450c9354c83/5063268878120_cover.jpg/592x592bb.webp',
         songLink: 'https://music.apple.com/us/album/pressure/1692834373?i=1692834648',
-        personalEmail: 'alibhangu1@outlook.com',
+        // personalEmail: 'alibhangu1@outlook.com',
         instagram: "https://www.instagram.com/notalibhangu/"
     },
     {
@@ -148,7 +148,7 @@ export const teamInfo: TeamMember[] =  [
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0f/a0/14/0fa0144d-6cd5-792a-1589-3e1f0c25db49/20UM1IM08851.rgb.jpg/632x632bb.webp',
         song: 'mirrorball (the long pod studio sessions) - Taylor Swift',
         instagram: "https://www.instagram.com/fayy.lee/",
-        personalEmail: "flee081@uottawa.ca",
+        // personalEmail: "flee081@uottawa.ca",
     },
     {
         name: 'Chelsea Brown',
@@ -182,7 +182,7 @@ export const teamInfo: TeamMember[] =  [
         song: "Red Wine Supernova - Chappell Roan",
         songLink: "https://music.apple.com/us/album/red-wine-supernova/1686988889?i=1686988896",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ca/8e/78/ca8e7878-4c53-0c23-acff-85f69a4803a7/23UMGIM46981.rgb.jpg/632x632bb.webp",
-        personalEmail: "rachelolugbemiro16@gmail.com"
+        // personalEmail: "rachelolugbemiro16@gmail.com"
     },
     {
         name: 'Erik Ang',
@@ -199,7 +199,7 @@ export const teamInfo: TeamMember[] =  [
         song: "Get Lucky - Daft Punk, Pharrell Williams, Nile Rodgers",
         songLink: "https://music.apple.com/us/album/get-lucky/617154241?i=617154366",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/632x632bb.webp",
-        personalEmail: "eang030@uottawa.ca",
+        // personalEmail: "eang030@uottawa.ca",
 
     },
     {
@@ -212,7 +212,7 @@ export const teamInfo: TeamMember[] =  [
         email: 'it@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/toluwanimi-emoruwa-1417ab218/',
         instagram: 'https://www.instagram.com/t.o.l.u.e/',
-        personalEmail: 'emoruwatoluwanimi@gmail.com',
+        // personalEmail: 'emoruwatoluwanimi@gmail.com',
         questions: [
             ["Do you think a spring roll is a burrito?", "No. A spring roll would be a chimichanga more than anything"],
             ["", ""]
