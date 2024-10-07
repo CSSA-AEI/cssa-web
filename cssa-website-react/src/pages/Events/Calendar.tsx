@@ -6,6 +6,7 @@ interface CalendarProps {
     activeDay: number;
     year: number;
     month: number;
+    setYear: React.Dispatch<React.SetStateAction<number>>;
     setMonth: React.Dispatch<React.SetStateAction<number>>;
     setEventsList: React.Dispatch<React.SetStateAction<any[]>>;
     setActiveDay: React.Dispatch<React.SetStateAction<number>>;
@@ -46,7 +47,7 @@ export function doesDayContainEvent(events : any[]){
     return mapDates;
 }
 
-const Calendar: React.FC<CalendarProps> = ({ year, month, setMonth, setActiveDay, activeDay, setEventsList}) => {
+const Calendar: React.FC<CalendarProps> = ({ year, month, setMonth, setActiveDay, activeDay, setEventsList, setYear}) => {
 
     const [events, setEvents] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
@@ -111,21 +112,24 @@ const Calendar: React.FC<CalendarProps> = ({ year, month, setMonth, setActiveDay
                     <div className='left-button' onClick={() => {
                         month--; 
                         console.log(month)
-                        if(month == 0){
+                        if(month === 0){
                             setMonth(12);
+                            year--;
+                            setYear(year);
                         }
                         else{
                             setMonth(month);
                         }
-                        
                     }}>&#8249;</div>
                     <h2>{monthNames[month - 1]} {year}</h2>
                 </div>
                 <div className='right-button'>
                     <div className='right-button' onClick={() => {
                         month++; 
-                        if(month == 13){
+                        if(month === 13){
                             setMonth(1);
+                            year++;
+                            setYear(year);
                         }
                         else{
                             setMonth(month);

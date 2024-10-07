@@ -76,6 +76,7 @@ const Events: React.FC = () => {
                                 setEventsList={setEventsList} 
                                 activeDay={activeDay} 
                                 setActiveDay={setActiveDay}
+                                setYear={setActiveYear}
                             />
                         </div>
                     </div>
@@ -87,7 +88,7 @@ const Events: React.FC = () => {
   return (
         <div className='events-page-container'>
             <BinaryEvents />
-            <img src={EventsPage} id="events-page-footer"/>
+            <img src={EventsPage} id="events-page-footer" alt='events collage'/>
             <div className='event-body' style={(windowDimensions.width / windowDimensions.height <= 1) ? { display: 'flex', flexDirection: 'column' } : {}}>
                 <div className='events-list-container'>
                     <div className='events-header-container'>
@@ -119,6 +120,7 @@ const Events: React.FC = () => {
                     <div className='event-calendar'>
                         <Calendar 
                             year={activeYear} 
+                            setYear={setActiveYear}
                             month={calendarMonth} 
                             setMonth={setCalendarMonth} 
                             setEventsList={setEventsList} 
