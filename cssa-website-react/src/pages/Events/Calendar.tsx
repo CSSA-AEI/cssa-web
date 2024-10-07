@@ -108,11 +108,29 @@ const Calendar: React.FC<CalendarProps> = ({ year, month, setMonth, setActiveDay
         <div className='calendar-container'>
             <div className='calendar-header'>
                 <div className='left-side'>
-                    <div className='left-button' onClick={() => {month--; setMonth(month)}}>&#8249;</div>
+                    <div className='left-button' onClick={() => {
+                        month--; 
+                        console.log(month)
+                        if(month == 0){
+                            setMonth(12);
+                        }
+                        else{
+                            setMonth(month);
+                        }
+                        
+                    }}>&#8249;</div>
                     <h2>{monthNames[month - 1]} {year}</h2>
                 </div>
                 <div className='right-button'>
-                    <div className='right-button' onClick={() => {month++; setMonth(month)}}>&#8250;</div>
+                    <div className='right-button' onClick={() => {
+                        month++; 
+                        if(month == 13){
+                            setMonth(1);
+                        }
+                        else{
+                            setMonth(month);
+                        }
+                    }}>&#8250;</div>
                 </div>
             </div>
             
