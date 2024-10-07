@@ -6,6 +6,7 @@
     justify-content: space-between;
     overflow: hidden;
     position: absolute;
+    top: 8vh;
 }
 .event-body{
     width: 100%;

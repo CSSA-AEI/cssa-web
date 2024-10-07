@@ -5,6 +5,7 @@
     display: flex;
     position: absolute;
     overflow: hidden;
+    top: 8vh;
 }
 .newsletter-container{
     height: 100%;

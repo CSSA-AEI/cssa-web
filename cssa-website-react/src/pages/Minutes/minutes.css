@@ -5,6 +5,7 @@
     box-sizing: border-box;
     overflow: hidden;
     position: absolute;
+    top: 8vh;
 }
 .minutes-list{
     width: fit-content;

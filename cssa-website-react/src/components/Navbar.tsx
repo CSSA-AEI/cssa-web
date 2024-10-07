@@ -19,7 +19,6 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
         i18n.changeLanguage(newLanguage);
     };
 
-
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
     };
@@ -29,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
             <div className='navbar-logo'>
                 <Link to='/'><img src={NavLogo} alt={"CSSA Logo"} /></Link>
             </div>
-            <ul className={showDropdown ? 'navbar-links dropdown-menu' : 'navbar-links'}>
+            <ul className={showDropdown ? 'navbar-links dropdown-menu active' : 'navbar-links'}>
                 {links.map((link, index) => (
                 <li className='navbar-link' key={index}>
                     <Link to={link.url}>{t(link.name)}</Link>
@@ -42,13 +41,6 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
             <div className='dropdown-button' onClick={toggleDropdown}>
                 &#9776; {/* Unicode for three horizontal bars (Hamburger menu icon) */}
             </div>
-            <ul className={showDropdown ? 'dropdown-menu active' : 'dropdown-menu'}>
-                {links.map((link, index) => (
-                <li className='navbar-link' key={index}>
-                    <Link className={showDropdown ? 'ready' : ''} to={link.url}>{t(link.name)}</Link>
-                </li>
-                ))}
-            </ul>
         </div>
     );
 };
