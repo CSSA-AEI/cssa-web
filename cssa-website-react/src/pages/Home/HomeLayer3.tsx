@@ -8,6 +8,7 @@ import EventCard from './EventCard';
 import Event1 from '../../images/events-posters/CienaNetworking.webp';
 import Event2 from '../../images/events-posters/webdevevent.webp';
 import Event3 from '../../images/events-posters/halloween_event.webp';
+import Event4 from '../../images/events-posters/event1.webp';
 import Group20 from '../../images/scrapbook-images/Group-20.png';
 import BinaryBackground from './BinaryBackground';
 import { useTranslation } from 'react-i18next';
@@ -56,9 +57,9 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
                     <div className='events-scroller' style={{top: `18%`, left: `0%`, height:`fit-content`, width: `100vw`, boxSizing: `content-box`}}>
                         <div className='scroller' style={{padding: `0.5em 1em`, minWidth: `${minWidth}vw`, height:`fit-content`}}>
                             <EventCard title='Ciena Networking Night' date='Oct 7th' description='Join us for some pancakes' image={Event1} orientation={displayOrientation} link=''/>
-                            <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
+                            <EventCard title='Saunders Farm' date='Oct 25th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
                             <EventCard title='Web Dev for Dummies' date='Jan 10th' description='Learn how to build lovely sites like ours!' image={Event2} orientation={displayOrientation} link=''/>
-                            <EventCard title='Sweets and Skating' date='Jan 11th' description='Eat sweets and skate' image={Event1} orientation={displayOrientation} link=''/>
+                            <EventCard title='Sweets and Skating' date='Jan 11th' description='Eat sweets and skate' image={Event4} orientation={displayOrientation} link=''/>
                         </div>
                     </div>
                     <BinaryBackground />
@@ -81,9 +82,9 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
                     <div className='events-scroller' style={{top: `18%`, left: `0%`, height:`fit-content`, width: `100vw`, boxSizing: `content-box`}}>
                         <div className='scroller' style={{padding: `0.5em 1em`, minWidth: `${minWidth}vw`, height: `fit-content`}}>
                             <EventCard title='Ciena Networking Night' date='Oct 7th' description='Join us for some pancakes' image={Event1} orientation={displayOrientation} link=''/>
-                            <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
+                            <EventCard title='Saunders Farm' date='Oct 25th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
                             <EventCard title='Web Dev for Dummies' date='Jan 10th' description='Learn how to build lovely sites like ours!' image={Event2} orientation={displayOrientation} link=''/>
-                            <EventCard title='Sweets and Skating' date='Jan 11th' description='Eat sweets and skate' image={Event1} orientation={displayOrientation} link=''/>
+                            <EventCard title='Sweets and Skating' date='Jan 11th' description='Eat sweets and skate' image={Event4} orientation={displayOrientation} link=''/>
                         </div>
                     </div>
                     <BinaryBackground />
@@ -111,9 +112,9 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
             <div className='events-scroller'>
                 <div className='scroller' style={{padding: `2em`}}>
                     <EventCard title='Ciena Networking Night' date='Oct 7th' description='Join us for some pancakes' image={Event1} orientation={displayOrientation} link=''/>
-                    <EventCard title='Saunders Farm' date='Oct 14th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
+                    <EventCard title='Saunders Farm' date='Oct 25th' description='Join us for a night of terror at Saunders!' image={Event3} orientation={displayOrientation} link=''/>
                     <EventCard title='Web Dev for Dummies' date='Jan 10th' description='Learn how to build lovely sites like ours!' image={Event2} orientation={displayOrientation} link='https://www.instagram.com/p/C10hIRuRVw5/?img_index=1'/>
-                    <EventCard title='Sweets and Skating' date='Jan 11th' description='Eat sweets and skate' image={Event1} orientation={displayOrientation} link=''/>
+                    <EventCard title='Sweets and Skating' date='Jan 11th' description='Eat sweets and skate' image={Event4} orientation={displayOrientation} link=''/>
                 </div>
             </div>
             <BinaryBackground />

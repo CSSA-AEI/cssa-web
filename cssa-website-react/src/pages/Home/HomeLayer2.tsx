@@ -115,7 +115,6 @@ const HomeLayer2: React.FC<HomeLayer2Props> = ({windowDimensions}) => {
                                 <p>{currentMember.position}</p>
                                 <p>{currentMember.year}</p>
                             </div>
-                            
                             <p>{currentMember.blurb}</p>
                         </div>
                     </div>

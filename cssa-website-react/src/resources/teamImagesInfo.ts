@@ -9,6 +9,8 @@ import JustinFront from '../images/Justin_Wang.webp';
 import AashishFront from '../images/Aashish_Suresh.webp';
 import ToluFront from '../images/Tolu_Emoruwa.webp';
 import TaraFront from '../images/Tara_DenaudJoseph.webp';
+import ErikFront from '../images/Erik.webp';
+import ChelseaFront from '../images/chelsea.webp';
 
 export interface TeamMember {
     name: string;
@@ -30,7 +32,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Rachel Qi',
         position: 'VP Academic',
-        year: '3rd Year',
+        year: '2nd Year',
         blurb: `Hi! I'm Rachel, a 2nd year CS & math student from Aurora. Outside of studying, I spend my time gaming, 
         hanging out with friends, or learning about something new (currently planes!). I can't wait to meet you all! 🥰 `,
         frontImage: RachelQiFront,
@@ -81,7 +83,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Justin Wang',
         position: '101 Week Coordinator',
-        year: '3rd Year',
+        year: '4th Year',
         blurb: `You come here often? I'm Justin and I'm currently going into my 4th year. If you see me walking around 
         with a Hawaiian shirt or a jersey, you'll know it's me!`,
         frontImage: JustinFront,
@@ -116,7 +118,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Timothy Mao',
         position: 'VP Logistics',
-        year: '2nd Year',
+        year: '4th Year',
         blurb: `Hey, I'm Tim and I'm now in my 4th year! I'm the guy who keeps track of merch and games -- 
         pretty sweet gig, right? I also love listening to music and trying to survive the everyday!`,
         frontImage: TimFront,
@@ -154,7 +156,7 @@ export const teamInfo: TeamMember[] =  [
         blurb: `Hello! I'm Chelsea, if you were confused about that. I'm this year's VP Internal, which means I'm responsible for all 
         things related to our office. I'm responsible for keeping our office orderly, fun, and stocked with snacks!! When I'm not frantically doing homework, I'm likely playing piano/guitar, cooking, 
         perfecting my latte art, or trying to nurse my tomato plants back to health. If you have any office questions, come find me during my office hours!!`,
-        frontImage: AngieFront,
+        frontImage: ChelseaFront,
         email: 'internal@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/chelsea-brown-89340a245/',
         questions: [
@@ -186,7 +188,7 @@ export const teamInfo: TeamMember[] =  [
         position: 'VP External Affairs',
         year: '3rd Year',
         blurb: `Hi! I'm Erik and I am a current third year student here. When life and school isn't too busy I enjoy 3D printing, working out and playing video games.`,
-        frontImage: AngieFront,
+        frontImage: ErikFront,
         email: 'external@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/erik-ang-97773b260/',
         instagram: 'https://www.instagram.com/erik_ang_/',
@@ -202,7 +204,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Toluwanimi Emoruwa',
         position: 'VP IT',
-        year: '3rd Year',
+        year: '4th Year',
         blurb: `Hey, I'm Tolu and I'm a current 4th year student here. When I'm not in the office working on school you can find me on campus at different intramurals. 
         Hope to see you around campus!`,
         frontImage: ToluFront,
@@ -221,7 +223,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Meriem Mostefai',
         position: 'VP Social',
-        year: '3rd Year',
+        year: '4th Year',
         blurb: `I'm an alleged comp sci major and hater of proofs! I love to draw and be very loud. This is my second year being vp social and it's been my pleasure :D 
         I love this student association and I hope you'll come by to say hi to us at the office.`,
         frontImage: MeriemFront,
@@ -238,13 +240,15 @@ export const teamInfo: TeamMember[] =  [
         name: 'Tara Denaud Joseph',
         position: 'VP Communications',
         year: '3rd Year',
-        blurb: `Hello! I'm Chelsea, if you were confused about that. I'm this year's VP Internal, which means I'm responsible for all things related to our office 
-        (located at SITE 4076 by the way, very cool place, come hang out!). I'm responsible for keeping our office orderly, fun, and stocked with snacks!! 
-        When I'm not frantically doing homework, I'm likely playing piano/guitar, cooking, perfecting my latte art, or trying to nurse my tomato plants back to health. 
-        If you have any office questions, come find me during my office hours!!`,
+        blurb: `Hi everyone! My name is Tara, I am in 3rd year and I am this year's VP Comms! To put it shortly, I take care of the communication between the CSSA executive team and all the Computer Science students. Outside from everything CompSci related, I love doing my nails, spending time with friends, watching shows and doing random crafty things!`,
         frontImage: TaraFront,
         email: 'comms@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/taradenaud/',
-
+        questions: [
+            ["Do you think a spring roll is a burrito?", "I mean why not, we can think of one as tasty mini version! We can think of them as second cousins maybe??"]
+        ],
+        song: "Rocketeer - Far East Movement",
+        songLink: "https://music.apple.com/us/album/rocketeer-feat-ryan-tedder/1443121422?i=1443121691",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5f/69/26/5f6926ea-5a7f-17d9-25ce-dbcddfbc14d8/10UMGIM25431.rgb.jpg/592x592bb.webp"
     },
 ]

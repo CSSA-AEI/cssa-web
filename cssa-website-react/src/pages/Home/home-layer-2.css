@@ -75,13 +75,11 @@
 }
 .tv-content > p{
     margin: 0;
+    font-size: 0.8em;
 }
 .tv-content > div > p{
     margin: 0;
 }
-/* .tv-content > p:nth-child(2){
-    line-height: 1.5em;
-} */
 .meet-the-team-container{
     display: flex;
     flex-direction: column;
