@@ -137,8 +137,9 @@ const Volunteer: React.FC<VolunteerProps> = () => {
             ))}
           </div>
         </div>
-        <img src={VolunteerImage} alt='volunteering opportunities'/>
+        
       </div>
+      <img src={VolunteerImage} alt='volunteering opportunities'/>
     </div>
   );
 };
