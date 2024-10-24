@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
 
     const { t, i18n } = useTranslation();
     const toggleLanguage = () => {
-        const newLanguage = i18n.language === 'en' ? 'fr' : 'en';
+        const newLanguage = i18n.language === 'fr' ? 'en' : 'fr';
         i18n.changeLanguage(newLanguage);
     };
 
