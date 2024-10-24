@@ -187,6 +187,9 @@
         border-top: 1px solid #14283a;
         border-bottom: 1px solid #14283a;
     }
+    .tv-content > p{
+        font-size: 0.9em;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .layer-3-title > p{
@@ -195,6 +198,9 @@
     .layer-3-title{
         border-top: 1px solid #14283a;
         border-bottom: 1px solid #14283a;
+    }
+    .tv-content > p{
+        font-size: 0.8em;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -210,6 +216,9 @@
     }
     .meet-the-team-blurb > a{
         font-size: 0.7rem;
+    }
+    .tv-content > p{
+        font-size: 0.7em;
     }
 }
 @media only screen and (max-width: 550px) {

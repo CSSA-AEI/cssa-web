@@ -98,12 +98,6 @@
     box-sizing: border-box;
     align-items: center;
 }
-/* .volunteer-description-container > img{
-    width: 105vw;
-    height: auto;
-    transform: translate(-42.5%, 0%);
-    z-index: -2;
-} */
 .volunteer-image{
     width: 30%;
     height: 100%;
