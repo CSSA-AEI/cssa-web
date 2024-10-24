@@ -45,7 +45,7 @@ const About: React.FC = () => {
                   <p>{t('We are also dedicated to providing social programming, academic services and employment resource opportunities to all our members. We are dedicated to fostering a sense of community among students, professors and members of the computer science department through these events and services.')}</p>
                   <p>{t('Take a look below to see the current members of our team.')}</p>
                 </div>
-                <a className='constitution-link' href='https://www.cssa-aei.ca/constitutions/CSSA-Constitution-June-3-2024.pdf'>
+                <a className='constitution-link' href='/constitution-english.pdf'>
                   {t('View our constitution in English here. We are working on the French translation for our constitution.')}
                 </a>
               </div>
