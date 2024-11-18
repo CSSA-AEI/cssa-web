@@ -111,7 +111,6 @@ const Calendar: React.FC<CalendarProps> = ({ year, month, setMonth, setActiveDay
                 <div className='left-side'>
                     <div className='left-button' onClick={() => {
                         month--; 
-                        console.log(month)
                         if(month === 0){
                             setMonth(12);
                             year--;

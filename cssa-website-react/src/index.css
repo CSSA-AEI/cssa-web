@@ -16,7 +16,7 @@ code {
 
 body > div {
   box-sizing: border-box;
-  scrollbar-width: none;
+  scrollbar-width: 2px;
   overflow: hidden;
 }
 

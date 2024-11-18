@@ -94,9 +94,14 @@
 }
 
 /* Adjust font size for large screens */
+@media only screen and (min-width: 1600px) {
+    .navbar-link{
+        font-size: 1.4em;
+    }
+}
 @media only screen and (min-width: 1440px) {
     .navbar-link{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
 

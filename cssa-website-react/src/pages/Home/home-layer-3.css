@@ -80,6 +80,7 @@
     overflow: scroll;
     position: absolute;
     box-sizing: border-box;
+    scrollbar-width: 2px;
 }
 .scroller{
     min-width: 100vw;
