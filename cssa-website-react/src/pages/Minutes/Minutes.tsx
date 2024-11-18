@@ -33,6 +33,7 @@ const Minutes: React.FC = () => {
             <p>{t('You can access our minutes through the links below:')}</p>
           </div>
           <div className='minute-links'>
+            <a href='https://drive.google.com/drive/folders/1S9Vz0stl8XMlrsFFcbeZIIDEdGEq_2HO?usp=sharing'>2024-25</a>
             <a href='https://drive.google.com/drive/u/2/folders/11-bCRH3T3_ONt1bp9S5c5sQ_Xh8kNjN3'>2023-24</a>
             <a href='https://drive.google.com/drive/u/1/folders/1Wr3UTq4kh9pEseFfk8hpMOwYWqX9DErt'>2021-22</a>
             <a href='https://drive.google.com/drive/folders/1Bbn_NNVZM16kkxMNMAi51HkJn7QumebX'>2020-21</a>
@@ -54,6 +55,7 @@ const Minutes: React.FC = () => {
           <p>{t('You can access our minutes through the links below:')}</p>
         </div>
         <div className='minute-links'>
+          <a href='https://drive.google.com/drive/folders/1S9Vz0stl8XMlrsFFcbeZIIDEdGEq_2HO?usp=sharing'>2024-25</a>
           <a href='https://drive.google.com/drive/u/2/folders/11-bCRH3T3_ONt1bp9S5c5sQ_Xh8kNjN3'>2023-24</a>
           <a href='https://drive.google.com/drive/u/1/folders/1Wr3UTq4kh9pEseFfk8hpMOwYWqX9DErt'>2021-22</a>
           <a href='https://drive.google.com/drive/folders/1Bbn_NNVZM16kkxMNMAi51HkJn7QumebX'>2020-21</a>
