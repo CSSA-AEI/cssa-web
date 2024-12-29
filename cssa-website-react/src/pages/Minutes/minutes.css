@@ -84,6 +84,22 @@
         min-width: calc(50vw - 4em);
     }
 }
+@media only screen and (orientation: portrait){
+    .minutes-image{
+        width: 100%;
+    }
+    .minutes-header{
+        margin-bottom: 2vw;
+    }
+    .minutes-description{
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+    .minutes-image > img{
+        width: 110vw;
+        transform: translate(-2%, 1%);
+    }
+}
 @media only screen and (max-width: 900px) {
     .minutes-page-container{
         flex-direction: column;

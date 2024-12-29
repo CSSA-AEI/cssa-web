@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './about.css';
 import TeamImagesSelector from './TeamImagesSelector';
-import AboutWall from '../../images/scrapbook-images/aboutPageWall.webp';
-import ExecTeam from '../../images/scrapbook-images/execTeam.jpg';
 import BinaryEvents from '../Events/BinaryEvents';
 import { teamInfo, TeamMember } from '../../resources/teamImagesInfo';
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
@@ -52,7 +50,7 @@ const About: React.FC = () => {
               <div className='exec-main-image'>
                 <div className='exec-main-image-container'>
                   <div className='exec-main-image-polaroid'>
-                    <img src={ExecTeam} alt="cssa-exec-team"/>
+                    <img src="/images/AboutPage/execTeam.webp" alt="cssa-exec-team"/>
                   </div>
                   <a className='exec-office-hours' href='https://www.instagram.com/p/DABR82sx1Zo/?img_index=1'>
                     {t('Every exec has office hours. Click here to see when the execs will be in office.')}
@@ -61,7 +59,7 @@ const About: React.FC = () => {
               </div>
             </div>
             <div className='about-wall-holder'>
-              <img src={AboutWall} alt="cssa collage"/>
+              <img src="/images/AboutPage/aboutPageWall.webp" alt="cssa collage"/>
             </div>
           </div>
           <div className='team-title'>

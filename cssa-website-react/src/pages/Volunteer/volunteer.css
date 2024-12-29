@@ -133,6 +133,15 @@
     .volunteer-event{
         min-width: calc(100vw - 4em);
     }
+    .volunteer-description-container{
+        width: 100%;
+    }
+    .volunteer-event > a{
+        width: 80%;
+    }
+    .volunteer-info{
+        width: 100%;
+    }
 }
 @media only screen and (orientation:portrait) and (max-width: 399px){
     .volunteer-events-container{

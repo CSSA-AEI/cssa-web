@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Calendar from './Calendar';
 import BinaryEvents from './BinaryEvents';
 import { doesDayContainEvent } from './Calendar';
-import EventsPage from '../../images/scrapbook-images/EventsPage.webp';
 import DayEvent from './DayEvent';
 import { useTranslation } from 'react-i18next';
 import './events.css';
@@ -88,7 +87,7 @@ const Events: React.FC = () => {
   return (
         <div className='events-page-container'>
             <BinaryEvents />
-            <img src={EventsPage} id="events-page-footer" alt='events collage'/>
+            <img src="/images/EventsPage/EventsPage.webp" id="events-page-footer" alt='events collage'/>
             <div className='event-body' style={(windowDimensions.width / windowDimensions.height <= 1) ? { display: 'flex', flexDirection: 'column' } : {}}>
                 <div className='events-list-container'>
                     <div className='events-header-container'>
