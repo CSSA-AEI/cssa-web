@@ -8,6 +8,7 @@ import Minutes from './pages/Minutes/Minutes';
 import Volunteer from './pages/Volunteer/Volunteer';
 import Blog from './pages/Blog/Blog';
 import Events from './pages/Events/Events';
+import Sponsors from './pages/Sponsors/sponsors'
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
