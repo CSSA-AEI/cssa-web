@@ -1,0 +1,21 @@
+.sponsors-buttoncontainer{
+    font-family: 'Intervogue Soft';
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 3% 0;
+}
+
+.sponsors-buttons{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0);
+}
+
+button svg{
+    width: 3em;
+    height: 3em;
+}

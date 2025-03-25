@@ -1,0 +1,44 @@
+.sponsors-body{
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    top: 8vh;
+    text-align: center;
+}
+
+.sponsors-leftside{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.sponsors-rightside{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sponsors-type{
+    justify-content: center;
+}
+
+.sponsors-name{
+    justify-content: center;
+    padding: 0 20%;
+}
+
+.sponsors-desc{
+    justify-content: center;
+}
+
+/*
+.container{
+    
+}
+*/
