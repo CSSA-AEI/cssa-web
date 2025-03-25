@@ -25,6 +25,7 @@ const App: React.FC = () => {
     { name: 'Volunteer', url: '/volunteer' },
     { name: 'Minutes', url: '/minutes' },
     { name: 'About', url: '/about' },
+    { name: 'Sponsors', url: '/sponsors' },
   ];
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
@@ -35,6 +36,7 @@ const App: React.FC = () => {
         <Navbar title="My Navbar" links={links} />
         <Routes>
           <Route path="/" Component={Home} />
+          <Route path="/sponsors" Component={Sponsors} />
           <Route path="/about" Component={About} />
           <Route path="/minutes" Component={Minutes} />
           <Route path="/volunteer" Component={Volunteer} />

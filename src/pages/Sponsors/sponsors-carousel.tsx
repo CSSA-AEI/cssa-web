@@ -137,7 +137,7 @@ const SponsorsCircularCarousel: React.FC<CircularCarouselProps> = ({flexDirectio
 
     return (
       <div className="container">
-        <div className="wheel" style={{ transform: `translate(-45%, 10%) rotate(${rotate}deg)`}}>
+        <div className="wheel" style={{ transform: `translate(-30%, -30%) rotate(${rotate}deg)`}}>
           <div className="wheel-border" style={{transform: `rotate(${rotate}deg)`}}></div>
           {slides &&
           slides.map((slide, index) => {

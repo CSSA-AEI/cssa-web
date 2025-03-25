@@ -1,15 +1,15 @@
 import cse from '../images/sponsors/cse-cst.webp';
-import nokia from '../images/nokia.webp';
-import placeholder from '../images/placeholder.webp';
+import nokia from '../images/sponsors/nokia.webp';
+import placeholder from '../images/sponsors/placeholder.webp';
 
-export interface TeamMember {
+export interface Sponsor {
     name: string;
     type: string;
     description: string;
     frontImage: string;
 }
 
-export const teamInfo: TeamMember[] =  [
+export const sponsorsInfo: Sponsor[] =  [
     {
         name: "Nokia",
         type: "sponsor type",
