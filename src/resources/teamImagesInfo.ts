@@ -1,18 +1,87 @@
-import AngieFront from '../images/angie.webp';
+// "Look Around" Images
+import Aashish0 from "../images/execs/5/0.webp";
+import Aashish1 from "../images/execs/5/1.webp";
+import Aashish2 from "../images/execs/5/2.webp";
+import Aashish3 from "../images/execs/5/3.webp";
+import Aashish4 from "../images/execs/5/4.webp";
+import Aashish5 from "../images/execs/5/5.webp";
+import Aashish6 from "../images/execs/5/6.webp";
+import Aashish7 from "../images/execs/5/7.webp";
+import Aashish8 from "../images/execs/5/8.webp";
+import Aashish9 from "../images/execs/5/9.webp";
+
+import Tara0 from "../images/execs/7/0.webp";
+import Tara1 from "../images/execs/7/1.webp";
+import Tara2 from "../images/execs/7/2.webp";
+import Tara3 from "../images/execs/7/3.webp";
+import Tara4 from "../images/execs/7/4.webp";
+import Tara5 from "../images/execs/7/5.webp";
+import Tara6 from "../images/execs/7/6.webp";
+import Tara7 from "../images/execs/7/7.webp";
+import Tara8 from "../images/execs/7/8.webp";
+import Tara9 from "../images/execs/7/9.webp";
+
+import Fay0 from "../images/execs/8/0.webp";
+import Fay1 from "../images/execs/8/1.webp";
+import Fay2 from "../images/execs/8/2.webp";
+import Fay3 from "../images/execs/8/3.webp";
+import Fay4 from "../images/execs/8/4.webp";
+import Fay5 from "../images/execs/8/5.webp";
+import Fay6 from "../images/execs/8/6.webp";
+import Fay7 from "../images/execs/8/7.webp";
+import Fay8 from "../images/execs/8/8.webp";
+import Fay9 from "../images/execs/8/9.webp";
+
+import RachelQ0 from "../images/execs/10/0.webp";
+import RachelQ1 from "../images/execs/10/1.webp";
+import RachelQ2 from "../images/execs/10/2.webp";
+import RachelQ3 from "../images/execs/10/3.webp";
+import RachelQ4 from "../images/execs/10/4.webp";
+import RachelQ5 from "../images/execs/10/5.webp";
+import RachelQ6 from "../images/execs/10/6.webp";
+import RachelQ7 from "../images/execs/10/7.webp";
+import RachelQ8 from "../images/execs/10/8.webp";
+import RachelQ9 from "../images/execs/10/9.webp";
+
+import RachelO0 from "../images/execs/11/0.webp";
+import RachelO1 from "../images/execs/11/1.webp";
+import RachelO2 from "../images/execs/11/2.webp";
+import RachelO3 from "../images/execs/11/3.webp";
+import RachelO4 from "../images/execs/11/4.webp";
+import RachelO5 from "../images/execs/11/5.webp";
+import RachelO6 from "../images/execs/11/6.webp";
+import RachelO7 from "../images/execs/11/7.webp";
+import RachelO8 from "../images/execs/11/8.webp";
+import RachelO9 from "../images/execs/11/9.webp";
+
+import Chelsea0 from "../images/execs/12/0.webp";
+import Chelsea1 from "../images/execs/12/1.webp";
+import Chelsea2 from "../images/execs/12/2.webp";
+import Chelsea3 from "../images/execs/12/3.webp";
+import Chelsea4 from "../images/execs/12/4.webp";
+import Chelsea5 from "../images/execs/12/5.webp";
+import Chelsea6 from "../images/execs/12/6.webp";
+import Chelsea7 from "../images/execs/12/7.webp";
+import Chelsea8 from "../images/execs/12/8.webp";
+import Chelsea9 from "../images/execs/12/9.webp";
+
+
+// Profile Images
 import RachelQiFront from '../images/Rachel_Qi.webp';
 import RachelOFront from '../images/rachelo.webp';
 import FayFront from '../images/Fay_Lee.webp';
-import MeriemFront from '../images/Meriem_Mostefai.webp';
 import AashishFront from '../images/Aashish_Suresh.webp';
-import ToluFront from '../images/Tolu_Emoruwa.webp';
 import TaraFront from '../images/Tara_DenaudJoseph.webp';
-import ErikFront from '../images/Erik.webp';
 import ChelseaFront from '../images/chelsea.webp';
 import AnastasiaFront from '../images/Anastasia_Sadovskyy.webp';
 import MarianneFront from '../images/Marianne_Aguhar.webp';
 import TracyFront from '../images/Tracy_Feghali.webp';
 import AparnaFront from '../images/Aparna_Balaji.webp';
 import AdamFront from '../images/Adam_R.webp';
+import KaliFront from '../images/Kali_Jade_LaFontaine.webp';
+import RichaFront from '../images/Richa_Kewalramani.webp';
+import SanikaFront from '../images/Sanika_Sisodia.webp';
+import LaciaFront from '../images/Lacia_Paige_Cummings.webp';
 
 export interface TeamMember {
     name: string;
@@ -20,6 +89,7 @@ export interface TeamMember {
     year: string;
     blurb: string;
     frontImage: string; // Assuming this is a string representing a URL or a path to the image
+    galleryImages: [string, string, string, string, string, string, string, string, string, string]; // Array of image URLs or paths for the "Look Around" feature (use front image as placeholder)
     email?: string; // Optional, as some members might not have an email
     linkedIn?: string;
     personalEmail?: string;
@@ -31,13 +101,33 @@ export interface TeamMember {
 }
 
 export const teamInfo: TeamMember[] =  [
+        {
+        name: 'Aashish Suresh',
+        position: 'President',
+        year: '4th Year',
+        blurb: `Hello Everyone! My name is Aashish Suresh and I am the President of the CSSA! I am going in my 4th year of Computer Science and Economics, 
+        and am so excited to be a part of the team. When not in school, you can catch me doing things such as going on hikes, 
+        playing sports, fishing (weather permitting), or playing the guitar.`,
+        frontImage: AashishFront,
+        galleryImages: [Aashish0, Aashish1, Aashish2, Aashish3, Aashish4, Aashish5, Aashish6, Aashish7, Aashish8, Aashish9],
+        email: 'president@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/aashish-suresh-a36639246/',
+        instagram: "https://www.instagram.com/asuresh37/",
+        questions: [
+            ["Who would win: 1000 CS students or 1 polar bear?", "[Aashish answer]"]
+        ],
+        song: "Reelin' in the Years - Steely Dan",
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/08/f3/f1/08f3f17c-e92a-516f-57c0-0a5d250c6cdc/22UM1IM01200.rgb.jpg/632x632bb.webp',
+        songLink: 'https://music.apple.com/us/album/reelin-in-the-years/1650885288?i=1650885304',
+    },
     {
         name: 'Rachel Qi',
-        position: 'VP Academic',
+        position: 'VP Academic Affairs',
         year: '3rd Year',
         blurb: `Hi! I'm Rachel Qi, a 3rd year CS & math student from Aurora. Outside of studying, I spend my time gaming, hanging out with friends, learning something new (currently skating! ⛸️), or working at one of my 3 jobs. 
         Feel free to drop by my office hours or shoot me a message if you ever need any academic help! 👩🏻‍🏫 I can't wait to meet you all! 💖`,
         frontImage: RachelQiFront,
+        galleryImages: [RachelQ0, RachelQ1, RachelQ2, RachelQ3, RachelQ4, RachelQ5, RachelQ6, RachelQ7, RachelQ8, RachelQ9],
         email: 'academic@cssa-aei.ca',
         questions: [
             ["Who would win: 1000 CS students or 1 polar bear?", "The polar bear for sure! The scent of 1000 CS students would give them away *immediately*."]
@@ -50,60 +140,37 @@ export const teamInfo: TeamMember[] =  [
         linkedIn: 'https://www.linkedin.com/in/rachel-q/'
     },
     {
-        name: 'Aashish Suresh',
-        position: 'President',
-        year: '4th Year',
-        blurb: `Hello Everyone! My name is Aashish Suresh and I am the President of the CSSA! I am going in my 4th year of Computer Science and Economics, 
-        and am so excited to be a part of the team. When not in school, you can catch me doing things such as going on hikes, 
-        playing sports, fishing (weather permitting), or playing the guitar.`,
-        frontImage: AashishFront,
-        email: 'president@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/aashish-suresh-a36639246/',
-        instagram: "https://www.instagram.com/asuresh37/",
-        questions: [
-            ["Who would win: 1000 CS students or 1 polar bear?", "[Aashish answer]"]
-        ],
-        song: "Reelin' in the Years - Steely Dan",
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/08/f3/f1/08f3f17c-e92a-516f-57c0-0a5d250c6cdc/22UM1IM01200.rgb.jpg/632x632bb.webp',
-        songLink: 'https://music.apple.com/us/album/reelin-in-the-years/1650885288?i=1650885304',
-    },
-    {
-        // TODO: Replace everything except name
         name: 'Richa Kewalramani',
         position: 'VP Executive Affairs',
         year: '4th Year',
-        blurb: "hallooo 🥭 ! :3 my name is angie and im ur vp exec affairs !! i'm a helping hand and i work internally with the team to help them be the best exec team for u guys ! i love mangoes and hanging out w my friends and i cant wait to meet all of u !!",
-        frontImage: AngieFront,
+        blurb: "Hiii! I love being outdoors, reading books, and drinking coffee! I love playing sports like basketball and soccer, going on walks, travelling, being at the beach, etc. You can often catch me giggling with my girls.",
+        frontImage: RichaFront,
+        galleryImages: [RichaFront, RichaFront, RichaFront, RichaFront, RichaFront, RichaFront, RichaFront, RichaFront, RichaFront, RichaFront],
         email: 'execaffairs@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/angeleeca-jocson/',
-        song: 'Tsundere Twintails - Sunshine',
-        songImage:'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ce/1d/24/ce1d24df-96e1-0d59-6765-0da458c9f3b3/artwork.jpg/632x632bb.webp',
-        songLink: 'https://music.apple.com/us/album/sunshine/1590773462?i=1590773463',
+        linkedIn: 'https://www.linkedin.com/in/richa-kd/',
+        instagram: 'https://www.instagram.com/richa.kd/',
+        song: 'I Wanna Be Yours - Arctic Monkeys',
+        songImage:'https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/cc/0f/2d/cc0f2d02-5ff1-10e7-eea2-76863a55dbad/887828031795.png/592x592bb.webp',
+        songLink: 'https://music.apple.com/us/song/i-wanna-be-yours/663098065',
         questions: [
-            ['Do you think a spring roll is a burrito?', "No, I get they're rolled the same way, but it's dishonorable to think one is the other when they come from different cultures (I do NOT know how to make a good burrito but I can make a bomb ass spring roll)"]
-        ],
-        instagram: "https://www.instagram.com/altth3a/",
-
+            ['Who would win: 1000 CS students or 1 polar bear?', "Hmm 1000 CS students that touch grass...right?"]
+        ]
     },
     {
-        // TODO: Replace everything except name
         name: 'Kali-Jade LaFontaine',
         position: 'VP Finance',
-        year: '3rd Year',
-        blurb: `Hello Everyone! My name is Aashish Suresh and I am the VP Finance of the CSSA! I am going into my 
-        3rd year of Computer Science and Economics, and am so excited to be a part of the team. When not in school, 
-        you can catch me doing things such as going on hikes, playing sports, fishing (weather permitting), or playing 
-        the guitar.`,
-        frontImage: AashishFront,
+        year: '1st Year',
+        blurb: `As a first-year Computer Science student and VP Finance, I enjoy working with numbers, systems, and structured problem-solving. I'm excited to be part of CSSA and contribute to our student community.`,
+        frontImage: KaliFront,
+        galleryImages: [KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront],
         email: 'finance@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/aashish-suresh-a36639246/',
-        instagram: 'https://www.instagram.com/asuresh37/',
+        linkedIn: 'https://www.linkedin.com/in/kali-jade-lafontaine-b62624343/',
         questions: [
-            ["Do you think a spring roll is a burrito?", "No, I think a proper burrito consists of a meat/protein, a carb, and some vegetables. A Spring roll only has vegetables and is missing the rest."]
+            ["Who would win: 1000 CS students or 1 polar bear?", "1 polar bear"]
         ],
-        song: "Reelin' in the Years - Steely Dan",
-        songLink: "https://music.apple.com/us/album/reelin-in-the-years/1650885288?i=1650885304",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/08/f3/f1/08f3f17c-e92a-516f-57c0-0a5d250c6cdc/22UM1IM01200.rgb.jpg/632x632bb.webp",
+        song: "August - Taylor swift",
+        songLink: "https://music.apple.com/us/song/august/1524801944",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video124/v4/4f/56/d0/4f56d047-5f9e-d8de-0446-879c1a15a8ac/Job67f9bcc2-c099-4890-99a4-9035a9260544-108238448-PreviewImage_preview_image_nonvideo_sdr-Time1607911089290.png/592x592bb.webp",
     },
     {
         name: 'Rachel Olugbemiro',
@@ -112,6 +179,7 @@ export const teamInfo: TeamMember[] =  [
         blurb: `Hey everyone! My name is Rachel and I'm your VP Equity of the CSSA this year! I'm in my 2nd year of CS and my job is to promote equity in and outside of the CSSA. 
         When I'm not doing my assignments I enjoy going to the gym and hanging out with friends.`,
         frontImage: RachelOFront,
+        galleryImages: [RachelO0, RachelO1, RachelO2, RachelO3, RachelO4, RachelO5, RachelO6, RachelO7, RachelO8, RachelO9],
         email: 'logistics@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/rachel-olugbemiro/',
         questions: [
@@ -129,6 +197,7 @@ export const teamInfo: TeamMember[] =  [
         blurb: `Hi, my name's Fay and I'm in fourth year! When I'm not procrastinating assignments or pretending to be busy at work, I love going on 
         hot girl walks, spending time with friends, and watching reality tv/teen dramas!`,
         frontImage: FayFront,
+        galleryImages: [Fay0, Fay1, Fay2, Fay3, Fay4, Fay5, Fay6, Fay7, Fay8, Fay9],
         email: 'phil@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/fay-lee/',
         questions: [
@@ -148,6 +217,7 @@ export const teamInfo: TeamMember[] =  [
         things related to our office. I'm responsible for keeping our office orderly, fun, and stocked with snacks!! When I'm not frantically doing homework, I'm likely playing piano/guitar, cooking, 
         perfecting my latte art, or trying to nurse my tomato plants back to health. If you have any office questions, come find me during my office hours!!`,
         frontImage: ChelseaFront,
+        galleryImages: [Chelsea0, Chelsea1, Chelsea2, Chelsea3, Chelsea4, Chelsea5, Chelsea6, Chelsea7, Chelsea8, Chelsea9],
         email: 'internal@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/chelsea-brown-89340a245/',
         questions: [
@@ -163,6 +233,7 @@ export const teamInfo: TeamMember[] =  [
         year: '2nd Year',
         blurb: `Hi! I'm Anastasia. I'm from Ottawa and currently a 2nd year student studying CS in French. I love hanging out with friends, watching tv shows and going on walks.`,
         frontImage: AnastasiaFront,
+        galleryImages: [AnastasiaFront, AnastasiaFront, AnastasiaFront, AnastasiaFront, AnastasiaFront, AnastasiaFront, AnastasiaFront, AnastasiaFront, AnastasiaFront, AnastasiaFront],
         email: 'equity@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/anastasia-sadovskyy-8aa49a340',
         questions: [
@@ -173,31 +244,12 @@ export const teamInfo: TeamMember[] =  [
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/1f/57/cd/1f57cd8b-003c-a44d-4887-6965592f9d07/Job79e2f997-43a0-474e-80b5-a74332e2bc41-155736740-PreviewImage_Preview_Image_Intermediate_nonvideo_sdr_298549005_1556680965-Time1694799458084.png/632x632bb.webp",
     },
     {
-        // TODO: replace everything except name
-        name: 'Sanika Sinosida',
-        position: 'VP External Affairs',
-        year: '3rd Year',
-        blurb: `Hi! I'm Erik and I am a current third year student here. When life and school isn't too busy I enjoy 3D printing, working out and playing video games.`,
-        frontImage: ErikFront,
-        email: 'external@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/erik-ang-97773b260/',
-        instagram: 'https://www.instagram.com/erik_ang_/',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "Nah, a burrito's gotta get you kinda full at least, a normal spring roll simply can't do that."]
-        ],
-        song: "Get Lucky - Daft Punk, Pharrell Williams, Nile Rodgers",
-        songLink: "https://music.apple.com/us/album/get-lucky/617154241?i=617154366",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/632x632bb.webp",
-        // personalEmail: "eang030@uottawa.ca",
-
-    },
-    {
-        // TODO: add image
         name: 'Adam R',
         position: 'Director of IT',
         year: '3rd Year',
         blurb: `Hey, I'm Adam, a 3rd year CS and Math student. I'm the Director of IT here in the CSSA which means I mainly maintain this website!`,
         frontImage: AdamFront,
+        galleryImages: [AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront],
         email: 'it@cssa-aei.ca',
         questions: [
             ["Who would win: 1000 CS students or 1 polar bear?", "I think we got it"],
@@ -207,21 +259,34 @@ export const teamInfo: TeamMember[] =  [
         songLink: 'https://music.apple.com/us/song/hours/1523194843'
     },
     {
-        // TODO: replace everything but name
-        name: 'Lacia Paige',
+        // TODO: Fix blurb spacing
+        name: 'Lacia-Paige Cummings',
         position: 'VP Communications',
-        year: '4th Year',
-        blurb: `I'm an alleged comp sci major and hater of proofs! I love to draw and be very loud. This is my second year being vp social and it's been my pleasure :D 
-        I love this student association and I hope you'll come by to say hi to us at the office.`,
-        frontImage: MeriemFront,
+        year: '2nd Year',
+        blurb: `Hi, I'm Lacia-Paige Cummings, a second-year Computer Science student in the French Immersion stream with a minor in Spanish. 
+        I'm passionate about languages and hope to learn as many as I can while traveling the world and experiencing new cultures.
+        \n
+        Outside of academics, I'm a dancer who loves staying active, whether that's going for a run or spending time at the gym. This summer, 
+        I'll be working as a Geomatics Analyst, and as VP Communications for the Computer Science Student Association, I've enjoyed developing my skills in UI design and social media while giving back to the undergraduate community.
+        \n
+        ——
+        \n
+        Bonjour, je m'appelle Lacia-Paige Cummings, je suis étudiante en deuxième année d'informatique dans le programme d'immersion française avec une mineure en espagnol. 
+        Je suis passionnée par les langues et j'espère en apprendre autant que possible en voyageant à travers le monde et en découvrant de nouvelles cultures.
+        \n
+        En dehors de mes études, je suis danseuse et j'aime rester active, que ce soit en allant courir ou en passant du temps à la salle de sport. Cet été, je travaillerai comme analyste en géomatique et, 
+        en tant que vice-présidente des communications de l'association des étudiants en informatique, j'ai pris plaisir à développer mes compétences en conception d'interfaces utilisateur et en médias sociaux tout en redonnant à la communauté des étudiants en Informatique.`,
+        frontImage: LaciaFront,
+        galleryImages: [LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront],
         email: 'social@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/meriemmostefai/',
+        linkedIn: 'https://www.linkedin.com/in/lacia-paige-cummings-9a2ba0332',
+        instagram: 'https://www.instagram.com/laciapaige',
         questions: [
-            ["Do you think a spring roll is a burrito?", "If a spring roll is a burrito then a samosa is also a burrito and i can't live in a world where that's the case"]
+            ["Who would win: 1000 CS students or 1 polar bear?", "Cs student definitely"]
         ],
-        song: 'Bubbly - Good Kid',
-        songLink: 'https://music.apple.com/us/album/bubbly-single/1719818392',
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/03/1c/4c/031c4ce2-d4c0-8cae-f15e-aefa8e841773/0.jpg/632x632bb.webp',
+        song: 'Girl, Get Up. - Doechii feat. SZA',
+        songLink: 'https://music.apple.com/us/song/girl-get-up/1865239527',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/6a/10/af6a10d8-23ba-5212-7fb5-f1fce06412da/25UMGIM72057.rgb.jpg/592x592bb.webp',
     },
     {
         // TODO: add personal website
@@ -230,6 +295,7 @@ export const teamInfo: TeamMember[] =  [
         year: '4th Year',
         blurb: `Hi everyone! My name is Tara, I am in 4th year and I am this year's VP Social! To put it shortly, I take care of social events for Computer Science students. Outside from everything CompSci related, I love doing my nails, spending time with friends, watching shows and doing random crafty things!`,
         frontImage: TaraFront,
+        galleryImages: [Tara0, Tara1, Tara2, Tara3, Tara4, Tara5, Tara6, Tara7, Tara8, Tara9],
         email: 'comms@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/taradenaud/',
         questions: [
@@ -246,6 +312,7 @@ export const teamInfo: TeamMember[] =  [
         blurb: `hi, i'm marianne! i'm a 2nd year computer science student who happens to like drawing a lot :3 i also enjoy playing video games, 
         reading (currently on a medieval horror streak), and collecting pokemon cards!`,
         frontImage: MarianneFront,
+        galleryImages: [MarianneFront, MarianneFront, MarianneFront, MarianneFront, MarianneFront, MarianneFront, MarianneFront, MarianneFront, MarianneFront, MarianneFront],
         linkedIn: "https://www.linkedin.com/in/marianne-aguhar-93707b243/",
         instagram: "https://www.instagram.com/mariannnen/",
         questions: [
@@ -256,6 +323,22 @@ export const teamInfo: TeamMember[] =  [
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7b/cb/75/7bcb75ad-1353-e6de-7800-3b9cb039568a/859775085428_cover.jpg/592x592bb.webp"
     },
     {
+        name: "Sanika Sisodia",
+        position: "VP External Affairs",
+        year: "4th Year",
+        blurb: `Hi I'm Sanika! I'm in 4th year comp sci and I'm the vp external. When I'm not in classes I'm usually baking, swimming, or watching the F1 race (Mercedes on top 😛).`,
+        frontImage: SanikaFront,
+        galleryImages: [SanikaFront, SanikaFront, SanikaFront, SanikaFront, SanikaFront, SanikaFront, SanikaFront, SanikaFront, SanikaFront, SanikaFront],
+        linkedIn:"https://www.linkedin.com/in/sanika-sisodia-833638268/",
+        instagram: "https://www.instagram.com/sanika.sisodia/",
+        questions: [
+            ["Who would win: 1000 CS students or 1 polar bear?", "Probably the polar bear I think the cs students would try and free solo the mountains in Antarctica to get away and fall off so the polar bear wouldn’t even need to try "]
+        ],
+        song: "Heaven or Las Vegas - The Weeknd",
+        songLink: "https://music.apple.com/us/song/heaven-or-las-vegas/1714909173",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/632x632bb.webp"
+    },
+    {
         name: 'Tracy Feghali',
         position: 'Junior VP Social',
         year: '1st Year',
@@ -263,6 +346,7 @@ export const teamInfo: TeamMember[] =  [
         and I couldn't be happier to be part of such an amazing team. Outside of school, I love spending time with my sisters and friends, 
         and snuggling with my dog, Milo!`,
         frontImage: TracyFront,
+        galleryImages: [TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront],
         linkedIn: 'https://www.linkedin.com/in/tracy-feghali-1217b4307',
         questions: [
             ["Who would win: 1000 CS students or 1 polar bear?", "A polar bear, sadly, while the students try to debug him!!"]
@@ -277,6 +361,7 @@ export const teamInfo: TeamMember[] =  [
         year: '1st Year',
         blurb: `Hi! I'm Aparna, a first-year CS student. I love art, crafting, cats, Fortnite, and being outside. Hope to see you around!`,
         frontImage: AparnaFront,
+        galleryImages: [AparnaFront, AparnaFront, AparnaFront, AparnaFront, AparnaFront, AparnaFront, AparnaFront, AparnaFront, AparnaFront, AparnaFront],
         linkedIn: "https://www.linkedin.com/in/aparna-balaji07",
         instagram: "https://www.instagram.com/_aparnabalaji/",
         questions: [
@@ -286,5 +371,5 @@ export const teamInfo: TeamMember[] =  [
         songLink: "https://music.apple.com/us/song/good-days/1546390051",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ef/09/cf/ef09cf1f-a057-6039-00d3-7b5d14c7eba1/886449006717.jpg/592x592bb.webp"
     },
-    // TODO: Add juniors
+    // TODO: add Khwaish
 ]
