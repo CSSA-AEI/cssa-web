@@ -114,7 +114,8 @@ export const teamInfo: TeamMember[] =  [
         linkedIn: 'https://www.linkedin.com/in/aashish-suresh-a36639246/',
         instagram: "https://www.instagram.com/asuresh37/",
         questions: [
-            ["Who would win: 1000 CS students or 1 polar bear?", "[Aashish answer]"]
+            // Placeholder answer
+            ["Who would win: 1000 CS students or 1 polar bear?", "I'll lead us to victory"]
         ],
         song: "Reelin' in the Years - Steely Dan",
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/08/f3/f1/08f3f17c-e92a-516f-57c0-0a5d250c6cdc/22UM1IM01200.rgb.jpg/632x632bb.webp',
