@@ -183,7 +183,7 @@ export const teamInfo: TeamMember[] =  [
         email: 'logistics@cssa-aei.ca',
         linkedIn: 'https://www.linkedin.com/in/rachel-olugbemiro/',
         questions: [
-            ["Who would win: 1000 CS students or 1 polar bear?", "[Rachel O answer]"]
+            ["Who would win: 1000 CS students or 1 polar bear?", "a polar bear would win, if I were apart of the 1000 CS students I would run the other way😭"]
         ],
         song: 'Red Wine Supernova - Chappell Roan',
         songLink: 'https://music.apple.com/us/album/red-wine-supernova/1686988889?i=1686988896',
@@ -264,18 +264,8 @@ export const teamInfo: TeamMember[] =  [
         position: 'VP Communications',
         year: '2nd Year',
         blurb: `Hi, I'm Lacia-Paige Cummings, a second-year Computer Science student in the French Immersion stream with a minor in Spanish. 
-        I'm passionate about languages and hope to learn as many as I can while traveling the world and experiencing new cultures.
-        \n
-        Outside of academics, I'm a dancer who loves staying active, whether that's going for a run or spending time at the gym. This summer, 
-        I'll be working as a Geomatics Analyst, and as VP Communications for the Computer Science Student Association, I've enjoyed developing my skills in UI design and social media while giving back to the undergraduate community.
-        \n
-        ——
-        \n
-        Bonjour, je m'appelle Lacia-Paige Cummings, je suis étudiante en deuxième année d'informatique dans le programme d'immersion française avec une mineure en espagnol. 
-        Je suis passionnée par les langues et j'espère en apprendre autant que possible en voyageant à travers le monde et en découvrant de nouvelles cultures.
-        \n
-        En dehors de mes études, je suis danseuse et j'aime rester active, que ce soit en allant courir ou en passant du temps à la salle de sport. Cet été, je travaillerai comme analyste en géomatique et, 
-        en tant que vice-présidente des communications de l'association des étudiants en informatique, j'ai pris plaisir à développer mes compétences en conception d'interfaces utilisateur et en médias sociaux tout en redonnant à la communauté des étudiants en Informatique.`,
+        I'm passionate about languages and hope to learn as many as I can! Outside of academics, 
+        I'm a dancer who loves staying active, whether that's going for a run or spending time at the gym. Excited to meet you all <3`,
         frontImage: LaciaFront,
         galleryImages: [LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront],
         email: 'social@cssa-aei.ca',
@@ -293,7 +283,8 @@ export const teamInfo: TeamMember[] =  [
         name: 'Tara Denaud Joseph',
         position: 'VP Social',
         year: '4th Year',
-        blurb: `Hi everyone! My name is Tara, I am in 4th year and I am this year's VP Social! To put it shortly, I take care of social events for Computer Science students. Outside from everything CompSci related, I love doing my nails, spending time with friends, watching shows and doing random crafty things!`,
+        blurb: `Hi everyone! My name is Tara, I am in 4th year and I am this year's VP Social! To put it shortly, I take care of social events for Computer Science students. 
+        Outside from everything CompSci related, I love doing my nails, spending time with friends, watching shows and doing random crafty things!`,
         frontImage: TaraFront,
         galleryImages: [Tara0, Tara1, Tara2, Tara3, Tara4, Tara5, Tara6, Tara7, Tara8, Tara9],
         email: 'comms@cssa-aei.ca',
