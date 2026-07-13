@@ -1,16 +1,14 @@
-import AliFront from '../images/ali.webp';
-import AngieFront from '../images/angie.webp';
-import RachelQiFront from '../images/rachelqi.webp';
-import RachelOFront from '../images/rachelo.webp';
-import TimFront from '../images/Tim_Mao.webp';
-import FayFront from '../images/Fay_Lee.webp';
-import MeriemFront from '../images/Meriem_Mostefai.webp';
-import JustinFront from '../images/Justin_Wang.webp';
-import AashishFront from '../images/Aashish_Suresh.webp';
-import ToluFront from '../images/Tolu_Emoruwa.webp';
-import TaraFront from '../images/Tara_DenaudJoseph.webp';
-import ErikFront from '../images/Erik.webp';
-import ChelseaFront from '../images/chelsea.webp';
+// Profile Images
+import ClorisFront from '../images/2026-2027-team/Cloris Wong.webp';
+import DanielaFront from '../images/2026-2027-team/Daniela Bordeianu.webp';
+import KaliFront from '../images/2026-2027-team/Kali_Jade_LaFontaine.webp';
+import LaciaFront from '../images/2026-2027-team/Lacia_Paige_Cummings.webp';
+import NicolasFront from '../images/2026-2027-team/Nicolas Guilbault.webp';
+import RachelFront from '../images/2026-2027-team/Rachel_Qi.webp';
+import TracyFront from '../images/2026-2027-team/Tracy_Feghali.webp';
+import UdulaFront from '../images/2026-2027-team/Udula Ravishan.webp';
+import AdamFront from '../images/2026-2027-team/Udula Ravishan.webp';
+
 
 export interface TeamMember {
     name: string;
@@ -18,9 +16,9 @@ export interface TeamMember {
     year: string;
     blurb: string;
     frontImage: string; // Assuming this is a string representing a URL or a path to the image
+    galleryImages: [string, string, string, string, string, string, string, string, string, string]; // Array of image URLs of paths for the "Look Around" feature (use front image as placeholder)
     email?: string; // Optional, as some members might not have an email
     linkedIn?: string;
-    personalEmail?: string;
     instagram?: string;
     questions?: string[][];
     song?: string;
@@ -31,225 +29,164 @@ export interface TeamMember {
 export const teamInfo: TeamMember[] =  [
     {
         name: 'Rachel Qi',
-        position: 'VP Academic',
-        year: '2nd Year',
-        blurb: `Hi! I'm Rachel, a 2nd year CS & math student from Aurora. Outside of studying, I spend my time gaming, 
-        hanging out with friends, or learning about something new (currently planes!). I can't wait to meet you all! 🥰 `,
-        frontImage: RachelQiFront,
-        email: 'academic@cssa-aei.ca',
+        position: 'President',
+        year: '4th Year',
+        blurb: `Hi! I'm Rachel Qi, a 4th year CS & math student from Aurora. Outside of studying, I spend my time gaming, 
+        hanging out with friends, learning something new, or working at one of my 3 jobs. 
+        Feel free to drop by my office hours or shoot me a message if you ever need any help! 👩🏻‍🏫 I can't wait to meet you all! 💖`,
+        frontImage: RachelFront,
+        galleryImages: [RachelFront, RachelFront, RachelFront, RachelFront, RachelFront, RachelFront, RachelFront, RachelFront, RachelFront, RachelFront],
+        email: 'president@cssa-aei.ca',
+        instagram: "https://www.instagram.com/r.chel.i/",
+        linkedIn: 'https://www.linkedin.com/in/rachel-q/',
         questions: [
-            ["Do you think a spring roll is a burrito?", "No, because they aren't wrapped in a tortilla and are traditionally deep-fried. Source: am Chinese."]
+            [ "Who would win: 1000 CS students or 1 polar bear?", "The polar bear for sure! The scent of 1000 CS students would give them away *immediately*." ]
         ],
         song: "You're On Your Own, Kid - Taylor Swift",
         songLink: "https://music.apple.com/us/album/youre-on-your-own-kid/1649434004?i=1649434298",
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/b6/28/23/b6282315-240d-78f0-0f7d-bec9f71be33e/Job99958555-3bb9-421c-a723-ef66635dcdab-139171365-PreviewImage_preview_image_nonvideo_sdr-Time1668634899071.png/632x632bb.webp",
-        // personalEmail: "rqi041@uottawa.ca",
-        instagram: "https://www.instagram.com/r.chel.i/",
-        linkedIn: 'https://www.linkedin.com/in/rachel-q/'
     },
     {
-        name: 'Ali Raza Bhangu',
-        position: 'President',
-        year: '4th Year',
-        blurb: "I'm Ali, I'm in my 4th year of CS with one co-op term left and I'm a 4x CSSA Executive. I like long walks on the beach, biking, and Software development. You can catch me working on projects in the CSSA office or just hanging out",
-        frontImage: AliFront,
-        email: 'president@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/alirazabhangu/',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "The way a spring roll is rolled is very burrito like, which leads me to believe it may be a burrito"]
-        ],
-        song: 'Pressure - Rushy',
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/dc/55/d0/dc55d0f2-c3bc-2256-a990-6450c9354c83/5063268878120_cover.jpg/592x592bb.webp',
-        songLink: 'https://music.apple.com/us/album/pressure/1692834373?i=1692834648',
-        // personalEmail: 'alibhangu1@outlook.com',
-        instagram: "https://www.instagram.com/notalibhangu/"
-    },
-    {
-        name: 'Angeleeca Jocson',
-        position: 'VP Executive Affairs',
-        year: '4th Year',
-        blurb: "hallooo 🥭 ! :3 my name is angie and im ur vp exec affairs !! i'm a helping hand and i work internally with the team to help them be the best exec team for u guys ! i love mangoes and hanging out w my friends and i cant wait to meet all of u !!",
-        frontImage: AngieFront,
-        email: 'execaffairs@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/angeleeca-jocson/',
-        song: 'Tsundere Twintails - Sunshine',
-        songImage:'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ce/1d/24/ce1d24df-96e1-0d59-6765-0da458c9f3b3/artwork.jpg/632x632bb.webp',
-        songLink: 'https://music.apple.com/us/album/sunshine/1590773462?i=1590773463',
-        questions: [
-            ['Do you think a spring roll is a burrito?', "No, I get they're rolled the same way, but it's dishonorable to think one is the other when they come from different cultures (I do NOT know how to make a good burrito but I can make a bomb ass spring roll)"]
-        ],
-        instagram: "https://www.instagram.com/altth3a/",
-
-    },
-    {
-        name: 'Justin Wang',
-        position: '101 Week Coordinator',
-        year: '4th Year',
-        blurb: `You come here often? I'm Justin and I'm currently going into my 4th year. If you see me walking around 
-        with a Hawaiian shirt or a jersey, you'll know it's me!`,
-        frontImage: JustinFront,
-        email: '',
-        linkedIn: 'https://www.linkedin.com/in/justin-wang-181b28203/',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "Yes, it's the burrito's asian cousin. They descend from the same family tree of rolled objects."]
-        ],
-        song: 'Cornelius Brothers & Sister Rose - Too Late To Turn Back Now',
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ca/e4/17/cae41776-443d-76c3-9a8a-72edbf081158/00724385396656.jpg/632x632bb.webp',
-        songLink: 'https://music.apple.com/us/album/too-late-to-turn-back-now/724661748?i=724661857',
-    },
-    {
-        name: 'Aashish Suresh',
-        position: 'VP Finance',
-        year: '3rd Year',
-        blurb: `Hello Everyone! My name is Aashish Suresh and I am the VP Finance of the CSSA! I am going into my 
-        3rd year of Computer Science and Economics, and am so excited to be a part of the team. When not in school, 
-        you can catch me doing things such as going on hikes, playing sports, fishing (weather permitting), or playing 
-        the guitar.`,
-        frontImage: AashishFront,
-        email: 'finance@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/aashish-suresh-a36639246/',
-        instagram: 'https://www.instagram.com/asuresh37/',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "No, I think a proper burrito consists of a meat/protein, a carb, and some vegetables. A Spring roll only has vegetables and is missing the rest."]
-        ],
-        song: "Reelin' in the Years - Steely Dan",
-        songLink: "https://music.apple.com/us/album/reelin-in-the-years/1650885288?i=1650885304",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/08/f3/f1/08f3f17c-e92a-516f-57c0-0a5d250c6cdc/22UM1IM01200.rgb.jpg/632x632bb.webp",
-    },
-    {
-        name: 'Timothy Mao',
-        position: 'VP Logistics',
-        year: '4th Year',
-        blurb: `Hey, I'm Tim and I'm now in my 4th year! I'm the guy who keeps track of merch and games -- 
-        pretty sweet gig, right? I also love listening to music and trying to survive the everyday!`,
-        frontImage: TimFront,
-        email: 'logistics@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/the-offliner/',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "It's similar to a burrito, but no it's not a burrito. BUT a hotdog is definitely a sandwich"]
-        ],
-        song: 'Sunset Jesus - Avicii',
-        songLink: 'https://music.apple.com/us/album/sunset-jesus/1440834059?i=1440834615',
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e0/f4/25/e0f425ba-2848-f1c2-e102-9ddcef5e9d9d/15UMGIM35223.rgb.jpg/632x632bb.webp'
-    },
-    {
-        name: 'Fay Lee',
-        position: 'VP Philanthropy',
-        year: '3rd Year',
-        blurb: `Hi, my name's Fay and I'm in third year! When I'm not procrastinating assignments or pretending to be busy at work, I love going on 
-        hot girl walks, spending time with friends, and watching reality tv/teen dramas!`,
-        frontImage: FayFront,
-        email: 'phil@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/fay-lee/',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "No… it's a spring roll. Conceptually they're their own distinct entities, just because they're wrapped similarly doesn't make it the same thing!"]
-        ],
-        songLink: 'https://music.apple.com/us/album/mirrorball-the-long-pond-studio-sessions/1541904688?i=1541905080',
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0f/a0/14/0fa0144d-6cd5-792a-1589-3e1f0c25db49/20UM1IM08851.rgb.jpg/632x632bb.webp',
-        song: 'mirrorball (the long pod studio sessions) - Taylor Swift',
-        instagram: "https://www.instagram.com/fayy.lee/",
-        // personalEmail: "flee081@uottawa.ca",
-    },
-    {
-        name: 'Chelsea Brown',
-        position: 'VP Internal Affairs',
-        year: '3rd Year',
-        blurb: `Hello! I'm Chelsea, if you were confused about that. I'm this year's VP Internal, which means I'm responsible for all 
-        things related to our office. I'm responsible for keeping our office orderly, fun, and stocked with snacks!! When I'm not frantically doing homework, I'm likely playing piano/guitar, cooking, 
-        perfecting my latte art, or trying to nurse my tomato plants back to health. If you have any office questions, come find me during my office hours!!`,
-        frontImage: ChelseaFront,
-        email: 'internal@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/chelsea-brown-89340a245/',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "No! There's no rice in a spring roll >:[ but i do love the out of the box thinking..."]
-        ],
-        song: "To Learn - Leith Ross",
-        songLink: "https://music.apple.com/us/album/to-learn/1682951304?i=1682951426",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9a/ea/a3/9aeaa3b3-656c-8e7a-6f88-46645493cb6d/23UMGIM21848.rgb.jpg/632x632bb.webp",
-    },
-    {
-        name: 'Rachel Olugbemiro',
-        position: 'VP Equity',
-        year: '3rd Year',
-        blurb: `Hey everyone! My name is Rachel and I'm your VP Equity of the CSSA this year! I'm in my 2nd year of CS and my job is to promote equity in and outside of the CSSA. 
-        When I'm not doing my assignments I enjoy going to the gym and hanging out with friends.`,
-        frontImage: RachelOFront,
-        email: 'equity@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/rachel-olugbemiro/',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "Yes it is, i love mini burritos😋😋"]
-        ],
-        song: "Red Wine Supernova - Chappell Roan",
-        songLink: "https://music.apple.com/us/album/red-wine-supernova/1686988889?i=1686988896",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ca/8e/78/ca8e7878-4c53-0c23-acff-85f69a4803a7/23UMGIM46981.rgb.jpg/632x632bb.webp",
-        // personalEmail: "rachelolugbemiro16@gmail.com"
-    },
-    {
-        name: 'Erik Ang',
-        position: 'VP External Affairs',
-        year: '3rd Year',
-        blurb: `Hi! I'm Erik and I am a current third year student here. When life and school isn't too busy I enjoy 3D printing, working out and playing video games.`,
-        frontImage: ErikFront,
-        email: 'external@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/erik-ang-97773b260/',
-        instagram: 'https://www.instagram.com/erik_ang_/',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "Nah, a burrito's gotta get you kinda full at least, a normal spring roll simply can't do that."]
-        ],
-        song: "Get Lucky - Daft Punk, Pharrell Williams, Nile Rodgers",
-        songLink: "https://music.apple.com/us/album/get-lucky/617154241?i=617154366",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/632x632bb.webp",
-        // personalEmail: "eang030@uottawa.ca",
-
-    },
-    {
-        name: 'Toluwanimi Emoruwa',
-        position: 'VP IT',
-        year: '4th Year',
-        blurb: `Hey, I'm Tolu and I'm a current 4th year student here. When I'm not in the office working on school you can find me on campus at different intramurals. 
-        Hope to see you around campus!`,
-        frontImage: ToluFront,
-        email: 'it@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/toluwanimi-emoruwa-1417ab218/',
-        instagram: 'https://www.instagram.com/t.o.l.u.e/',
-        // personalEmail: 'emoruwatoluwanimi@gmail.com',
-        questions: [
-            ["Do you think a spring roll is a burrito?", "No. A spring roll would be a chimichanga more than anything"],
-            ["", ""]
-        ],
-        song: 'Next Levels - King Geedorah',
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8d/90/7e/8d907ef8-b448-849d-5858-238ac35a2063/dj.nwgymcvg.jpg/632x632bb.webp',
-        songLink: 'https://music.apple.com/us/album/next-levels-feat-4-winds-lil-sci-stahhr/416318858?i=416318865'
-    },
-    {
-        name: 'Meriem Mostefai',
+        name: 'Udula Ravishan',
         position: 'VP Social',
         year: '4th Year',
-        blurb: `I'm an alleged comp sci major and hater of proofs! I love to draw and be very loud. This is my second year being vp social and it's been my pleasure :D 
-        I love this student association and I hope you'll come by to say hi to us at the office.`,
-        frontImage: MeriemFront,
+        blurb: `Hey, I'm Udula, a 4th year cs student and vp social. 
+        My favorite data structure is a doubly linked list, my favorite 101 week activity is couch carry and my favorite coding language is java.  
+        I also  play intramural basketball, make short films and rn I've taken an interest in football (soccer). 
+        I love making new friends so please drop by the CSSA office!`,
+        frontImage: UdulaFront,
+        galleryImages: [UdulaFront, UdulaFront, UdulaFront, UdulaFront, UdulaFront, UdulaFront, UdulaFront, UdulaFront, UdulaFront, UdulaFront],
         email: 'social@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/meriemmostefai/',
+        linkedIn: 'https://www.linkedin.com/in/udula-ravishan',
         questions: [
-            ["Do you think a spring roll is a burrito?", "If a spring roll is a burrito then a samosa is also a burrito and i can't live in a world where that's the case"]
+            [ "Who would win: 1000 CS students or 1 polar bear?", "Polar Bear" ]
         ],
-        song: 'Bubbly - Good Kid',
-        songLink: 'https://music.apple.com/us/album/bubbly-single/1719818392',
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/03/1c/4c/031c4ce2-d4c0-8cae-f15e-aefa8e841773/0.jpg/632x632bb.webp',
+        song: "Greedy - Tate McRae",
+        songLink: "https://music.apple.com/us/song/greedy/1706381103",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/1f/57/cd/1f57cd8b-003c-a44d-4887-6965592f9d07/Job79e2f997-43a0-474e-80b5-a74332e2bc41-155736740-PreviewImage_Preview_Image_Intermediate_nonvideo_sdr_298549005_1556680965-Time1694799458084.png/632x632bb.webp",
     },
     {
-        name: 'Tara Denaud Joseph',
-        position: 'VP Communications',
-        year: '3rd Year',
-        blurb: `Hi everyone! My name is Tara, I am in 3rd year and I am this year's VP Comms! To put it shortly, I take care of the communication between the CSSA executive team and all the Computer Science students. Outside from everything CompSci related, I love doing my nails, spending time with friends, watching shows and doing random crafty things!`,
-        frontImage: TaraFront,
-        email: 'comms@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/taradenaud/',
+        name: 'Adam R',
+        position: 'VP IT',
+        year: '4th Year',
+        blurb: `Hey, I'm Adam, a 4th year CS and Math student. I'm VP IT here in the CSSA which means I mainly maintain this website!`,
+        frontImage: AdamFront,
+        galleryImages: [AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront, AdamFront],
+        email: 'it@cssa-aei.ca',
         questions: [
-            ["Do you think a spring roll is a burrito?", "I mean why not, we can think of one as tasty mini version! We can think of them as second cousins maybe??"]
+            [ "Who would win: 1000 CS students or 1 polar bear?", "I think we got it" ],
         ],
-        song: "Rocketeer - Far East Movement",
-        songLink: "https://music.apple.com/us/album/rocketeer-feat-ryan-tedder/1443121422?i=1443121691",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5f/69/26/5f6926ea-5a7f-17d9-25ce-dbcddfbc14d8/10UMGIM25431.rgb.jpg/592x592bb.webp"
+        song: "This ffffire - Franz Ferdinand/",
+        songLink: "https://music.apple.com/us/song/this-fffire/29276049",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Features/e1/a5/ea/dj.plgyurpa.jpg/600x600bb.webp",
     },
+    {
+        name: 'Lacia Paige Cummings',
+        position: 'VP Phil Equity',
+        year: '3rd Year',
+        blurb: `Hi, I'm Lacia-Paige Cummings, a second-year Computer Science student in the French Immersion stream with a minor in Spanish. 
+        I'm passionate about languages and hope to learn as many as I can! Outside of academics, 
+        I'm a dancer who loves staying active, whether that's going for a run or spending time at the gym. Excited to meet you all <3`,
+        frontImage: LaciaFront,
+        galleryImages: [LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront, LaciaFront],
+        email: 'phil-equity@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/lacia-paige-cummings-9a2ba0332',
+        instagram: 'https://www.instagram.com/laciapaige',
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "CS student definitely" ]
+        ],
+        song: 'Girl, Get Up. - Doechii feat. SZA',
+        songLink: 'https://music.apple.com/us/song/girl-get-up/1865239527',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/6a/10/af6a10d8-23ba-5212-7fb5-f1fce06412da/25UMGIM72057.rgb.jpg/592x592bb.webp',
+    },
+    {
+        name: 'Tracy Feghali',
+        position: 'VP Exec Affairs',
+        year: '2nd Year',
+        blurb: `Hi! I'm Tracy, a first-year Data Science student. This year, I've been involved with the CSSA on the social side, 
+        and I couldn't be happier to be part of such an amazing team. Outside of school, I love spending time with my sisters and friends, 
+        and snuggling with my dog, Milo!`,
+        frontImage: TracyFront,
+        galleryImages: [TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront, TracyFront],
+        email: 'exec-affairs@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/tracy-feghali-1217b4307',
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "A polar bear, sadly, while the students try to debug him!!" ]
+        ],
+        song: "Good Days - SZA",
+        songLink: "https://music.apple.com/us/song/good-days/1546390051",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ef/09/cf/ef09cf1f-a057-6039-00d3-7b5d14c7eba1/886449006717.jpg/592x592bb.webp",
+    },
+    {
+        name: 'Kali Jade LaFontaine',
+        position: 'VP Finance',
+        year: '2nd Year',
+        blurb: `As a second-year Computer Science student and VP Finance, 
+        I enjoy working with numbers, systems, and structured problem-solving. I'm excited to be part of CSSA and contribute to our student community.`,
+        frontImage: KaliFront,
+        galleryImages: [KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront, KaliFront],
+        email: 'finance@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/kali-jade-lafontaine-b62624343/',
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "1 polar bear" ]
+        ],
+        song: "August - Taylor swift",
+        songLink: "https://music.apple.com/us/song/august/1524801944",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video124/v4/4f/56/d0/4f56d047-5f9e-d8de-0446-879c1a15a8ac/Job67f9bcc2-c099-4890-99a4-9035a9260544-108238448-PreviewImage_preview_image_nonvideo_sdr-Time1607911089290.png/592x592bb.webp",
+    },
+    {
+        name: 'Nicolas Guilbault',
+        position: 'VP Internal Affairs',
+        year: '2nd Year',
+        blurb: `Hey, my name is Nicolas. I'm a 2nd data science student. 
+        Apart of dealing with numbers I love training martial art (bjj, Muay Thai, wrestling etc), 
+        playing lots of video games and spending time with loved ones.`,
+        frontImage: NicolasFront,
+        galleryImages: [NicolasFront, NicolasFront, NicolasFront, NicolasFront, NicolasFront, NicolasFront, NicolasFront, NicolasFront, NicolasFront, NicolasFront],
+        email: 'internal@cssa.ca',
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "1000 CS students for sure. I think we're smart enough to figure out some sort of plan to defeat the beast. Even if it doesn't work, the bear is going to get tired eventually, right?" ]
+        ],
+        song: "Mary Jane's Last Dance - Tom Petty and the Heartbreakers",
+        songLink: "https://music.apple.com/us/song/mary-janes-last-dance/1465207045",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e4/c5/c5/e4c5c50d-7e75-dc31-e20c-5a3aafc06509/18UMGIM54648.rgb.jpg/632x632bb.webp",
+    },
+    {
+        name: 'Daniela Bordeianu',
+        position: 'VP External Affairs',
+        year: '3rd Year',
+        blurb: `Hi! I'm Daniela, your new VP External. I just wrapped up my second year, 
+        including my first co-op term, and I'm really passionate about system design as well as software development. 
+        Outside of tech, you'll find me painting using watercolour, staying active, or out taking photos of anything that catches my eye. 
+        Can't wait to meet you all!`,
+        frontImage: DanielaFront,
+        galleryImages: [DanielaFront, DanielaFront, DanielaFront, DanielaFront, DanielaFront, DanielaFront, DanielaFront, DanielaFront, DanielaFront, DanielaFront],
+        email: 'external@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/danielabordeianu',
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "Definitely the CS students, who are we kidding? The polar bear doesn't stand a chance" ],
+        ],
+        song: "Paradise - Sade",
+        songLink: "https://music.apple.com/us/song/paradise/604770779",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5f/ad/2a/5fad2aca-d998-701d-7b27-c074339d5fd0/886972262628.jpg/632x632bb.webp",
+    },
+    {
+        name: 'Cloris Wong',
+        position: 'VP Design',
+        year: '2nd Year',
+        blurb: `Hi! I'm the VP Design of CSSA and currently a second-year CS student. 
+        I enjoy playing games, watching anime, and creating fan art of the characters and series I love in my free time. 
+        Bringing creativity into design and visual storytelling is what I like to try.`,
+        frontImage: ClorisFront,
+        galleryImages: [ClorisFront, ClorisFront, ClorisFront, ClorisFront, ClorisFront, ClorisFront, ClorisFront, ClorisFront, ClorisFront, ClorisFront],
+        email: 'design@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/yui-hei-wong-8823482b7/',
+        instagram: 'https://www.instagram.com/yui.hei.cloris',
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "A polar bear would win a hackathon. A thousand CS students would win in surviving at the North Pole. Win-win." ]
+        ],
+        song: 'Quiet Romance by Yuki Kajiura',
+        songLink: 'https://music.apple.com/us/song/quiet-romance/1576617533',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/31/9f/20/319f2065-62da-4ac8-ce20-4d489f88a20f/4534530132437.jpg/632x632bb.webp'
+    }
 ]

@@ -103,11 +103,6 @@ const About: React.FC = () => {
                                 <FaLinkedin />
                               </a>
                             )}
-                            {execMemberObject?.personalEmail && (
-                              <a href={`mailto:${execMemberObject.personalEmail}`}>
-                                <FaEnvelope />
-                              </a>
-                            )}
                           </div>
                         </div>
                       </div>
