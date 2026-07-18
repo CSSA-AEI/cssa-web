@@ -37,10 +37,12 @@
     color: #326491;
     cursor: pointer;
 }
+/*
 .left-side > h2{
-    /* margin: 0;
-    margin: 1em ; */
+    margin: 0;
+    margin: 1em; 
 }
+*/
 .calendar-table{
     width: 100%;
     padding: 1em;

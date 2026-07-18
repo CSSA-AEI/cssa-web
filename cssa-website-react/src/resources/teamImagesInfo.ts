@@ -84,7 +84,7 @@ export const teamInfo: TeamMember[] =  [
         name: 'Lacia Paige Cummings',
         position: 'VP Phil Equity',
         year: '3rd Year',
-        blurb: `Hi, I'm Lacia-Paige Cummings, a second-year Computer Science student in the French Immersion stream with a minor in Spanish. 
+        blurb: `Hi, I'm Lacia-Paige Cummings, a third-year Computer Science student in the French Immersion stream with a minor in Spanish. 
         I'm passionate about languages and hope to learn as many as I can! Outside of academics, 
         I'm a dancer who loves staying active, whether that's going for a run or spending time at the gym. Excited to meet you all <3`,
         frontImage: LaciaFront,

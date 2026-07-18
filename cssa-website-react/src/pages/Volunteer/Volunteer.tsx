@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './volunteer.css';
-import BinaryBackground from '../Home/BinaryBackground';
+import BinaryBackground from '../../components/Background/BinaryBackground';
 import { useTranslation } from 'react-i18next';
 
 const Volunteer: React.FC = () => {

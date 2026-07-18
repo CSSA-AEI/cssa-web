@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './about.css';
 import TeamImagesSelector from './TeamImagesSelector';
-import BinaryEvents from '../Events/BinaryEvents';
+import BinaryBackground from '../../components/Background/BinaryBackground';
 import { teamInfo, TeamMember } from '../../resources/teamImagesInfo';
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Carousel from './Carousel';
@@ -115,7 +115,7 @@ const About: React.FC = () => {
                 }
               </div>
             </div>
-            <BinaryEvents />
+            <BinaryBackground />
           </div>
         </div>
   );

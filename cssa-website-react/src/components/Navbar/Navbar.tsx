@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
-import NavLogo from '../images/small_logo.png';
+import NavLogo from '../../images/small_logo.png';
 import { useTranslation } from 'react-i18next';
 import './navbar-styling.css';
 

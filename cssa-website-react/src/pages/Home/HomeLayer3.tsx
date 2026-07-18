@@ -10,7 +10,7 @@ import Event2 from '../../images/events-posters/webdevevent.webp';
 import Event3 from '../../images/events-posters/halloween_event.webp';
 import Event4 from '../../images/events-posters/event1.webp';
 import Group20 from '../../images/scrapbook-images/Group-20.png';
-import BinaryBackground from './BinaryBackground';
+import BinaryBackground from '../../components/Background/BinaryBackground';
 import { useTranslation } from 'react-i18next';
 
 interface HomeLayer3Props {
