@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import BinaryBackground from '../../components/Background/BinaryBackground';
-import { getWindowDimensions } from '../Home/Home';
 import './minutes.css';
 import { useTranslation } from 'react-i18next';
 
