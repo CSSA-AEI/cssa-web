@@ -22,7 +22,7 @@ const App: React.FC = () => {
   const links = [
     { name: '101 Week', url: '/101week' },
     { name: 'Events', url: '/events' },
-    { name: 'Merch', url: 'https://cssa-aei--101week-kits.square.site/' },
+    { name: 'Merch', url: 'https://cssa-aei.square.site/' },
 //   { name: 'Blog', url: '/blog' },
 //    { name: 'Volunteer', url: '/volunteer' },
 //    { name: 'Minutes', url: '/minutes' },

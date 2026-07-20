@@ -41,8 +41,12 @@
     justify-content: space-between;
 }
 .form-link-container > a{
-    display: inline-block;
-    padding: 0.75em 1.25em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1.75em;
+    font-size: 1.1rem;
+    min-width: 16rem;
     background-color: #14283a;
     color: white;
     text-decoration: none;
