@@ -18,7 +18,7 @@ const InformationLayer: React.FC<InformationLayerProps> = () => {
                 <div className='info-layer-logo-container'>
                     <img className='info-layer-logo' src={logo} alt="The CSSA Logo"/>
                 </div>
-                <div className='cssa-title'>{t('Computer Science Students Association')}</div>
+                <div className='cssa-title'>{t('Computer Science Student Association')}</div>
                 <div className='pacman-layer'>
                     <Pacman />
                 </div>

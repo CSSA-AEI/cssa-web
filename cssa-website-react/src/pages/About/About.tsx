@@ -53,7 +53,7 @@ const About: React.FC = () => {
                     <img src="/images/AboutPage/site.webp" alt="cssa-exec-team"/>
                   </div>
                   <a className='exec-office-hours' href='https://www.instagram.com/p/DABR82sx1Zo/?img_index=1'>
-                    {t('Every exec has office hours. Click here to see when the execs will be in office.')}
+                    {t('Every Exec has office hours. Click here to see when the Execs will be in office.')}
                   </a>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className='team-title'>
-            MEET OUR 2024-25 TEAM
+            {t("MEET OUR 2026-27 TEAM")}
           </div>
           <div className='team-info-container'>
             <TeamImagesSelector setSelectedExecMember={setSelectedExecMember}/>

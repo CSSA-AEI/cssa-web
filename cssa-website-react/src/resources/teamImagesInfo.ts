@@ -167,9 +167,9 @@ export const teamInfo: TeamMember[] =  [
         questions: [
             [ "Who would win: 1000 CS students or 1 polar bear?", "The polar bear for sure! The scent of 1000 CS students would give them away *immediately*." ]
         ],
-        song: "You're On Your Own, Kid - Taylor Swift",
-        songLink: "https://music.apple.com/us/album/youre-on-your-own-kid/1649434004?i=1649434298",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/b6/28/23/b6282315-240d-78f0-0f7d-bec9f71be33e/Job99958555-3bb9-421c-a723-ef66635dcdab-139171365-PreviewImage_preview_image_nonvideo_sdr-Time1668634899071.png/632x632bb.webp",
+        song: "Ruin My Life - Zara Larsson",
+        songLink: "https://music.apple.com/us/song/ruin-my-life/1438676278",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/47/88/b1/4788b1e3-80bb-ee43-bfba-e63c53883599/886447330340.jpg/632x632bb.webp",
     },
     {
         name: 'Udula Ravishan',
