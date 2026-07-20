@@ -22,9 +22,9 @@ const App: React.FC = () => {
   const links = [
     { name: '101 Week', url: '/101week' },
     { name: 'Events', url: '/events' },
-    { name: 'Blog', url: '/blog' },
-    { name: 'Volunteer', url: '/volunteer' },
-    { name: 'Minutes', url: '/minutes' },
+//   { name: 'Blog', url: '/blog' },
+//    { name: 'Volunteer', url: '/volunteer' },
+//    { name: 'Minutes', url: '/minutes' },
     { name: 'About', url: '/about' },
   ];
 
@@ -38,9 +38,9 @@ const App: React.FC = () => {
           <Route path="/" Component={Home} />
           <Route path="/101week" Component={FroshWeek} />
           <Route path="/about" Component={About} />
-          <Route path="/minutes" Component={Minutes} />
-          <Route path="/volunteer" Component={Volunteer} />
-          <Route path="/blog" Component={Blog} />
+          {/* <Route path="/minutes" Component={Minutes} /> */}
+          {/* <Route path="/volunteer" Component={Volunteer} /> */}
+          {/* <Route path="/blog" Component={Blog} /> */}
           <Route path="/events" Component={Events} />
         </Routes>
       </div>

@@ -50,7 +50,7 @@ const About: React.FC = () => {
               <div className='exec-main-image'>
                 <div className='exec-main-image-container'>
                   <div className='exec-main-image-polaroid'>
-                    <img src="/images/AboutPage/execTeam.webp" alt="cssa-exec-team"/>
+                    <img src="/images/AboutPage/site.webp" alt="cssa-exec-team"/>
                   </div>
                   <a className='exec-office-hours' href='https://www.instagram.com/p/DABR82sx1Zo/?img_index=1'>
                     {t('Every exec has office hours. Click here to see when the execs will be in office.')}

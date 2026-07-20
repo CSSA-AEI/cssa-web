@@ -35,22 +35,8 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
-    filter: brightness(140%);
-}
-#member-img-1{
-    filter: brightness(120%);
-}
-#member-img-8{
-    filter: brightness(90%);
-}
-#member-img-9{
-    filter: brightness(90%);
-}
-#member-img-10{
-    filter: brightness(90%);
-}
-#member-img-11{
-    filter: brightness(90%);
+    filter: brightness(0.96) contrast(1.02);
+    -webkit-filter: brightness(0.96) contrast(1.02);
 }
 @media only screen and (orientation:portrait) {
     .team-container{
