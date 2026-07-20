@@ -1,5 +1,5 @@
 {
-  "Computer Science Students Association": "Association des Étudiants en Informatique",
+  "Computer Science Student Association": "Association des Étudiants en Informatique",
       "SWING BY OUR OFFICE": "PASSEZ À NOTRE BUREAU",
       "AT": "À",
       "MEET THE TEAM": "RENCONTRER L'ÉQUIPE",
@@ -25,6 +25,7 @@
       "Volunteer": "Bénévole",
       "Minutes": "Minutes",
       "About":"À propos",
+      "101 Week": "Semaine 101",
       "Catch up with everything CSSA related":"Rattrapez-vous sur tout ce qui concerne l'AÉI",
       "VOLUNTEERING OPPORTUNITIES": "OPPORTUNITÉS DE BÉNÉVOLAT",
       "101 WEEK GUIDE APPLICATION":"SEMAINE 101, APPLICATIONS DE GUIDES",
@@ -45,5 +46,7 @@
       "Juniors work with members of the CSSA Exec team to plan events and ensure the smooth running of the association.": "Les juniors travaillent avec les membres de l'équipe exécutive de l'AÉI pour organiser des événements et assurer le bon déroulement  de l'association.",
       "Apply to become a junior today!" : "Posez votre candidature pour devenir junior dès aujourd'hui!",
       "View our constitution in English here. We are working on the French translation for our constitution." : "Consultez notre constitution en anglais ici. Nous travaillons sur la version française de notre constitution.",
-      "Every exec has office hours. Click here to see when the execs will be in office." : "Chaque membre de l'équipe a des heures de bureau. Cliquez ici pour connaître les heures de bureau des membres de l'équipe exécutive."
+      "Every Exec has office hours. Click here to see when the Execs will be in office." : "Chaque membre de l'équipe a des heures de bureau. Cliquez ici pour connaître les heures de bureau des membres de l'équipe exécutive.",
+      "MEET OUR 2026-27 TEAM": "DÉCOUVREZ NOTRE ÉQUIPE POUR LA SAISON 2026-2027",
+      "Merch": "Marchandises"
 }

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 import CircularCarousel from './CircularCarousel';
-import BinaryBackground from './BinaryBackground';
+import BinaryBackground from '../../components/Background/BinaryBackground';
 import { teamInfo } from '../../resources/teamImagesInfo';
 import './home-layer-2.css';
 import { useTranslation } from 'react-i18next';

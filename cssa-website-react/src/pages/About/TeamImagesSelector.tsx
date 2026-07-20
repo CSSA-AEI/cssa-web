@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { execMapping, execImageMap } from '../../resources/execInfo';
+import { teamInfo } from '../../resources/teamImagesInfo';
 import './team-images-selector.css';
 
 export function getWindowDimensions() {
@@ -10,16 +10,18 @@ export function getWindowDimensions() {
   };
 }
 
-const preloadImages = (imageMapping: Map<number, string>[]) => {
-  const promises = imageMapping.flatMap(map =>
-    Array.from(map.values()).map(
-      (src) =>
-        new Promise<void>((resolve, reject) => {
-          const img = new Image();
-          img.src = src;
-          img.onload = () => resolve();
-          img.onerror = reject;
-        })
+// Preload the look around images for each exec
+const preloadImages = () => {
+  // Iterate over team members
+  const promises = teamInfo.flatMap(member =>
+    // Get gallery images (with fallback)
+    (member.galleryImages || []).map(src =>
+      new Promise<void>((resolve, reject) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => resolve();
+        img.onerror = reject;
+      })
     )
   );
 
@@ -35,11 +37,10 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const memberSpotRefs = useRef<(HTMLDivElement | null)[]>([]);
-    const imageMapping = execImageMap;
     const [imagesPreloaded, setImagesPreloaded] = useState(false);
 
     useEffect(() => {
-      preloadImages(execImageMap).then(() => {
+      preloadImages().then(() => {
         setImagesPreloaded(true);
       }).catch((error) => {
         console.error("Image preloading failed", error);
@@ -88,7 +89,7 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
     };
     
   
-    const memberSpots = Array.from({ length: 13 }).map((_, index) => {
+    const memberSpots = teamInfo.map((member, index) => {
         const ref = (el: HTMLDivElement) => {
             memberSpotRefs.current[index] = el;
         };
@@ -108,7 +109,7 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
   
         const elementPosition = getElementPosition();
         const backgroundImagePath = getQuadrantColor(mousePosition.x, mousePosition.y, elementPosition.x, elementPosition.y, elementPosition.width);
-        var imageDisplay = imageMapping.at(index)?.get(backgroundImagePath);
+        var imageDisplay = member.galleryImages?.[backgroundImagePath] || '';
   
         return (
             <div
@@ -122,9 +123,9 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
                     src={imageDisplay}
                     alt={`spot-${index}`}
                     onClick={(e) => {
-                      const newImage = imageMapping.at(index)?.get(9) || '';
+                      const newImage = member.galleryImages?.[9] || '';
                       e.currentTarget.src = newImage;
-                      setSelectedExecMember(execMapping.get(index + 1));
+                      setSelectedExecMember(member.name);
                     }}
                   />
                   ) : (

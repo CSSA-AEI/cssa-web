@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Calendar from './Calendar';
-import BinaryEvents from './BinaryEvents';
+import BinaryBackground from '../../components/Background/BinaryBackground';
 import { doesDayContainEvent } from './Calendar';
 import DayEvent from './DayEvent';
 import { useTranslation } from 'react-i18next';
@@ -36,7 +36,7 @@ const Events: React.FC = () => {
   if(windowDimensions.width / windowDimensions.height <= 1){
     return(
             <div className='events-page-container' style={{height: `fit-content`}}>
-                <BinaryEvents />
+                <BinaryBackground />
                 <div className='event-body' style={{flexDirection: `column`, height: `fit-content`, width: `100vw`}}>
                     <div className='events-list-container' style={{width: `100%`, padding: `1em`, height: `80vh`}}>
                         <div className='events-header-container'>
@@ -86,7 +86,7 @@ const Events: React.FC = () => {
 
   return (
         <div className='events-page-container'>
-            <BinaryEvents />
+            <BinaryBackground />
             <img src="/images/EventsPage/EventsPage.webp" id="events-page-footer" alt='events collage'/>
             <div className='event-body' style={(windowDimensions.width / windowDimensions.height <= 1) ? { display: 'flex', flexDirection: 'column' } : {}}>
                 <div className='events-list-container'>

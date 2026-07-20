@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './about.css';
 import TeamImagesSelector from './TeamImagesSelector';
-import BinaryEvents from '../Events/BinaryEvents';
+import BinaryBackground from '../../components/Background/BinaryBackground';
 import { teamInfo, TeamMember } from '../../resources/teamImagesInfo';
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Carousel from './Carousel';
@@ -43,17 +43,17 @@ const About: React.FC = () => {
                   <p>{t('We are also dedicated to providing social programming, academic services and employment resource opportunities to all our members. We are dedicated to fostering a sense of community among students, professors and members of the computer science department through these events and services.')}</p>
                   <p>{t('Take a look below to see the current members of our team.')}</p>
                 </div>
-                <a className='constitution-link' href='/constitution-english.pdf'>
+                <a className='constitution-link' href='/CSSAConstitution_March2026_en.pdf'>
                   {t('View our constitution in English here. We are working on the French translation for our constitution.')}
                 </a>
               </div>
               <div className='exec-main-image'>
                 <div className='exec-main-image-container'>
                   <div className='exec-main-image-polaroid'>
-                    <img src="/images/AboutPage/execTeam.webp" alt="cssa-exec-team"/>
+                    <img src="/images/AboutPage/site.webp" alt="cssa-exec-team"/>
                   </div>
                   <a className='exec-office-hours' href='https://www.instagram.com/p/DABR82sx1Zo/?img_index=1'>
-                    {t('Every exec has office hours. Click here to see when the execs will be in office.')}
+                    {t('Every Exec has office hours. Click here to see when the Execs will be in office.')}
                   </a>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className='team-title'>
-            MEET OUR 2024-25 TEAM
+            {t("MEET OUR 2026-27 TEAM")}
           </div>
           <div className='team-info-container'>
             <TeamImagesSelector setSelectedExecMember={setSelectedExecMember}/>
@@ -103,11 +103,6 @@ const About: React.FC = () => {
                                 <FaLinkedin />
                               </a>
                             )}
-                            {execMemberObject?.personalEmail && (
-                              <a href={`mailto:${execMemberObject.personalEmail}`}>
-                                <FaEnvelope />
-                              </a>
-                            )}
                           </div>
                         </div>
                       </div>
@@ -120,7 +115,7 @@ const About: React.FC = () => {
                 }
               </div>
             </div>
-            <BinaryEvents />
+            <BinaryBackground />
           </div>
         </div>
   );

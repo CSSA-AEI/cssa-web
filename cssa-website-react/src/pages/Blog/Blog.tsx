@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './blog.css';
+import BinaryBackground from '../../components/Background/BinaryBackground';
 
 interface BlogProps {
 }
@@ -12,6 +13,7 @@ const Blog: React.FC<BlogProps> = () => {
 
     return (
         <div className="blog-body">
+            <BinaryBackground />
             <div className='newsletter-container'>
                 <div className='newsletter-body'>
                     <div className='newsletter-header'>

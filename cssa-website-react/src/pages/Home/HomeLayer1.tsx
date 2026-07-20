@@ -3,7 +3,7 @@ import InformationLayer from './Information-Layer';
 import Connor from '../../images/home-layer-1-images/Connor.webp';
 import Tim from '../../images/home-layer-1-images/Tim.webp';
 import CouchCarry from '../../images/home-layer-1-images/CouchCarry.webp';
-import BinaryBackground from './BinaryBackground';
+import BinaryBackground from '../../components/Background/BinaryBackground';
 import './home-layer-1.css';
 
 interface HomeLayer1Props {
