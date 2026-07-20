@@ -228,9 +228,8 @@ export const teamInfo: TeamMember[] =  [
         name: 'Tracy Feghali',
         position: 'VP Exec Affairs',
         year: '2nd Year',
-        blurb: `Hi! I'm Tracy, a first-year Data Science student. This year, I've been involved with the CSSA on the social side, 
-        and I couldn't be happier to be part of such an amazing team. Outside of school, I love spending time with my sisters and friends, 
-        and snuggling with my dog, Milo!`,
+        blurb: `Hi! I'm Tracy, a second-year Data Science student, and I'm so excited to be part of the CSSA Exec team this year! 
+        Outside of school, I love spending time with my sisters and friends, and going on walks with my dog, Milo! `,
         frontImage: TracyFront,
         galleryImages: [Tracy0, Tracy1, Tracy2, Tracy3, Tracy4, Tracy5, Tracy6, Tracy7, Tracy8, Tracy9],
         email: 'exec-affairs@cssa-aei.ca',

@@ -20,7 +20,7 @@ export function getWindowDimensions() {
 
 const App: React.FC = () => {
   const links = [
-    { name: '101 Week', url: '/101week' },
+//      { name: '101 Week', url: '/101week' },
     { name: 'Events', url: '/events' },
     { name: 'Merch', url: 'https://cssa-aei.square.site/' },
 //   { name: 'Blog', url: '/blog' },
@@ -44,6 +44,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <div>
+{/*}
         {show101Popup && (
           <div className="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
             <div className="popup-card">
@@ -65,10 +66,11 @@ const App: React.FC = () => {
             </div>
           </div>
         )}
+          */}
         <Navbar title="My Navbar" links={links} />
         <Routes>
           <Route path="/" Component={Home} />
-          <Route path="/101week" Component={FroshWeek} />
+          {/*<Route path="/101week" Component={FroshWeek} />*/}
           <Route path="/about" Component={About} />
           {/* <Route path="/minutes" Component={Minutes} /> */}
           {/* <Route path="/volunteer" Component={Volunteer} /> */}

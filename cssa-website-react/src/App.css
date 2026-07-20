@@ -47,17 +47,22 @@
   justify-content: center;
   z-index: 2000;
   padding: 1rem;
+  overflow-y: auto;
 }
 
 .popup-card {
   position: relative;
   width: min(100%, 480px);
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
   padding: 2rem;
   border-radius: 0.5rem;
   background: #ffffff;
   box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25);
   color: #111827;
   font-family: inherit;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .popup-card h2 {
@@ -92,6 +97,7 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1.25rem;
+  width: 100%;
 }
 
 .popup-reset-btn {
@@ -122,6 +128,7 @@
   font-family: inherit;
   font-size: 0.95rem;
   line-height: 1;
+  box-sizing: border-box;
 }
 
 .popup-btn.primary {
@@ -138,13 +145,17 @@
 @media (max-width: 600px) {
   .popup-card {
     padding: 1.5rem;
+    max-width: calc(100vw - 1rem);
   }
 
   .popup-actions {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .popup-btn {
     width: 100%;
+    max-width: 100%;
+    white-space: normal;
   }
 }
