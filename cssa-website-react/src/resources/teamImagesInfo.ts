@@ -242,23 +242,6 @@ export const teamInfo: TeamMember[] =  [
         songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ef/09/cf/ef09cf1f-a057-6039-00d3-7b5d14c7eba1/886449006717.jpg/592x592bb.webp",
     },
     {
-        name: 'Kali Jade LaFontaine',
-        position: 'VP Finance',
-        year: '2nd Year',
-        blurb: `As a second-year Computer Science student and VP Finance, 
-        I enjoy working with numbers, systems, and structured problem-solving. I'm excited to be part of CSSA and contribute to our student community.`,
-        frontImage: KaliFront,
-        galleryImages: [Kali0, Kali1, Kali2, Kali3, Kali4, Kali5, Kali6, Kali7, Kali8, Kali9],
-        email: 'finance@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/kali-jade-lafontaine-b62624343/',
-        questions: [
-            [ "Who would win: 1000 CS students or 1 polar bear?", "1 polar bear" ]
-        ],
-        song: "August - Taylor swift",
-        songLink: "https://music.apple.com/us/song/august/1524801944",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video124/v4/4f/56/d0/4f56d047-5f9e-d8de-0446-879c1a15a8ac/Job67f9bcc2-c099-4890-99a4-9035a9260544-108238448-PreviewImage_preview_image_nonvideo_sdr-Time1607911089290.png/592x592bb.webp",
-    },
-    {
         name: 'Nicolas Guilbault',
         position: 'VP Internal Affairs',
         year: '2nd Year',
@@ -330,6 +313,23 @@ export const teamInfo: TeamMember[] =  [
         song: 'STAY HERE 4 LIFE - A$AP Rocky',
         songLink: 'https://music.apple.com/us/song/stay-here-4-life-feat-brent-faiyaz/1862935161',
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/58/99/f1/5899f1b4-674b-3033-9e12-14348a9de396/196873986029.jpg/632x632bb.webp'
+    },
+        {
+        name: 'Kali Jade LaFontaine',
+        position: 'VP Finance',
+        year: '2nd Year',
+        blurb: `As a second-year Computer Science student and VP Finance, 
+        I enjoy working with numbers, systems, and structured problem-solving. I'm excited to be part of CSSA and contribute to our student community.`,
+        frontImage: KaliFront,
+        galleryImages: [Kali0, Kali1, Kali2, Kali3, Kali4, Kali5, Kali6, Kali7, Kali8, Kali9],
+        email: 'finance@cssa-aei.ca',
+        linkedIn: 'https://www.linkedin.com/in/kali-jade-lafontaine-b62624343/',
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "1 polar bear" ]
+        ],
+        song: "August - Taylor swift",
+        songLink: "https://music.apple.com/us/song/august/1524801944",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video124/v4/4f/56/d0/4f56d047-5f9e-d8de-0446-879c1a15a8ac/Job67f9bcc2-c099-4890-99a4-9035a9260544-108238448-PreviewImage_preview_image_nonvideo_sdr-Time1607911089290.png/592x592bb.webp",
     },
     {
         name: 'Tessia Odubella',
