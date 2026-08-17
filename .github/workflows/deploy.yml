@@ -23,9 +23,11 @@ jobs:
                 node-version: 18
             
             - name: Install Dependencies
+              working-directory: ./cssa-website-react
               run: npm install
 
             - name: Build Site
+              working-directory: ./cssa-website-react
               run: npm run build
             
             # Send to Cloudflare
@@ -35,6 +37,6 @@ jobs:
                 apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                 accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                 projectName: cssa-website
-                directory: dist
+                directory: cssa-website-react/dist
                 gitHubToken: ${{ secrets.GITHUB_TOKEN }}
                 branch: React-version-cssa-web
