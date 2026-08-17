@@ -16,7 +16,17 @@ const Home: React.FC = () => {
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
   
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions(getWindowDimensions());
+    };
 
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   return (
         <div className='home-layers' style={{position: "relative", top:"8vh"}}>
           <HomeLayer1 windowDimensions={windowDimensions}/>

@@ -24,11 +24,6 @@ const HomeLayer3: React.FC<HomeLayer3Props> = ({windowDimensions}) => {
     const { t } = useTranslation();
 
     var minWidth = 160;
-    var cardHeight = 500;
-
-    if(windowDimensions.height >= 1600){
-        cardHeight = 800;
-    }
 
     if(windowDimensions.width < 500){
         minWidth = 240;

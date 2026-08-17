@@ -55,8 +55,9 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
         if (!wheelWidth) {
           return;
         }
-    
-        let positionedSlides = slides.map((slide, index) => {
+
+        setSlides(prevSlides => {
+          let positionedSlides = prevSlides.map((slide, index) => {
             
             // Calculate angle increment based on total slides,
             //we're doing this in radians for simplification
@@ -79,7 +80,8 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
             };
         });
     
-        setSlides(positionedSlides);
+        return positionedSlides;
+      });
     }, [wheelWidth, flexDirection]);
     
     const handleSlideClick = (e: any) => {
