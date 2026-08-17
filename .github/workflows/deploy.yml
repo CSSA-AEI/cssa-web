@@ -33,7 +33,7 @@ jobs:
               uses: cloudflare/pages-action@v1
               with:
                 apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-                accountID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+                accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                 projectName: cssa-website
                 directory: dist
                 gitHubToken: ${{ secrets.GITHUB_TOKEN }}
