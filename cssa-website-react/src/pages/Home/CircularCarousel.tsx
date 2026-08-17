@@ -61,7 +61,7 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
             
             // Calculate angle increment based on total slides,
             //we're doing this in radians for simplification
-            const angleIncrement = (2 * Math.PI) / slides.length;
+            const angleIncrement = (2 * Math.PI) / prevSlides.length;
             var newTheta = angleIncrement * index;
 
             //This is done so the middle one is highlighted and not the top one
