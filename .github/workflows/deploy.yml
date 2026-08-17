@@ -37,6 +37,6 @@ jobs:
                 apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                 accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                 projectName: cssa-website
-                directory: cssa-website-react/dist
+                directory: cssa-website-react/build
                 gitHubToken: ${{ secrets.GITHUB_TOKEN }}
                 branch: React-version-cssa-web
