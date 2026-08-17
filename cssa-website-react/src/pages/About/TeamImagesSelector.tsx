@@ -34,7 +34,7 @@ interface TeamImagesSelectorProps {
 
 const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecMember}) => {
 
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+//    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const memberSpotRefs = useRef<(HTMLDivElement | null)[]>([]);
     const [imagesPreloaded, setImagesPreloaded] = useState(false);
@@ -57,7 +57,8 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
         window.removeEventListener('mousemove', handleMouseMove);
       };
     }, []);
-  
+ 
+    /*
     useEffect(() => {
       const handleResize = () => {
         setWindowDimensions(getWindowDimensions());
@@ -68,6 +69,7 @@ const TeamImagesSelector: React.FC<TeamImagesSelectorProps> = ({setSelectedExecM
         window.removeEventListener('resize', handleResize);
       };
     }, []);
+    */
 
     const getQuadrantColor = (mouseX: number, mouseY: number, elementX: number, elementY: number, rectW: number) => {
 

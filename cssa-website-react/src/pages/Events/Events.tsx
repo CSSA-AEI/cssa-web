@@ -32,6 +32,16 @@ const Events: React.FC = () => {
         setEvents(dayEvents)
   }, [eventsList, activeDay]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions(getWindowDimensions());
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   if(windowDimensions.width / windowDimensions.height <= 1){
     return(

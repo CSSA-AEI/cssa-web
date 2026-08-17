@@ -3,7 +3,7 @@ import './about.css';
 import TeamImagesSelector from './TeamImagesSelector';
 import BinaryBackground from '../../components/Background/BinaryBackground';
 import { teamInfo, TeamMember } from '../../resources/teamImagesInfo';
-import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Carousel from './Carousel';
 import { useTranslation } from 'react-i18next';
 

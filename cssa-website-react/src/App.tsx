@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, /* Link ,*/ Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home';
-import FroshWeek from './pages/FroshWeek/FroshWeek';
+//import FroshWeek from './pages/FroshWeek/FroshWeek';
 import About from './pages/About/About';
-import Minutes from './pages/Minutes/Minutes';
-import Volunteer from './pages/Volunteer/Volunteer';
-import Blog from './pages/Blog/Blog';
+//import Minutes from './pages/Minutes/Minutes';
+//import Volunteer from './pages/Volunteer/Volunteer';
+//import Blog from './pages/Blog/Blog';
 import Events from './pages/Events/Events';
 
 export function getWindowDimensions() {
@@ -29,9 +29,10 @@ const App: React.FC = () => {
     { name: 'About', url: '/about' },
   ];
 
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-  const [show101Popup, setShow101Popup] = useState(false);
+  //const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  //const [show101Popup, setShow101Popup] = useState(false);
 
+/*
   useEffect(() => {
     const timer = window.setTimeout(() => setShow101Popup(true), 600);
     return () => window.clearTimeout(timer);
@@ -40,6 +41,7 @@ const App: React.FC = () => {
   const close101Popup = () => {
     setShow101Popup(false);
   };
+*/
 
   return (
     <Router>
