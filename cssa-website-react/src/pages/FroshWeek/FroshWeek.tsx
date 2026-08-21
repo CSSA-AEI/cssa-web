@@ -2,11 +2,36 @@ import React, { useState } from 'react';
 import './frosh-week.css';
 import BinaryBackground from '../../components/Background/BinaryBackground';
 import { useTranslation } from 'react-i18next';
+import FroshCarousel from './FroshCarousel';
+
+// Placeholder images for the carousel, upload new onesat new path
+import image0 from '../../images/2026-2027-team/Adam/lookAround/0.webp';
+import image1 from '../../images/2026-2027-team/Adam/lookAround/1.webp';
+import image2 from '../../images/2026-2027-team/Adam/lookAround/2.webp';
+import image3 from '../../images/2026-2027-team/Adam/lookAround/3.webp';
+import image4 from '../../images/2026-2027-team/Adam/lookAround/4.webp';
+import image5 from '../../images/2026-2027-team/Adam/lookAround/5.webp';
+import image6 from '../../images/2026-2027-team/Adam/lookAround/6.webp';
+import image7 from '../../images/2026-2027-team/Adam/lookAround/7.webp';
+import image8 from '../../images/2026-2027-team/Adam/lookAround/8.webp';
+import image9 from '../../images/2026-2027-team/Adam/lookAround/9.webp';
 
 const FroshWeek: React.FC = () => {
     const { t } = useTranslation();
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
+    const froshImages = [
+        image0,
+        image1,
+        image2,
+        image3,
+        image4,
+        image5,
+        image6,
+        image7,
+        image8,
+        image9
+    ];
     const faqItems = [
         {
             question: t('What is 101 Week?'),
@@ -86,6 +111,10 @@ const FroshWeek: React.FC = () => {
                     >
                         {t('Register for 101 Week')}
                     </a>
+                </div>
+
+                <div className="frosh-week-carousel-wrapper">
+                    <FroshCarousel images={froshImages} />
                 </div>
             </div>
 

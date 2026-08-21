@@ -1,9 +1,9 @@
-import React /*, { useEffect, useState } */ from 'react';
+import React , { useEffect, useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router, /* Link ,*/ Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router,  Link , Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home';
-//import FroshWeek from './pages/FroshWeek/FroshWeek';
+import FroshWeek from './pages/FroshWeek/FroshWeek';
 import About from './pages/About/About';
 //import Minutes from './pages/Minutes/Minutes';
 //import Volunteer from './pages/Volunteer/Volunteer';
@@ -20,19 +20,18 @@ export function getWindowDimensions() {
 
 const App: React.FC = () => {
   const links = [
-//      { name: '101 Week', url: '/101week' },
+    { name: '101 Week', url: '/101week' },
     { name: 'Events', url: '/events' },
     { name: 'Merch', url: 'https://cssa-aei.square.site/' },
-//   { name: 'Blog', url: '/blog' },
-//    { name: 'Volunteer', url: '/volunteer' },
-//    { name: 'Minutes', url: '/minutes' },
+//  { name: 'Blog', url: '/blog' },
+//  { name: 'Volunteer', url: '/volunteer' },
+//  { name: 'Minutes', url: '/minutes' },
     { name: 'About', url: '/about' },
   ];
 
-  //const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-  //const [show101Popup, setShow101Popup] = useState(false);
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  const [show101Popup, setShow101Popup] = useState(false);
 
-/*
   useEffect(() => {
     const timer = window.setTimeout(() => setShow101Popup(true), 600);
     return () => window.clearTimeout(timer);
@@ -41,12 +40,11 @@ const App: React.FC = () => {
   const close101Popup = () => {
     setShow101Popup(false);
   };
-*/
+
 
   return (
     <Router>
       <div>
-{/*}
         {show101Popup && (
           <div className="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
             <div className="popup-card">
@@ -68,11 +66,11 @@ const App: React.FC = () => {
             </div>
           </div>
         )}
-          */}
+          
         <Navbar title="My Navbar" links={links} />
         <Routes>
           <Route path="/" Component={Home} />
-          {/*<Route path="/101week" Component={FroshWeek} />*/}
+          <Route path="/101week" Component={FroshWeek} />
           <Route path="/about" Component={About} />
           {/* <Route path="/minutes" Component={Minutes} /> */}
           {/* <Route path="/volunteer" Component={Volunteer} /> */}
