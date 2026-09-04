@@ -38,7 +38,6 @@ const AppContent: React.FC = () => {
     { name: 'About', url: '/about' },
   ];
 
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
   const [show101Popup, setShow101Popup] = useState(false);
 
   useEffect(() => {

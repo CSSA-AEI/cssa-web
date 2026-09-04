@@ -8,7 +8,7 @@ interface FroshCarouselProps {
 export default function FroshCarousel({ images }: FroshCarouselProps) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    if (!images || images.length == 0) return null;
+    if (!images || images.length === 0) return null;
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
