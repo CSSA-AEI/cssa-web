@@ -1,6 +1,7 @@
 import React , { useEffect, useRef, useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router,  Link , Route, Routes, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './App.css';
 import Home from './pages/Home/Home';
 import FroshWeek from './pages/FroshWeek/FroshWeek';
@@ -22,6 +23,7 @@ export function getWindowDimensions() {
 
 const AppContent: React.FC = () => {
   const location = useLocation();
+  const { t } = useTranslation();
   const isFroshWeekPage = location.pathname === '/101week';
   const initialPath = useRef(location.pathname);
   const [isInitialPage, setIsInitialPage] = useState(true);
@@ -74,17 +76,17 @@ const AppContent: React.FC = () => {
               <button className="popup-close" onClick={close101Popup} aria-label="Close popup">
                 &#215;
               </button>
-              <h2 id="popup-title">Here for 101 Week?</h2>
+              <h2 id="popup-title">{t('Here for 101 Week?')}</h2>
               <p>
-                Discover the events, activities, and excitement happening throughout 101 Week.
+                {t('Discover the events, activities, and excitement happening throughout 101 Week.')}
               </p>
               <div className="popup-actions">
-                <button className="popup-btn secondary" onClick={close101Popup}>
-                  Maybe later
-                </button>
                 <Link className="popup-btn primary" to="/101week" onClick={close101Popup}>
-                  Explore 101 Week
+                  {t('Explore 101 Week')}
                 </Link>
+                <button className="popup-btn secondary" onClick={close101Popup}>
+                  {t('Maybe Later')}
+                </button>
               </div>
             </div>
           </div>

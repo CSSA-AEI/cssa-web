@@ -110,6 +110,15 @@
     padding: 0 1em 1em;
     color: #14283a;
 }
+.registration-form-link{
+    color: #326491;
+}
+.frosh-week-page-container a{
+    color: #326491;
+}
+.frosh-week-page-container .form-link-container > a{
+    color: white;
+}
 
 .frosh-week-carousel-wrapper{
     width: 100%;
