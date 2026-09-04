@@ -144,7 +144,7 @@
     }
 
     .frosh-week-carousel-image-container{
-        height: min(450px, 65vw);
-        min-height: 240px;
+        height: auto;
+        min-height: 0;
     }
 }

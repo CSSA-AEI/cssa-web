@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.203b6b26.css",
-    "main.js": "/static/js/main.740de5ed.js",
+    "main.css": "/static/css/main.61b1c6f9.css",
+    "main.js": "/static/js/main.121c204b.js",
     "static/css/450.b0eb20ea.chunk.css": "/static/css/450.b0eb20ea.chunk.css",
-    "static/js/450.e76c95c1.chunk.js": "/static/js/450.e76c95c1.chunk.js",
+    "static/js/450.a9df6f3a.chunk.js": "/static/js/450.a9df6f3a.chunk.js",
     "static/css/558.d079d6d6.chunk.css": "/static/css/558.d079d6d6.chunk.css",
-    "static/js/558.1e59a440.chunk.js": "/static/js/558.1e59a440.chunk.js",
+    "static/js/558.f7e8d7c3.chunk.js": "/static/js/558.f7e8d7c3.chunk.js",
     "static/css/194.9b2b5720.chunk.css": "/static/css/194.9b2b5720.chunk.css",
-    "static/js/194.c833786c.chunk.js": "/static/js/194.c833786c.chunk.js",
+    "static/js/194.f29128a1.chunk.js": "/static/js/194.f29128a1.chunk.js",
     "static/js/453.5dc8821d.chunk.js": "/static/js/453.5dc8821d.chunk.js",
     "static/media/Jana_Sorour.webp": "/static/media/Jana_Sorour.24e1a4664d470540de96.webp",
     "static/media/Tessia_Odubella.webp": "/static/media/Tessia_Odubella.5273aac5ae49123616b0.webp",
@@ -23,7 +23,11 @@
     "static/media/HeaderImageTablet.png": "/static/media/HeaderImageTablet.b4c0159b2d1bb4e5ee9e.png",
     "static/media/Laptopfooter.png": "/static/media/Laptopfooter.5045652bac229ce725b4.png",
     "static/media/Cloris_Wong.webp": "/static/media/Cloris_Wong.2e2b4dc25380bf5b0408.webp",
+    "static/media/2026-101-week-schedule-fr.webp": "/static/media/2026-101-week-schedule-fr.e59530440b19d6437572.webp",
+    "static/media/2026-101-week-schedule-en.webp": "/static/media/2026-101-week-schedule-en.bf342012cedf42620afa.webp",
     "static/media/FooterImageTablet.png": "/static/media/FooterImageTablet.3ebb33bde16f996fa269.png",
+    "static/media/2026-101-week-kit-sales-fr.webp": "/static/media/2026-101-week-kit-sales-fr.8a2c854efc65b29967b6.webp",
+    "static/media/2026-101-week-kit-sales-en.webp": "/static/media/2026-101-week-kit-sales-en.8812aeea5d5748cd5307.webp",
     "static/media/Tracy_Feghali.webp": "/static/media/Tracy_Feghali.5f02aa724ed9b0f0a37a.webp",
     "static/media/bowling.png": "/static/media/bowling.c17474a5081c39f52461.png",
     "static/media/bump_off.png": "/static/media/bump_off.312dd6946dbdba533dbe.png",
@@ -51,18 +55,18 @@
     "static/media/cssalogo.webp": "/static/media/cssalogo.cf90d5c6ff895ef80cff.webp",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.7a7a1c81840c96d5a3ea.cjs",
-    "main.203b6b26.css.map": "/static/css/main.203b6b26.css.map",
-    "main.740de5ed.js.map": "/static/js/main.740de5ed.js.map",
+    "main.61b1c6f9.css.map": "/static/css/main.61b1c6f9.css.map",
+    "main.121c204b.js.map": "/static/js/main.121c204b.js.map",
     "450.b0eb20ea.chunk.css.map": "/static/css/450.b0eb20ea.chunk.css.map",
-    "450.e76c95c1.chunk.js.map": "/static/js/450.e76c95c1.chunk.js.map",
+    "450.a9df6f3a.chunk.js.map": "/static/js/450.a9df6f3a.chunk.js.map",
     "558.d079d6d6.chunk.css.map": "/static/css/558.d079d6d6.chunk.css.map",
-    "558.1e59a440.chunk.js.map": "/static/js/558.1e59a440.chunk.js.map",
+    "558.f7e8d7c3.chunk.js.map": "/static/js/558.f7e8d7c3.chunk.js.map",
     "194.9b2b5720.chunk.css.map": "/static/css/194.9b2b5720.chunk.css.map",
-    "194.c833786c.chunk.js.map": "/static/js/194.c833786c.chunk.js.map",
+    "194.f29128a1.chunk.js.map": "/static/js/194.f29128a1.chunk.js.map",
     "453.5dc8821d.chunk.js.map": "/static/js/453.5dc8821d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.203b6b26.css",
-    "static/js/main.740de5ed.js"
+    "static/css/main.61b1c6f9.css",
+    "static/js/main.121c204b.js"
   ]
 }
