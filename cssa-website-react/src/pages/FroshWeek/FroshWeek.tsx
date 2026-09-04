@@ -2,69 +2,106 @@ import React, { useState } from 'react';
 import './frosh-week.css';
 import BinaryBackground from '../../components/Background/BinaryBackground';
 import { useTranslation } from 'react-i18next';
+import FroshCarousel from './FroshCarousel';
+
+// Placeholder images for the carousel, upload new onesat new path
+import image0 from '../../images/2026-101-week/2026-101-week-schedule-en.webp';
+import image1 from '../../images/2026-101-week/2026-101-week-schedule-fr.webp';
+import image2 from '../../images/2026-101-week/2026-101-week-kit-sales-en.webp';
+import image3 from '../../images/2026-101-week/2026-101-week-kit-sales-fr.webp';
 
 const FroshWeek: React.FC = () => {
     const { t } = useTranslation();
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
+    const froshImages = [
+        image0,
+        image1,
+        image2,
+        image3
+    ];
     const faqItems = [
         {
-            question: t('What is 101 Week?'),
-            answer: t('101 Week is a welcoming event for new computer science students to meet peers, learn about campus life, and get involved with the CSSA.'),
-        },
-        {
-            question: t('Who can participate?'),
-            answer: t('All new computer science students are encouraged to join and take part in the activities and events.'),
-        },
-        {
             question: t('How do I register?'),
-            answer: t('Use the registration link above to sign up for 101 Week and reserve your spot.'),
-        },
-        {
-            question: t('Why are the kits so cheap?'),
-            answer: t('The CSSA subsidizes the cost of each ticket! Meaning a value of over $150 for just $90!'),
+            answer: 
+            <>
+                {t('Complete the')} <a href="https://your-registration-link.com" className="registration-form-link">{t('registration form')}</a> {t(' to pre-order your 101 Week kit and reserve your spot! Purchasing a kit is required to participate in 101 Week.')}
+                <p>
+                    {t('Our kits are limited and are distributed on a first-come, first-served basis. Ordering online is the best way to reserve your spot for an unforgettable start of your first year.')}
+                </p>
+                <p>
+                    {t('Kits must be picked up in person. Swing by our booth in front of the STEM building on Saturday, September 5th (9:30 am - 5:00 pm) or Sunday, September 6th (9:30 am - 2:00 pm) to collect yours.')}
+                </p>
+            </>
         },
         {
             question: t('When is 101 Week?'),
-            answer: t('We have events running every day from Sunday September 6th to Saturday September 12th.')
+            answer: t('101 Week runs every day from Saturday, September 5th, 2026 through Saturday, September 12th, 2026. Kits can be purchased or picked up (if reserved) at our Kit Sales event in front of STEM on Saturday (9:30 am - 5:00 pm) and Sunday (9:30 am - 2:00 pm).')
         },
         {
-            question: t('Where is it?'),
-            answer: t("Although our events will take you all over the city, our home base is infront of the stem building on uottawa's campus.")
+            question: t('Where is 101 Week?'),
+            answer: t("While our events will take you all across Ottawa, our headquarters is located on the University of Ottawa campus. For your safety and convenience, round-trip transportation will be provided for all off-campus events.")
         },
         {
-            question: t('Do I have to go to every event?'),
-            answer: t('We reccomend you come to as many events as you can but are not obligated to attend every event.')
+            question: t('Who can participate?'),
+            answer: t('Participation is open to all incoming first-year undergraduate students at the University of Ottawa. Even if you are not enrolled in a computer science program, you are more than welcome to purchase a kit and engage in the festivities!'),
         },
         {
-            question: t('Am I under the CSSA?'),
-            answer: t('The CSSA represent all students in the computer science program. This includes students in the Data Science and joint Honors programs.')
+            question: t("Where can I find additional information and updates?"),
+            answer: (
+                <>
+                    {t('To connect with your future classmates, ask questions, stay up to date on 101 Week events, and receive important announcements throughout the week, join the')} <a href="https://discord.gg/MyvZsf9s53" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">{t('CSSA Community Discord server')}</a>{t('!')}
+
+                    <p> 
+                        {t('For the most comprehensive itinerary, including event locations, descriptions, and catering details, refer to our schedule on')} <a href="https://uevents.ca" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">uEvents</a>{t('. Available online or through the iOS App Store.')}
+                    </p>
+
+                    <p className="mb-4">
+                        {t('Want to stay connected all year long? To catch our latest event photos and biggest announcements, be sure to follow us on')} <a href="https://instagram.com/cssa.aei" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Instagram (@cssa.aei)</a>{t('.')}
+                    </p>
+                </>
+            ),
         },
         {
-            question: t("Is there anything I'm not allowed to bring?"),
-            answer: t('All drugs and alcohol are prohibited.')
+            question: t('Why is the 101 Week kit offered at a discounted rate?'),
+            answer: t('The Computer Science Student Association heavily subsidizes the cost of each kit to ensure our events remain accessible to all students. For the $90 sale price, you receive over $90 worth of premium, limited-edition merch and admission to over $150 worth of unforgettable 101 Week events!'),
+        },
+        {
+            question: t('Do I have to go to every 101 Week event?'),
+            answer: t('While we strongly encourage participating in as many activities as your schedule allows to maximize your orientation experience, there is no mandatory obligation to attend every event. We also incentivize participation by rewarding you with bottle caps for each event you attend, which can be traded in for exclusive prizes at the end of the week!')
+        },
+        {
+            question: t('Am I registered under the CSSA?'),
+            answer: t('The CSSA represents all undergraduate students enrolled in computer science at the University of Ottawa. This includes computer science majors and minors, along with students in the Data Science (B.Sc. Mathematics and B.Sc. Computer Science) and Joint Honours (B.Sc. Computer Science and Mathematics) programs.')
         },
         {
             question: t('Is a minimum age to participate?'),
-            answer: t('No!')
+            answer: t('There is no minimum age requirement to participate in 101 Week. However, attendees must be over the age of 18 to attend an event where alcohol is served.')
         },
         {
-            question:t("Like I'm indigenous! What resources are there on campus for me during 101 Week?"),
-            answer: t(`Reach out to the ISA (Indigenous Students' Association) at their email: isa.uofo@gmail.com or instagram: @isa.uottawa! They represent all Indigenous students on campus and will be happy to provide any necessary assitance. 
-                They also have offered to cover the cost of your kit to alleviate any financial burden that buying the kit could cause (please note this is only available to First Nations, Metis, and Inuit students).
-                Just email them with the subject line “101 Week kit reimbursement” or send them a message on Instagram to get more details`)
+            question: t('Will meals and refreshments be provided?'),
+            answer: 
+            <>
+                {t('Catering and refreshments will be provided at select events throughout the week.')}
+                <p>
+                    {t('Please refer to our schedule on')} <a href="https://uevents.ca" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">uEvents</a> {t(', where complimentary meals and snacks will be denoted. We will always have food to accommodate food restrictions and allergies.')}
+                </p>
+            </>
+
         },
         {
-            question: t('Will food be provided?'),
-            answer: t('Food will be provided at some but not all events, please check your schedule as events where we provide food will be indicated')
+            question: t("Is there anything I'm not allowed to bring?"),
+            answer: t('The possession of weapons, drugs, alcohol, or any illegal substances is strictly prohibited at all 101 Week events. Additionally, select off-campus venues may enforce their own bag policies.')
         },
+        
         {
-            question: t("Where can I find more information?"),
-            answer: t("Check out our instagram @cssa.aei for more information")
+            question:t("What resources are available for Indigenous students during 101 Week?"),
+            answer: t(`All Indigenous students at uOttawa are represented by the Indigenous Students’ Association (ISA)! They have offered to cover the cost of your kit to alleviate any financial burden that buying the kit could cause (please note this is only available to First Nations, Metis, and Inuit students). Reach out to them via email at isa.uofo@gmail.com with the subject line “101 Week Kit Reimbursement” or send them a message on Instagram @isa.uottawa and they will reach out with more details!`)
         },
+        
         {
-            question: t("My question isn't here! Who can I ask?"),
-            answer: t("Just reach out to exec@cssa-aei.ca with your question and we will get back to you as soon as we can")
+            question: t("Who can I contact if I have further questions?"),
+            answer: t("If you require further clarification or have a specific inquiry not addressed in this FAQ, please do not hesitate to contact our executive team at exec@cssa-aei.ca. A representative will review your message and respond as soon as possible.")
         }
     ];
 
@@ -74,8 +111,8 @@ const FroshWeek: React.FC = () => {
             <div className="frosh-week-main">
                 <div className="frosh-week-header">{t('Join Us for 101 Week!')}</div>
                 <div className="frosh-week-description">
-                    <p>{t('101 Week is an exciting event for new computer science students to get involved with the CSSA and meet fellow students!')}</p>
-                    <p>{t("Don't miss out on this amazing experience!")}</p>
+                    <p>{t('The Computer Science Student Association (CSSA)\'s 101 Week Kit is your one-way ticket to the best week of your university career!')}</p>
+                    <p>{t("From September 5th to 12th, 2026, 101 Week is your chance to explore campus, make lifelong friends, and create unforgettable memories, all while celebrating the start of your uOttawa journey with our biggest-ever lineup of frosh events!")}</p>
                 </div>
 
                 <div className="form-link-container">
@@ -86,6 +123,10 @@ const FroshWeek: React.FC = () => {
                     >
                         {t('Register for 101 Week')}
                     </a>
+                </div>
+
+                <div className="frosh-week-carousel-wrapper">
+                    <FroshCarousel images={froshImages} />
                 </div>
             </div>
 

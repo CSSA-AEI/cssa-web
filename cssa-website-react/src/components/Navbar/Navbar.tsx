@@ -28,7 +28,10 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
             <div className='navbar-logo'>
                 <Link to='/'><img src={NavLogo} alt={"CSSA Logo"} /></Link>
             </div>
-            <ul className={showDropdown ? 'navbar-links dropdown-menu active' : 'navbar-links'}>
+            <ul
+                id="mobile-navigation"
+                className={showDropdown ? 'navbar-links dropdown-menu active' : 'navbar-links'}
+            >
                 {links.map((link, index) => (
                 <li className='navbar-link' key={index}>
                     <Link to={link.url}>{t(link.name)}</Link>
@@ -38,9 +41,16 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
                     {i18n.language === 'en' ? 'FR' : 'EN'}
                 </button>
             </ul>
-            <div className='dropdown-button' onClick={toggleDropdown}>
-                &#9776; {/* Unicode for three horizontal bars (Hamburger menu icon) */}
-            </div>
+            <button
+                type="button"
+                className='dropdown-button'
+                onClick={toggleDropdown}
+                aria-label={showDropdown ? 'Close navigation menu' : 'Open navigation menu'}
+                aria-expanded={showDropdown}
+                aria-controls="mobile-navigation"
+            >
+                &#9776;
+            </button>
         </div>
     );
 };
