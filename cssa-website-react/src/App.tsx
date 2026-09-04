@@ -1,6 +1,6 @@
-import React , { useEffect, useState } from 'react';
+import React , { useEffect, useRef, useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router,  Link , Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router,  Link , Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home';
 import FroshWeek from './pages/FroshWeek/FroshWeek';
@@ -10,6 +10,8 @@ import About from './pages/About/About';
 //import Blog from './pages/Blog/Blog';
 import Events from './pages/Events/Events';
 
+const POPUP_SESSION_KEY = 'cssa-101-week-popup-seen';
+
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -18,7 +20,12 @@ export function getWindowDimensions() {
   };
 }
 
-const App: React.FC = () => {
+const AppContent: React.FC = () => {
+  const location = useLocation();
+  const isFroshWeekPage = location.pathname === '/101week';
+  const initialPath = useRef(location.pathname);
+  const [isInitialPage, setIsInitialPage] = useState(true);
+
   const links = [
     { name: '101 Week', url: '/101week' },
     { name: 'Events', url: '/events' },
@@ -33,6 +40,23 @@ const App: React.FC = () => {
   const [show101Popup, setShow101Popup] = useState(false);
 
   useEffect(() => {
+    if (location.pathname !== initialPath.current) {
+      setIsInitialPage(false);
+      setShow101Popup(false);
+    }
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (sessionStorage.getItem(POPUP_SESSION_KEY)) {
+      return;
+    }
+
+    sessionStorage.setItem(POPUP_SESSION_KEY, 'true');
+
+    if (initialPath.current === '/101week') {
+      return;
+    }
+
     const timer = window.setTimeout(() => setShow101Popup(true), 600);
     return () => window.clearTimeout(timer);
   }, []);
@@ -43,9 +67,8 @@ const App: React.FC = () => {
 
 
   return (
-    <Router>
-      <div>
-        {show101Popup && (
+    <div>
+        {show101Popup && isInitialPage && !isFroshWeekPage && (
           <div className="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
             <div className="popup-card">
               <button className="popup-close" onClick={close101Popup} aria-label="Close popup">
@@ -77,9 +100,14 @@ const App: React.FC = () => {
           {/* <Route path="/blog" Component={Blog} /> */}
           <Route path="/events" Component={Events} />
         </Routes>
-      </div>
-    </Router>
+    </div>
   );
 };
+
+const App: React.FC = () => (
+  <Router>
+    <AppContent />
+  </Router>
+);
 
 export default App;
