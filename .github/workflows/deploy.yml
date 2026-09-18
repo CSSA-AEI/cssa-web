@@ -32,11 +32,9 @@ jobs:
             
             # Send to Cloudflare
             - name: Publish to Cloudflare Pages
-              uses: cloudflare/pages-action@v1
+              uses: cloudflare/wrangler-action@v4
               with:
                 apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                 accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-                projectName: cssa-website
-                directory: ./build
+                command: pages deploy ./build --project-name=cssa-website --branch=React-version-cssa-web
                 gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-                branch: React-version-cssa-web
