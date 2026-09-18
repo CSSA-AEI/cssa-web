@@ -23,11 +23,11 @@ jobs:
                 node-version: 18
             
             - name: Install Dependencies
-              working-directory: ./cssa-website-react
+              working-directory: .
               run: npm install
 
             - name: Build Site
-              working-directory: ./cssa-website-react
+              working-directory: .
               run: npm run build
             
             # Send to Cloudflare
