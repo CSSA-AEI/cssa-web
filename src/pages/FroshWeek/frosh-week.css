@@ -60,6 +60,20 @@
     box-shadow: 4px 4px #14283a;
     cursor: pointer;
 }
+.disabled-link {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none !important;
+    color: #6b7280 !important;
+}
+.form-link-container > a.disabled-link {
+    background-color: #9aa7b3 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    border-color: #9aa7b3 !important;
+    color: #ffffff !important;
+}
 .frosh-week-faq-container{
     width: min(100%, 28rem);
     display: flex;
