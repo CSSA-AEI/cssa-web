@@ -36,7 +36,7 @@ const FroshWeek: React.FC = () => {
         {
             name: 'QNX',
             logo: sponsor1,
-            subtitle: t('Gold partner for the 2026-2027 Academic Year!'),
+            subtitle: t('Gold Partner for the 2026-2027 Academic Year'),
             description: t("QNX is a division of BlackBerry, headquartered in Kanata, ON. They work in real-time operating systems and embedded software, meaning that they build the reliable foundation for various complex systems we all use on a daily basis such as vehicles, medical devices, and commercial transportation.")
         }
     ];
@@ -45,13 +45,13 @@ const FroshWeek: React.FC = () => {
         {
             name: 'CSE',
             logo: sponsor2,
-            subtitle: t('Silver partner for the 2026-2027 Academic Year!'),
+            subtitle: t('Silver Partner for the 2026-2027 Academic Year'),
             description: t("CSE is a governmental agency headquartered in Ottawa, ON. They work in cryptography and foreign signals intelligence to protect Canada's critical infrastructure and government networks. In other words, they're the 'hackers' that keep our data safe.")
         },
         {
             name: 'Ciena',
             logo: sponsor3,
-            subtitle: t('Silver partner for the 2026-2027 Academic Year!'),
+            subtitle: t('Silver Partner for the 2026-2027 Academic Year'),
             description: t("Ciena is a distinctive private company headquartered in Kanata, ON. They specialize in building the optical networking that moves data between the world's data centers, especially crucial in this AI era.")
         }
     ];
