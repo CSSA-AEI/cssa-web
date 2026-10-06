@@ -4,6 +4,9 @@ on:
     push:
         branches:
             - React-version-cssa-web
+    pull_request:
+          
+            
 
 jobs:
     deploy:
