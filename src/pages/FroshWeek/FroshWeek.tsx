@@ -1,18 +1,60 @@
 import React, { useState } from 'react';
 import './frosh-week.css';
+import { SITE_FLAGS } from '../../config/siteFlags';
 import BinaryBackground from '../../components/Background/BinaryBackground';
 import { useTranslation } from 'react-i18next';
 import FroshCarousel from './FroshCarousel';
 
-// Placeholder images for the carousel, upload new onesat new path
 import image0 from '../../images/2026-101-week/2026-101-week-schedule-en.webp';
 import image1 from '../../images/2026-101-week/2026-101-week-schedule-fr.webp';
 import image2 from '../../images/2026-101-week/2026-101-week-kit-sales-en.webp';
 import image3 from '../../images/2026-101-week/2026-101-week-kit-sales-fr.webp';
 
+import sponsor1 from '../../images/2026-101-week/2026-101-week-sponsor-QNX.webp';
+import sponsor2 from '../../images/2026-101-week/2026-101-week-sponsor-CSE.webp';
+import sponsor3 from '../../images/2026-101-week/2026-101-week-sponsor-ciena.webp';
+
+type Sponsor = {
+    name: string;
+    logo: string;
+    subtitle?: string;
+    description?: string;
+};
+
 const FroshWeek: React.FC = () => {
     const { t } = useTranslation();
     const [openIndex, setOpenIndex] = useState<number | null>(0);
+    const isFroshWeekEnabled = SITE_FLAGS.froshWeek;
+
+    const handleDisabledLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        if (!isFroshWeekEnabled) {
+            event.preventDefault();
+        }
+    };
+
+    const goldSponsors: Sponsor[] = [
+        {
+            name: 'QNX',
+            logo: sponsor1,
+            subtitle: t('Gold Partner for the 2026-2027 Academic Year'),
+            description: t("QNX is a division of BlackBerry, headquartered in Kanata, ON. They work in real-time operating systems and embedded software, meaning that they build the reliable foundation for various complex systems we all use on a daily basis such as vehicles, medical devices, and commercial transportation.")
+        }
+    ];
+
+    const silverSponsors: Sponsor[] = [
+        {
+            name: t('CSE'),
+            logo: sponsor2,
+            subtitle: t('Silver Partner for the 2026-2027 Academic Year'),
+            description: t("CSE is a governmental agency headquartered in Ottawa, ON. They work in cryptography and foreign signals intelligence to protect Canada's critical infrastructure and government networks. In other words, they're the 'hackers' that keep our data safe.")
+        },
+        {
+            name: 'Ciena',
+            logo: sponsor3,
+            subtitle: t('Silver Partner for the 2026-2027 Academic Year'),
+            description: t("Ciena is a distinctive private company headquartered in Kanata, ON. They specialize in building the optical networking that moves data between the world's data centers, especially crucial in this AI era.")
+        }
+    ];
 
     const froshImages = [
         image0,
@@ -20,12 +62,31 @@ const FroshWeek: React.FC = () => {
         image2,
         image3
     ];
+
+    const froshDescriptions = isFroshWeekEnabled 
+    ? (
+        <>
+            <p>{t("The Computer Science Student Association (CSSA)'s 101 Week Kit is your one-way ticket to the best week of your university career!")}</p>
+            <p>{t("From September 5th to 12th, 2026, 101 Week is your chance to explore campus, make lifelong friends, and create unforgettable memories, all while celebrating the start of your uOttawa journey with our biggest-ever lineup of frosh events!")}</p>
+        </>
+    ) : (
+        <>
+            <p>{t("The Computer Science Student Association (CSSA)'s 101 Week 2026 has already ended.")}</p>
+            {/* <p>{t("Please come back later for more info on 2027's 101 Week.")}</p> */}
+        </>
+    )
+
     const faqItems = [
         {
             question: t('How do I register?'),
             answer: 
             <>
-                {t('Complete the')} <a href="https://your-registration-link.com" className="registration-form-link">{t('registration form')}</a> {t(' to pre-order your 101 Week kit and reserve your spot! Purchasing a kit is required to participate in 101 Week.')}
+                {t('Complete the')} <a
+                    href={isFroshWeekEnabled ? 'https://your-registration-link.com' : undefined}
+                    className={isFroshWeekEnabled ? 'registration-form-link' : 'registration-form-link disabled-link'}
+                    onClick={handleDisabledLinkClick}
+                    aria-disabled={!isFroshWeekEnabled}
+                >{t('registration form')}</a> {t(' to pre-order your 101 Week kit and reserve your spot! Purchasing a kit is required to participate in 101 Week.')}
                 <p>
                     {t('Our kits are limited and are distributed on a first-come, first-served basis. Ordering online is the best way to reserve your spot for an unforgettable start of your first year.')}
                 </p>
@@ -50,14 +111,35 @@ const FroshWeek: React.FC = () => {
             question: t("Where can I find additional information and updates?"),
             answer: (
                 <>
-                    {t('To connect with your future classmates, ask questions, stay up to date on 101 Week events, and receive important announcements throughout the week, join the')} <a href="https://discord.gg/MyvZsf9s53" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">{t('CSSA Community Discord server')}</a>{t('!')}
+                    {t('To connect with your future classmates, ask questions, stay up to date on 101 Week events, and receive important announcements throughout the week, join the')} <a
+                        href={isFroshWeekEnabled ? 'https://discord.gg/MyvZsf9s53' : undefined}
+                        target={isFroshWeekEnabled ? '_blank' : undefined}
+                        rel={isFroshWeekEnabled ? 'noopener noreferrer' : undefined}
+                        className={isFroshWeekEnabled ? 'text-blue-500 underline' : 'text-blue-500 underline disabled-link'}
+                        onClick={handleDisabledLinkClick}
+                        aria-disabled={!isFroshWeekEnabled}
+                    >{t('CSSA Community Discord server')}</a>{t('!')}
 
                     <p> 
-                        {t('For the most comprehensive itinerary, including event locations, descriptions, and catering details, refer to our schedule on')} <a href="https://uevents.ca" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">uEvents</a>{t('. Available online or through the iOS App Store.')}
+                        {t('For the most comprehensive itinerary, including event locations, descriptions, and catering details, refer to our schedule on')} <a
+                            href={isFroshWeekEnabled ? 'https://uevents.ca' : undefined}
+                            target={isFroshWeekEnabled ? '_blank' : undefined}
+                            rel={isFroshWeekEnabled ? 'noopener noreferrer' : undefined}
+                            className={isFroshWeekEnabled ? 'text-blue-500 underline' : 'text-blue-500 underline disabled-link'}
+                            onClick={handleDisabledLinkClick}
+                            aria-disabled={!isFroshWeekEnabled}
+                        >uEvents</a>{t('. Available online or through the iOS App Store.')}
                     </p>
 
                     <p className="mb-4">
-                        {t('Want to stay connected all year long? To catch our latest event photos and biggest announcements, be sure to follow us on')} <a href="https://instagram.com/cssa.aei" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Instagram (@cssa.aei)</a>{t('.')}
+                        {t('Want to stay connected all year long? To catch our latest event photos and biggest announcements, be sure to follow us on')} <a
+                            href={isFroshWeekEnabled ? 'https://instagram.com/cssa.aei' : undefined}
+                            target={isFroshWeekEnabled ? '_blank' : undefined}
+                            rel={isFroshWeekEnabled ? 'noopener noreferrer' : undefined}
+                            className={isFroshWeekEnabled ? 'text-blue-500 underline' : 'text-blue-500 underline disabled-link'}
+                            onClick={handleDisabledLinkClick}
+                            aria-disabled={!isFroshWeekEnabled}
+                        >Instagram (@cssa.aei)</a>{t('.')}
                     </p>
                 </>
             ),
@@ -84,7 +166,14 @@ const FroshWeek: React.FC = () => {
             <>
                 {t('Catering and refreshments will be provided at select events throughout the week.')}
                 <p>
-                    {t('Please refer to our schedule on')} <a href="https://uevents.ca" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">uEvents</a> {t(', where complimentary meals and snacks will be denoted. We will always have food to accommodate food restrictions and allergies.')}
+                    {t('Please refer to our schedule on')} <a
+                        href={isFroshWeekEnabled ? 'https://uevents.ca' : undefined}
+                        target={isFroshWeekEnabled ? '_blank' : undefined}
+                        rel={isFroshWeekEnabled ? 'noopener noreferrer' : undefined}
+                        className={isFroshWeekEnabled ? 'text-blue-500 underline' : 'text-blue-500 underline disabled-link'}
+                        onClick={handleDisabledLinkClick}
+                        aria-disabled={!isFroshWeekEnabled}
+                    >uEvents</a> {t(', where complimentary meals and snacks will be denoted. We will always have food to accommodate food restrictions and allergies.')}
                 </p>
             </>
 
@@ -111,15 +200,17 @@ const FroshWeek: React.FC = () => {
             <div className="frosh-week-main">
                 <div className="frosh-week-header">{t('Join Us for 101 Week!')}</div>
                 <div className="frosh-week-description">
-                    <p>{t('The Computer Science Student Association (CSSA)\'s 101 Week Kit is your one-way ticket to the best week of your university career!')}</p>
-                    <p>{t("From September 5th to 12th, 2026, 101 Week is your chance to explore campus, make lifelong friends, and create unforgettable memories, all while celebrating the start of your uOttawa journey with our biggest-ever lineup of frosh events!")}</p>
+                    {froshDescriptions}
                 </div>
 
                 <div className="form-link-container">
                     <a
-                        href="https://pci.jotform.com/form/261946674835068"
-                        target="_blank" 
-                        rel="noopener noreferrer"
+                        href={isFroshWeekEnabled ? 'https://pci.jotform.com/form/261946674835068' : undefined}
+                        target={isFroshWeekEnabled ? '_blank' : undefined}
+                        rel={isFroshWeekEnabled ? 'noopener noreferrer' : undefined}
+                        className={isFroshWeekEnabled ? '' : 'disabled-link'}
+                        onClick={handleDisabledLinkClick}
+                        aria-disabled={!isFroshWeekEnabled}
                     >
                         {t('Register for 101 Week')}
                     </a>
@@ -127,6 +218,38 @@ const FroshWeek: React.FC = () => {
 
                 <div className="frosh-week-carousel-wrapper">
                     <FroshCarousel images={froshImages} />
+                </div>
+
+                <div className="frosh-week-partners-container">
+                    <div className="frosh-week-partners-title">{t('Our Partners')}</div>
+                    <div className="frosh-week-partners-container gold-tier-partner">
+                        {goldSponsors.map((sponsor) => (
+                            <article className="frosh-week-sponsor-card" key={sponsor.name}>
+                                <div className="frosh-week-sponsor-logo-container">
+                                    <img src={sponsor.logo} alt={sponsor.name} />
+                                </div>
+                                <div className="frosh-week-sponsor-copy">
+                                    <h3>{sponsor.name}</h3>
+                                    {sponsor.subtitle && <p className="frosh-week-sponsor-subtitle">{sponsor.subtitle}</p>}
+                                    {sponsor.description && <p className="frosh-week-sponsor-description">{sponsor.description}</p>}
+                                </div>
+                            </article>
+                        ))}
+                    </div>
+                    <div className="frosh-week-partners-container silver-tier-partner">
+                        {silverSponsors.map((sponsor) => (
+                            <article className="frosh-week-sponsor-card" key={sponsor.name}>
+                                <div className="frosh-week-sponsor-logo-container">
+                                    <img src={sponsor.logo} alt={sponsor.name} />
+                                </div>
+                                <div className="frosh-week-sponsor-copy">
+                                    <h3>{sponsor.name}</h3>
+                                    {sponsor.subtitle && <p className="frosh-week-sponsor-subtitle">{sponsor.subtitle}</p>}
+                                    {sponsor.description && <p className="frosh-week-sponsor-description">{sponsor.description}</p>}
+                                </div>
+                            </article>
+                        ))}
+                    </div>
                 </div>
             </div>
 

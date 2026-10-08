@@ -2,6 +2,7 @@ import React , { useEffect, useRef, useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router,  Link , Route, Routes, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { SITE_FLAGS } from './config/siteFlags';
 import './App.css';
 import Home from './pages/Home/Home';
 import FroshWeek from './pages/FroshWeek/FroshWeek';
@@ -12,6 +13,7 @@ import About from './pages/About/About';
 import Events from './pages/Events/Events';
 
 const POPUP_SESSION_KEY = 'cssa-101-week-popup-seen';
+const isFroshWeekEnabled = SITE_FLAGS.froshWeek;
 
 export function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -48,17 +50,18 @@ const AppContent: React.FC = () => {
   }, [location.pathname]);
 
   useEffect(() => {
-    if (sessionStorage.getItem(POPUP_SESSION_KEY)) {
-      return;
-    }
-
-    sessionStorage.setItem(POPUP_SESSION_KEY, 'true');
-
     if (initialPath.current === '/101week') {
       return;
     }
 
-    const timer = window.setTimeout(() => setShow101Popup(true), 600);
+    if (sessionStorage.getItem(POPUP_SESSION_KEY)) {
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
+      sessionStorage.setItem(POPUP_SESSION_KEY, 'true');
+      setShow101Popup(true);
+    }, 600);
     return () => window.clearTimeout(timer);
   }, []);
 
@@ -69,7 +72,7 @@ const AppContent: React.FC = () => {
 
   return (
     <div>
-        {show101Popup && isInitialPage && !isFroshWeekPage && (
+        {show101Popup && isInitialPage && !isFroshWeekPage && isFroshWeekEnabled && (
           <div className="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
             <div className="popup-card">
               <button className="popup-close" onClick={close101Popup} aria-label="Close popup">

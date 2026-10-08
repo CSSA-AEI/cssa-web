@@ -22,6 +22,24 @@
 .frosh-week-header{
     font-size: 2em;
 }
+
+.frosh-week-partners-title{
+    font-size: 1.5em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    box-sizing: border-box;
+    background-color: #326491;
+    color: white;
+    font-weight: 800;
+    overflow: hidden;
+    border-top: 2px solid #14283a;
+    border-bottom: 2px solid #14283a;
+    overflow: hidden;
+}
+
 .frosh-week-description{
     box-sizing: border-box;
     width: fit-content;
@@ -32,6 +50,7 @@
     box-shadow: 2px 2px #14283a;
     height: fit-content;
 }
+
 .form-link-container{
     width: fit-content;
     height: fit-content;
@@ -59,6 +78,20 @@
     transform: translate(-3%, -3%);
     box-shadow: 4px 4px #14283a;
     cursor: pointer;
+}
+.disabled-link {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none !important;
+    color: #6b7280 !important;
+}
+.form-link-container > a.disabled-link {
+    background-color: #9aa7b3 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    border-color: #9aa7b3 !important;
+    color: #ffffff !important;
 }
 .frosh-week-faq-container{
     width: min(100%, 28rem);
@@ -124,6 +157,93 @@
     width: 100%;
 }
 
+.frosh-week-partners-container {
+    display: grid;
+    gap: 20px;
+}
+
+.frosh-week-sponsor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 0;
+    min-height: 18rem;
+    padding: 1.25rem;
+    background-color: #ffffff;
+    border: 1px solid #14283a;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px #14283a;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.frosh-week-sponsor-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 7rem;
+    padding: 0 0.5rem 1rem;
+}
+
+.frosh-week-sponsor-card img {
+    display: block;
+    width: 100%;
+    max-height: 7rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.frosh-week-sponsor-copy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 0.75rem;
+    border-top: 1px solid #d6dce2;
+}
+
+.frosh-week-sponsor-copy h3 {
+    margin: 0;
+    color: #14283a;
+    font-size: 1.15rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.frosh-week-sponsor-subtitle {
+    margin: 0.35rem 0 0;
+    color: #326491;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.35;
+    text-align: center;
+}
+
+.frosh-week-sponsor-description {
+    margin: 0.65rem 0 0;
+    color: #14283a;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.gold-tier-partner {
+    grid-template-columns: repeat(autofit, minmax(220px, 1fr));
+}
+
+.gold-tier-partner .frosh-week-sponsor-card img {
+    max-height: 9rem;
+}
+
+.silver-tier-partner {
+    grid-template-columns: repeat(autofit, minmax(190px, 1fr));
+}
+
+.silver-tier-partner .frosh-week-sponsor-card img {
+    max-height: 6rem;
+}
+
 @media only screen and (max-width: 800px){
     .frosh-week-page-container{
         width: 100%;
@@ -156,4 +276,5 @@
         height: auto;
         min-height: 0;
     }
+
 }

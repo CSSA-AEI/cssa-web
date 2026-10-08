@@ -4,6 +4,9 @@ on:
     push:
         branches:
             - React-version-cssa-web
+    pull_request:
+
+            
 
 jobs:
     deploy:
@@ -36,5 +39,5 @@ jobs:
               with:
                 apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                 accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-                command: pages deploy ./build --project-name=cssa-website --branch=React-version-cssa-web
+                command: pages deploy ./build --project-name=cssa-website --branch=${{ github.head_ref || github.ref_name }}
                 gitHubToken: ${{ secrets.GITHUB_TOKEN }}
