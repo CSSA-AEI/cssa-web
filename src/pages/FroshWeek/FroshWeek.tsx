@@ -72,7 +72,7 @@ const FroshWeek: React.FC = () => {
     ) : (
         <>
             <p>{t("The Computer Science Student Association (CSSA)'s 101 Week 2026 has already ended.")}</p>
-            <p>{t("Please come back later for more info on 2027's 101 Week.")}</p>
+            {/* <p>{t("Please come back later for more info on 2027's 101 Week.")}</p> */}
         </>
     )
 
