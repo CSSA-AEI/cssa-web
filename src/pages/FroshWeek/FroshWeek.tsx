@@ -43,10 +43,10 @@ const FroshWeek: React.FC = () => {
 
     const silverSponsors: Sponsor[] = [
         {
-            name: t('CSE'),
+            name: t('Communications Security Establishment Canada'),
             logo: sponsor2,
             subtitle: t('Silver Partner for the 2026-2027 Academic Year'),
-            description: t("CSE is a governmental agency headquartered in Ottawa, ON. They work in cryptography and foreign signals intelligence to protect Canada's critical infrastructure and government networks. In other words, they're the 'hackers' that keep our data safe.")
+            description: t("The Communications Security Establishment Canada (CSE) is the national cryptologic agency, providing the Government of Canada with information technology security and foreign signals intelligence.")
         },
         {
             name: 'Ciena',
