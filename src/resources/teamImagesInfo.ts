@@ -131,6 +131,17 @@ import Arav7 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
 import Arav8 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
 import Arav9 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
 
+import Carolyn0 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn1 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn2 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn3 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn4 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn5 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn6 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn7 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn8 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn9 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+
 // Profile Images
 import ClorisFront from '../images/2026-2027-team/Cloris/Cloris_Wong.webp';
 import DanielaFront from '../images/2026-2027-team/Daniela/Daniela_Bordeianu.webp';
@@ -144,6 +155,7 @@ import AdamFront from '../images/2026-2027-team/Adam/Adam_R.webp';
 import JanaFront from '../images/2026-2027-team/Jana/Jana_Sorour.webp';
 import MasonFront from '../images/2026-2027-team/Mason/Mason_Eisner.webp';
 import AravFront from '../images/2026-2027-team/Arav/Arav_Ramjewan.webp';
+import CarolynFront from '../images/2026-2027-team/Carolyn/Carolyn_Zhang.webp';
 
 
 export interface TeamMember {
@@ -160,6 +172,7 @@ export interface TeamMember {
     song?: string;
     songLink?: string;
     songImage?: string;
+    junior?: boolean; // Will be set to false by default during execution, include only for juniors
 }
 
 export const teamInfo: TeamMember[] =  [
@@ -361,6 +374,7 @@ export const teamInfo: TeamMember[] =  [
     {
         name: 'Arav Ramjewan',
         position: 'Junior VP Presidential Affairs',
+        junior: true,
         year: '1st Year',
         blurb: `Hi my name's Arav!! I love Magic The Gathering and DND, if you wanna play then I'm your guy! I'm super excited to be here and let's make this a great year for all of us!`,
         frontImage: AravFront,
@@ -372,5 +386,20 @@ export const teamInfo: TeamMember[] =  [
         song: "When the Moon's Reaching Out Stars - Azumi Takahashi",
         songLink: 'https://music.apple.com/ca/song/when-the-moons-reaching-out-stars/1546593408',
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/1d/12/fa/1d12fa12-9c78-b46f-5e57-ad2ba930a6ae/049646_J.jpg/416x416bb.webp'
+    },
+    {
+        name: 'Carolyn Zhang',
+        position: 'Junior VP IT',
+        junior: true,
+        year: '1st Year',
+        blurb: `Hey! I'm Carolyn and I'm a first year in computer science. I enjoy hanging out with friends, gaming and crocheting! :D`,
+        frontImage: CarolynFront,
+        galleryImages: [Carolyn0, Carolyn1, Carolyn2, Carolyn3, Carolyn4, Carolyn5, Carolyn6, Carolyn7, Carolyn8, Carolyn9],
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "1000 CS students (with the power of friendship!)" ]
+        ],
+        song: "Found You First - Alec Benjamin",
+        songLink: 'https://music.apple.com/us/song/found-you-first/1751687563',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f1/14/81/f11481e9-88ad-81d0-dcd8-bc2c9e562ae6/075679643483.jpg/592x592bb.webp'
     }
 ]
