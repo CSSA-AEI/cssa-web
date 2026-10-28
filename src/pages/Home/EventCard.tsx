@@ -2,7 +2,7 @@ import React from "react";
 import { getWindowDimensions } from "../../App";
 import './event-card.css';
 
-interface EventCardProps {
+export interface EventCardProps {
     title: string;
     date: string;
     description: string;
