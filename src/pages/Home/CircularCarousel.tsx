@@ -10,7 +10,10 @@ interface CircularCarouselProps {
 const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCurrentMember, images}) => {
 
     const wheelRef = useRef<any>(null);
-    const initialSlidesState = images.map((slide, index) => ({
+
+    const execs = images.filter((member) => !member.junior);
+
+    const initialSlidesState = execs.map((slide, index) => ({
         coords: {
           x: 0,
           y: 0
@@ -21,7 +24,7 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
         name: slide.name,
         blurb: slide.blurb,
         position: slide.position,
-        year: slide.year
+        year: slide.year,
     }));
 
     const numSlides = images.length;
