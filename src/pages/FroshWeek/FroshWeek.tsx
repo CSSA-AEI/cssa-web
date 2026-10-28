@@ -52,7 +52,7 @@ const FroshWeek: React.FC = () => {
             name: 'Ciena',
             logo: sponsor3,
             subtitle: t('Silver Partner for the 2026-2027 Academic Year'),
-            description: t("Ciena is a distinctive private company headquartered in Kanata, ON. They specialize in building the optical networking that moves data between the world's data centers, especially crucial in this AI era.")
+            description: t("Ciena is a distinctive private company headquartered in Maryland, USA. They specialize in building the optical networking that moves data between the world's data centers, especially crucial in this AI era.")
         }
     ];
 
