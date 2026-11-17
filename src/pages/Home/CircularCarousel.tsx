@@ -27,7 +27,7 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({flexDirection, getCu
         year: slide.year,
     }));
 
-    const numSlides = images.length;
+    const numSlides = execs.length;
     const angle = 360 / numSlides;
 
     const [slides, setSlides] = useState(initialSlidesState);
