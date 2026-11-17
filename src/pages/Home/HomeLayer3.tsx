@@ -1,15 +1,15 @@
 import React from 'react';
 import './home-layer-3.css';
-import BumpOff from '../../images/scrapbook-images/bump_off.png';
-import WaterDunk from '../../images/scrapbook-images/water_dunk.png';
-import BullRiding from '../../images/scrapbook-images/bull_riding.png';
-import Bowling from '../../images/scrapbook-images/bowling.png';
+import BumpOff from '../../images/scrapbook-images/bump_off.webp';
+import WaterDunk from '../../images/scrapbook-images/water_dunk.webp';
+import BullRiding from '../../images/scrapbook-images/bull_riding.webp';
+import Bowling from '../../images/scrapbook-images/bowling.webp';
 import EventCard from './EventCard';
 import Event1 from '../../images/events-posters/CienaNetworking.webp';
 import Event2 from '../../images/events-posters/webdevevent.webp';
 import Event3 from '../../images/events-posters/halloween_event.webp';
 import Event4 from '../../images/events-posters/event1.webp';
-import Group20 from '../../images/scrapbook-images/Group-20.png';
+import Group20 from '../../images/scrapbook-images/Group-20.webp';
 import BinaryBackground from '../../components/Background/BinaryBackground';
 import { useTranslation } from 'react-i18next';
 

@@ -21,16 +21,16 @@ import Daniela7 from '../images/2026-2027-team/Daniela/lookAround/7.webp';
 import Daniela8 from '../images/2026-2027-team/Daniela/lookAround/8.webp';
 import Daniela9 from '../images/2026-2027-team/Daniela/lookAround/9.webp';
 
-import Kali0 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
-import Kali1 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
-import Kali2 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
-import Kali3 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
-import Kali4 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
-import Kali5 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
-import Kali6 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
-import Kali7 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
-import Kali8 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
-import Kali9 from '../images/2026-2027-team/Kali/lookAround/blank_pfp.webp';
+import Sebastien0 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
+import Sebastien1 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
+import Sebastien2 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
+import Sebastien3 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
+import Sebastien4 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
+import Sebastien5 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
+import Sebastien6 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
+import Sebastien7 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
+import Sebastien8 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
+import Sebastien9 from '../images/2026-2027-team/Sebastien/lookAround/blank_pfp.webp';
 
 import Nicolas0 from '../images/2026-2027-team/Nicolas/lookAround/0.webp';
 import Nicolas1 from '../images/2026-2027-team/Nicolas/lookAround/1.webp';
@@ -109,21 +109,65 @@ import Jana7 from '../images/2026-2027-team/Jana/lookAround/7.webp';
 import Jana8 from '../images/2026-2027-team/Jana/lookAround/8.webp';
 import Jana9 from '../images/2026-2027-team/Jana/lookAround/9.webp';
 
-import Tessia0 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
-import Tessia1 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
-import Tessia2 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
-import Tessia3 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
-import Tessia4 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
-import Tessia5 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
-import Tessia6 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
-import Tessia7 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
-import Tessia8 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
-import Tessia9 from '../images/2026-2027-team/Tessia/lookAround/blank_pfp.webp';
+import Mason0 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+import Mason1 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+import Mason2 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+import Mason3 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+import Mason4 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+import Mason5 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+import Mason6 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+import Mason7 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+import Mason8 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+import Mason9 from '../images/2026-2027-team/Mason/lookAround/blank_pfp.webp';
+
+import Arav0 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+import Arav1 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+import Arav2 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+import Arav3 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+import Arav4 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+import Arav5 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+import Arav6 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+import Arav7 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+import Arav8 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+import Arav9 from '../images/2026-2027-team/Arav/lookaround/blank_pfp.webp';
+
+import Carolyn0 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn1 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn2 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn3 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn4 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn5 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn6 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn7 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn8 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+import Carolyn9 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
+
+import Helen0 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen1 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen2 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen3 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen4 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen5 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen6 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen7 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen8 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen9 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+
+import Shahed0 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed1 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed2 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed3 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed4 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed5 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed6 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed7 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed8 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed9 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
 
 // Profile Images
 import ClorisFront from '../images/2026-2027-team/Cloris/Cloris_Wong.webp';
 import DanielaFront from '../images/2026-2027-team/Daniela/Daniela_Bordeianu.webp';
-import KaliFront from '../images/2026-2027-team/Kali/Kali_Jade_LaFontaine.webp';
+import SebastienFront from '../images/2026-2027-team/Sebastien/Sebastien_Gosselin.webp';
 import LaciaFront from '../images/2026-2027-team/Lacia/Lacia_Paige_Cummings.webp';
 import NicolasFront from '../images/2026-2027-team/Nicolas/Nicolas_Guilbault.webp';
 import RachelFront from '../images/2026-2027-team/Rachel/Rachel_Qi.webp';
@@ -131,8 +175,11 @@ import TracyFront from '../images/2026-2027-team/Tracy/Tracy_Feghali.webp';
 import UdulaFront from '../images/2026-2027-team/Udula/Udula_Ravishan.webp';
 import AdamFront from '../images/2026-2027-team/Adam/Adam_R.webp';
 import JanaFront from '../images/2026-2027-team/Jana/Jana_Sorour.webp';
-import TessiaFront from '../images/2026-2027-team/Tessia/Tessia_Odubella.webp';
-
+import MasonFront from '../images/2026-2027-team/Mason/Mason_Eisner.webp';
+import AravFront from '../images/2026-2027-team/Arav/Arav_Ramjewan.webp';
+import CarolynFront from '../images/2026-2027-team/Carolyn/Carolyn_Zhang.webp';
+import HelenFront from '../images/2026-2027-team/Helen/Helen_Wen.webp';
+import ShahedFront from '../images/2026-2027-team/Shahed/Shahed_Lababidi.webp';
 
 export interface TeamMember {
     name: string;
@@ -148,6 +195,7 @@ export interface TeamMember {
     song?: string;
     songLink?: string;
     songImage?: string;
+    junior?: boolean; // Will be set to false by default during execution, include only for juniors
 }
 
 export const teamInfo: TeamMember[] =  [
@@ -298,7 +346,7 @@ export const teamInfo: TeamMember[] =  [
     },
     {
         name: 'Jana Sorour',
-        position: "Director of Academic Affairs",
+        position: "VP Academic Affairs",
         year: '3rd Year',
         blurb: `Hi! I'm Jana and I'm in my 3rd year of CS. Outside of school, 
         I like to spend my time reading, being outside, or hanging out with friends. 
@@ -315,37 +363,98 @@ export const teamInfo: TeamMember[] =  [
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/58/99/f1/5899f1b4-674b-3033-9e12-14348a9de396/196873986029.jpg/632x632bb.webp'
     },
         {
-        name: 'Kali Jade LaFontaine',
+        name: 'Sébastien Gosselin',
         position: 'VP Finance',
-        year: '2nd Year',
-        blurb: `As a second-year Computer Science student and VP Finance, 
-        I enjoy working with numbers, systems, and structured problem-solving. I'm excited to be part of CSSA and contribute to our student community.`,
-        frontImage: KaliFront,
-        galleryImages: [Kali0, Kali1, Kali2, Kali3, Kali4, Kali5, Kali6, Kali7, Kali8, Kali9],
+        year: '3rd Year',
+        blurb: `Hey! I'm Sébastien, a 3rd year computer science student. 
+        My pastimes involve reading, crocheting, gaming and the gym and of course, working at my job!`,
+        frontImage: SebastienFront,
+        galleryImages: [Sebastien0, Sebastien1, Sebastien2, Sebastien3, Sebastien4, Sebastien5, Sebastien6, Sebastien7, Sebastien8, Sebastien9],
         email: 'finance@cssa-aei.ca',
-        linkedIn: 'https://www.linkedin.com/in/kali-jade-lafontaine-b62624343/',
         questions: [
-            [ "Who would win: 1000 CS students or 1 polar bear?", "1 polar bear" ]
+            [ "Who would win: 1000 CS students or 1 polar bear?", "Realistically if the CS students organized they should be able to overwhelm the polar bear" ]
         ],
-        song: "August - Taylor swift",
-        songLink: "https://music.apple.com/us/song/august/1524801944",
-        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Video124/v4/4f/56/d0/4f56d047-5f9e-d8de-0446-879c1a15a8ac/Job67f9bcc2-c099-4890-99a4-9035a9260544-108238448-PreviewImage_preview_image_nonvideo_sdr-Time1607911089290.png/592x592bb.webp",
+        song: "The User's Guide to Being Human - The Script",
+        songLink: "https://music.apple.com/us/song/the-users-guide-to-being-human/1892457608",
+        songImage: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/12/fc/61/12fc61d8-c9d5-346c-0180-011cfc78553b/4099964236408.jpg/592x592bb.webp",
     },
     {
-        name: 'Tessia Odubella',
-        position: 'Director of Communications',
+        name: 'Mason Eisner',
+        position: 'VP Communications',
         year: '3rd Year',
-        blurb: `Hey guys, I'm Tessia and I'm a third year! I love going to the gym, 
-        trying new restaurants and going out with my friends. 
-        Hope to see you around campus :)`,
-        frontImage: TessiaFront,
-        galleryImages: [Tessia0, Tessia1, Tessia2, Tessia3, Tessia4, Tessia5, Tessia6, Tessia7, Tessia8, Tessia9],
+        blurb: `Hey, I'm Mason! I'm in my third year of comp sci, and am excited to be your VP Comms! I like board games, cooking, and tabletop RPGs. 
+        You can also find me as an exec at uORover and uO Board Game Club`,
+        frontImage: MasonFront,
+        galleryImages: [Mason0, Mason1, Mason2, Mason3, Mason4, Mason5, Mason6, Mason7, Mason8, Mason9],
         email: 'comms@cssa-aei.ca',
         questions: [
-            [ "Who would win: 1000 CS students or 1 polar bear?", "1000 cs students we’ve got this!" ]
+            [ "Who would win: 1000 CS students or 1 polar bear?", "1000 CS students. I believe in us." ]
         ],
-        song: 'Tout donner - Naza',
-        songLink: 'https://music.apple.com/us/song/tout-donner/1815775483',
-        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/3f/3a/db3f3a96-565f-45ec-1e7e-c83e907b2113/cover.jpg/632x632bb.webp'
-    }
+        song: 'Wind - Aurora Ave.',
+        songLink: 'https://music.apple.com/us/song/wind/1776527257',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/06/0e/b3060e98-0a9b-a33e-ca44-3baf257c5021/472276.jpg/360x360bb.webp'
+    },
+    {
+        name: 'Arav Ramjewan',
+        position: 'Junior VP Presidential Affairs',
+        junior: true,
+        year: '1st Year',
+        blurb: `Hi my name's Arav!! I love Magic The Gathering and DND, if you wanna play then I'm your guy! I'm super excited to be here and let's make this a great year for all of us!`,
+        frontImage: AravFront,
+        galleryImages: [Arav0, Arav1, Arav2, Arav3, Arav4, Arav5, Arav6, Arav7, Arav8, Arav9],
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "system.out.println('1000 CS students'); \n//We can lock in trust" ]
+        ],
+        instagram: 'https://www.instagram.com/aravramjewan/',
+        song: "When the Moon's Reaching Out Stars - Azumi Takahashi",
+        songLink: 'https://music.apple.com/ca/song/when-the-moons-reaching-out-stars/1546593408',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/1d/12/fa/1d12fa12-9c78-b46f-5e57-ad2ba930a6ae/049646_J.jpg/416x416bb.webp'
+    },
+    {
+        name: 'Carolyn Zhang',
+        position: 'Junior VP IT',
+        junior: true,
+        year: '1st Year',
+        blurb: `Hey! I'm Carolyn and I'm a first year in computer science. I enjoy hanging out with friends, gaming and crocheting! :D`,
+        frontImage: CarolynFront,
+        galleryImages: [Carolyn0, Carolyn1, Carolyn2, Carolyn3, Carolyn4, Carolyn5, Carolyn6, Carolyn7, Carolyn8, Carolyn9],
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "1000 CS students (with the power of friendship!)" ]
+        ],
+        song: "Found You First - Alec Benjamin",
+        songLink: 'https://music.apple.com/us/song/found-you-first/1751687563',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f1/14/81/f11481e9-88ad-81d0-dcd8-bc2c9e562ae6/075679643483.jpg/592x592bb.webp'
+    },
+    {
+        name: 'Helen Wen',
+        position: 'Junior VP Phil Equity',
+        junior: true,
+        year: '1st Year',
+        blurb: `Heya, it's Helen ^_^ I'm a first year compsci student and your Jr. VP of Philanthropy and Equity for 26-27! Outside of uni, I love to game, draw, and watch marine life documentaries. Looking forward to a great year <3`,
+        frontImage: HelenFront,
+        galleryImages: [Helen0, Helen1, Helen2, Helen3, Helen4, Helen5, Helen6, Helen7, Helen8, Helen9],
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "CS students. Some of you may die, but that is a sacrifice I am willing to make!" ]
+        ],
+        instagram: 'https://www.instagram.com/pillowcorpse/',
+        song: "Petals - Hole",
+        songLink: 'https://music.apple.com/us/song/petals/1440906373',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/bd/53/9a/bd539a7c-37f4-a4dc-ed95-2fede21f54b8/OBJECT_PROXYd0714be6-3c1d-4ba5-a3cd-73180b8014a8_KEY_FRAME_OUTPUT_0_OBJECT_PROXYd0714be6-3c1d-4ba5-a3cd-73180b8014a8.png/900x1200bb.webp'
+    },
+    {
+        name: 'Shahed Lababidi',
+        position: 'Junior VP Social',
+        junior: true,
+        year: '1st Year',
+        blurb: `Hi! I am Shahed Lababidi, a first year Data Science student in the French Immersion program. I am Junior VP Social. Outside of studies, I like talking to friends, playing board games and video games, learning new languages, and crafting! I also love talking to and meeting new people, so don't be afraid to say hi if you ever see me around!`,
+        frontImage: ShahedFront,
+        galleryImages: [Shahed0, Shahed1, Shahed2, Shahed3, Shahed4, Shahed5, Shahed6, Shahed7, Shahed8, Shahed9],
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "1000 CS students would win because we are so tuff and we could always design a program that beats the polar bear 👀" ]
+        ],
+        instagram: 'https://www.instagram.com/bruhlolme/',
+        song: "Garee2a Awy - TUL8TE",
+        songLink: 'https://music.apple.com/us/song/garee2a-awy/6797577057',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2d/2f/73/2d2f739c-eb8c-fd9e-c67a-f7704d3fb66e/cover.jpg/416x416bb.webp'
+    },
 ]

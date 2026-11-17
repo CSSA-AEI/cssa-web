@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from "react";
 import { getWindowDimensions } from "../../App";
 import { Link } from "react-router-dom";
-import FooterTablet from '../../images/scrapbook-images/FooterImageTablet.png';
-import HeaderTablet from '../../images/scrapbook-images/HeaderImageTablet.png';
-import LaptopFooter from '../../images/scrapbook-images/Laptopfooter.png';
-//import LaptopHeader from '../../images/scrapbook-images/LaptopHeader.png';
-import Group22 from '../../images/scrapbook-images/Group22.png';
+import FooterTablet from '../../images/scrapbook-images/FooterImageTablet.webp';
+import HeaderTablet from '../../images/scrapbook-images/HeaderImageTablet.webp';
+import LaptopFooter from '../../images/scrapbook-images/Laptopfooter.webp';
+//import LaptopHeader from '../../images/scrapbook-images/LaptopHeader.webp';
+import Group22 from '../../images/scrapbook-images/Group22.webp';
 import { useTranslation } from 'react-i18next';
 import './home-layer-4.css';
 

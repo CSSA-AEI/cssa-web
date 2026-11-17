@@ -29,6 +29,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run optimize-images`
+
+Run this after adding or replacing images in `src/images`, before committing them. The script converts supported images to WebP, and enforces a 200 KB budget for general images and a 50 KB budget for files in `lookAround` folders. It preserves PNGs losslessly when they meet the budget, then uses lossy WebP and downsizing when needed. Original files are retained; source references are updated to use generated WebP files. Re-encoding removes image metadata. The script writes changes by default.
+
+To preview which files would be replaced without changing them, run `npm run optimize-images -- --dry-run`.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
