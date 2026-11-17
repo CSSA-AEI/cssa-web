@@ -142,6 +142,28 @@ import Carolyn7 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp
 import Carolyn8 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
 import Carolyn9 from '../images/2026-2027-team/Carolyn/lookaround/blank_pfp.webp';
 
+import Helen0 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen1 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen2 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen3 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen4 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen5 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen6 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen7 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen8 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+import Helen9 from '../images/2026-2027-team/Helen/lookaround/blank_pfp.webp';
+
+import Shahed0 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed1 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed2 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed3 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed4 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed5 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed6 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed7 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed8 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+import Shahed9 from '../images/2026-2027-team/Shahed/lookaround/blank_pfp.webp';
+
 // Profile Images
 import ClorisFront from '../images/2026-2027-team/Cloris/Cloris_Wong.webp';
 import DanielaFront from '../images/2026-2027-team/Daniela/Daniela_Bordeianu.webp';
@@ -156,7 +178,8 @@ import JanaFront from '../images/2026-2027-team/Jana/Jana_Sorour.webp';
 import MasonFront from '../images/2026-2027-team/Mason/Mason_Eisner.webp';
 import AravFront from '../images/2026-2027-team/Arav/Arav_Ramjewan.webp';
 import CarolynFront from '../images/2026-2027-team/Carolyn/Carolyn_Zhang.webp';
-
+import HelenFront from '../images/2026-2027-team/Helen/Helen_Wen.webp';
+import ShahedFront from '../images/2026-2027-team/Shahed/Shahed_Lababidi.webp';
 
 export interface TeamMember {
     name: string;
@@ -401,5 +424,37 @@ export const teamInfo: TeamMember[] =  [
         song: "Found You First - Alec Benjamin",
         songLink: 'https://music.apple.com/us/song/found-you-first/1751687563',
         songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f1/14/81/f11481e9-88ad-81d0-dcd8-bc2c9e562ae6/075679643483.jpg/592x592bb.webp'
-    }
+    },
+    {
+        name: 'Helen Wen',
+        position: 'Junior VP Phil Equity',
+        junior: true,
+        year: '1st Year',
+        blurb: `Heya, it's Helen ^_^ I'm a first year compsci student and your Jr. VP of Philanthropy and Equity for 26-27! Outside of uni, I love to game, draw, and watch marine life documentaries. Looking forward to a great year <3`,
+        frontImage: HelenFront,
+        galleryImages: [Helen0, Helen1, Helen2, Helen3, Helen4, Helen5, Helen6, Helen7, Helen8, Helen9],
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "CS students. Some of you may die, but that is a sacrifice I am willing to make!" ]
+        ],
+        instagram: 'https://www.instagram.com/pillowcorpse/',
+        song: "Petals - Hole",
+        songLink: 'https://music.apple.com/us/song/petals/1440906373',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/bd/53/9a/bd539a7c-37f4-a4dc-ed95-2fede21f54b8/OBJECT_PROXYd0714be6-3c1d-4ba5-a3cd-73180b8014a8_KEY_FRAME_OUTPUT_0_OBJECT_PROXYd0714be6-3c1d-4ba5-a3cd-73180b8014a8.png/900x1200bb.webp'
+    },
+    {
+        name: 'Shahed Lababidi',
+        position: 'Junior VP Social',
+        junior: true,
+        year: '1st Year',
+        blurb: `Hi! I am Shahed Lababidi, a first year Data Science student in the French Immersion program. I am Junior VP Social. Outside of studies, I like talking to friends, playing board games and video games, learning new languages, and crafting! I also love talking to and meeting new people, so don't be afraid to say hi if you ever see me around!`,
+        frontImage: ShahedFront,
+        galleryImages: [Shahed0, Shahed1, Shahed2, Shahed3, Shahed4, Shahed5, Shahed6, Shahed7, Shahed8, Shahed9],
+        questions: [
+            [ "Who would win: 1000 CS students or 1 polar bear?", "1000 CS students would win because we are so tuff and we could always design a program that beats the polar bear 👀" ]
+        ],
+        instagram: 'https://www.instagram.com/bruhlolme/',
+        song: "Garee2a Awy - TUL8TE",
+        songLink: 'https://music.apple.com/us/song/garee2a-awy/6797577057',
+        songImage: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2d/2f/73/2d2f739c-eb8c-fd9e-c67a-f7704d3fb66e/cover.jpg/416x416bb.webp'
+    },
 ]
