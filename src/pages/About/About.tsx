@@ -23,7 +23,7 @@ const About: React.FC = () => {
 
   const [selectedExecMember, setSelectedExecMember] = useState<string | undefined>('');
   const [execMemberObject, setExecMemberObject] = useState<TeamMember | undefined>(undefined);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   
   useEffect(() => {
     if (selectedExecMember) {
@@ -46,14 +46,17 @@ const About: React.FC = () => {
                 <a className='constitution-link' href='/CSSAConstitution_March2026_en.pdf'>
                   {t('View our constitution in English here. We are working on the French translation for our constitution.')}
                 </a>
+                <div className='image-polaroid'>
+                  <img src="/images/AboutPage/site.webp" alt="cssa-exec-team"/>
+                </div>
               </div>
               <div className='exec-main-image'>
                 <div className='exec-main-image-container'>
-                  <div className='exec-main-image-polaroid'>
-                    <img src="/images/AboutPage/site.webp" alt="cssa-exec-team"/>
+                  <div className='exec-image-polaroid'>
+                    <img src = {i18n.language === 'en' ? "/images/AboutPage/officeHoursEN.webp" : "/images/AboutPage/officeHoursFR.webp"} alt="exec-office-hours"/>
                   </div>
-                  <a className='exec-office-hours' href='https://www.instagram.com/p/Ddj5f-Qife-/?hl=en&img_index=1'>
-                    {t('Every Exec has office hours. Click here to see when the Execs will be in office.')}
+                  <a className='exec-office-hours'>
+                    {t('Here are the Exec office hours!')}
                   </a>
                 </div>
               </div>

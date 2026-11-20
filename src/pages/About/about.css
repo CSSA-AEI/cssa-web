@@ -10,7 +10,7 @@
     position: absolute;
 }
 .about-blurb-container{
-    width: 50vw;
+    width: 80vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,25 @@
     display: flex;
     flex-direction: column;
 }
-.exec-main-image-polaroid{
+
+.image-polaroid{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 3px solid #14283A;
+    box-shadow: 3px 3px #14283A;
+    margin-top: 2em;
+    /* margin-left: auto; */
+}
+
+.image-polaroid > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.exec-image-polaroid{
     width: 100%;
     height: fit-content;
     background-color: white;
@@ -105,8 +123,9 @@
     box-sizing: border-box;
     border: 3px solid #14283A;
     box-shadow: 3px 3px #14283A;
+
 }
-.exec-main-image-polaroid > img{
+.exec-image-polaroid > img{
     width: 100%;
     object-fit: cover;
 }
@@ -117,7 +136,7 @@
     padding: 1em;
     border: 3px solid #14283A;
     box-shadow: 3px 3px #14283A;
-    height: 15%;
+    height: 6%;
     background-color: white;
     align-items: center;
     text-decoration: none;
