@@ -110,6 +110,21 @@
     }
 }
 
+@media (min-width: 801px) {
+    .navbar-links {
+        flex-wrap: nowrap;
+        gap: clamp(0.75rem, 2vw, 2rem);
+    }
+
+    .navbar-link {
+        flex-shrink: 0;
+    }
+
+    .navbar-link a {
+        white-space: nowrap;
+    }
+}
+
 /* Adjustments for smaller screen sizes */
 @media (max-width: 800px) {
         .navbar{
