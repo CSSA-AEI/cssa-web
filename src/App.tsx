@@ -11,6 +11,7 @@ import About from './pages/About/About';
 //import Volunteer from './pages/Volunteer/Volunteer';
 //import Blog from './pages/Blog/Blog';
 import Events from './pages/Events/Events';
+import Sponsors from './pages/Sponsors/Sponsors';
 
 const POPUP_SESSION_KEY = 'cssa-101-week-popup-seen';
 const isFroshWeekEnabled = SITE_FLAGS.froshWeek;
@@ -38,6 +39,7 @@ const AppContent: React.FC = () => {
 //  { name: 'Volunteer', url: '/volunteer' },
 //  { name: 'Minutes', url: '/minutes' },
     { name: 'About', url: '/about' },
+    { name: 'Partners', url: '/partners' },
   ];
 
   const [show101Popup, setShow101Popup] = useState(false);
@@ -103,6 +105,7 @@ const AppContent: React.FC = () => {
           {/* <Route path="/volunteer" Component={Volunteer} /> */}
           {/* <Route path="/blog" Component={Blog} /> */}
           <Route path="/events" Component={Events} />
+          <Route path="/partners" Component={Sponsors} />
         </Routes>
     </div>
   );
