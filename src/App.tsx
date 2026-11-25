@@ -32,7 +32,7 @@ const AppContent: React.FC = () => {
   const [isInitialPage, setIsInitialPage] = useState(true);
 
   const links = [
-    { name: '101 Week', url: '/101week' },
+    ...(isFroshWeekEnabled ? [{ name: '101 Week', url: '/101week' }] : []),
     { name: 'Events', url: '/events' },
     { name: 'Merch', url: 'https://cssa-aei.square.site/' },
 //  { name: 'Blog', url: '/blog' },
@@ -99,7 +99,7 @@ const AppContent: React.FC = () => {
         <Navbar title="My Navbar" links={links} />
         <Routes>
           <Route path="/" Component={Home} />
-          <Route path="/101week" Component={FroshWeek} />
+          {isFroshWeekEnabled && <Route path="/101week" Component={FroshWeek} />}
           <Route path="/about" Component={About} />
           {/* <Route path="/minutes" Component={Minutes} /> */}
           {/* <Route path="/volunteer" Component={Volunteer} /> */}
