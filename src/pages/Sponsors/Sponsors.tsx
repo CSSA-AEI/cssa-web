@@ -48,7 +48,7 @@ const goldSponsors: Sponsor[] = [
                 <div className="sponsors-title">{t('Our Partners')}</div>
                 <div className="sponsors-card-container gold-tier">
                     {goldSponsors.map((sponsor) => (
-                        <article className="sponsor-card" key={sponsor.name}>
+                        <article className="sponsor-card gold-tier" key={sponsor.name}>
                                 <div className="sponsor-logo-container">
                                     <img src={sponsor.logo} alt={sponsor.name} />
                                 </div>
@@ -60,9 +60,10 @@ const goldSponsors: Sponsor[] = [
                         </article>
                     ))}
                 </div>
+
                 <div className="sponsors-container silver-tier">
                     {silverSponsors.map((sponsor) => (
-                        <article className="sponsor-card" key={sponsor.name}>
+                        <article className="sponsor-card silver-tier" key={sponsor.name}>
                             <div className="sponsor-logo-container">
                                 <img src={sponsor.logo} alt={sponsor.name} />
                             </div>

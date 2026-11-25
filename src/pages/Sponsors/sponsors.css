@@ -1,3 +1,8 @@
+:root {
+    --border-color: #14283a;
+    --shadow-light-factor: 0.9;
+}
+
 .sponsors-page-container{
     min-height: 92vh;
     width: 100vw;
@@ -30,7 +35,6 @@
     overflow: hidden;
     border-top: 2px solid #14283a;
     border-bottom: 2px solid #14283a;
-    overflow: hidden;
 }
 
 .sponsors-card-container {
@@ -46,16 +50,16 @@
     min-height: 18rem;
     padding: 1.25rem;
     background-color: #ffffff;
-    border: 1px solid #14283a;
+    border: 3px solid var(--border-color);
     border-radius: 0.5rem;
-    box-shadow: 3px 3px #14283a;
+    box-shadow: 5px 5px oklch(from var(--border-color) calc(l * var(--shadow-light-factor)) c h);
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .sponsor-card:hover {
     transform: translate(-1%, -1%);
-    box-shadow: 4px 4px #14283a;
+    box-shadow: 6px 6px oklch(from var(--border-color) calc(l * var(--shadow-light-factor)) c h);
     transition: all 0.2s ease-in-out;
 }
 
@@ -112,6 +116,7 @@
 
 .gold-tier {
     grid-template-columns: repeat(autofit, minmax(220px, 1fr));
+    --border-color: #f4c430;
 }
 
 .gold-tier .sponsor-card img {
@@ -120,6 +125,7 @@
 
 .silver-tier {
     grid-template-columns: repeat(autofit, minmax(190px, 1fr));
+    --border-color: #d7d7d7;
 }
 
 .silver-tier .sponsor-card img {
