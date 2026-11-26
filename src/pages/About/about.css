@@ -17,6 +17,7 @@
     box-sizing: border-box;
     padding: 1em;
 }
+
 .about-info-body{
     box-sizing: border-box;
     display: flex;
@@ -404,5 +405,21 @@
     .exec-social > a {
         display: flex;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .cssa-info-container {
+        position: relative;
+        flex-direction: column;
+        height: fit-content;
+        min-height: 100vh;
+    }
+    .about-info-body {
+        position: relative;
+    }
+    .about-wall-holder {
+        position: absolute;
+        bottom: 0;
     }
 }
