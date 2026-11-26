@@ -6,7 +6,8 @@
 .sponsors-page-container{
     min-height: 92vh;
     width: 100vw;
-    display: flex;
+    display: grid;
+    align-content: flex-start;
     box-sizing: border-box;
     overflow: hidden;
     position: absolute;
@@ -14,11 +15,6 @@
     padding: 2em;
     gap: 2em;
     align-items: flex-start;
-}
-
-.sponsors-container {
-    display: grid;
-    gap: 20px;
 }
 
 .sponsors-title{
@@ -35,6 +31,13 @@
     overflow: hidden;
     border-top: 2px solid #14283a;
     border-bottom: 2px solid #14283a;
+}
+
+.sponsors-container {
+
+    display: grid;
+    gap: 20px;
+    
 }
 
 .sponsors-card-container {
