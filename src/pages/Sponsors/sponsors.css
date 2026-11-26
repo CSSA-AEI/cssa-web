@@ -53,17 +53,18 @@
     min-height: 18rem;
     padding: 1.25rem;
     background-color: #ffffff;
-    border: 3px solid var(--border-color);
+    /* Removed border for a cleaner look but code for border and relative shadow remains */
+    /* border: 3px solid var(--border-color); */ 
     border-radius: 0.5rem;
-    box-shadow: 5px 5px color-mix(in oklch, var(--border-color) 90%, black);
+    box-shadow: 8px 8px color-mix(in oklch, var(--border-color) 90%, black);
     box-sizing: border-box;
     overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .sponsor-card:hover {
     transform: translate(-1%, -1%);
-    box-shadow: 6px 6px color-mix(in oklch, var(--border-color) 90%, black);
-    transition: all 0.2s ease-in-out;
+    box-shadow: 10px 10px color-mix(in oklch, var(--border-color) 90%, black);
 }
 
 .sponsor-logo-container {

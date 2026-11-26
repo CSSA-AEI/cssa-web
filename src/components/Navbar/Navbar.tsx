@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
             >
                 {links.map((link, index) => (
                 <li className='navbar-link' key={index}>
-                    <Link to={link.url}>{t(link.name)}</Link>
+                    <Link to={link.url} onClick={() => setShowDropdown(false)}>{t(link.name)}</Link>
                 </li>
                 ))}
                 <button onClick={toggleLanguage}>
