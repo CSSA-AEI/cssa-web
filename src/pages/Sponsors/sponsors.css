@@ -1,0 +1,137 @@
+:root {
+    --border-color: #14283a;
+    --shadow-light-factor: 0.9;
+}
+
+.sponsors-page-container{
+    min-height: 92vh;
+    width: 100vw;
+    display: grid;
+    align-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    top: 8vh;
+    padding: 2em;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.sponsors-title{
+    font-size: 1.5em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    box-sizing: border-box;
+    background-color: #326491;
+    color: white;
+    font-weight: 800;
+    overflow: hidden;
+    border-top: 2px solid #14283a;
+    border-bottom: 2px solid #14283a;
+}
+
+.sponsors-container {
+
+    display: grid;
+    gap: 20px;
+    
+}
+
+.sponsors-card-container {
+    display: grid;
+    gap: 20px;
+}
+
+.sponsor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 0;
+    min-height: 18rem;
+    padding: 1.25rem;
+    background-color: #ffffff;
+    /* Removed border for a cleaner look but code for border and relative shadow remains */
+    /* border: 3px solid var(--border-color); */ 
+    border-radius: 0.5rem;
+    box-shadow: 8px 8px color-mix(in oklch, var(--border-color) 90%, black);
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.sponsor-card:hover {
+    transform: translate(-1%, -1%);
+    box-shadow: 10px 10px color-mix(in oklch, var(--border-color) 90%, black);
+}
+
+.sponsor-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 7rem;
+    padding: 0 0.5rem 1rem;
+}
+
+.sponsor-card img {
+    display: block;
+    width: 100%;
+    max-height: 7rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.sponsor-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 0.75rem;
+    border-top: 1px solid #d6dce2;
+}
+
+.sponsor-text h3 {
+    margin: 0;
+    color: #14283a;
+    font-size: 1.15rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.sponsor-subtitle {
+    margin: 0.35rem 0 0;
+    color: #326491;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.35;
+    text-align: center;
+}
+
+.sponsor-description {
+    margin: 0.65rem 0 0;
+    color: #14283a;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.gold-tier {
+    grid-template-columns: repeat(autofit, minmax(220px, 1fr));
+    --border-color: #f4c430;
+}
+
+.gold-tier .sponsor-card img {
+    max-height: 9rem;
+}
+
+.silver-tier {
+    grid-template-columns: repeat(autofit, minmax(190px, 1fr));
+    --border-color: #d7d7d7;
+}
+
+.silver-tier .sponsor-card img {
+    max-height: 6rem;
+}

@@ -25,6 +25,7 @@
       "Volunteer": "Volunteer",
       "Minutes": "Minutes",
       "About":"About",
+      "Partners": "Partners",
       "101 Week": "101 Week",
       "Catch up with everything CSSA related":"Catch up with everything CSSA related",
       "VOLUNTEERING OPPORTUNITIES": "VOLUNTEERING OPPORTUNITIES",
@@ -51,7 +52,7 @@
       "Merch": "Merch",
       "How do I register?": "How do I register?",
       "Complete the": "Complete the",
-      " to pre-order your 101 Week kit and reserve your spot! Purchasing a kit is required to participate in 101 Week.": " to pre-order your 101 Week kit and reserve your spot! Purchasing a kit is required to participate in 101 Week.",
+      "to pre-order your 101 Week kit and reserve your spot! Purchasing a kit is required to participate in 101 Week.": " to pre-order your 101 Week kit and reserve your spot! Purchasing a kit is required to participate in 101 Week.",
       "Our kits are limited and are distributed on a first-come, first-served basis. Ordering online is the best way to reserve your spot for an unforgettable start of your first year.": "Our kits are limited and are distributed on a first-come, first-served basis. Ordering online is the best way to reserve your spot for an unforgettable start of your first year.",
       "Kits must be picked up in person. Swing by our booth in front of the STEM building on Saturday, September 5th (9:30 am - 5:00 pm) or Sunday, September 6th (9:30 am - 2:00 pm) to collect yours.": "Kits must be picked up in person. Swing by our booth in front of the STEM building on Saturday, September 5th (9:30 am - 5:00 pm) or Sunday, September 6th (9:30 am - 2:00 pm) to collect yours.",
       "When is 101 Week?": "When is 101 Week?",
@@ -99,9 +100,10 @@
       "The Computer Science Student Association (CSSA)'s 101 Week 2026 has already ended.": "The Computer Science Student Association (CSSA)'s 101 Week 2026 has already ended.",
       "Please come back later for more info on 2027's 101 Week.": "Please come back later for more info on 2027's 101 Week.",
       "QNX is a division of BlackBerry, headquartered in Kanata, ON. They work in real-time operating systems and embedded software, meaning that they build the reliable foundation for various complex systems we all use on a daily basis such as vehicles, medical devices, and commercial transportation.": "QNX is a division of BlackBerry, headquartered in Kanata, ON. They work in real-time operating systems and embedded software, meaning that they build the reliable foundation for various complex systems we all use on a daily basis such as vehicles, medical devices, and commercial transportation.",
-      "CSE is a governmental agency headquartered in Ottawa, ON. They work in cryptography and foreign signals intelligence to protect Canada's critical infrastructure and government networks. In other words, they're the 'hackers' that keep our data safe.": "CSE is a governmental agency headquartered in Ottawa, ON. They work in cryptography and foreign signals intelligence to protect Canada's critical infrastructure and government networks. In other words, they're the 'hackers' that keep our data safe.",
-      "Ciena is a distinctive private company headquartered in Kanata, ON. They specialize in building the optical networking that moves data between the world's data centers, especially crucial in this AI era.": "Ciena is a distinctive private company headquartered in Kanata, ON. They specialize in building the optical networking that moves data between the world's data centers, especially crucial in this AI era.",
+      "The Communications Security Establishment Canada (CSE) is the national cryptologic agency, providing the Government of Canada with information technology security and foreign signals intelligence.": "The Communications Security Establishment Canada (CSE) is the national cryptologic agency, providing the Government of Canada with information technology security and foreign signals intelligence.",
+      "Ciena is a distinctive private company headquartered in Maryland, USA. They specialize in building the optical networking that moves data between the world's data centers, especially crucial in this AI era.": "Ciena is a distinctive private company headquartered in Maryland, USA. They specialize in building the optical networking that moves data between the world's data centers, especially crucial in this AI era.",
       "Gold Partner for the 2026-2027 Academic Year": "Gold Partner for the 2026-2027 Academic Year",
       "Silver Partner for the 2026-2027 Academic Year": "Silver Partner for the 2026-2027 Academic Year",
-      "CSE": "CSE"
+      "Communications Security Establishment Canada": "Communications Security Establishment Canada",
+      "Our Partners": "Our Partners"
 }

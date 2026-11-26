@@ -11,6 +11,7 @@ import About from './pages/About/About';
 //import Volunteer from './pages/Volunteer/Volunteer';
 //import Blog from './pages/Blog/Blog';
 import Events from './pages/Events/Events';
+import Sponsors from './pages/Sponsors/Sponsors';
 
 const POPUP_SESSION_KEY = 'cssa-101-week-popup-seen';
 const isFroshWeekEnabled = SITE_FLAGS.froshWeek;
@@ -31,13 +32,14 @@ const AppContent: React.FC = () => {
   const [isInitialPage, setIsInitialPage] = useState(true);
 
   const links = [
-    { name: '101 Week', url: '/101week' },
+    ...(isFroshWeekEnabled ? [{ name: '101 Week', url: '/101week' }] : []),
     { name: 'Events', url: '/events' },
     { name: 'Merch', url: 'https://cssa-aei.square.site/' },
 //  { name: 'Blog', url: '/blog' },
 //  { name: 'Volunteer', url: '/volunteer' },
 //  { name: 'Minutes', url: '/minutes' },
     { name: 'About', url: '/about' },
+    { name: 'Partners', url: '/partners' },
   ];
 
   const [show101Popup, setShow101Popup] = useState(false);
@@ -97,12 +99,13 @@ const AppContent: React.FC = () => {
         <Navbar title="My Navbar" links={links} />
         <Routes>
           <Route path="/" Component={Home} />
-          <Route path="/101week" Component={FroshWeek} />
+          {isFroshWeekEnabled && <Route path="/101week" Component={FroshWeek} />}
           <Route path="/about" Component={About} />
           {/* <Route path="/minutes" Component={Minutes} /> */}
           {/* <Route path="/volunteer" Component={Volunteer} /> */}
           {/* <Route path="/blog" Component={Blog} /> */}
           <Route path="/events" Component={Events} />
+          <Route path="/partners" Component={Sponsors} />
         </Routes>
     </div>
   );
